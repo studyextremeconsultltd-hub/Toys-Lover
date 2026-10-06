@@ -8,6 +8,7 @@ import { GiftOccasions } from "@/components/home/GiftOccasions";
 import { TrustBadges } from "@/components/home/TrustBadges";
 import { Newsletter } from "@/components/home/Newsletter";
 import { BestSellers } from "@/components/home/BestSellers";
+import { PayNowBanner } from "@/components/home/PayNowBanner";
 import { GlowHeading } from "@/components/home/GlowHeading";
 import { Container } from "@/components/ui/Container";
 
@@ -28,6 +29,7 @@ export default function HomePage() {
         </Container>
       </section>
 
+      <PayNowBanner />
       <LearningBenefits />
       <SaleBanner />
       <ParentLove />

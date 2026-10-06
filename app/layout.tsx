@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[80] focus:rounded-full focus:bg-coral-500 focus:px-4 focus:py-2 focus:font-display focus:font-extrabold focus:text-white"
         >
-          Skip To Content
+          Skip to content
         </a>
         <Providers>
           <Navbar />

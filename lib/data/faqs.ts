@@ -59,7 +59,7 @@ export const faqs: FaqItem[] = [
     group: "Payments",
     question: "Which payment methods do you accept?",
     answer:
-      "This demo checkout is a frontend preview. A live Toy Bloom shop would typically accept major cards and Apple Pay / Google Pay. Prices are in pounds sterling. No real payment is processed here.",
+      "We accept secure deposits and payments through Stripe (cards) and PayPal. Tap Pay Now, enter your details on Toy Bloom, then finish on Stripe or PayPal’s official checkout. Prices are in pounds sterling.",
   },
   {
     group: "Orders",

@@ -18,7 +18,7 @@ export default function FaqPage() {
         image={img.heroKids2}
         eyebrow="Help"
         title="Questions parents actually ask."
-        description="Shipping, returns, safety, age marks, and how this preview checkout works."
+        description="Shipping, returns, safety, age guidance, and how Pay Now deposits work with Stripe and PayPal."
       />
       <Section>
         <Container className="space-y-12">

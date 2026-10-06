@@ -10,7 +10,7 @@ const tiles = [
   { href: "/age/3-5", label: "3-4 Years", image: productShot("dream-castle-playset") },
   { href: "/age/6-8", label: "5-7 Years", image: productShot("dino-expedition-build") },
   { href: "/shop/educational-stem", label: "STEM Toys", image: productShot("space-explorer-kit") },
-  { href: "/shop/board-games", label: "Books & Puzzles", image: productShot("stage-quest-card-game") },
+  { href: "/shop/board-games", label: "Board Games", image: productShot("stage-quest-card-game") },
   { href: "/blog/gift-guide-ages-three-to-five", label: "Gifts & Bundles", image: productShot("mini-lit-christmas-trees") },
 ];
 

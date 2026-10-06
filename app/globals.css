@@ -265,9 +265,30 @@ a {
   color: #fff;
 }
 
-.buy-online-glow {
-  background: #f25c38;
-  color: #fff;
+.header-pay-now::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.55) 48%,
+    transparent 70%
+  );
+  transform: translateX(-120%);
+  animation: header-pay-shine 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes header-pay-shine {
+  0%,
+  45% {
+    transform: translateX(-120%);
+  }
+  70%,
+  100% {
+    transform: translateX(120%);
+  }
 }
 
 .age-chip {
@@ -506,7 +527,8 @@ a {
   .logo-glow:focus-visible,
   .logo-glow::before,
   .logo-glow-inverted,
-  .footer-logo-stage::before {
+  .footer-logo-stage::before,
+  .header-pay-now::before {
     transition: none;
     transform: none;
     animation: none;

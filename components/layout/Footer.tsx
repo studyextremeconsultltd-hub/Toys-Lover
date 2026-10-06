@@ -29,7 +29,8 @@ export function Footer() {
             <li><Link href="/age/3-5" className="hover:text-white">By Age</Link></li>
             <li><Link href="/shop" className="hover:text-white">By Category</Link></li>
             <li><Link href="/shop/educational-stem" className="hover:text-white">STEM Toys</Link></li>
-            <li><Link href="/shop/board-games" className="hover:text-white">Books</Link></li>
+            <li><Link href="/shop/board-games" className="hover:text-white">Board Games</Link></li>
+            <li><Link href="/pay" className="hover:text-white">Pay Now</Link></li>
             <li><Link href="/blog/gift-guide-ages-three-to-five" className="hover:text-white">Gift Guide</Link></li>
           </ul>
         </div>

@@ -42,7 +42,7 @@ const benefits = [
   {
     icon: Users,
     title: "Strengthens Social Skills",
-    text: "Encourages sharing, teamwork and communication.",
+    text: "Encourages sharing, teamwork, and communication.",
     card: "bg-sky-50 ring-sky-100",
     iconWrap: "bg-sky-500 text-white shadow-[0_10px_20px_-10px_rgba(43,116,199,0.6)]",
     titleColor: "text-sky-700",

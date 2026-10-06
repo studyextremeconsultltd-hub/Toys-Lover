@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Heart, MapPin, Menu, Search, ShoppingCart, User, X } from "lucide-react";
+import { Heart, MapPin, Menu, Search, ShoppingCart, Sparkles, User, X, Zap } from "lucide-react";
 import { useCart } from "@/lib/context/CartContext";
 import { useWishlist } from "@/lib/context/WishlistContext";
 import { FREE_SHIPPING_GBP } from "@/lib/constants";
@@ -15,7 +15,7 @@ const links = [
   { href: "/age/3-5", label: "By Age" },
   { href: "/shop", label: "By Category" },
   { href: "/shop/educational-stem", label: "STEM Toys" },
-  { href: "/shop/board-games", label: "Books" },
+  { href: "/shop/board-games", label: "Board Games" },
   { href: "/blog/gift-guide-ages-three-to-five", label: "Gift Guide" },
   { href: "/about", label: "About Us" },
 ];
@@ -78,7 +78,23 @@ export function Navbar() {
           })}
         </nav>
 
-        <div className="ml-auto flex shrink-0 items-center gap-0.5 text-ink-700">
+        <div className="ml-auto flex shrink-0 items-center gap-1.5 text-ink-700 sm:gap-2">
+          <Link
+            href="/pay"
+            className={cn(
+              "header-pay-now group relative inline-flex items-center gap-1.5 overflow-hidden rounded-full",
+              "bg-gradient-to-r from-sun-300 via-sun-400 to-coral-400 px-3 py-2 sm:px-4",
+              "font-display text-[11px] font-black uppercase tracking-wide text-ink-900 sm:text-xs",
+              "shadow-[0_0_18px_rgba(250,204,21,0.55)] ring-2 ring-white/80",
+              "transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_28px_rgba(242,112,74,0.55)]",
+              pathname.startsWith("/pay") && "ring-coral-400",
+            )}
+          >
+            <Sparkles className="h-3.5 w-3.5 text-coral-600 transition group-hover:rotate-12 sm:h-4 sm:w-4" />
+            <span className="relative z-10">Pay Now</span>
+            <Zap className="hidden h-3.5 w-3.5 text-coral-700 sm:block" />
+          </Link>
+
           <Link href="/shop" className="grid h-10 w-10 place-items-center rounded-full hover:bg-cream-100" aria-label="Search toys">
             <Search className="h-5 w-5" />
           </Link>
@@ -136,6 +152,14 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                href="/pay"
+                prefetch={false}
+                className="mt-1 inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-sun-300 to-coral-400 px-4 py-3 font-display text-base font-black uppercase tracking-wide text-ink-900 shadow-soft"
+              >
+                <Sparkles className="h-4 w-4" />
+                Pay Now
+              </Link>
             </div>
           </nav>
         </div>

@@ -38,3 +38,6 @@ next-env.d.ts
 /Toys Pics/
 /Website logo.jpeg
 /scripts/_*.txt
+
+.cursor/
+
