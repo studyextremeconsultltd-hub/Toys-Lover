@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { img } from "@/lib/media";
 import { PageHero } from "@/components/ui/PageHero";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { CheckoutForm } from "@/components/checkout/CheckoutForm";
+import { CheckoutClient } from "@/components/checkout/CheckoutClient";
 
 export const metadata: Metadata = {
   title: "Checkout",
   robots: { index: false, follow: false },
 };
 
-export default function CheckoutPage({
-  searchParams,
-}: {
-  searchParams: { method?: string };
-}) {
-  const method = searchParams.method === "paypal" || searchParams.method === "card" ? searchParams.method : "stripe";
-
+export default function CheckoutPage() {
   return (
     <>
       <PageHero
@@ -27,7 +22,9 @@ export default function CheckoutPage({
       />
       <Section>
         <Container>
-          <CheckoutForm method={method} />
+          <Suspense fallback={<div className="h-64 animate-pulse rounded-3xl bg-cream-100" />}>
+            <CheckoutClient />
+          </Suspense>
         </Container>
       </Section>
     </>

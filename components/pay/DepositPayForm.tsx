@@ -90,23 +90,35 @@ export function DepositPayForm() {
         setBusy(true);
         const form = new FormData(event.currentTarget);
         try {
-          const res = await fetch("/api/pay/create", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              method,
-              name: form.get("name"),
-              email: form.get("email"),
-              phone: form.get("phone"),
-              note: form.get("note"),
-              amount: effectiveAmount,
-            }),
-          });
-          const data = (await res.json()) as { ok?: boolean; url?: string; message?: string };
-          if (!res.ok || !data.ok || !data.url) {
-            throw new Error(data.message || "Could not open the payment page.");
+          const name = String(form.get("name") || "").trim();
+          const email = String(form.get("email") || "").trim().toLowerCase();
+          const phone = String(form.get("phone") || "").trim();
+          const note = String(form.get("note") || "").trim();
+          if (name.length < 2) throw new Error("Please enter your full name.");
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) throw new Error("Please enter a valid email address.");
+          if (phone.replace(/\D/g, "").length < 7) throw new Error("Please enter a valid phone number.");
+          if (!effectiveAmount || effectiveAmount < 1) throw new Error("Enter a deposit of at least £1.");
+
+          // GoDaddy static hosting: open official Stripe / PayPal pages via public payment links.
+          const stripeLink = (process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK || "").trim();
+          const paypalLink = (process.env.NEXT_PUBLIC_PAYPAL_ME_LINK || "").trim();
+
+          if (method === "stripe") {
+            if (!stripeLink.startsWith("https://")) {
+              throw new Error("Add NEXT_PUBLIC_STRIPE_PAYMENT_LINK (Stripe Payment Link) before going live.");
+            }
+            const url = new URL(stripeLink);
+            url.searchParams.set("prefilled_email", email);
+            url.searchParams.set("client_reference_id", `${name}|${phone}|${effectiveAmount}|${note}`.slice(0, 200));
+            window.location.assign(url.toString());
+            return;
           }
-          window.location.assign(data.url);
+
+          if (!paypalLink.startsWith("https://")) {
+            throw new Error("Add NEXT_PUBLIC_PAYPAL_ME_LINK (PayPal.Me URL) before going live.");
+          }
+          const base = paypalLink.replace(/\/$/, "");
+          window.location.assign(`${base}/${effectiveAmount.toFixed(2)}`);
         } catch (err) {
           setError(err instanceof Error ? err.message : "Payment could not be started.");
           setBusy(false);

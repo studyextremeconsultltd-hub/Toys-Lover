@@ -42,8 +42,8 @@ export default function PayPage() {
 
           <p className="mx-auto mt-8 flex max-w-3xl items-start gap-2 text-sm text-ink-500">
             <Lock className="mt-0.5 h-4 w-4 shrink-0" />
-            Live payments need Stripe and/or PayPal keys in the server environment. Without them, the
-            form explains what to configure — nothing is charged on this page itself.
+            After you submit, you leave Toy Bloom and pay on Stripe or PayPal’s official page. Set
+            NEXT_PUBLIC_STRIPE_PAYMENT_LINK and NEXT_PUBLIC_PAYPAL_ME_LINK before the live upload.
           </p>
         </Container>
       </Section>
