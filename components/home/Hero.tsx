@@ -59,7 +59,7 @@ export function Hero() {
               priority
               fetchPriority="high"
               sizes="(min-width: 1024px) 46vw, 100vw"
-              quality={72}
+              quality={62}
               className="object-contain object-bottom"
             />
           </div>

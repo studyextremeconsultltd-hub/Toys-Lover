@@ -12,70 +12,66 @@ export function CartView() {
 
   if (lines.length === 0) {
     return (
-      <div className="overflow-hidden rounded-3xl bg-white shadow-card">
-        <div className="grid grid-cols-3">
-          {[
-            "/images/products/snuggle-puppy-plush.jpg",
-            "/images/products/rocket-48-bubble-machine.jpg",
-            "/images/products/rc-monster-truck.jpg",
-          ].map((src) => (
-            <div key={src} className="media-hover-frame relative aspect-square">
-              <ToyPhoto src={src} alt="" sizes="33vw" className="h-full w-full" />
-            </div>
-          ))}
-        </div>
-        <div className="p-10 text-center">
-          <p className="heading-glow font-display text-2xl font-extrabold text-ink-900">Your Cart Is Empty</p>
-          <p className="mt-2 text-ink-500">Add a toy you would happily give at bedtime.</p>
-          <Button href="/shop" className="mt-6">
-            Shop Now
-          </Button>
-        </div>
+      <div className="rounded-3xl bg-white p-8 text-center shadow-card sm:p-10">
+        <p className="font-display text-2xl font-extrabold text-ink-900">Your cart is empty</p>
+        <p className="mt-2 text-ink-500">Find a toy you would happily give at bedtime.</p>
+        <Button href="/shop" className="mt-6">
+          Shop Now
+        </Button>
       </div>
     );
   }
 
+  const shipping = subtotal >= 60 ? 0 : 4.5;
+  const total = subtotal + shipping;
+
   return (
-    <div className="grid gap-8 lg:grid-cols-[1fr_20rem]">
+    <div className="grid gap-8 pb-28 lg:grid-cols-[1fr_20rem] lg:pb-0">
       <ul className="space-y-4">
         {lines.map(({ product, quantity }) => (
           <li
             key={product.slug}
             className="flex gap-4 rounded-3xl border border-ink-100 bg-white p-4 shadow-soft"
           >
-            <Link href={`/product/${product.slug}`} className="media-hover-frame h-24 w-24 shrink-0 overflow-hidden rounded-2xl">
+            <Link
+              href={`/product/${product.slug}`}
+              className="media-hover-frame h-24 w-24 shrink-0 overflow-hidden rounded-2xl"
+            >
               <ToyPhoto src={product.images[0]} alt={product.name} sizes="96px" className="h-24 w-24" />
             </Link>
             <div className="min-w-0 flex-1">
-              <Link href={`/product/${product.slug}`} className="heading-glow-soft font-display font-extrabold text-ink-900 hover:text-coral-600">
+              <Link
+                href={`/product/${product.slug}`}
+                className="font-display font-extrabold text-ink-900 hover:text-coral-600"
+              >
                 {toTitleCase(product.name)}
               </Link>
               <p className="text-sm text-ink-400">{product.brand}</p>
               <p className="mt-1 font-semibold">{formatPrice(product.price)}</p>
-              <div className="mt-3 flex items-center gap-3">
+              <div className="mt-3 flex flex-wrap items-center gap-3">
                 <div className="inline-flex items-center rounded-full border border-ink-200">
                   <button
                     type="button"
-                    className="p-2"
-                    aria-label="Decrease"
+                    className="grid h-11 w-11 place-items-center"
+                    aria-label="Decrease quantity"
                     onClick={() => updateQuantity(product.slug, quantity - 1)}
                   >
-                    <Minus className="h-3.5 w-3.5" />
+                    <Minus className="h-4 w-4" />
                   </button>
-                  <span className="min-w-[1.5rem] text-center text-sm font-bold">{quantity}</span>
+                  <span className="min-w-[1.75rem] text-center text-sm font-bold">{quantity}</span>
                   <button
                     type="button"
-                    className="p-2"
-                    aria-label="Increase"
+                    className="grid h-11 w-11 place-items-center"
+                    aria-label="Increase quantity"
                     onClick={() => updateQuantity(product.slug, quantity + 1)}
                   >
-                    <Plus className="h-3.5 w-3.5" />
+                    <Plus className="h-4 w-4" />
                   </button>
                 </div>
                 <button
                   type="button"
                   onClick={() => removeItem(product.slug)}
-                  className="inline-flex items-center gap-1 text-sm text-ink-400 hover:text-coral-600"
+                  className="inline-flex min-h-11 items-center gap-1 text-sm text-ink-400 hover:text-coral-600"
                 >
                   <Trash2 className="h-4 w-4" />
                   Remove
@@ -85,24 +81,37 @@ export function CartView() {
           </li>
         ))}
       </ul>
-      <aside className="h-fit rounded-3xl bg-white p-6 shadow-card">
-        <h2 className="heading-glow font-display text-lg font-extrabold">Order Summary</h2>
+
+      <aside className="hidden h-fit rounded-3xl bg-white p-6 shadow-card lg:block">
+        <h2 className="font-display text-lg font-extrabold">Order Summary</h2>
         <p className="mt-4 flex justify-between text-sm">
           <span>{itemCount} items</span>
           <span>{formatPrice(subtotal)}</span>
         </p>
         <p className="mt-2 flex justify-between text-sm text-ink-500">
           <span>Shipping</span>
-          <span>{subtotal >= 60 ? "Free" : formatPrice(4.5)}</span>
+          <span>{shipping === 0 ? "Free" : formatPrice(shipping)}</span>
         </p>
         <p className="mt-4 flex justify-between font-display text-lg font-extrabold">
-          <span>Subtotal</span>
-          <span>{formatPrice(subtotal + (subtotal >= 60 ? 0 : 4.5))}</span>
+          <span>Total</span>
+          <span>{formatPrice(total)}</span>
         </p>
         <Button href="/pay" size="lg" className="mt-6 w-full">
           Buy Online
         </Button>
       </aside>
+
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-cream-200 bg-white/95 p-3 shadow-[0_-8px_24px_rgba(0,0,0,0.08)] backdrop-blur-md lg:hidden">
+        <div className="mx-auto flex max-w-7xl items-center gap-3">
+          <div className="min-w-0 flex-1">
+            <p className="text-xs text-ink-500">{itemCount} items</p>
+            <p className="font-display text-lg font-extrabold text-ink-900">{formatPrice(total)}</p>
+          </div>
+          <Button href="/pay" size="lg" className="shrink-0 px-6">
+            Buy Online
+          </Button>
+        </div>
+      </div>
     </div>
   );
 }

@@ -15,7 +15,27 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: Props): Metadata {
   const post = getPost(params.slug);
-  return { title: post?.title ?? "Article" };
+  if (!post) return { title: "Article" };
+  return {
+    title: post.title,
+    description: post.excerpt,
+    alternates: { canonical: `/blog/${post.slug}/` },
+    openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.excerpt,
+      url: `/blog/${post.slug}/`,
+      publishedTime: post.date,
+      authors: [post.author],
+      images: [{ url: post.image, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
+  };
 }
 
 export default function BlogPostPage({ params }: Props) {
@@ -29,9 +49,9 @@ export default function BlogPostPage({ params }: Props) {
       <div className="relative isolate min-h-[46vh] overflow-hidden bg-ink-900 text-white">
         <SafeImage
           src={post.image}
-          alt=""
+          alt={post.title}
           fill
-          quality={72}
+          quality={65}
           priority
           sizes="100vw"
           className={

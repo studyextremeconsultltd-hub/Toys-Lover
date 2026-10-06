@@ -26,16 +26,15 @@ export function Logo({
       <Image
         src={img.logoBloom}
         alt={`${SITE_NAME} — Trendy Toys for Happy Kids`}
-        width={180}
-        height={180}
-        priority
-        quality={92}
-        sizes={compact ? "80px" : inverted ? "128px" : "112px"}
+        width={160}
+        height={160}
+        quality={70}
+        sizes={compact ? "64px" : inverted ? "112px" : "96px"}
         className={cn(
           "block object-cover object-center",
-          compact && "h-14 w-14 sm:h-16 sm:w-16",
-          !compact && !inverted && "h-24 w-24 sm:h-28 sm:w-28",
-          inverted && "h-[6.5rem] w-[6.5rem] sm:h-32 sm:w-32",
+          compact && "h-12 w-12 sm:h-14 sm:w-14",
+          !compact && !inverted && "h-20 w-20 sm:h-24 sm:w-24",
+          inverted && "h-24 w-24 sm:h-28 sm:w-28",
         )}
       />
     </Link>

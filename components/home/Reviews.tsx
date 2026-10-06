@@ -53,7 +53,7 @@ export function Reviews() {
             >
               <ToyPhoto
                 src={review.image}
-                alt=""
+                alt={`${review.name} — ${review.age}`}
                 sizes="330px"
                 fit={review.image.includes("/products/") ? "contain" : "cover"}
                 className="aspect-[16/10]"

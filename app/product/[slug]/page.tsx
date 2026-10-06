@@ -6,6 +6,7 @@ import {
   products,
 } from "@/lib/data/products";
 import { getCategory } from "@/lib/data/categories";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { formatPrice, toTitleCase } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
@@ -24,7 +25,30 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: Props): Metadata {
   const product = getProduct(params.slug);
-  return { title: product?.name ?? "Product" };
+  if (!product) return { title: "Product" };
+  const title = toTitleCase(product.name);
+  const description =
+    product.description?.slice(0, 155) ||
+    `Buy ${title} from ${SITE_NAME}. Age ${product.ageRange}. Free UK shipping over £60.`;
+  const image = product.images[0];
+  return {
+    title,
+    description,
+    alternates: { canonical: `/product/${product.slug}/` },
+    openGraph: {
+      type: "website",
+      title,
+      description,
+      url: `/product/${product.slug}/`,
+      images: [{ url: image, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
+  };
 }
 
 export default function ProductPage({ params }: Props) {
@@ -33,9 +57,36 @@ export default function ProductPage({ params }: Props) {
 
   const category = getCategory(product.categorySlug);
   const related = getRelatedProducts(product);
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    image: product.images.map((src) => `${SITE_URL}${src}`),
+    description: product.description,
+    sku: product.slug,
+    brand: { "@type": "Brand", name: product.brand },
+    category: category?.name,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: product.rating,
+      reviewCount: product.reviewCount,
+    },
+    offers: {
+      "@type": "Offer",
+      url: `${SITE_URL}/product/${product.slug}/`,
+      priceCurrency: "GBP",
+      price: product.price.toFixed(2),
+      availability: "https://schema.org/InStock",
+      seller: { "@type": "Organization", name: SITE_NAME },
+    },
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <Section className="pt-10">
         <Container className="grid gap-10 lg:grid-cols-2">
           <ProductGallery images={product.images} name={product.name} />

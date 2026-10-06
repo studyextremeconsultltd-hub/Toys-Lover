@@ -29,11 +29,10 @@ export function PageHero({
           <div className="relative aspect-square">
             <Image
               src={image}
-              alt=""
+              alt={title}
               fill
-              priority
-              sizes="40vw"
-              quality={70}
+              sizes="(min-width: 1024px) 40vw, 0px"
+              quality={60}
               className="object-contain object-center bg-white p-0.5"
             />
           </div>

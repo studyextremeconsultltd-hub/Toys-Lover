@@ -25,7 +25,7 @@ export function ParentLove() {
               <p className="mt-3 text-sm leading-relaxed text-ink-600">“{review.quote}”</p>
               <div className="mt-5 flex items-center gap-3">
                 <div className="relative h-12 w-12 overflow-hidden rounded-full bg-white">
-                  <Image src={portraits[index]} alt="" fill sizes="48px" className="object-cover" />
+                  <Image src={portraits[index]} alt={`${review.name} portrait`} fill sizes="48px" className="object-cover" />
                 </div>
                 <div>
                   <p className="font-display text-sm font-bold text-ink-800">{review.name}</p>

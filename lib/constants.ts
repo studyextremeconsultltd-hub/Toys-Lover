@@ -5,6 +5,10 @@ export const SITE_TAGLINE = "Play. Learn. Grow Together.";
 export const SITE_DESCRIPTION =
   "Toy Bloom is a trusted UK toy store for families — age-appropriate play, safe materials, and gifts that spark curiosity. Free UK shipping over £60.";
 
+export const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://toybloom.co.uk"
+).replace(/\/$/, "");
+
 export const FREE_SHIPPING_GBP = 60;
 
 export const CONTACT = {

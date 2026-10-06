@@ -8,7 +8,7 @@ export const img = {
   logo: "/images/logo-mark.png",
   logoBloom: "/images/logo-bloom.jpg",
   wordmark: "/images/logo-wordmark.png",
-  homeHero: "/images/home/home-hero-child.png",
+  homeHero: "/images/home/home-hero-child.jpg",
   age012: "/images/home/age-0-12.png",
   age12: "/images/home/age-1-2.png",
   age34: "/images/home/age-3-4.png",
