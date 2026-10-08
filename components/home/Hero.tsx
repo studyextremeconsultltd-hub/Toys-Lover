@@ -14,33 +14,33 @@ export function Hero() {
       <Container className="grid items-center gap-6 py-8 lg:grid-cols-[0.95fr_1.05fr] lg:py-10">
         <div className="relative z-10">
           <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-[3.6rem]">
-            <span className="text-coral-500">Smart Play.</span>
+            <span className="text-coral-500">Squishies.</span>
             <br />
-            <span className="text-teal-600">Bright Futures.</span>
+            <span className="text-teal-600">Our main squeeze.</span>
           </h1>
           <p className="mt-4 max-w-md text-base leading-relaxed text-ink-600 sm:text-lg">
-            Educational toys that spark curiosity, build skills, and make learning fun.
+            Fruit, food and sensory jar squishies lead the shop — each boxed with piece count and a fair UK price.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Button href="/shop" size="lg">
-              Shop Best Sellers
+            <Button href="/#squishies" size="lg">
+              Shop Squishies
               <ArrowRight className="h-4 w-4" />
             </Button>
             <Button href="/pay" variant="sun" size="lg" className="shadow-[0_0_20px_rgba(250,204,21,0.45)]">
               Pay Now
             </Button>
-            <Button href="/age/3-5" variant="outline" size="lg">
-              Explore by Age
+            <Button href="/shop#all-categories" variant="outline" size="lg">
+              All Categories
             </Button>
           </div>
           <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-ink-600">
             <li className="inline-flex items-center gap-1.5">
-              <ShieldCheck className="h-4 w-4 text-teal-600" />
-              Safe & Non-Toxic
+              <Sparkles className="h-4 w-4 text-coral-500" />
+              Squishies first
             </li>
             <li className="inline-flex items-center gap-1.5">
-              <Sparkles className="h-4 w-4 text-coral-500" />
-              Supports Learning
+              <ShieldCheck className="h-4 w-4 text-teal-600" />
+              Safe & Non-Toxic
             </li>
             <li className="inline-flex items-center gap-1.5">
               <Heart className="h-4 w-4 text-coral-500" />

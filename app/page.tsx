@@ -1,6 +1,7 @@
 import { getBestSellers } from "@/lib/data/products";
 import { Hero } from "@/components/home/Hero";
-import { ShopByAge } from "@/components/home/ShopByAge";
+import { SquishyLane } from "@/components/home/SquishyLane";
+import { CategoryTiles } from "@/components/home/CategoryTiles";
 import { LearningBenefits } from "@/components/home/LearningBenefits";
 import { SaleBanner } from "@/components/home/SaleBanner";
 import { ParentLove } from "@/components/home/ParentLove";
@@ -18,7 +19,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <ShopByAge />
+      <SquishyLane />
+      <CategoryTiles title="Shop by Category" eyebrow="Click the header for every aisle" />
 
       <section id="trending" className="bg-cream-50 py-14">
         <Container>

@@ -5,7 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Check, ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
 import type { Product } from "@/lib/types";
-import { formatPrice, toTitleCase } from "@/lib/utils";
+import { getCategory } from "@/lib/data/categories";
+import { formatPrice, getPiecesPerBox, toTitleCase } from "@/lib/utils";
 import { Rating } from "@/components/ui/Rating";
 import { WishButton } from "@/components/product/ProductCardActions";
 import { useCart } from "@/lib/context/CartContext";
@@ -35,6 +36,8 @@ function AddToCartButton({ slug }: { slug: string }) {
 }
 
 function BestSellerCard({ product }: { product: Product }) {
+  const category = getCategory(product.categorySlug);
+  const pieces = getPiecesPerBox(product);
   const badge = product.compareAtPrice ? "Sale" : product.isNew ? "New" : "Bestseller";
   const badgeClass = product.compareAtPrice
     ? "bg-coral-500 text-white"
@@ -51,9 +54,9 @@ function BestSellerCard({ product }: { product: Product }) {
             alt={product.name}
             fill
             sizes="(min-width: 1280px) 14vw, (min-width: 640px) 28vw, 46vw"
-            quality={65}
+            quality={92}
             loading="lazy"
-            className="bestseller-photo bg-white p-0.5"
+            className="bestseller-photo bg-white object-contain object-center"
           />
         </Link>
         <span
@@ -61,10 +64,17 @@ function BestSellerCard({ product }: { product: Product }) {
         >
           {badge}
         </span>
+        {pieces ? (
+          <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">
+            Packet · {pieces} pcs
+          </span>
+        ) : null}
         <WishButton slug={product.slug} />
       </div>
       <div className="flex flex-1 flex-col px-3 pb-3 pt-2.5">
-        <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-teal-700">{product.ageRange}</p>
+        <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-teal-700">
+          {category?.shortName ?? product.categorySlug}
+        </p>
         <h3 className="mt-1 font-display text-sm font-bold leading-snug text-ink-800">
           <Link href={`/product/${product.slug}`} className="transition-colors duration-200 hover:text-coral-500">
             {toTitleCase(product.name)}
@@ -73,14 +83,19 @@ function BestSellerCard({ product }: { product: Product }) {
         <div className="mt-1">
           <Rating value={product.rating} />
         </div>
-        <p className="mt-auto pt-2 font-display text-base font-bold text-coral-500">
-          {formatPrice(product.price)}
-          {product.compareAtPrice ? (
-            <span className="ml-2 text-sm font-semibold text-ink-400 line-through">
-              {formatPrice(product.compareAtPrice)}
-            </span>
+        <div className="mt-auto flex items-end justify-between gap-2 border-t border-cream-200 pt-2">
+          <p className="font-display text-base font-bold text-coral-500">
+            {formatPrice(product.price)}
+            {product.compareAtPrice ? (
+              <span className="ml-2 text-sm font-semibold text-ink-400 line-through">
+                {formatPrice(product.compareAtPrice)}
+              </span>
+            ) : null}
+          </p>
+          {pieces ? (
+            <p className="font-display text-xs font-black uppercase tracking-wide text-ink-600">{pieces} pcs</p>
           ) : null}
-        </p>
+        </div>
         <AddToCartButton slug={product.slug} />
       </div>
     </article>

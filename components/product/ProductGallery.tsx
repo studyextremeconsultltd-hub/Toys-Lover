@@ -10,9 +10,9 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
       alt={name}
       sizes="(min-width: 1024px) 40vw, 100vw"
       priority
-      quality={72}
+      quality={95}
       fit="contain"
-      className="aspect-square rounded-4xl shadow-soft ring-1 ring-coral-100"
+      className="aspect-square rounded-4xl bg-white shadow-soft ring-1 ring-coral-100"
     />
   );
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { categories } from "@/lib/data/categories";
+import { getProductsByCategory } from "@/lib/data/products";
 import { toTitleCase } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
@@ -34,31 +35,41 @@ export function CategoryGrid({
           </div>
         </FadeIn>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {list.map((category, index) => (
-            <FadeIn key={category.slug} delay={index * 0.04}>
-              <Link
-                href={`/shop/${category.slug}`}
-                className="media-hover group relative block overflow-hidden rounded-3xl shadow-soft"
-              >
-                <div className="relative aspect-[5/3] bg-white">
-                  <ToyPhoto
-                    src={category.image}
-                    alt={category.name}
-                    sizes="(min-width: 1024px) 33vw, 100vw"
-                    fit="contain"
-                    className="h-full w-full"
-                  />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-900/75 via-ink-900/15 to-transparent" />
-                </div>
-                <div className="absolute inset-x-0 bottom-0 p-5 text-white">
-                  <h3 className="heading-glow-light font-display text-xl font-extrabold">
-                    {toTitleCase(category.shortName)}
-                  </h3>
-                  <p className="mt-1 line-clamp-2 text-sm text-cream-200">{category.description}</p>
-                </div>
-              </Link>
-            </FadeIn>
-          ))}
+          {list.map((category, index) => {
+            const products = getProductsByCategory(category.slug);
+            const names = products.slice(0, 3).map((product) => product.name);
+            return (
+              <FadeIn key={category.slug} delay={index * 0.04}>
+                <Link
+                  href={`/shop/${category.slug}`}
+                  className="media-hover group relative block overflow-hidden rounded-3xl shadow-soft"
+                >
+                  <div className="relative aspect-[5/3] bg-white">
+                    <ToyPhoto
+                      src={category.image}
+                      alt={category.name}
+                      sizes="(min-width: 1024px) 33vw, 100vw"
+                      fit="contain"
+                      className="h-full w-full"
+                    />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-900/75 via-ink-900/15 to-transparent" />
+                  </div>
+                  <div className="absolute inset-x-0 bottom-0 p-5 text-white">
+                    <h3 className="heading-glow-light font-display text-xl font-extrabold">
+                      {toTitleCase(category.shortName)}
+                    </h3>
+                    <p className="mt-1 line-clamp-2 text-sm text-cream-200">{category.description}</p>
+                    {names.length ? (
+                      <p className="mt-2 line-clamp-2 text-xs font-semibold text-cream-100">
+                        {names.map((name) => toTitleCase(name)).join(" · ")}
+                        {products.length > names.length ? ` · +${products.length - names.length} more` : ""}
+                      </p>
+                    ) : null}
+                  </div>
+                </Link>
+              </FadeIn>
+            );
+          })}
         </div>
       </Container>
     </Section>

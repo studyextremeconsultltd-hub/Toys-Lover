@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
 import { products } from "@/lib/data/products";
 import { categories } from "@/lib/data/categories";
-import { AGE_GUIDES } from "@/lib/data/ages";
 import { posts } from "@/lib/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -41,13 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  const ageRoutes = AGE_GUIDES.map((age) => ({
-    url: `${SITE_URL}/age/${age.slug}/`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
   const blogRoutes = posts.map((post) => ({
     url: `${SITE_URL}/blog/${post.slug}/`,
     lastModified: new Date(post.date),
@@ -55,5 +47,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.65,
   }));
 
-  return [...staticRoutes, ...productRoutes, ...categoryRoutes, ...ageRoutes, ...blogRoutes];
+  return [...staticRoutes, ...productRoutes, ...categoryRoutes, ...blogRoutes];
 }

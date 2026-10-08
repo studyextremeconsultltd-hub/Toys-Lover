@@ -508,6 +508,39 @@ export const categories: Category[] = [
     accent: "sky",
     ageLabel: "Ages 6–8",
   },
+  {
+    slug: "fruit-squishies",
+    name: "Fruit Squishies",
+    shortName: "Fruit Squish",
+    description: "Jumbo cherries, pineapple, blueberry, apple and other fruit squeeze toys.",
+    longDescription:
+      "Fruit-shaped slow-rise squishies from the latest import trays. Each product card shows the box piece count and UK retail price.",
+    image: categoryImage["fruit-squishies"],
+    accent: "coral",
+    ageLabel: "All ages",
+  },
+  {
+    slug: "food-squishies",
+    name: "Food & Character Squishies",
+    shortName: "Food Squish",
+    description: "Food, animal and emoji squeeze toys — bread, ice cream, bears and more.",
+    longDescription:
+      "Playful food and character squishies sorted from the import listings. Boxed piece counts and competitive prices on every card.",
+    image: categoryImage["food-squishies"],
+    accent: "sun",
+    ageLabel: "All ages",
+  },
+  {
+    slug: "sensory-jars",
+    name: "Sensory Jars & Butter Squish",
+    shortName: "Sensory Jars",
+    description: "Vaseline-style jars, butter sticks, cheese tubs and soft sensory putty toys.",
+    longDescription:
+      "Novelty jar and butter-style sensory toys. Every listing shows how many pieces are in the box and the retail price.",
+    image: categoryImage["sensory-jars"],
+    accent: "mint",
+    ageLabel: "All ages",
+  },
 ];
 
 export function getCategory(slug: string) {
@@ -524,7 +557,7 @@ export const CATEGORY_AGE_GROUPS = [
   {
     id: "6-8",
     label: "Ages 6–8",
-    slugs: ["building-sets", "action-figures", "board-games", "christmas-surprise", "christmas-glow", "halloween-squishies", "party-spotlight", "hatch-dragons", "fashion-play-sets", "monster-buddy-keyrings", "light-up-hats", "push-pop-games", "crunchy-squishies", "funky-frights", "festive-dumplings", "halloween-hats", "light-up-gloves", "cheese-squishies", "glow-swords"],
+    slugs: ["building-sets", "action-figures", "board-games", "christmas-surprise", "christmas-glow", "halloween-squishies", "party-spotlight", "hatch-dragons", "fashion-play-sets", "monster-buddy-keyrings", "light-up-hats", "push-pop-games", "crunchy-squishies", "funky-frights", "festive-dumplings", "halloween-hats", "light-up-gloves", "cheese-squishies", "glow-swords", "fruit-squishies", "food-squishies", "sensory-jars"],
   },
   {
     id: "9-12",

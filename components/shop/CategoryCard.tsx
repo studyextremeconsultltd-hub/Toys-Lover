@@ -10,7 +10,17 @@ const accents = {
   sun: "from-sun-500/80",
 };
 
-export function CategoryCard({ category }: { category: Category }) {
+export function CategoryCard({
+  category,
+  productNames = [],
+  count,
+}: {
+  category: Category;
+  productNames?: string[];
+  count?: number;
+}) {
+  const mentioned = productNames.slice(0, 5);
+
   return (
     <article className="media-hover group flex h-full flex-col overflow-hidden rounded-[1.75rem] bg-white shadow-card">
       <div className="relative aspect-[4/3] overflow-hidden">
@@ -28,9 +38,21 @@ export function CategoryCard({ category }: { category: Category }) {
       </div>
       <div className="flex flex-1 flex-col p-5">
         <p className="mb-2 inline-flex w-fit rounded-full bg-[#7A4A2B] px-3 py-1 font-display text-xs font-black uppercase tracking-wide text-white">
-          {category.ageLabel}
+          {typeof count === "number" ? `${count} products` : "Category"}
         </p>
-        <p className="flex-1 text-sm font-medium leading-relaxed text-ink-500">{category.description}</p>
+        <p className="text-sm font-medium leading-relaxed text-ink-500">{category.description}</p>
+        {mentioned.length ? (
+          <ul className="mt-3 flex-1 space-y-1.5 border-t border-cream-200 pt-3">
+            <li className="text-[10px] font-bold uppercase tracking-wide text-ink-400">Products in this category</li>
+            {mentioned.map((name) => (
+              <li key={name} className="truncate text-sm font-semibold text-ink-700">
+                · {toTitleCase(name)}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div className="flex-1" />
+        )}
         <Button href={`/shop/${category.slug}`} className="mt-5 w-full">
           Shop Category
         </Button>

@@ -30,6 +30,8 @@ export interface Product {
   materials: string;
   isNew?: boolean;
   isBestSeller?: boolean;
+  /** Pieces / units included in the retail box or carton pack. */
+  piecesPerBox?: number;
   stock: number;
 }
 

@@ -15,9 +15,9 @@ export default function ShopPage() {
         image={img.pageShop}
         eyebrow="Aisles"
         title="Shop by category."
-        description="Tap a card to open that aisle. Each one shows the toys, the age, and how many picks are inside."
+        description={`Browse all ${categories.length} categories. Click the category header to jump to every aisle, each with its related products listed.`}
       />
-      <CategoryTiles title="Pick a lane" eyebrow={`${categories.length} aisles`} />
+      <CategoryTiles title="All Categories" eyebrow={`${categories.length} aisles — click the header`} />
     </>
   );
 }

@@ -31,7 +31,7 @@ export default function CategoryPage({ params }: Props) {
     <>
       <PageHero
         image={categoryStudio[category.slug] ?? category.image}
-        eyebrow={`Category · ${category.ageLabel}`}
+        eyebrow={`${products.length} products in this category`}
         title={category.name}
         description={category.longDescription}
       />

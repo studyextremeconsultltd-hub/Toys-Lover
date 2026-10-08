@@ -6,7 +6,7 @@ export function ToyPhoto({
   src,
   alt,
   sizes,
-  quality = 55,
+  quality = 92,
   priority,
   className,
   fit,
@@ -42,7 +42,7 @@ export function ToyPhoto({
         priority={priority}
         className={
           mode === "contain"
-            ? "object-contain object-center bg-white p-0.5"
+            ? "object-contain object-center bg-white"
             : shopFloor
               ? "object-cover object-center"
               : "object-cover object-center"

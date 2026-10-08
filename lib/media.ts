@@ -113,6 +113,9 @@ const NEW_AISLES = [
   "light-up-gloves",
   "cheese-squishies",
   "glow-swords",
+  "fruit-squishies",
+  "food-squishies",
+  "sensory-jars",
 ] as const;
 
 export const categoryStudio: Record<string, string> = {

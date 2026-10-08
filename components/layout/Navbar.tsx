@@ -11,11 +11,11 @@ import { cn } from "@/lib/utils";
 import { Logo } from "@/components/layout/Logo";
 
 const links = [
+  { href: "/#squishies", label: "Squishies" },
   { href: "/shop", label: "Shop All" },
-  { href: "/age/3-5", label: "By Age" },
-  { href: "/shop/educational-stem", label: "STEM Toys" },
-  { href: "/shop/board-games", label: "Board Games" },
-  { href: "/blog/gift-guide-ages-three-to-five", label: "Gift Guide" },
+  { href: "/shop#all-categories", label: "Categories" },
+  { href: "/shop/fruit-squishies", label: "Fruit Squish" },
+  { href: "/shop/sensory-jars", label: "Sensory Jars" },
   { href: "/about", label: "About Us" },
 ];
 

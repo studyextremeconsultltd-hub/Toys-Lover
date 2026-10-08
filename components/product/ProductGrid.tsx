@@ -12,7 +12,7 @@ export function ProductGrid({
   if (products.length === 0) {
     return (
       <p className="rounded-3xl border border-dashed border-ink-200 bg-white p-10 text-center text-ink-500">
-        No toys match those filters yet. Try a wider age or price range.
+        No toys match those filters yet. Try a wider price, brand, or theme.
       </p>
     );
   }

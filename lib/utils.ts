@@ -26,3 +26,19 @@ export function toTitleCase(value: string) {
   });
 }
 
+/** Pieces shown in the product box (explicit field or carton feature line). */
+export function getPiecesPerBox(product: {
+  piecesPerBox?: number;
+  stock?: number;
+  features?: string[];
+}): number | undefined {
+  if (typeof product.piecesPerBox === "number" && product.piecesPerBox > 0) {
+    return product.piecesPerBox;
+  }
+  const fromFeature = product.features
+    ?.map((feature) => feature.match(/Carton pack:\s*(\d+)\s*pcs/i)?.[1])
+    .find(Boolean);
+  if (fromFeature) return Number(fromFeature);
+  return undefined;
+}
+

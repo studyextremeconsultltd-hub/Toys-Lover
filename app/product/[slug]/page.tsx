@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   getProduct,
@@ -7,7 +8,7 @@ import {
 } from "@/lib/data/products";
 import { getCategory } from "@/lib/data/categories";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
-import { formatPrice, toTitleCase } from "@/lib/utils";
+import { formatPrice, getPiecesPerBox, toTitleCase } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Rating } from "@/components/ui/Rating";
@@ -29,7 +30,7 @@ export function generateMetadata({ params }: Props): Metadata {
   const title = toTitleCase(product.name);
   const description =
     product.description?.slice(0, 155) ||
-    `Buy ${title} from ${SITE_NAME}. Age ${product.ageRange}. Free UK shipping over £60.`;
+    `Buy ${title} from ${SITE_NAME}. Free UK shipping over £60.`;
   const image = product.images[0];
   return {
     title,
@@ -57,6 +58,7 @@ export default function ProductPage({ params }: Props) {
 
   const category = getCategory(product.categorySlug);
   const related = getRelatedProducts(product);
+  const pieces = getPiecesPerBox(product);
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -99,17 +101,43 @@ export default function ProductPage({ params }: Props) {
             </h1>
             <div className="mt-3 flex flex-wrap items-center gap-3">
               <Rating value={product.rating} count={product.reviewCount} size="md" />
-              <Badge tone="sky">{product.ageRange}</Badge>
+              {category ? (
+                <Link href={`/shop/${category.slug}`}>
+                  <Badge tone="sky">{category.shortName}</Badge>
+                </Link>
+              ) : null}
+              {pieces ? <Badge tone="mint">Packet · {pieces} pcs</Badge> : null}
               {product.isNew ? <Badge>New</Badge> : null}
             </div>
-            <p className="mt-5 font-display text-3xl font-extrabold text-ink-900">
-              {formatPrice(product.price)}
-              {product.compareAtPrice ? (
-                <span className="ml-3 text-lg text-ink-400 line-through">
-                  {formatPrice(product.compareAtPrice)}
-                </span>
-              ) : null}
-            </p>
+            <div className="mt-5 grid gap-3 rounded-2xl border border-cream-300 bg-cream-50 p-4 sm:grid-cols-3">
+              <div className="sm:col-span-3">
+                <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Packet name</p>
+                <p className="font-display text-xl font-extrabold text-ink-900">{toTitleCase(product.name)}</p>
+              </div>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Price</p>
+                <p className="font-display text-3xl font-extrabold text-ink-900">
+                  {formatPrice(product.price)}
+                  {product.compareAtPrice ? (
+                    <span className="ml-3 text-lg text-ink-400 line-through">
+                      {formatPrice(product.compareAtPrice)}
+                    </span>
+                  ) : null}
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Complete items in box</p>
+                <p className="font-display text-3xl font-extrabold text-teal-700">
+                  {pieces ? `${pieces} pcs` : "1 pc"}
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Category</p>
+                <p className="font-display text-xl font-extrabold text-ink-800">
+                  {category?.shortName ?? product.categorySlug}
+                </p>
+              </div>
+            </div>
             <ProductTabs product={product} />
             <div className="mt-6">
               <ProductActions product={product} />

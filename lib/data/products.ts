@@ -3,6 +3,8 @@ import { categories } from "@/lib/data/categories";
 import { newStock } from "@/lib/data/new-stock";
 import { advanceStock } from "@/lib/data/advance-stock";
 import { extraStock } from "@/lib/data/extra-stock";
+import { chinaStock } from "@/lib/data/china-stock";
+import { innovativeStock } from "@/lib/data/innovative-stock";
 import { productGallery, shop } from "@/lib/media";
 
 const catalog: Product[] = [
@@ -1879,6 +1881,8 @@ const catalog: Product[] = [
   ...newStock,
   ...advanceStock,
   ...extraStock,
+  ...chinaStock,
+  ...innovativeStock,
 ];
 
 export const products: Product[] = catalog.map((product) => ({
@@ -1890,10 +1894,37 @@ export function getProduct(slug: string) {
   return products.find((product) => product.slug === slug);
 }
 
+/** Core squishy aisles — the main product range for Toy Bloom. */
+export const SQUISHY_CATEGORY_SLUGS = [
+  "fruit-squishies",
+  "food-squishies",
+  "sensory-jars",
+  "crunchy-squishies",
+  "cheese-squishies",
+  "glitter-squeeze",
+  "halloween-squishies",
+] as const;
+
 export function getSquishies() {
+  const aisle = new Set<string>(SQUISHY_CATEGORY_SLUGS);
+  const innovativeSlugs = new Set(innovativeStock.map((product) => product.slug));
   return products
-    .filter((product) => product.brand === "Squish Lane" && product.theme === "Sensory")
-    .sort((a, b) => Number(b.isNew) - Number(a.isNew) || Number(b.isBestSeller) - Number(a.isBestSeller));
+    .filter(
+      (product) =>
+        aisle.has(product.categorySlug) ||
+        (product.brand === "Squish Lane" && product.theme === "Sensory"),
+    )
+    .sort(
+      (a, b) =>
+        Number(innovativeSlugs.has(b.slug)) - Number(innovativeSlugs.has(a.slug)) ||
+        Number(b.isNew) - Number(a.isNew) ||
+        Number(b.isBestSeller) - Number(a.isBestSeller) ||
+        b.reviewCount - a.reviewCount,
+    );
+}
+
+export function getSquishyCount() {
+  return getSquishies().length;
 }
 
 export function getProductsByCategory(categorySlug: string) {
@@ -1906,6 +1937,16 @@ export function getNewArrivals() {
 
 export function getBestSellers() {
   return products.filter((product) => product.isBestSeller);
+}
+
+/** Products imported from China Items Listings PDFs / WhatsApp order. */
+export function getChinaListingProducts() {
+  const chinaSlugs = new Set(chinaStock.map((product) => product.slug));
+  return products.filter((product) => chinaSlugs.has(product.slug));
+}
+
+export function getChinaListingCount() {
+  return chinaStock.length;
 }
 
 export function getFeatured(limit = 8) {
