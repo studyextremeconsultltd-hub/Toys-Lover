@@ -20,7 +20,7 @@ export function ProductCard({ product }: { product: Product }) {
             alt={product.name}
             fill
             sizes="(min-width: 1280px) 20vw, (min-width: 1024px) 25vw, 50vw"
-            quality={92}
+            quality={95}
             className="object-contain object-center bg-white"
           />
         </Link>
@@ -29,11 +29,9 @@ export function ProductCard({ product }: { product: Product }) {
           {product.compareAtPrice ? <Badge className="bg-coral-500 text-white">Sale</Badge> : null}
           {product.isNew ? <Badge>New</Badge> : null}
         </div>
-        {deal.soldAsBox ? (
-          <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">
-            Box · {deal.pieces} pcs
-          </span>
-        ) : null}
+        <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">
+          {deal.pieces} pcs · {formatPrice(deal.boxPrice)}
+        </span>
         <WishButton slug={product.slug} />
       </div>
       <div className="flex flex-1 flex-col gap-1.5 px-3 py-3">
@@ -51,14 +49,12 @@ export function ProductCard({ product }: { product: Product }) {
           <p className="truncate font-display text-xs font-bold text-ink-800">{toTitleCase(product.name)}</p>
           <div className="mt-2 grid grid-cols-2 gap-2">
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-wide text-ink-400">Total pieces</p>
-              <p className="font-display text-sm font-black text-ink-900">{deal.pieces} pcs</p>
+              <p className="text-[10px] font-bold uppercase tracking-wide text-ink-400">Total pcs</p>
+              <p className="font-display text-base font-black text-ink-900">{deal.pieces} pcs</p>
             </div>
             <div className="text-right">
               <p className="text-[10px] font-bold uppercase tracking-wide text-ink-400">Box price</p>
-              <p className="font-display text-lg font-bold text-coral-500">
-                {formatPrice(deal.boxPrice)}
-              </p>
+              <p className="font-display text-lg font-bold text-coral-500">{formatPrice(deal.boxPrice)}</p>
               {deal.singlesCompare ? (
                 <p className="text-[10px] font-semibold text-ink-400 line-through">
                   {formatPrice(deal.singlesCompare)} singles
@@ -68,9 +64,13 @@ export function ProductCard({ product }: { product: Product }) {
           </div>
           {deal.soldAsBox ? (
             <p className="mt-2 text-[11px] font-semibold leading-snug text-teal-800">
-              Buy the full box — only {formatPrice(deal.perPiece)} each. Better value than singles.
+              Buy the full box — {deal.pieces} pcs for {formatPrice(deal.boxPrice)} ({formatPrice(deal.perPiece)} each).
             </p>
-          ) : null}
+          ) : (
+            <p className="mt-2 text-[11px] font-semibold leading-snug text-teal-800">
+              Price {formatPrice(deal.boxPrice)} · {deal.pieces} pc
+            </p>
+          )}
         </div>
         <AddButton slug={product.slug} label={deal.soldAsBox ? "Add box" : "Add"} />
       </div>

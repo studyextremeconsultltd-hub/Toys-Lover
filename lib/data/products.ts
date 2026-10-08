@@ -1887,6 +1887,7 @@ const catalog: Product[] = [
 
 export const products: Product[] = catalog.map((product) => ({
   ...product,
+  piecesPerBox: product.piecesPerBox && product.piecesPerBox > 0 ? product.piecesPerBox : 1,
   images: productGallery(product.slug, product.categorySlug),
 }));
 

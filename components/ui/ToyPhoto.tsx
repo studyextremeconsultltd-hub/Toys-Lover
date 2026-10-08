@@ -42,7 +42,7 @@ export function ToyPhoto({
         priority={priority}
         className={
           mode === "contain"
-            ? "object-contain object-center bg-white"
+            ? "h-full w-full object-contain object-center bg-white"
             : shopFloor
               ? "object-cover object-center"
               : "object-cover object-center"

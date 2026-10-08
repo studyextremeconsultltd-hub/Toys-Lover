@@ -106,7 +106,8 @@ export default function ProductPage({ params }: Props) {
                   <Badge tone="sky">{category.shortName}</Badge>
                 </Link>
               ) : null}
-              {deal.soldAsBox ? <Badge tone="mint">Full box · {deal.pieces} pcs</Badge> : null}
+              <Badge tone="mint">{deal.pieces} pcs</Badge>
+              <Badge tone="coral">{formatPrice(deal.boxPrice)}</Badge>
               {product.isNew ? <Badge>New</Badge> : null}
             </div>
             <div className="mt-5 rounded-2xl border border-teal-200 bg-teal-50/80 p-4">

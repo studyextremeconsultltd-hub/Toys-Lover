@@ -42,7 +42,7 @@ export function AisleCard({
           fill
           priority={priority}
           sizes="(min-width: 1280px) 22vw, (min-width: 768px) 40vw, 80vw"
-          quality={90}
+          quality={95}
           className="object-contain object-center bg-white"
         />
       </div>
