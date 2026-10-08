@@ -107,15 +107,23 @@ export default function ProductPage({ params }: Props) {
                 </Link>
               ) : null}
               <Badge tone="mint">{deal.pieces} pcs</Badge>
-              <Badge tone="coral">{formatPrice(deal.boxPrice)}</Badge>
+              <Badge tone="coral">Box {formatPrice(deal.boxPrice)}</Badge>
+              {deal.soldAsBox ? <Badge tone="sky">Single {formatPrice(deal.singleItemPrice)}</Badge> : null}
               {product.isNew ? <Badge>New</Badge> : null}
             </div>
             <div className="mt-5 rounded-2xl border border-teal-200 bg-teal-50/80 p-4">
               <p className="text-xs font-bold uppercase tracking-wide text-teal-700">Item in this box</p>
               <p className="font-display text-xl font-extrabold text-ink-900">{toTitleCase(product.name)}</p>
-              <div className="mt-4 grid gap-3 sm:grid-cols-3">
+              <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Total pieces in box</p>
+                  <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Single item price</p>
+                  <p className="font-display text-2xl font-extrabold text-ink-700">
+                    {formatPrice(deal.singleItemPrice)}
+                  </p>
+                  <p className="text-xs font-semibold text-ink-500">Lower than the full box</p>
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Total pcs in box</p>
                   <p className="font-display text-3xl font-extrabold text-teal-700">{deal.pieces} pcs</p>
                 </div>
                 <div>
@@ -123,9 +131,9 @@ export default function ProductPage({ params }: Props) {
                   <p className="font-display text-3xl font-extrabold text-coral-500">
                     {formatPrice(deal.boxPrice)}
                   </p>
-                  {deal.singlesCompare ? (
+                  {deal.soldAsBox ? (
                     <p className="text-sm font-semibold text-ink-400 line-through">
-                      {formatPrice(deal.singlesCompare)} if bought as singles
+                      {formatPrice(deal.singlesTotal)} as {deal.pieces} singles
                     </p>
                   ) : null}
                 </div>
@@ -136,12 +144,16 @@ export default function ProductPage({ params }: Props) {
                   <p className="font-display text-2xl font-extrabold text-ink-800">
                     {deal.soldAsBox ? formatPrice(deal.perPiece) : category?.shortName ?? product.categorySlug}
                   </p>
+                  {deal.soldAsBox ? (
+                    <p className="text-xs font-bold text-teal-700">Cheaper than one single</p>
+                  ) : null}
                 </div>
               </div>
               {deal.soldAsBox ? (
                 <p className="mt-4 rounded-xl bg-white px-3 py-2 text-sm font-semibold text-teal-800 ring-1 ring-teal-100">
-                  Buy the full box — not singles. You get all {deal.pieces} pieces at a competitive box price
-                  ({formatPrice(deal.perPiece)} each).
+                  Single item is {formatPrice(deal.singleItemPrice)} (less than the box), but buying the full box
+                  of {deal.pieces} pcs for {formatPrice(deal.boxPrice)} brings each piece down to{" "}
+                  {formatPrice(deal.perPiece)}. Save {formatPrice(deal.savings)} — choose the box, not singles.
                 </p>
               ) : null}
             </div>

@@ -44,16 +44,31 @@ export function getPiecesPerBox(product: {
 
 export type BoxDeal = {
   pieces: number;
-  /** Competitive price for the full box (what the customer pays). */
+  /** Competitive price for the full box. */
   boxPrice: number;
-  /** Strikethrough “buy as singles” style compare, when available. */
-  singlesCompare?: number;
-  /** Effective price per piece when buying the box. */
+  /** Price if bought as one single item — always lower than boxPrice. */
+  singleItemPrice: number;
+  /** Cost of buying every piece as singles (usually higher than boxPrice). */
+  singlesTotal: number;
+  /** Money saved by choosing the box over singles. */
+  savings: number;
+  /** Effective price per piece inside the box. */
   perPiece: number;
   soldAsBox: boolean;
+  /** @deprecated use singlesTotal */
+  singlesCompare?: number;
 };
 
-/** Box-first pricing: listed price is the competitive full-box deal. */
+function roundMoney(value: number) {
+  return Math.round(value * 100) / 100;
+}
+
+/**
+ * Box-first pricing:
+ * - listed `price` = competitive full-box price
+ * - single item price is always lower than the box price
+ * - per-piece in the box is lower than the single item price (so the box wins)
+ */
 export function getBoxDeal(product: {
   price: number;
   compareAtPrice?: number;
@@ -64,14 +79,65 @@ export function getBoxDeal(product: {
   const pieces = getPiecesPerBox(product) ?? 1;
   const soldAsBox = pieces > 1;
   const boxPrice = product.price;
-  const perPiece = soldAsBox ? boxPrice / pieces : boxPrice;
-  const singlesCompare =
-    product.compareAtPrice && product.compareAtPrice > boxPrice
-      ? product.compareAtPrice
-      : soldAsBox
-        ? Math.round(boxPrice * 1.35 * 100) / 100
-        : undefined;
 
-  return { pieces, boxPrice, singlesCompare, perPiece, soldAsBox };
+  if (!soldAsBox) {
+    return {
+      pieces: 1,
+      boxPrice,
+      singleItemPrice: boxPrice,
+      singlesTotal: boxPrice,
+      savings: 0,
+      perPiece: boxPrice,
+      soldAsBox: false,
+    };
+  }
+
+  const perPiece = boxPrice / pieces;
+
+  // Prefer compareAtPrice when it is a valid single: below box, above per-piece-in-box.
+  const compareAt = product.compareAtPrice;
+  const compareOk =
+    typeof compareAt === "number" && compareAt > perPiece && compareAt < boxPrice;
+
+  let singleItemPrice: number;
+  if (compareOk) {
+    singleItemPrice = compareAt;
+  } else {
+    // ~40% above box-per-piece, but always strictly under the box price.
+    singleItemPrice = Math.min(boxPrice - 0.01, perPiece * 1.4);
+    if (singleItemPrice <= perPiece) {
+      singleItemPrice = Math.min(boxPrice - 0.01, perPiece + 0.4);
+    }
+    // Prefer friendly .99 endings when it still respects single < box.
+    const friendly = Math.floor(singleItemPrice) + 0.99;
+    if (friendly > perPiece && friendly < boxPrice) {
+      singleItemPrice = friendly;
+    } else {
+      singleItemPrice = roundMoney(singleItemPrice);
+    }
+  }
+
+  // Hard rules: single < box, and single > per-piece-in-box.
+  if (singleItemPrice >= boxPrice) {
+    singleItemPrice = roundMoney(Math.max(perPiece + 0.2, boxPrice * 0.75));
+    if (singleItemPrice >= boxPrice) singleItemPrice = roundMoney(boxPrice - 0.5);
+  }
+  if (singleItemPrice <= perPiece) {
+    singleItemPrice = roundMoney(Math.min(boxPrice - 0.01, perPiece * 1.25));
+  }
+
+  const singlesTotal = roundMoney(singleItemPrice * pieces);
+  const savings = roundMoney(Math.max(0, singlesTotal - boxPrice));
+
+  return {
+    pieces,
+    boxPrice,
+    singleItemPrice,
+    singlesTotal,
+    savings,
+    perPiece,
+    soldAsBox: true,
+    singlesCompare: singlesTotal,
+  };
 }
 

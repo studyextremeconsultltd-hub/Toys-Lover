@@ -83,18 +83,20 @@ function BestSellerCard({ product }: { product: Product }) {
         <div className="mt-1">
           <Rating value={product.rating} />
         </div>
-        <div className="mt-auto grid grid-cols-2 gap-2 border-t border-cream-200 pt-2">
-          <div>
-            <p className="text-[10px] font-bold uppercase tracking-wide text-ink-400">Total pcs</p>
-            <p className="font-display text-sm font-black text-ink-900">{deal.pieces} pcs</p>
+        <div className="mt-auto space-y-1 border-t border-cream-200 pt-2 text-[11px]">
+          <div className="flex justify-between gap-2">
+            <span className="font-semibold text-ink-500">Single</span>
+            <span className="font-bold text-ink-700">{formatPrice(deal.singleItemPrice)}</span>
           </div>
-          <div className="text-right">
-            <p className="text-[10px] font-bold uppercase tracking-wide text-ink-400">Box price</p>
-            <p className="font-display text-base font-bold text-coral-500">{formatPrice(deal.boxPrice)}</p>
+          <div className="flex justify-between gap-2">
+            <span className="font-semibold text-ink-500">Box ({deal.pieces} pcs)</span>
+            <span className="font-display text-base font-bold text-coral-500">{formatPrice(deal.boxPrice)}</span>
           </div>
         </div>
         {deal.soldAsBox ? (
-          <p className="mt-1 text-[10px] font-semibold text-teal-800">Buy the box — better than singles</p>
+          <p className="mt-1 text-[10px] font-semibold text-teal-800">
+            Buy the box — save {formatPrice(deal.savings)}
+          </p>
         ) : null}
         <AddToCartButton slug={product.slug} />
       </div>

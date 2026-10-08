@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Heart, Minus, Plus } from "lucide-react";
 import type { Product } from "@/lib/types";
-import { getBoxDeal } from "@/lib/utils";
+import { formatPrice, getBoxDeal } from "@/lib/utils";
 import { useCart } from "@/lib/context/CartContext";
 import { useWishlist } from "@/lib/context/WishlistContext";
 import { Button } from "@/components/ui/Button";
@@ -22,7 +22,9 @@ export function ProductActions({ product }: { product: Product }) {
     <div className="space-y-4">
       {deal.soldAsBox ? (
         <p className="rounded-2xl bg-teal-50 px-4 py-3 text-sm font-semibold text-teal-800 ring-1 ring-teal-100">
-          Sold as a full box only ({deal.pieces} pcs). Skip singles — the box is the better deal.
+          Single item {formatPrice(deal.singleItemPrice)} is less than the box — but the box of {deal.pieces} pcs
+          for {formatPrice(deal.boxPrice)} is better value ({formatPrice(deal.perPiece)} each). Save{" "}
+          {formatPrice(deal.savings)} vs buying singles. Sold as full box only.
         </p>
       ) : null}
       <div className="flex items-center gap-3">
