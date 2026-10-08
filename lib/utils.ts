@@ -42,3 +42,36 @@ export function getPiecesPerBox(product: {
   return undefined;
 }
 
+export type BoxDeal = {
+  pieces: number;
+  /** Competitive price for the full box (what the customer pays). */
+  boxPrice: number;
+  /** Strikethrough “buy as singles” style compare, when available. */
+  singlesCompare?: number;
+  /** Effective price per piece when buying the box. */
+  perPiece: number;
+  soldAsBox: boolean;
+};
+
+/** Box-first pricing: listed price is the competitive full-box deal. */
+export function getBoxDeal(product: {
+  price: number;
+  compareAtPrice?: number;
+  piecesPerBox?: number;
+  features?: string[];
+  slug?: string;
+}): BoxDeal {
+  const pieces = getPiecesPerBox(product) ?? 1;
+  const soldAsBox = pieces > 1;
+  const boxPrice = product.price;
+  const perPiece = soldAsBox ? boxPrice / pieces : boxPrice;
+  const singlesCompare =
+    product.compareAtPrice && product.compareAtPrice > boxPrice
+      ? product.compareAtPrice
+      : soldAsBox
+        ? Math.round(boxPrice * 1.35 * 100) / 100
+        : undefined;
+
+  return { pieces, boxPrice, singlesCompare, perPiece, soldAsBox };
+}
+

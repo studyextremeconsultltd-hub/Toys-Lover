@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Check, ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
 import type { Product } from "@/lib/types";
 import { getCategory } from "@/lib/data/categories";
-import { formatPrice, getPiecesPerBox, toTitleCase } from "@/lib/utils";
+import { formatPrice, getBoxDeal, toTitleCase } from "@/lib/utils";
 import { Rating } from "@/components/ui/Rating";
 import { WishButton } from "@/components/product/ProductCardActions";
 import { useCart } from "@/lib/context/CartContext";
@@ -30,20 +30,22 @@ function AddToCartButton({ slug }: { slug: string }) {
       }`}
     >
       {added ? <Check className="cart-icon h-4 w-4" /> : <ShoppingBag className="cart-icon h-4 w-4" />}
-      {added ? "Added" : "Add to cart"}
+      {added ? "Added" : "Add box"}
     </button>
   );
 }
 
 function BestSellerCard({ product }: { product: Product }) {
   const category = getCategory(product.categorySlug);
-  const pieces = getPiecesPerBox(product);
-  const badge = product.compareAtPrice ? "Sale" : product.isNew ? "New" : "Bestseller";
-  const badgeClass = product.compareAtPrice
-    ? "bg-coral-500 text-white"
-    : product.isNew
-      ? "bg-teal-600 text-white"
-      : "bg-sun-400 text-ink-800";
+  const deal = getBoxDeal(product);
+  const badge = deal.soldAsBox ? "Full box" : product.compareAtPrice ? "Sale" : product.isNew ? "New" : "Bestseller";
+  const badgeClass = deal.soldAsBox
+    ? "bg-teal-600 text-white"
+    : product.compareAtPrice
+      ? "bg-coral-500 text-white"
+      : product.isNew
+        ? "bg-teal-600 text-white"
+        : "bg-sun-400 text-ink-800";
 
   return (
     <article className="bestseller-card flex h-full flex-col overflow-hidden rounded-[1.6rem] bg-white ring-1 ring-cream-200 transition hover:-translate-y-0.5 hover:shadow-soft">
@@ -64,9 +66,9 @@ function BestSellerCard({ product }: { product: Product }) {
         >
           {badge}
         </span>
-        {pieces ? (
+        {deal.soldAsBox ? (
           <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">
-            Packet · {pieces} pcs
+            Box · {deal.pieces} pcs
           </span>
         ) : null}
         <WishButton slug={product.slug} />
@@ -83,17 +85,18 @@ function BestSellerCard({ product }: { product: Product }) {
         <div className="mt-1">
           <Rating value={product.rating} />
         </div>
-        <div className="mt-auto flex items-end justify-between gap-2 border-t border-cream-200 pt-2">
-          <p className="font-display text-base font-bold text-coral-500">
-            {formatPrice(product.price)}
-            {product.compareAtPrice ? (
-              <span className="ml-2 text-sm font-semibold text-ink-400 line-through">
-                {formatPrice(product.compareAtPrice)}
-              </span>
+        <div className="mt-auto border-t border-cream-200 pt-2">
+          <p className="text-[10px] font-bold uppercase tracking-wide text-ink-400">Box price</p>
+          <div className="flex items-end justify-between gap-2">
+            <p className="font-display text-base font-bold text-coral-500">{formatPrice(deal.boxPrice)}</p>
+            {deal.soldAsBox ? (
+              <p className="text-right text-[10px] font-semibold text-teal-700">
+                {deal.pieces} pcs · {formatPrice(deal.perPiece)}/pc
+              </p>
             ) : null}
-          </p>
-          {pieces ? (
-            <p className="font-display text-xs font-black uppercase tracking-wide text-ink-600">{pieces} pcs</p>
+          </div>
+          {deal.soldAsBox ? (
+            <p className="mt-1 text-[10px] font-semibold text-teal-800">Buy the box — better than singles</p>
           ) : null}
         </div>
         <AddToCartButton slug={product.slug} />

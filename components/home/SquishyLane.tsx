@@ -45,8 +45,8 @@ export function SquishyLane() {
                 Squishies first.
               </h2>
               <p className="mt-3 text-sm text-white/95 sm:text-base">
-                Our hero range — fruit, food, sensory jars, glitter and crunchy squeezes. Every box shows
-                piece count and price.
+                Sold as full boxes — each listing shows the item, total pieces in the box, and a competitive
+                box price. Buy the box, not singles.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Button href="/shop/fruit-squishies" size="lg" variant="sun" className="w-fit">
@@ -85,7 +85,8 @@ export function SquishyLane() {
             href="/shop/fruit-squishies"
           />
           <p className="mx-auto mt-2 max-w-2xl text-center text-sm text-ink-500">
-            Boxed listings with total pieces and UK prices — tap a card or open a squishy aisle above.
+            Every card names the item in the box, the total piece count, and the competitive box price —
+            grab the full box for the best deal.
           </p>
         </div>
 

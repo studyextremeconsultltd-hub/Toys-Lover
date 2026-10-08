@@ -8,7 +8,7 @@ import {
 } from "@/lib/data/products";
 import { getCategory } from "@/lib/data/categories";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
-import { formatPrice, getPiecesPerBox, toTitleCase } from "@/lib/utils";
+import { formatPrice, getBoxDeal, toTitleCase } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Rating } from "@/components/ui/Rating";
@@ -58,7 +58,7 @@ export default function ProductPage({ params }: Props) {
 
   const category = getCategory(product.categorySlug);
   const related = getRelatedProducts(product);
-  const pieces = getPiecesPerBox(product);
+  const deal = getBoxDeal(product);
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -106,37 +106,43 @@ export default function ProductPage({ params }: Props) {
                   <Badge tone="sky">{category.shortName}</Badge>
                 </Link>
               ) : null}
-              {pieces ? <Badge tone="mint">Packet · {pieces} pcs</Badge> : null}
+              {deal.soldAsBox ? <Badge tone="mint">Full box · {deal.pieces} pcs</Badge> : null}
               {product.isNew ? <Badge>New</Badge> : null}
             </div>
-            <div className="mt-5 grid gap-3 rounded-2xl border border-cream-300 bg-cream-50 p-4 sm:grid-cols-3">
-              <div className="sm:col-span-3">
-                <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Packet name</p>
-                <p className="font-display text-xl font-extrabold text-ink-900">{toTitleCase(product.name)}</p>
-              </div>
-              <div>
-                <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Price</p>
-                <p className="font-display text-3xl font-extrabold text-ink-900">
-                  {formatPrice(product.price)}
-                  {product.compareAtPrice ? (
-                    <span className="ml-3 text-lg text-ink-400 line-through">
-                      {formatPrice(product.compareAtPrice)}
-                    </span>
+            <div className="mt-5 rounded-2xl border border-teal-200 bg-teal-50/80 p-4">
+              <p className="text-xs font-bold uppercase tracking-wide text-teal-700">Item in this box</p>
+              <p className="font-display text-xl font-extrabold text-ink-900">{toTitleCase(product.name)}</p>
+              <div className="mt-4 grid gap-3 sm:grid-cols-3">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Total pieces in box</p>
+                  <p className="font-display text-3xl font-extrabold text-teal-700">{deal.pieces} pcs</p>
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Competitive box price</p>
+                  <p className="font-display text-3xl font-extrabold text-coral-500">
+                    {formatPrice(deal.boxPrice)}
+                  </p>
+                  {deal.singlesCompare ? (
+                    <p className="text-sm font-semibold text-ink-400 line-through">
+                      {formatPrice(deal.singlesCompare)} if bought as singles
+                    </p>
                   ) : null}
-                </p>
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wide text-ink-400">
+                    {deal.soldAsBox ? "Per piece in the box" : "Category"}
+                  </p>
+                  <p className="font-display text-2xl font-extrabold text-ink-800">
+                    {deal.soldAsBox ? formatPrice(deal.perPiece) : category?.shortName ?? product.categorySlug}
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Complete items in box</p>
-                <p className="font-display text-3xl font-extrabold text-teal-700">
-                  {pieces ? `${pieces} pcs` : "1 pc"}
+              {deal.soldAsBox ? (
+                <p className="mt-4 rounded-xl bg-white px-3 py-2 text-sm font-semibold text-teal-800 ring-1 ring-teal-100">
+                  Buy the full box — not singles. You get all {deal.pieces} pieces at a competitive box price
+                  ({formatPrice(deal.perPiece)} each).
                 </p>
-              </div>
-              <div>
-                <p className="text-xs font-bold uppercase tracking-wide text-ink-400">Category</p>
-                <p className="font-display text-xl font-extrabold text-ink-800">
-                  {category?.shortName ?? product.categorySlug}
-                </p>
-              </div>
+              ) : null}
             </div>
             <ProductTabs product={product} />
             <div className="mt-6">

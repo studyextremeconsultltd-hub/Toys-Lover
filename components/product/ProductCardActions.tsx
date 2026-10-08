@@ -22,13 +22,13 @@ export function WishButton({ slug }: { slug: string }) {
   );
 }
 
-export function AddButton({ slug }: { slug: string }) {
+export function AddButton({ slug, label = "Add" }: { slug: string; label?: string }) {
   const { addItem } = useCart();
 
   return (
     <Button type="button" size="sm" className="w-full" onClick={() => addItem(slug)}>
       <ShoppingBag className="h-4 w-4" />
-      Add
+      {label}
     </Button>
   );
 }
