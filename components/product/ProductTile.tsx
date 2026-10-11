@@ -13,7 +13,7 @@ export function ProductTile({ product }: { product: Product }) {
       <div className="relative">
         <Link
           href={`/product/${product.slug}`}
-          className="relative block aspect-square min-h-[14rem] overflow-hidden bg-white sm:min-h-[18rem]"
+          className="relative block aspect-[4/3] min-h-[16rem] overflow-hidden bg-ink-900 sm:min-h-[20rem]"
         >
           <Image
             src={product.images[0]}
@@ -21,7 +21,8 @@ export function ProductTile({ product }: { product: Product }) {
             fill
             sizes="(min-width: 1280px) 30vw, (min-width: 640px) 45vw, 100vw"
             quality={100}
-            className="product-shot bg-white"
+            className="!object-cover !object-center"
+            style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </Link>
         <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2.5 py-1.5 font-display text-xs font-black uppercase tracking-wide text-white">

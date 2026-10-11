@@ -16,7 +16,7 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="relative overflow-hidden bg-white">
         <Link
           href={`/product/${product.slug}`}
-          className="relative block aspect-square min-h-[16rem] overflow-hidden bg-white sm:min-h-[20rem] lg:min-h-[22rem]"
+          className="relative block aspect-[4/3] min-h-[18rem] overflow-hidden bg-ink-900 sm:min-h-[22rem] lg:min-h-[24rem]"
         >
           <Image
             src={product.images[0]}
@@ -24,7 +24,8 @@ export function ProductCard({ product }: { product: Product }) {
             fill
             sizes="(min-width: 1280px) 32vw, (min-width: 768px) 45vw, 100vw"
             quality={100}
-            className="product-shot bg-white"
+            className="!object-cover !object-center"
+            style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </Link>
         <div className="absolute left-2 top-2 z-10 flex flex-col gap-1">

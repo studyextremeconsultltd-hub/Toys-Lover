@@ -43,11 +43,10 @@ export function ToyPhoto({
         priority={priority}
         className={
           useProductShot
-            ? "product-shot h-full w-full bg-white"
-            : shopFloor
-              ? "object-cover object-center"
-              : "object-cover object-center"
+            ? "!object-cover !object-center h-full w-full"
+            : "object-cover object-center"
         }
+        style={{ objectFit: "cover", objectPosition: "center" }}
       />
     </div>
   );

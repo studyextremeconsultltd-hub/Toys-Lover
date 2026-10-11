@@ -50,7 +50,7 @@ function BestSellerCard({ product }: { product: Product }) {
       <div className="relative">
         <Link
           href={`/product/${product.slug}`}
-          className="relative block aspect-square min-h-[14rem] overflow-hidden bg-white sm:min-h-[18rem]"
+          className="relative block aspect-[4/3] min-h-[16rem] overflow-hidden bg-ink-900 sm:min-h-[20rem]"
         >
           <Image
             src={product.images[0]}
@@ -59,7 +59,8 @@ function BestSellerCard({ product }: { product: Product }) {
             sizes="(min-width: 1280px) 30vw, (min-width: 640px) 45vw, 100vw"
             quality={100}
             loading="lazy"
-            className="product-shot bestseller-photo bg-white"
+            className="!object-cover !object-center bestseller-photo"
+            style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </Link>
         {badge ? (

@@ -12,7 +12,7 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
       priority
       quality={100}
       fit="cover"
-      className="aspect-square min-h-[18rem] rounded-4xl bg-white shadow-soft ring-1 ring-coral-100 sm:min-h-[24rem] lg:min-h-[28rem] [&_img]:h-full [&_img]:w-full"
+      className="aspect-[4/3] min-h-[20rem] rounded-4xl bg-ink-900 shadow-soft ring-1 ring-coral-100 sm:min-h-[26rem] lg:min-h-[30rem] [&_img]:h-full [&_img]:w-full"
     />
   );
 }
