@@ -541,6 +541,17 @@ export const categories: Category[] = [
     accent: "mint",
     ageLabel: "All ages",
   },
+  {
+    slug: "bath-bomb-gifts",
+    name: "Bath Bomb Gift Boxes",
+    shortName: "Bath Bombs",
+    description: "Surprise-toy bath bomb gift boxes — mermaid, ocean, candy and animal themes, 12 pcs per box.",
+    longDescription:
+      "Colourful bath bombs with a hidden charm inside. Each gift box holds 12 pieces; every card shows the box piece count and UK price.",
+    image: categoryImage["bath-bomb-gifts"],
+    accent: "sky",
+    ageLabel: "Ages 6–8",
+  },
 ];
 
 export function getCategory(slug: string) {
@@ -557,7 +568,7 @@ export const CATEGORY_AGE_GROUPS = [
   {
     id: "6-8",
     label: "Ages 6–8",
-    slugs: ["building-sets", "action-figures", "board-games", "christmas-surprise", "christmas-glow", "halloween-squishies", "party-spotlight", "hatch-dragons", "fashion-play-sets", "monster-buddy-keyrings", "light-up-hats", "push-pop-games", "crunchy-squishies", "funky-frights", "festive-dumplings", "halloween-hats", "light-up-gloves", "cheese-squishies", "glow-swords", "fruit-squishies", "food-squishies", "sensory-jars"],
+    slugs: ["building-sets", "action-figures", "board-games", "christmas-surprise", "christmas-glow", "halloween-squishies", "party-spotlight", "hatch-dragons", "fashion-play-sets", "monster-buddy-keyrings", "light-up-hats", "push-pop-games", "crunchy-squishies", "funky-frights", "festive-dumplings", "halloween-hats", "light-up-gloves", "cheese-squishies", "glow-swords", "fruit-squishies", "food-squishies", "sensory-jars", "bath-bomb-gifts"],
   },
   {
     id: "9-12",

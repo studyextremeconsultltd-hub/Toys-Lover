@@ -5,6 +5,7 @@ import { advanceStock } from "@/lib/data/advance-stock";
 import { extraStock } from "@/lib/data/extra-stock";
 import { chinaStock } from "@/lib/data/china-stock";
 import { innovativeStock } from "@/lib/data/innovative-stock";
+import { octoberNewStock } from "@/lib/data/october-new-stock";
 import { productGallery, shop } from "@/lib/media";
 
 const catalog: Product[] = [
@@ -1883,6 +1884,7 @@ const catalog: Product[] = [
   ...extraStock,
   ...chinaStock,
   ...innovativeStock,
+  ...octoberNewStock,
 ];
 
 export const products: Product[] = catalog.map((product) => ({
