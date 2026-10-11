@@ -13,15 +13,15 @@ export function ProductTile({ product }: { product: Product }) {
       <div className="relative">
         <Link
           href={`/product/${product.slug}`}
-          className="relative block aspect-square overflow-hidden bg-white"
+          className="relative block aspect-[5/4] min-h-[10.5rem] overflow-hidden bg-white sm:min-h-[13rem]"
         >
           <Image
             src={product.images[0]}
             alt={product.name}
             fill
-            sizes="(min-width: 1280px) 16vw, 50vw"
+            sizes="(min-width: 1280px) 22vw, (min-width: 640px) 30vw, 50vw"
             quality={100}
-            className="object-contain object-center bg-white p-1"
+            className="product-shot object-contain object-center bg-white"
           />
         </Link>
         <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">

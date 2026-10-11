@@ -14,14 +14,17 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-[1.4rem] bg-white shadow-soft ring-1 ring-cream-200">
       <div className="relative overflow-hidden bg-white">
-        <Link href={`/product/${product.slug}`} className="relative block aspect-square overflow-hidden bg-white">
+        <Link
+          href={`/product/${product.slug}`}
+          className="relative block aspect-[5/4] min-h-[11rem] overflow-hidden bg-white sm:min-h-[14rem] lg:min-h-[16rem]"
+        >
           <Image
             src={product.images[0]}
             alt={product.name}
             fill
-            sizes="(min-width: 1280px) 20vw, (min-width: 1024px) 25vw, 50vw"
+            sizes="(min-width: 1280px) 24vw, (min-width: 1024px) 30vw, 50vw"
             quality={100}
-            className="object-contain object-center bg-white p-1"
+            className="product-shot object-contain object-center bg-white"
           />
         </Link>
         <div className="absolute left-2 top-2 z-10 flex flex-col gap-1">

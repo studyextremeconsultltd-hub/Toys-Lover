@@ -48,15 +48,18 @@ function BestSellerCard({ product }: { product: Product }) {
   return (
     <article className="bestseller-card flex h-full flex-col overflow-hidden rounded-[1.6rem] bg-white ring-1 ring-cream-200 transition hover:-translate-y-0.5 hover:shadow-soft">
       <div className="relative">
-        <Link href={`/product/${product.slug}`} className="relative block aspect-square overflow-hidden bg-white">
+        <Link
+          href={`/product/${product.slug}`}
+          className="relative block aspect-[5/4] min-h-[9.5rem] overflow-hidden bg-white sm:min-h-[11rem]"
+        >
           <Image
             src={product.images[0]}
             alt={product.name}
             fill
-            sizes="(min-width: 1280px) 14vw, (min-width: 640px) 28vw, 46vw"
+            sizes="(min-width: 1280px) 16vw, (min-width: 640px) 30vw, 48vw"
             quality={100}
             loading="lazy"
-            className="bestseller-photo bg-white object-contain object-center p-1"
+            className="product-shot bestseller-photo bg-white object-contain object-center"
           />
         </Link>
         {badge ? (
@@ -116,7 +119,7 @@ export function BestSellers({ products }: { products: Product[] }) {
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-3 xl:grid-cols-3">
         {visible.map((product) => (
           <BestSellerCard key={`${page}-${product.slug}`} product={product} />
         ))}

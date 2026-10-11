@@ -187,13 +187,14 @@ a {
 
 .product-shot {
   object-fit: contain;
-  transform: none;
+  /* Strong zoom so pack shots read large on every card and aisle */
+  transform: scale(1.22);
   transform-origin: center center;
 }
 
 .group:hover .product-shot,
 .group:focus-within .product-shot {
-  transform: scale(1.05);
+  transform: scale(1.28);
 }
 
 .media-hover-frame img {
