@@ -45,8 +45,7 @@ export function SquishyLane() {
                 Squishies first.
               </h2>
               <p className="mt-3 text-sm text-white/95 sm:text-base">
-                Sold as full boxes — each listing shows the item, total pieces in the box, and a competitive
-                box price. Buy the box, not singles.
+                Sold as full boxes — each listing shows pieces in the box and the box price.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Button href="/shop/fruit-squishies" size="lg" variant="sun" className="w-fit">

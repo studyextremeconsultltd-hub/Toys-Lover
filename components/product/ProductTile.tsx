@@ -20,8 +20,8 @@ export function ProductTile({ product }: { product: Product }) {
             alt={product.name}
             fill
             sizes="(min-width: 1280px) 16vw, 50vw"
-            quality={95}
-            className="object-contain object-center bg-white"
+            quality={100}
+            className="object-contain object-center bg-white p-1"
           />
         </Link>
         <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">
@@ -38,18 +38,9 @@ export function ProductTile({ product }: { product: Product }) {
         <div className="mt-1">
           <Rating value={product.rating} />
         </div>
-        <div className="mt-auto space-y-1 border-t border-cream-200 pt-2 text-[11px]">
-          <div className="flex justify-between gap-2">
-            <span className="font-semibold text-ink-500">Single</span>
-            <span className="font-bold text-ink-700">{formatPrice(deal.singleItemPrice)}</span>
-          </div>
-          <div className="flex justify-between gap-2">
-            <span className="font-semibold text-ink-500">Box ({deal.pieces} pcs)</span>
-            <span className="font-display text-base font-bold text-coral-500">{formatPrice(deal.boxPrice)}</span>
-          </div>
-          {deal.soldAsBox ? (
-            <p className="font-semibold text-teal-700">Buy the box — save {formatPrice(deal.savings)}</p>
-          ) : null}
+        <div className="mt-auto flex items-end justify-between gap-2 border-t border-cream-200 pt-2">
+          <span className="text-[11px] font-semibold text-ink-500">Box price</span>
+          <span className="font-display text-base font-bold text-coral-500">{formatPrice(deal.boxPrice)}</span>
         </div>
       </div>
     </article>

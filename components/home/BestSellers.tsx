@@ -38,14 +38,12 @@ function AddToCartButton({ slug }: { slug: string }) {
 function BestSellerCard({ product }: { product: Product }) {
   const category = getCategory(product.categorySlug);
   const deal = getBoxDeal(product);
-  const badge = deal.soldAsBox ? "Full box" : product.compareAtPrice ? "Sale" : product.isNew ? "New" : "Bestseller";
-  const badgeClass = deal.soldAsBox
+  const badge = product.isNew ? "New" : product.isBestSeller ? "Bestseller" : product.compareAtPrice ? "Sale" : null;
+  const badgeClass = product.isNew
     ? "bg-teal-600 text-white"
-    : product.compareAtPrice
-      ? "bg-coral-500 text-white"
-      : product.isNew
-        ? "bg-teal-600 text-white"
-        : "bg-sun-400 text-ink-800";
+    : product.isBestSeller
+      ? "bg-sun-400 text-ink-800"
+      : "bg-coral-500 text-white";
 
   return (
     <article className="bestseller-card flex h-full flex-col overflow-hidden rounded-[1.6rem] bg-white ring-1 ring-cream-200 transition hover:-translate-y-0.5 hover:shadow-soft">
@@ -56,16 +54,18 @@ function BestSellerCard({ product }: { product: Product }) {
             alt={product.name}
             fill
             sizes="(min-width: 1280px) 14vw, (min-width: 640px) 28vw, 46vw"
-            quality={92}
+            quality={100}
             loading="lazy"
-            className="bestseller-photo bg-white object-contain object-center"
+            className="bestseller-photo bg-white object-contain object-center p-1"
           />
         </Link>
-        <span
-          className={`absolute left-3 top-3 z-10 rounded-full px-2.5 py-1 font-display text-[10px] font-bold uppercase tracking-wide ${badgeClass}`}
-        >
-          {badge}
-        </span>
+        {badge ? (
+          <span
+            className={`absolute left-3 top-3 z-10 rounded-full px-2.5 py-1 font-display text-[10px] font-bold uppercase tracking-wide ${badgeClass}`}
+          >
+            {badge}
+          </span>
+        ) : null}
         <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">
           {deal.pieces} pcs · {formatPrice(deal.boxPrice)}
         </span>
@@ -83,21 +83,10 @@ function BestSellerCard({ product }: { product: Product }) {
         <div className="mt-1">
           <Rating value={product.rating} />
         </div>
-        <div className="mt-auto space-y-1 border-t border-cream-200 pt-2 text-[11px]">
-          <div className="flex justify-between gap-2">
-            <span className="font-semibold text-ink-500">Single</span>
-            <span className="font-bold text-ink-700">{formatPrice(deal.singleItemPrice)}</span>
-          </div>
-          <div className="flex justify-between gap-2">
-            <span className="font-semibold text-ink-500">Box ({deal.pieces} pcs)</span>
-            <span className="font-display text-base font-bold text-coral-500">{formatPrice(deal.boxPrice)}</span>
-          </div>
+        <div className="mt-auto flex items-end justify-between gap-2 border-t border-cream-200 pt-2">
+          <span className="text-[11px] font-semibold text-ink-500">Box price</span>
+          <span className="font-display text-base font-bold text-coral-500">{formatPrice(deal.boxPrice)}</span>
         </div>
-        {deal.soldAsBox ? (
-          <p className="mt-1 text-[10px] font-semibold text-teal-800">
-            Buy the box — save {formatPrice(deal.savings)}
-          </p>
-        ) : null}
         <AddToCartButton slug={product.slug} />
       </div>
     </article>
