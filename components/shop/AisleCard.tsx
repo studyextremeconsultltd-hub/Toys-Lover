@@ -35,15 +35,15 @@ export function AisleCard({
       )}
     >
       <span className={cn("h-1.5 w-full bg-coral-500")} />
-      <div className="media-hover-frame relative aspect-[5/4] min-h-[10rem] bg-white sm:min-h-[12rem]">
+      <div className="media-hover-frame relative aspect-square min-h-[14rem] bg-white sm:min-h-[18rem]">
         <Image
           src={category.image}
           alt={category.name}
           fill
           priority={priority}
-          sizes="(min-width: 1280px) 24vw, (min-width: 768px) 42vw, 90vw"
+          sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 100vw"
           quality={100}
-          className="product-shot object-contain object-center bg-white"
+          className="product-shot bg-white"
         />
       </div>
       <div className="flex flex-1 flex-col p-4">

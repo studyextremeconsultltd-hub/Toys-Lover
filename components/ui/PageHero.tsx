@@ -26,14 +26,14 @@ export function PageHero({
           {description ? <p className="mt-3 max-w-xl text-base text-ink-600">{description}</p> : null}
         </div>
         <div className="relative overflow-hidden rounded-[1.8rem] bg-white shadow-soft ring-1 ring-cream-200">
-          <div className="relative aspect-[5/4] min-h-[14rem] sm:min-h-[18rem]">
+          <div className="relative aspect-square min-h-[16rem] sm:min-h-[22rem]">
             <Image
               src={image}
               alt={title}
               fill
-              sizes="(min-width: 1024px) 40vw, 90vw"
+              sizes="(min-width: 1024px) 40vw, 100vw"
               quality={100}
-              className="product-shot object-contain object-center bg-white"
+              className="product-shot bg-white"
               priority
             />
           </div>

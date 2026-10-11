@@ -50,16 +50,16 @@ function BestSellerCard({ product }: { product: Product }) {
       <div className="relative">
         <Link
           href={`/product/${product.slug}`}
-          className="relative block aspect-[5/4] min-h-[9.5rem] overflow-hidden bg-white sm:min-h-[11rem]"
+          className="relative block aspect-square min-h-[14rem] overflow-hidden bg-white sm:min-h-[18rem]"
         >
           <Image
             src={product.images[0]}
             alt={product.name}
             fill
-            sizes="(min-width: 1280px) 16vw, (min-width: 640px) 30vw, 48vw"
+            sizes="(min-width: 1280px) 30vw, (min-width: 640px) 45vw, 100vw"
             quality={100}
             loading="lazy"
-            className="product-shot bestseller-photo bg-white object-contain object-center"
+            className="product-shot bestseller-photo bg-white"
           />
         </Link>
         {badge ? (
@@ -119,7 +119,7 @@ export function BestSellers({ products }: { products: Product[] }) {
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-3 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
         {visible.map((product) => (
           <BestSellerCard key={`${page}-${product.slug}`} product={product} />
         ))}

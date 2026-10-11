@@ -35,7 +35,7 @@ export function CartView() {
           >
             <Link
               href={`/product/${product.slug}`}
-              className="media-hover-frame h-24 w-24 shrink-0 overflow-hidden rounded-2xl"
+              className="media-hover-frame h-32 w-32 shrink-0 overflow-hidden rounded-2xl sm:h-36 sm:w-36"
             >
               <ToyPhoto src={product.images[0]} alt={product.name} sizes="96px" className="h-24 w-24" />
             </Link>

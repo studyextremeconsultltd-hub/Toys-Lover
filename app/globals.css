@@ -186,15 +186,16 @@ a {
 }
 
 .product-shot {
-  object-fit: contain;
-  /* Strong zoom so pack shots read large on every card and aisle */
-  transform: scale(1.22);
+  /* Fill the whole photo frame — no tiny letterboxed pack shots */
+  object-fit: cover !important;
+  object-position: center center;
+  transform: scale(1.08);
   transform-origin: center center;
 }
 
 .group:hover .product-shot,
 .group:focus-within .product-shot {
-  transform: scale(1.28);
+  transform: scale(1.14);
 }
 
 .media-hover-frame img {
@@ -321,7 +322,7 @@ a {
 }
 
 .bestseller-photo {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 

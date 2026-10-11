@@ -6,7 +6,7 @@ export function ToyPhoto({
   src,
   alt,
   sizes,
-  quality = 92,
+  quality = 100,
   priority,
   className,
   fit,
@@ -22,8 +22,9 @@ export function ToyPhoto({
   const framed = isFramedPhoto(src);
   const studio = isStudioPhoto(src);
   const shopFloor = isShopPhoto(src);
-  const mode = fit ?? (framed || studio ? "contain" : "cover");
+  const mode = fit ?? (framed || studio ? "cover" : "cover");
   const image = src || "/images/hero-play.jpg";
+  const useProductShot = mode === "cover" || framed || studio;
 
   return (
     <div
@@ -41,8 +42,8 @@ export function ToyPhoto({
         quality={quality}
         priority={priority}
         className={
-          mode === "contain"
-            ? "product-shot h-full w-full object-contain object-center bg-white"
+          useProductShot
+            ? "product-shot h-full w-full bg-white"
             : shopFloor
               ? "object-cover object-center"
               : "object-cover object-center"

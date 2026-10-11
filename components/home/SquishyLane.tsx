@@ -84,8 +84,7 @@ export function SquishyLane() {
             href="/shop/fruit-squishies"
           />
           <p className="mx-auto mt-2 max-w-2xl text-center text-sm text-ink-500">
-            Every card names the item in the box, the total piece count, and the competitive box price —
-            grab the full box for the best deal.
+            Large HD pack shots with pieces in the box and the box price on every card.
           </p>
         </div>
 
