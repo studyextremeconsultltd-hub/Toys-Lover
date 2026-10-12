@@ -40,12 +40,11 @@ export function ToyPhoto({
         sizes={sizes}
         quality={quality}
         priority={priority}
+        decoding={priority ? "sync" : "async"}
         className={
           mode === "contain"
-            ? "h-full w-full object-contain object-center bg-white p-2"
-            : shopFloor
-              ? "object-cover object-center"
-              : "object-cover object-center"
+            ? "h-full w-full object-contain object-center bg-white p-2 sm:p-3"
+            : "object-cover object-center"
         }
       />
     </div>

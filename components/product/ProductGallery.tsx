@@ -1,18 +1,20 @@
+import Image from "next/image";
 import { img } from "@/lib/media";
-import { ToyPhoto } from "@/components/ui/ToyPhoto";
 
 export function ProductGallery({ images, name }: { images: string[]; name: string }) {
   const src = images[0] || img.heroToys;
 
   return (
-    <ToyPhoto
-      src={src}
-      alt={name}
-      sizes="(min-width: 1024px) 40vw, 100vw"
-      priority
-      quality={92}
-      fit="contain"
-      className="aspect-square rounded-4xl bg-white shadow-soft ring-1 ring-coral-100 [&_img]:h-full [&_img]:w-full"
-    />
+    <div className="relative aspect-square w-full overflow-hidden rounded-[1.75rem] bg-white shadow-soft ring-1 ring-coral-100">
+      <Image
+        src={src}
+        alt={name}
+        fill
+        priority
+        sizes="(min-width: 1024px) 40vw, 92vw"
+        quality={92}
+        className="object-contain object-center p-3 sm:p-4"
+      />
+    </div>
   );
 }
