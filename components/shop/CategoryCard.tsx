@@ -23,11 +23,11 @@ export function CategoryCard({
 
   return (
     <article className="media-hover group flex h-full flex-col overflow-hidden rounded-[1.75rem] bg-white shadow-card">
-      <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="relative aspect-square overflow-hidden bg-white">
         <ToyPhoto
           src={category.image}
           alt={category.name}
-          sizes="(min-width: 1024px) 33vw, 100vw"
+          sizes="(min-width: 1024px) 25vw, 50vw"
           fit="contain"
           className="h-full w-full"
         />

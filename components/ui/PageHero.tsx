@@ -25,16 +25,15 @@ export function PageHero({
           </h1>
           {description ? <p className="mt-3 max-w-xl text-base text-ink-600">{description}</p> : null}
         </div>
-        <div className="relative overflow-hidden rounded-[1.8rem] bg-ink-900 shadow-soft ring-1 ring-cream-200">
-          <div className="relative aspect-[4/3] min-h-[18rem] sm:min-h-[24rem]">
+        <div className="relative overflow-hidden rounded-[1.8rem] bg-white shadow-soft ring-1 ring-cream-200">
+          <div className="relative aspect-square">
             <Image
               src={image}
               alt={title}
               fill
-              sizes="(min-width: 1024px) 40vw, 100vw"
-              quality={100}
-              className="!object-cover !object-center"
-              style={{ objectFit: "cover", objectPosition: "center" }}
+              sizes="(min-width: 1024px) 36vw, 80vw"
+              quality={90}
+              className="object-contain object-center bg-white p-3"
               priority
             />
           </div>

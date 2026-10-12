@@ -113,7 +113,7 @@ export function CategoryShop({
             </Select>
           </div>
         </div>
-        <ProductGrid products={filtered.length ? filtered : products} />
+        <ProductGrid products={filtered.length ? filtered : products} compact />
         {!filtered.length && products.length ? (
           <p className="mt-4 text-center text-sm text-ink-500">
             Nothing matched those filters — showing the full aisle instead.

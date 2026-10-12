@@ -35,19 +35,16 @@ export function AisleCard({
       )}
     >
       <span className="h-1.5 w-full bg-coral-500" />
-      <div className="relative w-full overflow-hidden bg-ink-900">
-        <div className="relative aspect-[4/3] w-full min-h-[20rem] sm:min-h-[24rem] lg:min-h-[26rem]">
-          <Image
-            src={category.image}
-            alt={category.name}
-            fill
-            priority={priority}
-            sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
-            quality={100}
-            className="!object-cover !object-center"
-            style={{ objectFit: "cover", objectPosition: "center" }}
-          />
-        </div>
+      <div className="relative aspect-square overflow-hidden bg-white">
+        <Image
+          src={category.image}
+          alt={category.name}
+          fill
+          priority={priority}
+          sizes="(min-width: 1280px) 22vw, (min-width: 768px) 40vw, 80vw"
+          quality={90}
+          className="object-contain object-center bg-white p-2"
+        />
       </div>
       <div className="flex flex-1 flex-col p-4">
         <p

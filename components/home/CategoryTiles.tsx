@@ -52,7 +52,7 @@ export function CategoryTiles({
           ))}
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {aisles.map(({ category, products }, index) => (
             <AisleCard
               key={category.slug}
