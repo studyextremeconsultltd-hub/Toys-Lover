@@ -1,14 +1,18 @@
 "use client";
 
+import { useMemo } from "react";
 import Link from "next/link";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { useCart } from "@/lib/context/CartContext";
+import { cartSubtotal, resolveCartLines } from "@/lib/cart-lines";
 import { formatPrice, toTitleCase } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 import { ToyPhoto } from "@/components/ui/ToyPhoto";
 
 export function CartView() {
-  const { lines, updateQuantity, removeItem, subtotal, itemCount } = useCart();
+  const { items, updateQuantity, removeItem, itemCount } = useCart();
+  const lines = useMemo(() => resolveCartLines(items), [items]);
+  const subtotal = useMemo(() => cartSubtotal(lines), [lines]);
 
   if (lines.length === 0) {
     return (

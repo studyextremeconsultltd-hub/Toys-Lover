@@ -8,14 +8,12 @@ import {
   useMemo,
   useState,
 } from "react";
-import type { Product } from "@/lib/types";
-import { products } from "@/lib/data/products";
 
 const STORAGE_KEY = "toy-bloom-wishlist";
 
 type WishlistContextValue = {
   slugs: string[];
-  items: Product[];
+  count: number;
   toggle: (slug: string) => void;
   has: (slug: string) => boolean;
 };
@@ -49,12 +47,10 @@ export function WishlistProvider({ children }: { children: React.ReactNode }) {
 
   const has = useCallback((slug: string) => slugs.includes(slug), [slugs]);
 
-  const items = useMemo(
-    () => products.filter((product) => slugs.includes(product.slug)),
-    [slugs],
+  const value = useMemo(
+    () => ({ slugs, count: slugs.length, toggle, has }),
+    [slugs, toggle, has],
   );
-
-  const value = useMemo(() => ({ slugs, items, toggle, has }), [slugs, items, toggle, has]);
 
   return <WishlistContext.Provider value={value}>{children}</WishlistContext.Provider>;
 }

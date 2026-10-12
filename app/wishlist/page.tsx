@@ -1,6 +1,8 @@
 "use client";
 
+import { useMemo } from "react";
 import { useWishlist } from "@/lib/context/WishlistContext";
+import { getProduct } from "@/lib/data/products";
 import { img } from "@/lib/media";
 import { PageHero } from "@/components/ui/PageHero";
 import { Container } from "@/components/ui/Container";
@@ -9,7 +11,11 @@ import { ProductGrid } from "@/components/product/ProductGrid";
 import { Button } from "@/components/ui/Button";
 
 export default function WishlistPage() {
-  const { items } = useWishlist();
+  const { slugs } = useWishlist();
+  const items = useMemo(
+    () => slugs.map((slug) => getProduct(slug)).filter((product): product is NonNullable<typeof product> => Boolean(product)),
+    [slugs],
+  );
 
   return (
     <>

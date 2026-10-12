@@ -19,47 +19,52 @@ import { ProductGrid } from "@/components/product/ProductGrid";
 export function SquishyLane() {
   const allSquishies = getSquishies();
   const total = getSquishyCount();
-  const featured = allSquishies.slice(0, 12);
+  const featured = allSquishies.slice(0, 8);
 
   return (
     <Section id="squishies" className="scroll-mt-28 bg-gradient-to-b from-[#FFE4F0] via-[#FFF8F0] to-cream-50 py-10">
       <Container>
         <div className="mb-8 overflow-hidden rounded-[1.75rem] shadow-lift">
-          <div className="media-hover-frame relative aspect-[16/7] min-h-[180px] sm:min-h-[220px]">
+          <div className="media-hover-frame relative aspect-[21/9] min-h-[140px] sm:min-h-[180px]">
             <Image
               src={img.squishyLane}
               alt="Toy Bloom squishies — fruit, food and sensory jars"
               fill
-              priority
               sizes="(min-width: 1152px) 1152px, 100vw"
-              quality={90}
+              quality={70}
+              loading="lazy"
               className="object-cover object-[center_70%]"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#E85D8C]/90 via-[#E85D8C]/45 to-transparent" />
-            <div className="relative z-10 flex h-full max-w-xl flex-col justify-center p-6 sm:p-10">
+            <div className="absolute inset-0 bg-gradient-to-r from-[#E85D8C]/92 via-[#E85D8C]/50 to-transparent" />
+            <div className="relative z-10 flex h-full max-w-xl flex-col justify-center p-5 sm:p-8">
               <p className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-3 py-1 font-display text-[11px] font-black uppercase tracking-wide text-[#E85D8C]">
                 <Sparkles className="h-3.5 w-3.5" />
-                Main product · {total} squishies
+                Main range · {total} squishies
               </p>
-              <h2 className="mt-3 font-display text-3xl font-extrabold text-white sm:text-4xl">
+              <h2 className="mt-3 font-display text-2xl font-extrabold text-white sm:text-3xl">
                 Squishies first.
               </h2>
-              <p className="mt-3 text-sm text-white/95 sm:text-base">
-                Sold as full boxes — each listing shows pieces in the box and the box price.
+              <p className="mt-2 max-w-md text-sm text-white/95">
+                Full boxes with piece count and a clear UK box price on every card.
               </p>
-              <div className="mt-5 flex flex-wrap gap-3">
+              <div className="mt-4 flex flex-wrap gap-2">
                 <Button href="/shop/fruit-squishies" size="lg" variant="sun" className="w-fit">
                   Shop Fruit Squishies
                 </Button>
-                <Button href="#squishy-wall" size="lg" variant="outline" className="w-fit border-white bg-white/15 text-white hover:bg-white hover:text-[#E85D8C]">
-                  See the wall
+                <Button
+                  href="#squishy-wall"
+                  size="lg"
+                  variant="outline"
+                  className="w-fit border-white bg-white/15 text-white hover:bg-white hover:text-[#E85D8C]"
+                >
+                  See bestsellers
                 </Button>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mb-6 flex flex-wrap justify-center gap-2">
+        <div className="mb-5 flex flex-wrap justify-center gap-2">
           {SQUISHY_CATEGORY_SLUGS.map((slug) => {
             const category = getCategory(slug);
             const count = getProductsByCategory(slug).length;
@@ -77,28 +82,19 @@ export function SquishyLane() {
           })}
         </div>
 
-        <div id="squishy-wall" className="mb-6 scroll-mt-28">
+        <div id="squishy-wall" className="mb-5 scroll-mt-28">
           <GlowHeading
-            eyebrow={`${featured.length} of ${total} on the wall`}
+            eyebrow={`${featured.length} favourites`}
             title="Squishy bestsellers"
             href="/shop/fruit-squishies"
           />
-          <p className="mx-auto mt-2 max-w-2xl text-center text-sm text-ink-500">
-            Large HD pack shots with pieces in the box and the box price on every card.
-          </p>
         </div>
 
-        <ProductGrid products={featured} />
+        <ProductGrid products={featured} compact />
 
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <div className="mt-8 flex justify-center">
           <Button href="/shop/fruit-squishies" size="lg">
-            Fruit Squishies
-          </Button>
-          <Button href="/shop/food-squishies" size="lg" variant="outline">
-            Food Squishies
-          </Button>
-          <Button href="/shop/sensory-jars" size="lg" variant="sun">
-            Sensory Jars
+            Browse all squishies
           </Button>
         </div>
       </Container>

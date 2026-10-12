@@ -8,21 +8,17 @@ import {
   useMemo,
   useState,
 } from "react";
-import type { CartItem, Product } from "@/lib/types";
-import { products } from "@/lib/data/products";
+import type { CartItem } from "@/lib/types";
 
 const STORAGE_KEY = "toy-bloom-cart";
 
 type CartContextValue = {
   items: CartItem[];
   itemCount: number;
-  subtotal: number;
   addItem: (slug: string, quantity?: number) => void;
   removeItem: (slug: string) => void;
   updateQuantity: (slug: string, quantity: number) => void;
   clearCart: () => void;
-  getLine: (slug: string) => { product: Product; quantity: number } | undefined;
-  lines: { product: Product; quantity: number }[];
 };
 
 const CartContext = createContext<CartContextValue | null>(null);
@@ -81,38 +77,21 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const clearCart = useCallback(() => setItems([]), []);
 
-  const lines = useMemo(
-    () =>
-      items
-        .map((item) => {
-          const product = products.find((entry) => entry.slug === item.slug);
-          return product ? { product, quantity: item.quantity } : null;
-        })
-        .filter((line): line is { product: Product; quantity: number } => line !== null),
+  const itemCount = useMemo(
+    () => items.reduce((sum, item) => sum + item.quantity, 0),
     [items],
   );
-
-  const getLine = useCallback(
-    (slug: string) => lines.find((line) => line.product.slug === slug),
-    [lines],
-  );
-
-  const itemCount = lines.reduce((sum, line) => sum + line.quantity, 0);
-  const subtotal = lines.reduce((sum, line) => sum + line.product.price * line.quantity, 0);
 
   const value = useMemo(
     () => ({
       items,
       itemCount,
-      subtotal,
       addItem,
       removeItem,
       updateQuantity,
       clearCart,
-      getLine,
-      lines,
     }),
-    [items, itemCount, subtotal, addItem, removeItem, updateQuantity, clearCart, getLine, lines],
+    [items, itemCount, addItem, removeItem, updateQuantity, clearCart],
   );
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;

@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Lock } from "lucide-react";
 import { useCart } from "@/lib/context/CartContext";
+import { cartSubtotal, resolveCartLines } from "@/lib/cart-lines";
 import { formatPrice, toTitleCase } from "@/lib/utils";
 import { CONTACT } from "@/lib/constants";
 import { Input, Select, Textarea } from "@/components/ui/Input";
@@ -15,7 +16,9 @@ const methodLabel: Record<string, string> = {
 };
 
 export function CheckoutForm({ method = "stripe" }: { method?: string }) {
-  const { lines, subtotal, clearCart, itemCount } = useCart();
+  const { items, clearCart, itemCount } = useCart();
+  const lines = useMemo(() => resolveCartLines(items), [items]);
+  const subtotal = useMemo(() => cartSubtotal(lines), [lines]);
   const shipping = subtotal >= 60 || itemCount === 0 ? 0 : 4.5;
   const [done, setDone] = useState(false);
   const payName = methodLabel[method] ?? "Stripe";

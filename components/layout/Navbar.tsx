@@ -22,7 +22,7 @@ const links = [
 export function Navbar() {
   const pathname = usePathname();
   const { itemCount } = useCart();
-  const { items: wished } = useWishlist();
+  const { count: wishCount } = useWishlist();
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -99,9 +99,9 @@ export function Navbar() {
             aria-label="Wishlist"
           >
             <Heart className="h-5 w-5" />
-            {wished.length > 0 ? (
+            {wishCount > 0 ? (
               <span className="absolute right-1 top-1 grid h-4 min-w-4 place-items-center rounded-full bg-coral-500 px-1 text-[10px] font-bold text-white">
-                {wished.length}
+                {wishCount}
               </span>
             ) : null}
           </Link>

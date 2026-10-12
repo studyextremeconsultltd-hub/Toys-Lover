@@ -23,8 +23,10 @@ export function ProductCard({ product }: { product: Product }) {
             alt={product.name}
             fill
             sizes="(min-width: 1280px) 22vw, (min-width: 768px) 30vw, 50vw"
-            quality={90}
-            className="object-contain object-center bg-white p-2"
+            quality={75}
+            loading="lazy"
+            decoding="async"
+            className="object-contain object-center bg-white p-2 product-shot"
           />
         </Link>
         <div className="absolute left-2 top-2 z-10 flex flex-col gap-1">

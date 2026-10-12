@@ -40,6 +40,12 @@ a {
   scrollbar-width: none;
 }
 
+/* Skip layout/paint for off-screen homepage sections until scroll */
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
 .logo-glow {
   position: relative;
   isolation: isolate;
