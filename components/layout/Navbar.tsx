@@ -49,7 +49,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center gap-2 px-4 py-2 sm:gap-3 sm:px-6 sm:py-2.5 lg:px-8">
         <Logo compact />
 
-        <nav aria-label="Primary" className="hidden flex-1 items-center justify-center gap-0.5 lg:flex">
+        <nav aria-label="Primary" className="hidden flex-1 items-center justify-center gap-1 lg:flex">
           {links.map((link) => {
             const active =
               pathname === link.href || (link.href !== "/shop" && pathname.startsWith(link.href));
@@ -58,12 +58,13 @@ export function Navbar() {
                 key={`${link.href}-${link.label}`}
                 href={link.href}
                 prefetch={false}
+                data-active={active ? "true" : "false"}
                 className={cn(
-                  "rounded-full px-3 py-2 font-display text-sm font-semibold text-ink-700 transition hover:text-coral-500",
+                  "nav-link-glow rounded-full px-3.5 py-2 font-display text-base font-extrabold text-ink-800 hover:bg-cream-50 hover:text-coral-500 xl:px-4 xl:text-lg",
                   active && "bg-cream-100 text-coral-500",
                 )}
               >
-                {link.label}
+                <span className={cn(active && "heading-glow-coral")}>{link.label}</span>
               </Link>
             );
           })}
@@ -147,9 +148,9 @@ export function Navbar() {
                   key={`${link.href}-${link.label}-m`}
                   href={link.href}
                   prefetch={false}
-                  className="rounded-2xl px-4 py-3.5 font-display text-base font-semibold text-ink-800 hover:bg-cream-100"
+                  className="nav-link-glow rounded-2xl px-4 py-3.5 font-display text-lg font-extrabold text-ink-800 hover:bg-cream-100 hover:text-coral-500"
                 >
-                  {link.label}
+                  <span className="heading-glow-coral">{link.label}</span>
                 </Link>
               ))}
               <div className="mt-2 grid grid-cols-2 gap-2">

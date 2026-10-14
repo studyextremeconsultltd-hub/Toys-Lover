@@ -33,7 +33,7 @@ function AddToCartButton({ slug }: { slug: string }) {
   );
 }
 
-function BestSellerCard({ product }: { product: Product }) {
+function BestSellerCard({ product, index }: { product: Product; index: number }) {
   const category = getCategory(product.categorySlug);
   const deal = getBoxDeal(product);
   const badge = product.isNew ? "New" : product.isBestSeller ? "Bestseller" : product.compareAtPrice ? "Sale" : null;
@@ -42,6 +42,9 @@ function BestSellerCard({ product }: { product: Product }) {
     : product.isBestSeller
       ? "bg-sun-400 text-ink-800"
       : "bg-coral-500 text-white";
+  // Horizontal carousel keeps most cards off-screen — Next/Image defaults to lazy,
+  // so off-screen slides stay blank until the strip is scrolled. Force eager.
+  const priority = index < 3;
 
   return (
     <article className="bestseller-card flex h-full flex-col overflow-hidden rounded-[1.6rem] bg-white ring-1 ring-cream-200 transition hover:-translate-y-0.5 hover:shadow-soft">
@@ -55,8 +58,9 @@ function BestSellerCard({ product }: { product: Product }) {
             alt={product.name}
             fill
             sizes="(min-width: 1280px) 212px, (min-width: 640px) 36vw, 70vw"
-            quality={82}
-            loading="lazy"
+            quality={78}
+            priority={priority}
+            loading="eager"
             decoding="async"
             className="object-contain object-center bg-white p-2 bestseller-photo product-shot"
           />
@@ -179,13 +183,13 @@ export function BestSellers({ products }: { products: Product[] }) {
         aria-roledescription="carousel"
         aria-label="Best sellers"
       >
-        {products.map((product) => (
+        {products.map((product, index) => (
           <div
             key={product.slug}
             data-bestseller-card
             className="w-[72%] shrink-0 snap-start sm:w-[44%] md:w-[32%] lg:w-[24%] xl:w-[19%]"
           >
-            <BestSellerCard product={product} />
+            <BestSellerCard product={product} index={index} />
           </div>
         ))}
       </div>

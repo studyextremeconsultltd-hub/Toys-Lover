@@ -19,8 +19,8 @@ export function ProductTile({ product }: { product: Product }) {
             src={product.images[0]}
             alt={product.name}
             fill
-            sizes="(min-width: 1280px) 212px, (min-width: 640px) 22vw, 44vw"
-            quality={82}
+            sizes="(min-width: 1280px) 200px, (min-width: 640px) 22vw, 44vw"
+            quality={75}
             loading="lazy"
             decoding="async"
             className="object-contain object-center bg-white p-2 product-shot"

@@ -40,8 +40,8 @@ export function AisleCard({
           alt={category.name}
           fill
           priority={priority}
-          sizes="(min-width: 1280px) 212px, (min-width: 768px) 22vw, 44vw"
-          quality={82}
+          sizes="(min-width: 1280px) 180px, (min-width: 768px) 20vw, 42vw"
+          quality={72}
           loading={priority ? undefined : "lazy"}
           decoding="async"
           className="object-contain object-center bg-white p-2 product-shot"

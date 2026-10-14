@@ -11,7 +11,7 @@ import { GlowHeading } from "@/components/home/GlowHeading";
 import { Container } from "@/components/ui/Container";
 
 export default function HomePage() {
-  const bestsellers = getBestSellers().slice(0, 18);
+  const bestsellers = getBestSellers().slice(0, 12);
 
   return (
     <>
