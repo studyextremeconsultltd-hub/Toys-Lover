@@ -117,6 +117,7 @@ const NEW_AISLES = [
   "food-squishies",
   "sensory-jars",
   "bath-bomb-gifts",
+  "others",
 ] as const;
 
 export const categoryStudio: Record<string, string> = {
@@ -192,6 +193,11 @@ const RELATED_PHOTOS: Record<string, string[]> = {
     productShot("mech-pioneer-build"),
     productShot("engineering-dump-truck"),
   ],
+  "bubble-blowers": [
+    productShot("animal-bubble-camera-set"),
+    productShot("funtasy-bubble-gun"),
+    productShot("rocket-48-bubble-machine"),
+  ],
   "board-games": [
     productShot("soccer-star-table-game"),
     productShot("tabletop-football-pitch"),
@@ -203,9 +209,9 @@ const RELATED_PHOTOS: Record<string, string[]> = {
     productShot("swirl-ice-cream-squishy"),
   ],
   "outdoor-sports": [
-    productShot("rocket-48-bubble-machine"),
     productShot("basketball-play-set"),
     productShot("ride-on-4x4-jeep"),
+    productShot("sports-ball-pack"),
   ],
   "baby-toddler": [
     productShot("piano-fitness-gym"),
@@ -218,14 +224,14 @@ const RELATED_PHOTOS: Record<string, string[]> = {
     productShot("kitchen-cook-set"),
   ],
   "games-gadgets": [
-    productShot("rainbow-butter-squishy"),
-    productShot("dumpling-pop-spinner"),
+    productShot("rc-monster-truck"),
     productShot("twin-track-rc-set"),
+    productShot("speed-phantom-rc"),
   ],
-  "bubble-blowers": [
-    productShot("animal-bubble-camera-set"),
-    productShot("panda-bubble-camera"),
-    productShot("pink-octopus-bubble-blower"),
+  others: [
+    productShot("racers-camera-car"),
+    productShot("colorful-gear-sport-car"),
+    productShot("crystal-mood-lamp"),
   ],
   "christmas-surprise": [productShot("christmas-surprise-figure-bag")],
   "ear-buddy-plush": [productShot("ear-buddy-plush-pair"), productShot("glowing-ear-buddy-plush")],
@@ -233,7 +239,7 @@ const RELATED_PHOTOS: Record<string, string[]> = {
   "party-spotlight": [
     productShot("rainbow-cloud-flop-hat"),
     productShot("neon-star-wand"),
-    productShot("jumbo-squishy-surprise-bag"),
+    productShot("sequin-cowboy-hat"),
   ],
   "kids-hats": [
     productShot("candy-sports-bucket-hats"),
@@ -247,8 +253,8 @@ const RELATED_PHOTOS: Record<string, string[]> = {
   ],
   "light-up-toys": [
     productShot("lace-heart-wands"),
-    productShot("mini-lit-christmas-trees"),
     productShot("lollipop-light-wands"),
+    productShot("fibre-unicorn-wands"),
   ],
   "articulated-keyrings": [
     productShot("rainbow-sphynx-keyring-set"),
@@ -261,16 +267,20 @@ const RELATED_PHOTOS: Record<string, string[]> = {
     productShot("mint-table-fan"),
   ],
   "bottle-plush": [productShot("sports-bottle-plush-set")],
-  "christmas-glow": [productShot("santa-snow-train"), productShot("santa-glow-lantern-pair")],
+  "christmas-glow": [
+    productShot("santa-snow-train"),
+    productShot("mini-lit-christmas-trees"),
+    productShot("christmas-booth-lanterns"),
+  ],
   "glitter-squeeze": [
     productShot("crystal-unicorn-squeeze"),
-    productShot("glitter-axolotl-squeeze"),
-    productShot("happy-duck-squeeze"),
+    productShot("jumbo-squishy-surprise-bag"),
+    productShot("ra-579-31-unicorn-squishy"),
   ],
   "glow-wands": [
-    productShot("princess-electric-glow-stick"),
-    productShot("rainbow-heart-glow-sticks"),
-    productShot("character-glow-wands"),
+    productShot("trio-glow-spinner-wands"),
+    productShot("spinner-character-wands"),
+    productShot("bow-kitty-plush-wand"),
   ],
   "play-balls": [productShot("character-play-balls")],
   "halloween-squishies": [
@@ -278,10 +288,14 @@ const RELATED_PHOTOS: Record<string, string[]> = {
     productShot("halloween-tray-squishy-01"),
     productShot("halloween-tray-squishy-02"),
   ],
-  "fidget-spinners": [productShot("hero-fidget-spinner-range")],
+  "fidget-spinners": [
+    productShot("hero-fidget-spinner-range"),
+    productShot("ra-103-2key-spinner"),
+    productShot("dumpling-pop-spinner"),
+  ],
   "monster-buddy-bags": [
     productShot("monster-buddy-big-bag-01"),
-    productShot("monster-buddy-large-bag-01"),
+    productShot("fluffy-monster-bag-charm"),
     productShot("monster-buddy-small-bag-01"),
   ],
   "hatch-dragons": [productShot("hatch-dragon-egg-01"), productShot("hatch-dragon-egg-02")],

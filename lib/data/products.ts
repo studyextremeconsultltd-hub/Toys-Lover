@@ -358,7 +358,7 @@ const catalog: Product[] = [
     ageRange: "3-5 years",
     brand: "BubbleBurst",
     theme: "Bubbles",
-    categorySlug: "outdoor-sports",
+    categorySlug: "bubble-blowers",
     images: [shop.s02, shop.s11, shop.s08],
     shortDescription: "One-click electric bubble gun for ages 3+ — UK retail above the ~£0.65 wholesale wand price.",
     description:
@@ -378,7 +378,7 @@ const catalog: Product[] = [
     ageRange: "3-5 years",
     brand: "BubbleBurst",
     theme: "Bubbles",
-    categorySlug: "outdoor-sports",
+    categorySlug: "bubble-blowers",
     images: [shop.s11, shop.s02, shop.s08],
     shortDescription: "48-hole rocket blower — shop tag £6.50, yellow or pink.",
     description:
@@ -398,7 +398,7 @@ const catalog: Product[] = [
     ageRange: "6-8 years",
     brand: "BubbleBurst",
     theme: "Bubbles",
-    categorySlug: "outdoor-sports",
+    categorySlug: "bubble-blowers",
     images: [shop.s02, shop.s11, shop.s08],
     shortDescription: "Bigger 32-hole bazooka for denser bubble storms in the park.",
     description:
@@ -417,7 +417,7 @@ const catalog: Product[] = [
     ageRange: "3-5 years",
     brand: "BubbleBurst",
     theme: "Fairies",
-    categorySlug: "role-play",
+    categorySlug: "bubble-blowers",
     images: [shop.s02, shop.s11, shop.p03],
     shortDescription: "Heart-top wand with lights, music, and bubbles — dress-up that also works in the garden.",
     description:
@@ -688,7 +688,7 @@ const catalog: Product[] = [
     ageRange: "3-5 years",
     brand: "Volt Racers",
     theme: "Vehicles",
-    categorySlug: "games-gadgets",
+    categorySlug: "others",
     images: [shop.s05, shop.s08, shop.s07],
     shortDescription: "1:48 four-channel tanker with lights — shop tag £12.50, ages 3+.",
     description:
@@ -727,7 +727,7 @@ const catalog: Product[] = [
     ageRange: "6-8 years",
     brand: "Stage Pop",
     theme: "Dress-up",
-    categorySlug: "role-play",
+    categorySlug: "party-spotlight",
     images: [shop.p03, shop.s01, shop.s12],
     shortDescription: "Shiny party cowboy hat in pink, gold, or lime — festival and dress-up aisle.",
     description:
@@ -805,7 +805,7 @@ const catalog: Product[] = [
     ageRange: "3-5 years",
     brand: "Forge & Fun",
     theme: "Construction",
-    categorySlug: "action-figures",
+    categorySlug: "building-sets",
     images: [shop.s08, shop.s07, shop.s03],
     shortDescription: "1:32 yellow dump truck with a tipping bed.",
     description:
@@ -1075,7 +1075,7 @@ const catalog: Product[] = [
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
-    categorySlug: "games-gadgets",
+    categorySlug: "sensory-jars",
     images: [shop.p05, shop.p01, shop.s20],
     shortDescription: "Slow-rise butter brick in yellow, pink, or lime. Boxes mark 6+.",
     description:
@@ -1154,7 +1154,7 @@ const catalog: Product[] = [
     ageRange: "3-5 years",
     brand: "Volt Racers",
     theme: "RC",
-    categorySlug: "games-gadgets",
+    categorySlug: "others",
     images: [shop.s07, shop.s08, shop.s04],
     shortDescription: "1:18 teal-and-orange RC crawler — shelf price around £14.50, ages 3+.",
     description:
@@ -1233,7 +1233,7 @@ const catalog: Product[] = [
     ageRange: "9-12 years",
     brand: "Volt Racers",
     theme: "RC",
-    categorySlug: "games-gadgets",
+    categorySlug: "others",
     images: [shop.s05, shop.s04, shop.s08],
     shortDescription: "Wireless-camera series sports RC, ages 8+, purple-blue body.",
     description:
@@ -1549,7 +1549,7 @@ const catalog: Product[] = [
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
-    categorySlug: "games-gadgets",
+    categorySlug: "sensory-jars",
     images: [shop.p05],
     shortDescription: "Pastel layered butter brick — the viral slow-rise stick from the butter wall.",
     description:
@@ -1687,7 +1687,7 @@ const catalog: Product[] = [
     ageRange: "9-12 years",
     brand: "Volt Racers",
     theme: "Gadget",
-    categorySlug: "games-gadgets",
+    categorySlug: "handheld-fans",
     images: [shop.p03, shop.s04, shop.s09],
     shortDescription: "Handheld mini fan in white, pink, purple, or navy — summer counter toy.",
     description:
@@ -1706,7 +1706,7 @@ const catalog: Product[] = [
     ageRange: "13+ years",
     brand: "Nightfield",
     theme: "Gadget",
-    categorySlug: "games-gadgets",
+    categorySlug: "others",
     images: [shop.s09, shop.s04, shop.p03],
     shortDescription: "LED crystal-style lamp from the seasonal shelf — desk glow for older kids.",
     description:
@@ -1725,7 +1725,7 @@ const catalog: Product[] = [
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
-    categorySlug: "games-gadgets",
+    categorySlug: "fidget-spinners",
     images: [],
     shortDescription: "Steamer-basket fidget with four pop dumplings — a till-point hit.",
     description:
@@ -1868,7 +1868,7 @@ const catalog: Product[] = [
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
-    categorySlug: "games-gadgets",
+    categorySlug: "cheese-squishies",
     images: [],
     shortDescription: "Jumbo yellow cheese brick with holes — the other butter-aisle fidget.",
     description:

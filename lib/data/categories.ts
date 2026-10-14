@@ -552,6 +552,17 @@ export const categories: Category[] = [
     accent: "sky",
     ageLabel: "Ages 6–8",
   },
+  {
+    slug: "others",
+    name: "Others & Mixed Finds",
+    shortName: "Others",
+    description: "Mixed novelty, hybrid gadgets, and one-off finds that do not sit in a single aisle.",
+    longDescription:
+      "A clear catch-all shelf for hybrid toys and mixed novelty — camera cars, gear vehicles, and other finds that shoppers might otherwise miss. Every card still shows a centred product photo and UK price.",
+    image: categoryImage["others"],
+    accent: "mint",
+    ageLabel: "All ages",
+  },
 ];
 
 export function getCategory(slug: string) {
@@ -575,7 +586,7 @@ export const CATEGORY_AGE_GROUPS = [
     label: "Ages 9–12",
     slugs: ["educational-stem", "outdoor-sports", "party-flags", "kids-hats", "novelty-keyrings", "handheld-fans", "monster-buddy-bags", "metal-keyrings", "mini-shoulder-bags", "light-up-glasses"],
   },
-  { id: "13+", label: "Ages 13+", slugs: ["games-gadgets", "articulated-keyrings", "fidget-spinners"] },
+  { id: "13+", label: "Ages 13+", slugs: ["games-gadgets", "articulated-keyrings", "fidget-spinners", "others"] },
 ] as const;
 
 export const AGE_GROUP_RANGES: Record<(typeof CATEGORY_AGE_GROUPS)[number]["id"], AgeRange> = {
