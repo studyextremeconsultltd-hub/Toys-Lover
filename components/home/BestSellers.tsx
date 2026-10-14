@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Check, ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
@@ -10,8 +10,6 @@ import { formatPrice, getBoxDeal, toTitleCase } from "@/lib/utils";
 import { Rating } from "@/components/ui/Rating";
 import { WishButton } from "@/components/product/ProductCardActions";
 import { useCart } from "@/lib/context/CartContext";
-
-const PAGE = 6;
 
 function AddToCartButton({ slug }: { slug: string }) {
   const { addItem } = useCart();
@@ -56,7 +54,7 @@ function BestSellerCard({ product }: { product: Product }) {
             src={product.images[0]}
             alt={product.name}
             fill
-            sizes="(min-width: 1280px) 212px, (min-width: 640px) 22vw, 44vw"
+            sizes="(min-width: 1280px) 212px, (min-width: 640px) 36vw, 70vw"
             quality={82}
             loading="lazy"
             decoding="async"
@@ -98,74 +96,126 @@ function BestSellerCard({ product }: { product: Product }) {
 }
 
 export function BestSellers({ products }: { products: Product[] }) {
-  const [page, setPage] = useState(0);
-  const pages = Math.max(1, Math.ceil(products.length / PAGE));
+  const scroller = useRef<HTMLDivElement>(null);
+  const [paused, setPaused] = useState(false);
+  const [active, setActive] = useState(0);
+  const count = products.length;
 
-  const goTo = (next: number) => {
-    setPage((next + pages) % pages);
-  };
+  const scrollByCard = useCallback((direction: -1 | 1) => {
+    const node = scroller.current;
+    if (!node) return;
+    const card = node.querySelector<HTMLElement>("[data-bestseller-card]");
+    const step = card ? card.offsetWidth + 12 : Math.min(node.clientWidth * 0.75, 280);
+    node.scrollBy({ left: direction * step, behavior: "smooth" });
+  }, []);
 
-  const visible = useMemo(() => {
-    const start = page * PAGE;
-    return products.slice(start, start + PAGE);
-  }, [page, products]);
+  const syncActive = useCallback(() => {
+    const node = scroller.current;
+    if (!node || count === 0) return;
+    const card = node.querySelector<HTMLElement>("[data-bestseller-card]");
+    const step = card ? card.offsetWidth + 12 : 240;
+    const index = Math.round(node.scrollLeft / step);
+    setActive(Math.max(0, Math.min(count - 1, index)));
+  }, [count]);
+
+  useEffect(() => {
+    const node = scroller.current;
+    if (!node) return;
+    node.addEventListener("scroll", syncActive, { passive: true });
+    syncActive();
+    return () => node.removeEventListener("scroll", syncActive);
+  }, [syncActive]);
+
+  useEffect(() => {
+    if (paused || count < 2) return;
+    const reduced =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced) return;
+
+    const id = window.setInterval(() => {
+      const node = scroller.current;
+      if (!node) return;
+      const card = node.querySelector<HTMLElement>("[data-bestseller-card]");
+      const step = card ? card.offsetWidth + 12 : 240;
+      const atEnd = node.scrollLeft + node.clientWidth >= node.scrollWidth - 8;
+      if (atEnd) {
+        node.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        node.scrollBy({ left: step, behavior: "smooth" });
+      }
+    }, 3800);
+
+    return () => window.clearInterval(id);
+  }, [paused, count]);
+
+  if (count === 0) return null;
 
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocusCapture={() => setPaused(true)}
+      onBlurCapture={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+          setPaused(false);
+        }
+      }}
+    >
       <button
         type="button"
         aria-label="Previous bestsellers"
-        onClick={() => goTo(page - 1)}
-        className="absolute -left-3 top-[32%] z-10 hidden h-12 w-12 place-items-center rounded-full bg-white text-coral-500 shadow-card ring-1 ring-cream-200 transition hover:bg-cream-50 hover:text-coral-600 lg:grid"
+        onClick={() => scrollByCard(-1)}
+        className="absolute -left-2 top-[38%] z-10 grid h-11 w-11 place-items-center rounded-full bg-white text-coral-500 shadow-card ring-1 ring-cream-200 transition hover:bg-cream-50 hover:text-coral-600 sm:-left-3 sm:h-12 sm:w-12"
       >
-        <ChevronLeft className="h-6 w-6" />
+        <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
       </button>
-      <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
-        {visible.map((product) => (
-          <BestSellerCard key={`${page}-${product.slug}`} product={product} />
+
+      <div
+        ref={scroller}
+        className="no-scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth px-1 pb-3"
+        role="region"
+        aria-roledescription="carousel"
+        aria-label="Best sellers"
+      >
+        {products.map((product) => (
+          <div
+            key={product.slug}
+            data-bestseller-card
+            className="w-[72%] shrink-0 snap-start sm:w-[44%] md:w-[32%] lg:w-[24%] xl:w-[19%]"
+          >
+            <BestSellerCard product={product} />
+          </div>
         ))}
       </div>
+
       <button
         type="button"
         aria-label="Next bestsellers"
-        onClick={() => goTo(page + 1)}
-        className="absolute -right-3 top-[32%] z-10 hidden h-12 w-12 place-items-center rounded-full bg-white text-coral-500 shadow-card ring-1 ring-cream-200 transition hover:bg-cream-50 hover:text-coral-600 lg:grid"
+        onClick={() => scrollByCard(1)}
+        className="absolute -right-2 top-[38%] z-10 grid h-11 w-11 place-items-center rounded-full bg-white text-coral-500 shadow-card ring-1 ring-cream-200 transition hover:bg-cream-50 hover:text-coral-600 sm:-right-3 sm:h-12 sm:w-12"
       >
-        <ChevronRight className="h-6 w-6" />
+        <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
       </button>
-      <div className="mt-6 flex items-center justify-center gap-3">
-        <button
-          type="button"
-          aria-label="Previous bestsellers"
-          onClick={() => goTo(page - 1)}
-          className="grid h-11 w-11 place-items-center rounded-full bg-white text-coral-500 shadow-soft ring-1 ring-cream-200 transition lg:hidden"
-        >
-          <ChevronLeft className="h-5 w-5" />
-        </button>
-        <div className="flex gap-1.5">
-          {Array.from({ length: pages })
-            .slice(0, 8)
-            .map((_, index) => (
-              <button
-                key={index}
-                type="button"
-                aria-label={`Show bestsellers page ${index + 1}`}
-                aria-current={index === page ? "true" : undefined}
-                onClick={() => goTo(index)}
-                className={`h-2 rounded-full transition-all duration-300 ease-out ${
-                  index === page ? "w-6 bg-coral-500" : "w-2 bg-cream-300"
-                }`}
-              />
-            ))}
-        </div>
-        <button
-          type="button"
-          aria-label="Next bestsellers"
-          onClick={() => goTo(page + 1)}
-          className="grid h-11 w-11 place-items-center rounded-full bg-white text-coral-500 shadow-soft ring-1 ring-cream-200 transition lg:hidden"
-        >
-          <ChevronRight className="h-5 w-5" />
-        </button>
+
+      <div className="mt-5 flex items-center justify-center gap-1.5">
+        {products.map((product, index) => (
+          <button
+            key={product.slug}
+            type="button"
+            aria-label={`Show ${product.name}`}
+            aria-current={index === active ? "true" : undefined}
+            onClick={() => {
+              const node = scroller.current;
+              const card = node?.querySelectorAll<HTMLElement>("[data-bestseller-card]")[index];
+              card?.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
+            }}
+            className={`h-2 rounded-full transition-all duration-300 ease-out ${
+              index === active ? "w-6 bg-coral-500" : "w-2 bg-cream-300 hover:bg-cream-400"
+            }`}
+          />
+        ))}
       </div>
     </div>
   );
