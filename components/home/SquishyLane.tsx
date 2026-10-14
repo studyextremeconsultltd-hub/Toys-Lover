@@ -39,13 +39,13 @@ export function SquishyLane() {
             <div className="relative z-10 flex h-full max-w-xl flex-col justify-center p-5 sm:p-8">
               <p className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-3 py-1 font-display text-[11px] font-black uppercase tracking-wide text-[#E85D8C]">
                 <Sparkles className="h-3.5 w-3.5" />
-                Main range · {total} squishies
+                Squishy aisle · {total} styles
               </p>
               <h2 className="mt-3 font-display text-2xl font-extrabold text-white sm:text-3xl">
-                Squishies first.
+                Squishy favourites.
               </h2>
               <p className="mt-2 max-w-md text-sm text-white/95">
-                Full boxes with piece count and a clear UK box price on every card.
+                One of many aisles — boxed with piece count and a clear UK box price.
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <Button href="/shop/fruit-squishies" size="lg" variant="sun" className="w-fit">

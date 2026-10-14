@@ -11,10 +11,8 @@ import { cn } from "@/lib/utils";
 import { Logo } from "@/components/layout/Logo";
 
 const links = [
-  { href: "/#squishies", label: "Squishies" },
   { href: "/shop", label: "Shop All" },
-  { href: "/shop#all-categories", label: "Categories" },
-  { href: "/shop/fruit-squishies", label: "Fruit Squish" },
+  { href: "/#all-categories", label: "Categories" },
   { href: "/shop/sensory-jars", label: "Sensory Jars" },
   { href: "/about", label: "About Us" },
 ];

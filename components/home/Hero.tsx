@@ -1,8 +1,23 @@
-import Image from "next/image";
 import { ArrowRight, Heart, ShieldCheck, Sparkles } from "lucide-react";
 import { img } from "@/lib/media";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { HeroSlider } from "@/components/home/HeroSlider";
+
+const slides = [
+  {
+    src: img.homeHero,
+    alt: "Toddler playing with wooden blocks, train and stacking rings",
+  },
+  {
+    src: img.heroKids2,
+    alt: "Children laughing and playing with colourful toys together",
+  },
+  {
+    src: img.heroKids3,
+    alt: "Kids enjoying creative playtime with toys at home",
+  },
+];
 
 export function Hero() {
   return (
@@ -13,17 +28,17 @@ export function Hero() {
             Toy Bloom · UK toy shop
           </p>
           <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-ink-900 sm:text-5xl lg:text-[3.4rem]">
-            <span className="text-coral-500">Squishies.</span>
+            <span className="text-coral-500">Toys</span> for every
             <br />
-            Our main squeeze.
+            kind of play.
           </h1>
           <p className="mt-4 max-w-md text-base leading-relaxed text-ink-600 sm:text-lg">
-            Fruit, food and sensory jar squishies lead the shop — boxed with piece count and a fair UK
-            price.
+            Squishies, STEM, plush, role play and more — browse every aisle with clear box prices and
+            happy UK delivery.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <Button href="/#squishies" size="lg">
-              Shop Squishies
+            <Button href="/#all-categories" size="lg">
+              Shop categories
               <ArrowRight className="h-4 w-4" />
             </Button>
             <Button href="/shop" variant="outline" size="lg">
@@ -33,7 +48,7 @@ export function Hero() {
           <ul className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-ink-600">
             <li className="inline-flex items-center gap-1.5">
               <Sparkles className="h-4 w-4 text-coral-500" />
-              Squishies first
+              Full category range
             </li>
             <li className="inline-flex items-center gap-1.5">
               <ShieldCheck className="h-4 w-4 text-teal-600" />
@@ -45,20 +60,7 @@ export function Hero() {
             </li>
           </ul>
         </div>
-        <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
-          <div className="relative aspect-[5/4] overflow-hidden rounded-[2rem] bg-white/40 shadow-soft ring-1 ring-white/60">
-            <Image
-              src={img.homeHero}
-              alt="Toddler playing with wooden blocks, train and stacking rings"
-              fill
-              priority
-              fetchPriority="high"
-              sizes="(min-width: 1024px) 42vw, 90vw"
-              quality={70}
-              className="object-contain object-bottom"
-            />
-          </div>
-        </div>
+        <HeroSlider slides={slides} />
       </Container>
     </section>
   );

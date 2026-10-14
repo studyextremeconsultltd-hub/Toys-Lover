@@ -16,8 +16,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <CategoryTiles title="Shop by Category" eyebrow="All aisles" />
       <SquishyLane />
-      <CategoryTiles title="Shop by Category" eyebrow="Pick an aisle" />
 
       <section id="trending" className="content-visibility-auto bg-cream-50 py-12">
         <Container>
