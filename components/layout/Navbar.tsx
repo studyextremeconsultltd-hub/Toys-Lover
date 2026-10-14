@@ -60,11 +60,11 @@ export function Navbar() {
                 prefetch={false}
                 data-active={active ? "true" : "false"}
                 className={cn(
-                  "nav-link-glow rounded-full px-3.5 py-2 font-display text-base font-extrabold text-ink-800 hover:bg-cream-50 hover:text-coral-500 xl:px-4 xl:text-lg",
-                  active && "bg-cream-100 text-coral-500",
+                  "nav-link-glow rounded-full px-4 py-2.5 font-display text-lg font-extrabold tracking-tight hover:bg-cream-50 xl:px-5 xl:text-xl",
+                  active && "bg-cream-100",
                 )}
               >
-                <span className={cn(active && "heading-glow-coral")}>{link.label}</span>
+                <span className="heading-glow-coral">{link.label}</span>
               </Link>
             );
           })}
@@ -148,7 +148,7 @@ export function Navbar() {
                   key={`${link.href}-${link.label}-m`}
                   href={link.href}
                   prefetch={false}
-                  className="nav-link-glow rounded-2xl px-4 py-3.5 font-display text-lg font-extrabold text-ink-800 hover:bg-cream-100 hover:text-coral-500"
+                  className="nav-link-glow rounded-2xl px-4 py-3.5 font-display text-xl font-extrabold tracking-tight hover:bg-cream-100"
                 >
                   <span className="heading-glow-coral">{link.label}</span>
                 </Link>
