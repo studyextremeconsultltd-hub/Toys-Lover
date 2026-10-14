@@ -303,9 +303,9 @@ export const categories: Category[] = [
     slug: "monster-buddy-bags",
     name: "Monster Buddy Bags",
     shortName: "Buddy Bags",
-    description: "Plush monster-buddy bags in big, large, medium, and small — each with its own photo and UK price.",
+    description: "Monster buddy bags in big, large, medium and small sizes — each listing has its own clear photo and UK box price.",
     longDescription:
-      "The new bag tray: roomy £11.50 big bags, large and standard pouches at £4.50, medium at £3.50, and small first zip bags at £2.50. One centred photo per listing.",
+      "Roomy big bags at £11.50, large pouches at £4.50, medium at £3.50, and small zip bags at £2.50. Every style shows a unique product photo.",
     image: categoryImage["monster-buddy-bags"],
     accent: "coral",
     ageLabel: "Ages 3–12",

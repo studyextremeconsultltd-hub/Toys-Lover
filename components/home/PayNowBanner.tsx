@@ -18,7 +18,7 @@ export function PayNowBanner() {
                 <Zap className="h-3.5 w-3.5 text-sun-300" />
                 Secure deposit · Pay Now
               </p>
-              <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-4xl lg:text-[2.75rem]">
+              <h2 className="heading-glow-light mt-4 font-display text-4xl font-extrabold leading-tight sm:text-5xl lg:text-[3.25rem]">
                 Ready to reserve?
                 <span className="block text-sun-300">Pay your deposit in seconds.</span>
               </h2>

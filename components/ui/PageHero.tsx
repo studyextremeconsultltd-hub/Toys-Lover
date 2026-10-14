@@ -20,8 +20,8 @@ export function PageHero({
           <p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-teal-700">
             {toTitleCase(eyebrow)}
           </p>
-          <h1 className="mt-2 font-display text-3xl font-bold leading-tight text-ink-800 sm:text-5xl">
-            <span className="text-coral-500">{toTitleCase(title)}</span>
+          <h1 className="heading-glow mt-2 font-display text-4xl font-extrabold leading-tight text-ink-900 sm:text-5xl lg:text-6xl">
+            <span className="heading-glow-coral">{toTitleCase(title)}</span>
           </h1>
           {description ? <p className="mt-3 max-w-xl text-base text-ink-600">{description}</p> : null}
         </div>

@@ -156,17 +156,40 @@ a {
   color: #fff;
 }
 
-.heading-glow,
+.heading-glow {
+  text-shadow:
+    0 0 18px rgba(242, 92, 56, 0.35),
+    0 0 36px rgba(242, 92, 56, 0.18),
+    0 2px 0 rgba(255, 255, 255, 0.65);
+  letter-spacing: -0.02em;
+}
+
 .heading-glow-soft {
-  text-shadow: none;
+  text-shadow:
+    0 0 14px rgba(242, 112, 74, 0.28),
+    0 0 28px rgba(14, 165, 164, 0.12);
 }
 
 .heading-glow-light {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  text-shadow:
+    0 0 22px rgba(255, 255, 255, 0.55),
+    0 0 40px rgba(242, 92, 56, 0.45),
+    0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .heading-glow-pill {
+  text-shadow:
+    0 0 12px rgba(242, 92, 56, 0.4),
+    0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.heading-glow-coral {
+  background: linear-gradient(120deg, #f25c38 0%, #ff8a5b 45%, #e11d48 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   text-shadow: none;
+  filter: drop-shadow(0 0 14px rgba(242, 92, 56, 0.45)) drop-shadow(0 0 28px rgba(242, 92, 56, 0.2));
 }
 
 .media-hover {
@@ -390,9 +413,11 @@ a {
   .logo-glow::before,
   .logo-glow-inverted,
   .footer-logo-stage::before,
-  .header-pay-now::before {
+  .header-pay-now::before,
+  .heading-glow-coral {
     transition: none;
     transform: none;
     animation: none;
+    filter: none;
   }
 }

@@ -20,7 +20,9 @@ export function GiftOccasions() {
       <Container>
         <div className="mb-8 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
           <div>
-            <h2 className="font-display text-2xl font-bold text-ink-800 sm:text-3xl">Find the Perfect Gift</h2>
+            <h2 className="heading-glow font-display text-3xl font-extrabold text-ink-900 sm:text-4xl">
+              <span className="heading-glow-coral">Find the Perfect Gift</span>
+            </h2>
             <p className="mt-1 text-sm text-ink-500">Curated picks for every occasion</p>
           </div>
           <Button href="/blog/gift-guide-ages-three-to-five" variant="outline" size="sm">

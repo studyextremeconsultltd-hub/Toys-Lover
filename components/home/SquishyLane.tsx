@@ -41,7 +41,7 @@ export function SquishyLane() {
                 <Sparkles className="h-3.5 w-3.5" />
                 Squishy aisle · {total} styles
               </p>
-              <h2 className="mt-3 font-display text-2xl font-extrabold text-white sm:text-3xl">
+              <h2 className="heading-glow-light mt-3 font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl">
                 Squishy favourites.
               </h2>
               <p className="mt-2 max-w-md text-sm text-white/95">

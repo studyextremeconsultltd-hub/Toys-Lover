@@ -18,8 +18,8 @@ export function PageHeader({
             {toTitleCase(eyebrow)}
           </p>
         ) : null}
-        <h1 className="heading-glow max-w-3xl font-display text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
-          {toTitleCase(title)}
+        <h1 className="max-w-3xl font-display text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+          <span className="heading-glow-coral">{toTitleCase(title)}</span>
         </h1>
         {description ? (
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-500">{description}</p>

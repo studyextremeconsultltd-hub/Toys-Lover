@@ -27,8 +27,8 @@ export function Hero() {
           <p className="mb-3 font-display text-xs font-black uppercase tracking-[0.18em] text-coral-500">
             Toy Bloom · UK toy shop
           </p>
-          <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-ink-900 sm:text-5xl lg:text-[3.4rem]">
-            <span className="text-coral-500">Toys</span> for every
+          <h1 className="heading-glow font-display text-5xl font-extrabold leading-[1.05] tracking-tight text-ink-900 sm:text-6xl lg:text-[4rem]">
+            <span className="heading-glow-coral">Toys</span> for every
             <br />
             kind of play.
           </h1>
