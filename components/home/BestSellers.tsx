@@ -56,11 +56,11 @@ function BestSellerCard({ product }: { product: Product }) {
             src={product.images[0]}
             alt={product.name}
             fill
-            sizes="(min-width: 1280px) 240px, (min-width: 640px) 28vw, 46vw"
-            quality={88}
+            sizes="(min-width: 1280px) 212px, (min-width: 640px) 22vw, 44vw"
+            quality={82}
             loading="lazy"
             decoding="async"
-            className="object-contain object-center bg-white p-2.5 bestseller-photo product-shot"
+            className="object-contain object-center bg-white p-2 bestseller-photo product-shot"
           />
         </Link>
         {badge ? (
@@ -120,7 +120,7 @@ export function BestSellers({ products }: { products: Product[] }) {
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-3.5 lg:grid-cols-4 xl:grid-cols-5">
+      <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
         {visible.map((product) => (
           <BestSellerCard key={`${page}-${product.slug}`} product={product} />
         ))}

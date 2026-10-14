@@ -22,11 +22,11 @@ export function ProductCard({ product }: { product: Product }) {
             src={product.images[0]}
             alt={product.name}
             fill
-            sizes="(min-width: 1280px) 240px, (min-width: 768px) 28vw, 46vw"
-            quality={88}
+            sizes="(min-width: 1280px) 212px, (min-width: 768px) 22vw, 44vw"
+            quality={82}
             loading="lazy"
             decoding="async"
-            className="object-contain object-center bg-white p-2.5 product-shot"
+            className="object-contain object-center bg-white p-2 product-shot"
           />
         </Link>
         <div className="absolute left-2 top-2 z-10 flex flex-col gap-1">

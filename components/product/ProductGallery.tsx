@@ -11,8 +11,8 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
         alt={name}
         fill
         priority
-        sizes="(min-width: 1024px) 480px, 92vw"
-        quality={92}
+        sizes="(min-width: 1024px) 420px, 92vw"
+        quality={88}
         className="object-contain object-center p-4 sm:p-5"
       />
     </div>

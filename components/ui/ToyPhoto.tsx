@@ -6,7 +6,7 @@ export function ToyPhoto({
   src,
   alt,
   sizes,
-  quality = 90,
+  quality = 82,
   priority,
   className,
   fit,

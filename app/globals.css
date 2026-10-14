@@ -201,7 +201,7 @@ a {
 
 .group:hover .product-shot,
 .group:focus-within .product-shot {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .media-hover-frame img {
