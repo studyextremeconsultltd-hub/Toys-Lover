@@ -40,11 +40,11 @@ export function AisleCard({
           alt={category.name}
           fill
           priority={priority}
-          sizes="(min-width: 1280px) 18vw, (min-width: 768px) 28vw, 45vw"
-          quality={85}
+          sizes="(min-width: 1280px) 240px, (min-width: 768px) 28vw, 46vw"
+          quality={88}
           loading={priority ? undefined : "lazy"}
           decoding="async"
-          className="object-contain object-center bg-white p-2 product-shot"
+          className="object-contain object-center bg-white p-2.5 product-shot"
         />
       </div>
       <div className="flex flex-1 flex-col p-3 sm:p-3.5">

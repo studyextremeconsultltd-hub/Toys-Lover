@@ -19,11 +19,11 @@ export function ProductTile({ product }: { product: Product }) {
             src={product.images[0]}
             alt={product.name}
             fill
-            sizes="(min-width: 1280px) 18vw, (min-width: 640px) 28vw, 50vw"
-            quality={85}
+            sizes="(min-width: 1280px) 220px, (min-width: 640px) 26vw, 46vw"
+            quality={88}
             loading="lazy"
             decoding="async"
-            className="object-contain object-center bg-white p-2 product-shot"
+            className="object-contain object-center bg-white p-2.5 product-shot"
           />
         </Link>
         <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">
