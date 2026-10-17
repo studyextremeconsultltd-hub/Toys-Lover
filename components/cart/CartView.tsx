@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { useCart } from "@/lib/context/CartContext";
 import { cartSubtotal, resolveCartLines } from "@/lib/cart-lines";
-import { formatPrice, toTitleCase } from "@/lib/utils";
+import { formatPrice, isPriceOnRequest, toTitleCase } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 import { ToyPhoto } from "@/components/ui/ToyPhoto";
 
@@ -51,7 +51,7 @@ export function CartView() {
                 {toTitleCase(product.name)}
               </Link>
               <p className="text-sm text-ink-400">{product.brand}</p>
-              <p className="mt-1 font-semibold">{formatPrice(product.price)}</p>
+              <p className="mt-1 font-semibold">{isPriceOnRequest(product) ? "Price on request" : formatPrice(product.price)}</p>
               <div className="mt-3 flex flex-wrap items-center gap-3">
                 <div className="inline-flex items-center rounded-full border border-ink-200">
                   <button

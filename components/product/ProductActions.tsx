@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Heart, Minus, Plus } from "lucide-react";
 import type { Product } from "@/lib/types";
-import { getBoxDeal } from "@/lib/utils";
+import { getBoxDeal, isPriceOnRequest } from "@/lib/utils";
 import { useCart } from "@/lib/context/CartContext";
 import { useWishlist } from "@/lib/context/WishlistContext";
 import { Button } from "@/components/ui/Button";
@@ -16,7 +16,27 @@ export function ProductActions({ product }: { product: Product }) {
   const router = useRouter();
   const wished = has(product.slug);
   const deal = getBoxDeal(product);
-  const unitLabel = deal.soldAsBox ? "boxes" : "items";
+  const ask = isPriceOnRequest(product);
+  const unitLabel = deal.soldAsBox && !ask && product.brand !== "Toy Bloom Wholesale" ? "boxes" : "items";
+  const wholesale = product.brand === "Toy Bloom Wholesale";
+
+  if (ask) {
+    return (
+      <div className="space-y-4">
+        <Button href="/contact/" size="lg" className="w-full">
+          Ask for price
+        </Button>
+        <button
+          type="button"
+          onClick={() => toggle(product.slug)}
+          className="inline-flex items-center gap-2 rounded-full border border-ink-200 px-4 py-2.5 text-sm font-semibold hover:border-coral-300"
+        >
+          <Heart className={wished ? "h-4 w-4 fill-coral-500 text-coral-500" : "h-4 w-4"} />
+          {wished ? "Saved" : "Wishlist"}
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-4">
@@ -41,7 +61,7 @@ export function ProductActions({ product }: { product: Product }) {
           </button>
         </div>
         <span className="text-sm font-semibold text-ink-500">
-          {qty} {deal.soldAsBox ? (qty === 1 ? "box" : "boxes") : qty === 1 ? "item" : "items"}
+          {qty} {wholesale ? (qty === 1 ? "piece" : "pieces") : deal.soldAsBox ? (qty === 1 ? "box" : "boxes") : qty === 1 ? "item" : "items"}
         </span>
         <button
           type="button"
@@ -54,7 +74,7 @@ export function ProductActions({ product }: { product: Product }) {
       </div>
       <div className="flex flex-col gap-3 sm:flex-row">
         <Button type="button" size="lg" className="flex-1" onClick={() => addItem(product.slug, qty)}>
-          {deal.soldAsBox ? "Add box to cart" : "Add to Cart"}
+          {wholesale ? "Add to Cart" : deal.soldAsBox ? "Add box to cart" : "Add to Cart"}
         </Button>
         <Button
           type="button"
@@ -66,7 +86,7 @@ export function ProductActions({ product }: { product: Product }) {
             router.push("/pay");
           }}
         >
-          {deal.soldAsBox ? "Buy this box" : "Buy Now"}
+          {wholesale ? "Buy Now" : deal.soldAsBox ? "Buy this box" : "Buy Now"}
         </Button>
       </div>
     </div>

@@ -11,5 +11,8 @@ export function resolveCartLines(items: CartItem[]) {
 }
 
 export function cartSubtotal(lines: { product: Product; quantity: number }[]) {
-  return lines.reduce((sum, line) => sum + line.product.price * line.quantity, 0);
+  return lines.reduce(
+    (sum, line) => sum + (line.product.priceTBC ? 0 : line.product.price * line.quantity),
+    0,
+  );
 }

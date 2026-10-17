@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/lib/types";
-import { formatPrice, getBoxDeal, toTitleCase } from "@/lib/utils";
+import { listingPrice, toTitleCase } from "@/lib/utils";
 import { Rating } from "@/components/ui/Rating";
 import { WishButton } from "@/components/product/ProductCardActions";
 
 export function ProductTile({ product }: { product: Product }) {
-  const deal = getBoxDeal(product);
+  const price = listingPrice(product);
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-[1.5rem] bg-white shadow-soft ring-1 ring-cream-200 transition duration-300 hover:-translate-y-0.5 hover:shadow-card">
@@ -27,7 +27,7 @@ export function ProductTile({ product }: { product: Product }) {
           />
         </Link>
         <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">
-          {deal.pieces} pcs · {formatPrice(deal.boxPrice)}
+          {price.badge}
         </span>
         <WishButton slug={product.slug} />
       </div>
@@ -41,8 +41,8 @@ export function ProductTile({ product }: { product: Product }) {
           <Rating value={product.rating} />
         </div>
         <div className="mt-auto flex items-end justify-between gap-2 border-t border-cream-200 pt-2">
-          <span className="text-[11px] font-semibold text-ink-500">Box price</span>
-          <span className="font-display text-base font-bold text-coral-500">{formatPrice(deal.boxPrice)}</span>
+          <span className="text-[11px] font-semibold text-ink-500">{price.label}</span>
+          <span className="font-display text-base font-bold text-coral-500">{price.text}</span>
         </div>
       </div>
     </article>

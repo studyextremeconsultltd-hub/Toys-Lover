@@ -6,14 +6,25 @@ import Link from "next/link";
 import { Check, ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
 import type { Product } from "@/lib/types";
 import { getCategory } from "@/lib/data/categories";
-import { formatPrice, getBoxDeal, toTitleCase } from "@/lib/utils";
+import { listingPrice, toTitleCase } from "@/lib/utils";
 import { Rating } from "@/components/ui/Rating";
 import { WishButton } from "@/components/product/ProductCardActions";
 import { useCart } from "@/lib/context/CartContext";
 
-function AddToCartButton({ slug }: { slug: string }) {
+function AddToCartButton({ slug, ask = false }: { slug: string; ask?: boolean }) {
   const { addItem } = useCart();
   const [added, setAdded] = useState(false);
+
+  if (ask) {
+    return (
+      <Link
+        href="/contact/"
+        className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral-500 py-2.5 font-display text-sm font-bold text-white shadow-soft hover:bg-coral-600"
+      >
+        Ask for price
+      </Link>
+    );
+  }
 
   return (
     <button
@@ -35,7 +46,7 @@ function AddToCartButton({ slug }: { slug: string }) {
 
 function BestSellerCard({ product, index }: { product: Product; index: number }) {
   const category = getCategory(product.categorySlug);
-  const deal = getBoxDeal(product);
+  const price = listingPrice(product);
   const badge = product.isNew ? "New" : product.isBestSeller ? "Bestseller" : product.compareAtPrice ? "Sale" : null;
   const badgeClass = product.isNew
     ? "bg-teal-600 text-white"
@@ -73,7 +84,7 @@ function BestSellerCard({ product, index }: { product: Product; index: number })
           </span>
         ) : null}
         <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">
-          {deal.pieces} pcs · {formatPrice(deal.boxPrice)}
+          {price.badge}
         </span>
         <WishButton slug={product.slug} />
       </div>
@@ -90,10 +101,10 @@ function BestSellerCard({ product, index }: { product: Product; index: number })
           <Rating value={product.rating} />
         </div>
         <div className="mt-auto flex items-end justify-between gap-2 border-t border-cream-200 pt-2">
-          <span className="text-[11px] font-semibold text-ink-500">Box price</span>
-          <span className="font-display text-base font-bold text-coral-500">{formatPrice(deal.boxPrice)}</span>
+          <span className="text-[11px] font-semibold text-ink-500">{price.label}</span>
+          <span className="font-display text-base font-bold text-coral-500">{price.text}</span>
         </div>
-        <AddToCartButton slug={product.slug} />
+        <AddToCartButton slug={product.slug} ask={price.ask} />
       </div>
     </article>
   );

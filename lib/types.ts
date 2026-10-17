@@ -32,6 +32,8 @@ export interface Product {
   isBestSeller?: boolean;
   /** Pieces / units included in the retail box or carton pack. */
   piecesPerBox?: number;
+  /** Wholesale line with no confirmed unit price. Do not render £0.00. */
+  priceTBC?: boolean;
   stock: number;
 }
 

@@ -2,14 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/lib/types";
 import { getCategory } from "@/lib/data/categories";
-import { formatPrice, getBoxDeal, toTitleCase } from "@/lib/utils";
+import { listingPrice, toTitleCase } from "@/lib/utils";
 import { Badge } from "@/components/ui/Badge";
 import { Rating } from "@/components/ui/Rating";
 import { AddButton, WishButton } from "@/components/product/ProductCardActions";
 
 export function ProductCard({ product }: { product: Product }) {
   const category = getCategory(product.categorySlug);
-  const deal = getBoxDeal(product);
+  const price = listingPrice(product);
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-[1.4rem] bg-white shadow-soft ring-1 ring-cream-200">
@@ -33,7 +33,7 @@ export function ProductCard({ product }: { product: Product }) {
           {product.isNew ? <Badge>New</Badge> : null}
         </div>
         <span className="absolute bottom-2 left-2 z-10 rounded-md bg-ink-900/90 px-2 py-1 font-display text-[10px] font-black uppercase tracking-wide text-white">
-          {deal.pieces} pcs · {formatPrice(deal.boxPrice)}
+          {price.badge}
         </span>
         <WishButton slug={product.slug} />
       </div>
@@ -48,10 +48,10 @@ export function ProductCard({ product }: { product: Product }) {
         </h3>
         <Rating value={product.rating} count={product.reviewCount} />
         <div className="mt-auto flex items-end justify-between gap-2 border-t border-cream-200 pt-2">
-          <span className="text-[11px] font-bold uppercase tracking-wide text-ink-400">Box price</span>
-          <span className="font-display text-xl font-bold text-coral-500">{formatPrice(deal.boxPrice)}</span>
+          <span className="text-[11px] font-bold uppercase tracking-wide text-ink-400">{price.label}</span>
+          <span className="font-display text-xl font-bold text-coral-500">{price.text}</span>
         </div>
-        <AddButton slug={product.slug} label={deal.soldAsBox ? "Add box" : "Add"} />
+        <AddButton slug={product.slug} ask={price.ask} label={price.ask ? "Ask for price" : price.label === "Box price" && product.piecesPerBox && product.piecesPerBox > 1 ? "Add box" : "Add"} />
       </div>
     </article>
   );

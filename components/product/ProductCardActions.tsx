@@ -22,8 +22,16 @@ export function WishButton({ slug }: { slug: string }) {
   );
 }
 
-export function AddButton({ slug, label = "Add" }: { slug: string; label?: string }) {
+export function AddButton({ slug, label = "Add", ask = false }: { slug: string; label?: string; ask?: boolean }) {
   const { addItem } = useCart();
+
+  if (ask) {
+    return (
+      <Button href="/contact/" size="sm" className="w-full">
+        {label}
+      </Button>
+    );
+  }
 
   return (
     <Button type="button" size="sm" className="w-full" onClick={() => addItem(slug)}>

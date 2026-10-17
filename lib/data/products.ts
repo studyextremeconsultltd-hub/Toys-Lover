@@ -6,6 +6,7 @@ import { extraStock } from "@/lib/data/extra-stock";
 import { chinaStock } from "@/lib/data/china-stock";
 import { innovativeStock } from "@/lib/data/innovative-stock";
 import { octoberNewStock } from "@/lib/data/october-new-stock";
+import { telegramStock } from "@/lib/data/telegram-stock";
 import { productGallery, shop } from "@/lib/media";
 
 const catalog: Product[] = [
@@ -1885,12 +1886,19 @@ const catalog: Product[] = [
   ...chinaStock,
   ...innovativeStock,
   ...octoberNewStock,
+  ...telegramStock,
 ];
+
+const catalogSlugs = catalog.map((product) => product.slug);
+const duplicateSlugs = catalogSlugs.filter((slug, index) => catalogSlugs.indexOf(slug) !== index);
+if (duplicateSlugs.length > 0) {
+  throw new Error(`Duplicate product slugs: ${Array.from(new Set(duplicateSlugs)).join(", ")}`);
+}
 
 export const products: Product[] = catalog.map((product) => ({
   ...product,
   piecesPerBox: product.piecesPerBox && product.piecesPerBox > 0 ? product.piecesPerBox : 1,
-  images: productGallery(product.slug, product.categorySlug),
+  images: productGallery(product.slug, product.categorySlug, product.images),
 }));
 
 export function getProduct(slug: string) {

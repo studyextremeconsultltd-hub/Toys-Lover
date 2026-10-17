@@ -155,17 +155,24 @@ export function productShot(slug: string) {
   return `/images/products/${slug}.jpg`;
 }
 
-export function productGallery(slug: string, _categorySlug?: string) {
+/** Telegram imports pass their own photo list. Every other product stays on /images/products/<slug>.jpg. */
+export function productGallery(slug: string, _categorySlug?: string, images?: string[]) {
+  const telegram = images?.filter((src) => src.startsWith("/images/products/telegram/"));
+  if (telegram && telegram.length > 0) return telegram;
   return [productShot(slug)];
 }
 
+export function isTelegramPhoto(src?: string | null) {
+  return Boolean(src && /\/images\/products\/telegram\//.test(src));
+}
+
 export function isStudioPhoto(src?: string | null) {
-  return Boolean(src && /\/images\/products\//.test(src));
+  return Boolean(src && (/\/images\/products\//.test(src) || isTelegramPhoto(src)));
 }
 
 /** Isolated catalog stills that must stay fully inside the tile. */
 export function isFramedPhoto(src?: string | null) {
-  return Boolean(src && /\/images\/(products|categories)\//.test(src));
+  return Boolean(src && (/\/images\/(products|categories)\//.test(src) || isTelegramPhoto(src)));
 }
 
 export function isShopPhoto(src?: string | null) {

@@ -17,7 +17,7 @@ export function cn(...classes: Array<string | false | null | undefined>) {
   return classes.filter(Boolean).join(" ");
 }
 
-const SMALL_CAPS = /^(UK|USA|STEM|FAQ|PCI|GB|AM|PM)$/i;
+const SMALL_CAPS = /^(UK|USA|STEM|FAQ|PCI|GB|AM|PM|LED|USB|FIFA|BMW|RC|XXL|XL|DIY|TV|HD|3D|4D)$/i;
 
 export function toTitleCase(value: string) {
   return value.replace(/[A-Za-zÀ-ÿ’']+/g, (word) => {
@@ -138,6 +138,50 @@ export function getBoxDeal(product: {
     perPiece,
     soldAsBox: true,
     singlesCompare: singlesTotal,
+  };
+}
+
+export function isPriceOnRequest(product: { priceTBC?: boolean }) {
+  return Boolean(product.priceTBC);
+}
+
+/** Telegram wholesale lines are priced per unit. Minimum order lives on piecesPerBox. */
+export function isUnitWholesale(product: { brand: string }) {
+  return product.brand === "Toy Bloom Wholesale";
+}
+
+export function listingPrice(product: {
+  price: number;
+  priceTBC?: boolean;
+  brand: string;
+  piecesPerBox?: number;
+  features?: string[];
+  compareAtPrice?: number;
+  slug?: string;
+}) {
+  const pieces = product.piecesPerBox && product.piecesPerBox > 0 ? product.piecesPerBox : 1;
+  if (isPriceOnRequest(product)) {
+    return {
+      ask: true as const,
+      badge: pieces > 1 ? `Min ${pieces} pcs` : "Ask for price",
+      label: "Price",
+      text: "On request",
+    };
+  }
+  if (isUnitWholesale(product)) {
+    return {
+      ask: false as const,
+      badge: pieces > 1 ? `Min ${pieces} pcs` : "Each",
+      label: "Each",
+      text: formatPrice(product.price),
+    };
+  }
+  const deal = getBoxDeal(product);
+  return {
+    ask: false as const,
+    badge: `${deal.pieces} pcs · ${formatPrice(deal.boxPrice)}`,
+    label: "Box price",
+    text: formatPrice(deal.boxPrice),
   };
 }
 

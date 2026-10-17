@@ -8,7 +8,7 @@ import {
 } from "@/lib/data/products";
 import { getCategory } from "@/lib/data/categories";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
-import { formatPrice, getBoxDeal, toTitleCase } from "@/lib/utils";
+import { formatPrice, getBoxDeal, isPriceOnRequest, isUnitWholesale, listingPrice, toTitleCase } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Rating } from "@/components/ui/Rating";
@@ -59,6 +59,9 @@ export default function ProductPage({ params }: Props) {
   const category = getCategory(product.categorySlug);
   const related = getRelatedProducts(product);
   const deal = getBoxDeal(product);
+  const price = listingPrice(product);
+  const wholesale = isUnitWholesale(product);
+  const ask = isPriceOnRequest(product);
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -77,7 +80,7 @@ export default function ProductPage({ params }: Props) {
       "@type": "Offer",
       url: `${SITE_URL}/product/${product.slug}/`,
       priceCurrency: "GBP",
-      price: product.price.toFixed(2),
+      ...(ask ? {} : { price: product.price.toFixed(2) }),
       availability: "https://schema.org/InStock",
       seller: { "@type": "Organization", name: SITE_NAME },
     },
@@ -106,17 +109,21 @@ export default function ProductPage({ params }: Props) {
                   <Badge tone="sky">{category.shortName}</Badge>
                 </Link>
               ) : null}
-              <Badge tone="mint">{deal.pieces} pcs</Badge>
-              <Badge tone="coral">Box {formatPrice(deal.boxPrice)}</Badge>
+              <Badge tone="mint">{wholesale || ask ? price.badge : `${deal.pieces} pcs`}</Badge>
+              {ask ? <Badge tone="coral">Price on request</Badge> : <Badge tone="coral">{wholesale ? price.text : `Box ${formatPrice(deal.boxPrice)}`}</Badge>}
               {product.isNew ? <Badge>New</Badge> : null}
             </div>
             <div className="mt-5 rounded-2xl border border-teal-200 bg-teal-50/80 p-5">
-              <p className="text-xs font-bold uppercase tracking-wide text-teal-700">Box price</p>
-              <p className="mt-1 font-display text-4xl font-extrabold text-coral-500">
-                {formatPrice(deal.boxPrice)}
-              </p>
+              <p className="text-xs font-bold uppercase tracking-wide text-teal-700">{price.label}</p>
+              <p className="mt-1 font-display text-4xl font-extrabold text-coral-500">{ask ? "Price on request" : price.text}</p>
               <p className="mt-1 text-sm font-semibold text-ink-600">
-                {deal.pieces} {deal.pieces === 1 ? "pc" : "pcs"} in this box
+                {ask
+                  ? "Ask us for the current wholesale price."
+                  : wholesale
+                    ? deal.pieces > 1
+                      ? `Minimum order ${deal.pieces} pcs`
+                      : "Priced per piece"
+                    : `${deal.pieces} ${deal.pieces === 1 ? "pc" : "pcs"} in this box`}
               </p>
             </div>
             <ProductTabs product={product} />

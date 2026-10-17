@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { Lock } from "lucide-react";
 import { useCart } from "@/lib/context/CartContext";
 import { cartSubtotal, resolveCartLines } from "@/lib/cart-lines";
-import { formatPrice, toTitleCase } from "@/lib/utils";
+import { formatPrice, isPriceOnRequest, toTitleCase } from "@/lib/utils";
 import { CONTACT } from "@/lib/constants";
 import { Input, Select, Textarea } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
@@ -102,7 +102,7 @@ export function CheckoutForm({ method = "stripe" }: { method?: string }) {
               <span>
                 {toTitleCase(product.name)} × {quantity}
               </span>
-              <span>{formatPrice(product.price * quantity)}</span>
+              <span>{isPriceOnRequest(product) ? "Price on request" : formatPrice(product.price * quantity)}</span>
             </li>
           ))}
         </ul>

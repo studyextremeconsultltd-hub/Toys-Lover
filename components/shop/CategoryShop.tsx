@@ -28,6 +28,7 @@ export function CategoryShop({
       if (brand !== "all" && product.brand !== brand) return false;
       if (theme !== "all" && product.theme !== theme) return false;
       if (price !== "all") {
+        if (product.priceTBC) return false;
         const range = PRICE_RANGES.find((item) => item.id === price);
         if (!range) return false;
         if (product.price < range.min || product.price >= range.max) return false;
@@ -36,8 +37,12 @@ export function CategoryShop({
     });
 
     next.sort((a, b) => {
-      if (sort === "price-asc") return a.price - b.price;
-      if (sort === "price-desc") return b.price - a.price;
+      if (sort === "price-asc") {
+        return (a.priceTBC ? Number.POSITIVE_INFINITY : a.price) - (b.priceTBC ? Number.POSITIVE_INFINITY : b.price);
+      }
+      if (sort === "price-desc") {
+        return (b.priceTBC ? Number.NEGATIVE_INFINITY : b.price) - (a.priceTBC ? Number.NEGATIVE_INFINITY : a.price);
+      }
       if (sort === "newest") return Number(b.isNew) - Number(a.isNew);
       return b.reviewCount - a.reviewCount;
     });
