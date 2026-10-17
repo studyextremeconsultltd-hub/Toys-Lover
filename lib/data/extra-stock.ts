@@ -17,6 +17,8 @@ export const extraStock: Product[] = [
     materials: "PU foam, crunchy beads.",
     isNew: true,
     isBestSeller: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 14,
   },
   {
@@ -34,6 +36,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam, crunchy beads.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 20,
   },
   {
@@ -51,6 +55,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam, crunchy beads.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 26,
   },
   {
@@ -68,6 +74,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam, crunchy beads.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 32,
   },
   {
@@ -85,6 +93,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam, crunchy beads.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 38,
   },
   {
@@ -102,6 +112,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam, crunchy beads.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 44,
   },
   {
@@ -120,6 +132,8 @@ export const extraStock: Product[] = [
     materials: "PU foam, crunchy beads.",
     isNew: true,
     isBestSeller: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 50,
   },
   {
@@ -137,6 +151,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam, crunchy beads.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 18,
   },
   {
@@ -154,6 +170,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam, crunchy beads.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 24,
   },
   {
@@ -171,6 +189,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Slow-rise foam, mixed Halloween shapes.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 30,
   },
   {
@@ -188,6 +208,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Slow-rise foam, mixed Halloween shapes.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 36,
   },
   {
@@ -205,6 +227,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Slow-rise foam, mixed Halloween shapes.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 42,
   },
   {
@@ -223,6 +247,8 @@ export const extraStock: Product[] = [
     materials: "Slow-rise foam, printed wrapper.",
     isNew: true,
     isBestSeller: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {
@@ -240,6 +266,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Slow-rise foam, printed wrapper.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 16,
   },
   {
@@ -257,6 +285,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Slow-rise foam, printed wrapper.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 22,
   },
   {
@@ -274,6 +304,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Slow-rise foam, printed wrapper.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 28,
   },
   {
@@ -308,6 +340,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Slow-rise PU foam.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 40,
   },
   {
@@ -326,6 +360,8 @@ export const extraStock: Product[] = [
     materials: "Slow-rise PU foam.",
     isNew: true,
     isBestSeller: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 46,
   },
   {
@@ -343,6 +379,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Slow-rise PU foam.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 14,
   },
   {
@@ -411,6 +449,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Slow-rise foam, printed wrapper.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 38,
   },
   {
@@ -429,6 +469,8 @@ export const extraStock: Product[] = [
     materials: "PU foam cheese brick.",
     isNew: true,
     isBestSeller: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 44,
   },
   {
@@ -446,6 +488,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam cheese brick.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 50,
   },
   {
@@ -463,6 +507,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam cheese brick.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 24,
   },
   {
@@ -480,6 +526,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam cheese brick.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 30,
   },
   {
@@ -497,6 +545,8 @@ export const extraStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "PU foam cheese brick.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 36,
   },
   {

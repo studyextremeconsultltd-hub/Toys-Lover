@@ -19,6 +19,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 96,
+    moqLabel: "Min order: 96 pcs (1 box)",
     stock: 96,
   },
   {
@@ -39,6 +40,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 54,
+    moqLabel: "Min order: 54 pcs (1 box)",
     stock: 54,
   },
   {
@@ -57,6 +59,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 72,
+    moqLabel: "Min order: 72 pcs (1 box)",
     stock: 72,
   },
   {
@@ -75,6 +78,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 96,
+    moqLabel: "Min order: 96 pcs (1 box)",
     stock: 96,
   },
   {
@@ -95,6 +99,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 72,
+    moqLabel: "Min order: 72 pcs (1 box)",
     stock: 72,
   },
   {
@@ -113,6 +118,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -133,6 +139,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 96,
+    moqLabel: "Min order: 96 pcs (1 box)",
     stock: 96,
   },
   {
@@ -151,6 +158,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -171,6 +179,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 48,
+    moqLabel: "Min order: 48 pcs (1 box)",
     stock: 48,
   },
   {
@@ -191,6 +200,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 36,
+    moqLabel: "Min order: 36 pcs (1 box)",
     stock: 36,
   },
   {
@@ -209,6 +219,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 48,
+    moqLabel: "Min order: 48 pcs (1 box)",
     stock: 48,
   },
   {
@@ -227,6 +238,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 32,
+    moqLabel: "Min order: 32 pcs (1 box)",
     stock: 32,
   },
   {
@@ -247,6 +259,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 48,
+    moqLabel: "Min order: 48 pcs (1 box)",
     stock: 48,
   },
   {
@@ -265,6 +278,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -285,6 +299,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -303,6 +318,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -321,6 +337,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -339,6 +356,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -359,6 +377,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -377,6 +396,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -397,6 +417,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 100,
+    moqLabel: "Min order: 100 pcs (1 box)",
     stock: 96,
   },
   {
@@ -415,6 +436,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -435,6 +457,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -455,6 +478,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 205,
+    moqLabel: "Min order: 205 pcs (1 box)",
     stock: 96,
   },
   {
@@ -473,6 +497,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 36,
+    moqLabel: "Min order: 36 pcs (1 box)",
     stock: 36,
   },
   {
@@ -493,6 +518,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -513,6 +539,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 72,
+    moqLabel: "Min order: 72 pcs (1 box)",
     stock: 72,
   },
   {
@@ -531,6 +558,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -551,6 +579,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -569,6 +598,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -587,6 +617,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -607,6 +638,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 48,
+    moqLabel: "Min order: 48 pcs (1 box)",
     stock: 48,
   },
   {
@@ -627,6 +659,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 36,
+    moqLabel: "Min order: 36 pcs (1 box)",
     stock: 36,
   },
   {
@@ -645,6 +678,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 36,
+    moqLabel: "Min order: 36 pcs (1 box)",
     stock: 36,
   },
   {
@@ -663,6 +697,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 36,
+    moqLabel: "Min order: 36 pcs (1 box)",
     stock: 36,
   },
   {
@@ -683,6 +718,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 36,
+    moqLabel: "Min order: 36 pcs (1 box)",
     stock: 36,
   },
   {
@@ -701,6 +737,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 36,
+    moqLabel: "Min order: 36 pcs (1 box)",
     stock: 36,
   },
   {
@@ -721,6 +758,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 72,
+    moqLabel: "Min order: 72 pcs (1 box)",
     stock: 72,
   },
   {
@@ -739,6 +777,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 84,
+    moqLabel: "Min order: 84 pcs (1 box)",
     stock: 84,
   },
   {
@@ -759,6 +798,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 160,
+    moqLabel: "Min order: 160 pcs (1 box)",
     stock: 96,
   },
   {
@@ -779,6 +819,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 36,
+    moqLabel: "Min order: 36 pcs (1 box)",
     stock: 36,
   },
   {
@@ -797,6 +838,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -815,6 +857,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 500,
+    moqLabel: "Min order: 500 pcs (1 box)",
     stock: 96,
   },
   {
@@ -833,6 +876,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 500,
+    moqLabel: "Min order: 500 pcs (1 box)",
     stock: 96,
   },
   {
@@ -851,6 +895,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 300,
+    moqLabel: "Min order: 300 pcs (1 box)",
     stock: 96,
   },
   {
@@ -887,6 +932,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 300,
+    moqLabel: "Min order: 300 pcs (1 box)",
     stock: 96,
   },
   {
@@ -905,6 +951,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 500,
+    moqLabel: "Min order: 500 pcs (1 box)",
     stock: 96,
   },
   {
@@ -923,6 +970,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 500,
+    moqLabel: "Min order: 500 pcs (1 box)",
     stock: 96,
   },
   {
@@ -941,6 +989,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 300,
+    moqLabel: "Min order: 300 pcs (1 box)",
     stock: 96,
   },
   {
@@ -959,6 +1008,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 300,
+    moqLabel: "Min order: 300 pcs (1 box)",
     stock: 96,
   },
   {
@@ -979,6 +1029,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -999,6 +1050,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 48,
+    moqLabel: "Min order: 48 pcs (1 box)",
     stock: 48,
   },
   {
@@ -1017,6 +1069,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 288,
+    moqLabel: "Min order: 288 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1035,6 +1088,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 480,
+    moqLabel: "Min order: 480 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1053,6 +1107,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 384,
+    moqLabel: "Min order: 384 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1071,6 +1126,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 288,
+    moqLabel: "Min order: 288 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1089,6 +1145,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 288,
+    moqLabel: "Min order: 288 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1107,6 +1164,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 288,
+    moqLabel: "Min order: 288 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1293,6 +1351,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 288,
+    moqLabel: "Min order: 288 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1313,6 +1372,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1331,6 +1391,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 72,
+    moqLabel: "Min order: 72 pcs (1 box)",
     stock: 72,
   },
   {
@@ -1349,6 +1410,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 288,
+    moqLabel: "Min order: 288 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1367,6 +1429,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 288,
+    moqLabel: "Min order: 288 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1385,6 +1448,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 288,
+    moqLabel: "Min order: 288 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1405,6 +1469,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1423,6 +1488,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1433,7 +1499,7 @@ export const chinaStock: Product[] = [
     ageRange: "3-5 years",
     brand: "Toy Bloom Import",
     theme: "Plush",
-    categorySlug: "dolls-plush",
+    categorySlug: "plush-soft-toys",
     images: [],
     shortDescription: "Soft pink owl plush with a turning head. Sold as 1 piece; carton pack 100 pcs.",
     description: "Soft pink owl plush with a turning head. Sold as 1 piece; carton pack 100 pcs. Soft sensory import from the China listings tray, photographed for the Toy Bloom catalog. SKU RA1288-2.",
@@ -1463,6 +1529,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1483,6 +1550,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 288,
+    moqLabel: "Min order: 288 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1503,6 +1571,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 120,
+    moqLabel: "Min order: 120 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1521,6 +1590,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1539,6 +1609,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 96,
+    moqLabel: "Min order: 96 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1559,6 +1630,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1577,6 +1649,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1595,6 +1668,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1613,6 +1687,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1631,6 +1706,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1649,6 +1725,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1667,6 +1744,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 72,
+    moqLabel: "Min order: 72 pcs (1 box)",
     stock: 72,
   },
   {
@@ -1685,6 +1763,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1703,6 +1782,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1721,6 +1801,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1739,6 +1820,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1759,6 +1841,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1779,6 +1862,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1797,6 +1881,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 216,
+    moqLabel: "Min order: 216 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1815,6 +1900,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 168,
+    moqLabel: "Min order: 168 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1835,6 +1921,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1853,6 +1940,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1871,6 +1959,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1891,6 +1980,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 72,
+    moqLabel: "Min order: 72 pcs (1 box)",
     stock: 72,
   },
   {
@@ -1909,6 +1999,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1929,6 +2020,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 72,
+    moqLabel: "Min order: 72 pcs (1 box)",
     stock: 72,
   },
   {
@@ -1949,6 +2041,7 @@ export const chinaStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 72,
+    moqLabel: "Min order: 72 pcs (1 box)",
     stock: 72,
   },
   {
@@ -1967,6 +2060,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 120,
+    moqLabel: "Min order: 120 pcs (1 box)",
     stock: 96,
   },
   {
@@ -1985,6 +2079,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
   {
@@ -2003,6 +2098,7 @@ export const chinaStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 144,
+    moqLabel: "Min order: 144 pcs (1 box)",
     stock: 96,
   },
 ];

@@ -19,6 +19,7 @@ export const innovativeStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {
@@ -39,6 +40,7 @@ export const innovativeStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {
@@ -59,6 +61,7 @@ export const innovativeStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 8,
+    moqLabel: "Min order: 8 pcs (1 box)",
     stock: 32,
   },
   {
@@ -79,6 +82,7 @@ export const innovativeStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {
@@ -98,6 +102,7 @@ export const innovativeStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {
@@ -117,6 +122,7 @@ export const innovativeStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {
@@ -136,6 +142,7 @@ export const innovativeStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {
@@ -155,6 +162,7 @@ export const innovativeStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {
@@ -174,6 +182,7 @@ export const innovativeStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {
@@ -193,6 +202,7 @@ export const innovativeStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {
@@ -212,6 +222,7 @@ export const innovativeStock: Product[] = [
     materials: "Soft PU / TPR sensory foam. Not a food item.",
     isNew: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   }
 ];

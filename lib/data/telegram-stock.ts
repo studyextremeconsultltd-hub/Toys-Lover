@@ -170,7 +170,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-stich-65cm-31-1.webp",
       "/images/products/telegram/tg-stich-65cm-31-2.webp",
@@ -199,7 +199,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-helloween-light-up-mask-76-2.webp",
       "/images/products/telegram/tg-helloween-light-up-mask-76-1.webp",
@@ -227,7 +227,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-big-size-35cm-teddy-40-1.webp",
       "/images/products/telegram/tg-big-size-35cm-teddy-40-2.webp",
@@ -254,7 +254,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-colourful-45cm-teddy-43-1.webp"
     ],
@@ -1221,7 +1221,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-atich-and-kuromi-gift-set-for-kids-280-1.webp",
       "/images/products/telegram/tg-atich-and-kuromi-gift-set-for-kids-280-2.webp",
@@ -1307,7 +1307,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-stich-plush-toys-in-4-sizes-395-1.webp",
       "/images/products/telegram/tg-stich-plush-toys-in-4-sizes-395-2.webp",
@@ -1423,7 +1423,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-rainbow-big-size-labubu-back-in-stock-2467-1.webp",
       "/images/products/telegram/tg-rainbow-big-size-labubu-back-in-stock-2467-2.webp",
@@ -1647,7 +1647,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-teddy-bear-549-1.webp",
       "/images/products/telegram/tg-teddy-bear-549-2.webp",
@@ -2136,7 +2136,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-soft-toys-stich-and-bluye-with-cover-zip-685-1.webp"
     ],
@@ -2190,7 +2190,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-stitch-plush-30cm-702-1.webp",
       "/images/products/telegram/tg-stitch-plush-30cm-702-2.webp",
@@ -2281,7 +2281,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-soft-toys-25cm-in-offer-770-1.webp",
       "/images/products/telegram/tg-soft-toys-25cm-in-offer-770-2.webp",
@@ -2646,7 +2646,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-stitch-dance-repeat-usb-rechargeable-853-1.webp"
     ],
@@ -2730,7 +2730,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-panda-60cm-894-1.webp",
       "/images/products/telegram/tg-panda-60cm-894-2.webp",
@@ -2898,7 +2898,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-inside-out-plush-toys-912-1.webp",
       "/images/products/telegram/tg-inside-out-plush-toys-912-2.webp"
@@ -2982,7 +2982,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-barking-dogs-in-box-971-1.webp"
     ],
@@ -3165,7 +3165,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-stitch-bluey-pokemon-etc-997-1.webp",
       "/images/products/telegram/tg-stitch-bluey-pokemon-etc-997-2.webp",
@@ -3536,7 +3536,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-breathing-teddy-1162-1.webp",
       "/images/products/telegram/tg-breathing-teddy-1162-2.webp",
@@ -3652,7 +3652,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-35cm-teddy-1199-1.webp"
     ],
@@ -3885,7 +3885,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-plushie-toys-1319-1.webp",
       "/images/products/telegram/tg-plushie-toys-1319-2.webp",
@@ -3939,7 +3939,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-inside-out-plush-1327-1.webp",
       "/images/products/telegram/tg-inside-out-plush-1327-2.webp",
@@ -3966,7 +3966,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-stitch-plushie-1349-1.webp",
       "/images/products/telegram/tg-stitch-plushie-1349-2.webp",
@@ -3995,7 +3995,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bluey",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-bluey-and-bingo-70cm-1398-1.webp",
       "/images/products/telegram/tg-bluey-and-bingo-70cm-1398-2.webp",
@@ -4054,7 +4054,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-slime-stitch-1452-1.webp",
       "/images/products/telegram/tg-slime-stitch-1452-2.webp",
@@ -4082,7 +4082,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-soft-teddy-1477-1.webp",
       "/images/products/telegram/tg-soft-teddy-1477-2.webp",
@@ -4708,7 +4708,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-stitch-rainbow-plush-30cm-1894-1.webp",
       "/images/products/telegram/tg-stitch-rainbow-plush-30cm-1894-2.webp",
@@ -4798,7 +4798,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-big-size-60cm-dragon-1931-1.webp",
       "/images/products/telegram/tg-big-size-60cm-dragon-1931-2.webp",
@@ -4860,7 +4860,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-stitch-and-bluey-1997-1.webp",
       "/images/products/telegram/tg-stitch-and-bluey-1997-2.webp",
@@ -5540,7 +5540,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-pop-mart-skull-panda-series-2185-1.webp",
       "/images/products/telegram/tg-pop-mart-skull-panda-series-2185-2.webp",
@@ -5997,7 +5997,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-stitch-genz-series-pop-mart-style-2394-1.webp",
       "/images/products/telegram/tg-stitch-genz-series-pop-mart-style-2394-2.webp",
@@ -6325,7 +6325,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-italian-brainrot-big-plush-2496-1.webp",
       "/images/products/telegram/tg-italian-brainrot-big-plush-2496-2.webp",
@@ -7508,7 +7508,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-stitch-flower-gift-set-2974-1.webp",
       "/images/products/telegram/tg-stitch-flower-gift-set-2974-2.webp",
@@ -8149,7 +8149,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-30cm-super-soft-hamish-the-highland-cow-3314-1.webp",
       "/images/products/telegram/tg-30cm-super-soft-hamish-the-highland-cow-3314-2.webp",
@@ -8375,7 +8375,7 @@ export const telegramStock: Product[] = [
     "shortDescription": "Needoh Full range. Nice cube loose: (288 in case). Nice cube pack: (144 in case). Gummy bear: (144 in case). Ice lolly: ( 480 in case). Ice cone : (288 in case ).",
     "description": "Needoh Full range. Nice cube loose: (288 in case). Nice cube pack: (144 in case). Gummy bear: (144 in case). Ice lolly: ( 480 in case). Ice cone : (288 in case ). Splash: (288 in case ). Jelly hops: ( in case ). Jelly fish: ( 240 in case). Pizza : ( 360 in case ). Buzz ball: ( 144 in case). Butter small: (288 in case ). Butter rainbow : ( 288 in case ). Butter gold : (288 in case). Cheese: (288 in case ). Cheese square : (288 in case ). Cheese pizza small: (288 in case). Cheese pizza big (192 in case ). Butter medium: (144 in case). Chocolate: (240 in case ).",
     "features": [
-      "Min order: 1 pc",
+      "Min order: 12 pcs (1 box)",
       "£2.15 each",
       "288 per box",
       "From £2.15 at case qty (cube, gummy bear, ice lolly, pizza, butter, cheese...). +25p each under a case"
@@ -8383,9 +8383,9 @@ export const telegramStock: Product[] = [
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
     "moqUnit": "pcs",
-    "moqLabel": "Min order: 1 pc",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
@@ -8502,7 +8502,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-jelly-cat-popcorn-soft-toys-3493-1.webp",
       "/images/products/telegram/tg-jelly-cat-popcorn-soft-toys-3493-2.webp"
@@ -8555,7 +8555,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "plush-soft-toys",
     "images": [
       "/images/products/telegram/tg-jellycat-burgers-3496-1.webp",
       "/images/products/telegram/tg-jellycat-burgers-3496-2.webp",
@@ -8691,15 +8691,15 @@ export const telegramStock: Product[] = [
     "shortDescription": "All new jumbo size squishy available now each ( 6 minimum each style ).",
     "description": "All new jumbo size squishy available now each ( 6 minimum each style ).",
     "features": [
-      "Min order: 6 pcs",
+      "Min order: 12 pcs (1 box)",
       "£12.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 6,
+    "piecesPerBox": 12,
     "moqUnit": "pcs",
-    "moqLabel": "Min order: 6 pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
@@ -9162,16 +9162,16 @@ export const telegramStock: Product[] = [
     "shortDescription": "Needoh advent calendar ( box of 100). Less than 100.",
     "description": "Needoh advent calendar ( box of 100). Less than 100.",
     "features": [
-      "Min order: 1 pc",
+      "Min order: 100 pcs (1 box)",
       "£6.00 each",
       "£7.50 each under 100"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 100,
     "moqUnit": "pcs",
-    "moqLabel": "Min order: 1 pc",
+    "moqLabel": "Min order: 100 pcs (1 box)",
     "stock": 50
   }
 ];

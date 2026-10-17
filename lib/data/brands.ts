@@ -5,7 +5,7 @@ export const brandCards = [
     name: "Nest & Wool",
     blurb: "First plush friends, gyms, and sensory toys for tiny hands.",
     image: productShot("snuggle-puppy-plush"),
-    slug: "dolls-plush",
+    slug: "plush-soft-toys",
   },
   {
     name: "Kindred",

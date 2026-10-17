@@ -19,6 +19,7 @@ export const octoberNewStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 24,
   },
   {
@@ -98,6 +99,7 @@ export const octoberNewStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 24,
   },
   {
@@ -118,6 +120,7 @@ export const octoberNewStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 27,
   },
   {
@@ -174,6 +177,7 @@ export const octoberNewStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 24,
+    moqLabel: "Min order: 24 pcs (1 box)",
     stock: 48,
   },
   {
@@ -192,6 +196,8 @@ export const octoberNewStock: Product[] = [
     materials: "Assorted soft PU / gel sensory toys. Not a food item.",
     isNew: true,
     isBestSeller: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 42,
   },
   {
@@ -229,6 +235,7 @@ export const octoberNewStock: Product[] = [
     isNew: true,
     isBestSeller: true,
     piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 48,
   },
   {

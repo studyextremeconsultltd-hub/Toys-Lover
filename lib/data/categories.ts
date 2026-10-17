@@ -28,21 +28,21 @@ export const categories: Category[] = [
     slug: "dolls",
     name: "Dolls",
     shortName: "Dolls",
-    description: "Fashion dolls, baby dolls and princess dolls for pretend play.",
+    description: "Fashion dolls, baby dolls, princess dolls and doll playsets.",
     longDescription:
-      "Dolls you can dress, care for and take on a day out — fashion dolls, baby dolls and princess dolls, each with its own photo.",
+      "Dolls you can dress, care for and take on a day out — fashion dolls, baby dolls, princess dolls, cry baby dolls and doll playsets, each with its own photo.",
     image: categoryCovers.dolls,
     accent: "coral",
     ageLabel: "Ages 3–8",
   },
   {
-    slug: "dolls-plush",
+    slug: "plush-soft-toys",
     name: "Plush & Soft Toys",
     shortName: "Plush & Soft Toys",
     description: "Teddies, character plush and hug-size soft toys.",
     longDescription:
-      "Soft toys and plush characters — teddies, Stitch, Bluey and other hug-size friends. Labubu has its own aisle.",
-    image: categoryCovers["dolls-plush"],
+      "Soft toys and plush characters — teddies, Stitch, Bluey and other hug-size friends. Labubu has its own aisle. Plush keyrings stay with the keyrings.",
+    image: categoryCovers["plush-soft-toys"],
     accent: "coral",
     ageLabel: "Ages 0–8",
   },
@@ -233,7 +233,7 @@ export const CATEGORY_AGE_GROUPS = [
   {
     id: "3-5",
     label: "Ages 3–5",
-    slugs: ["dolls", "dolls-plush", "role-play", "bubble-blowers"],
+    slugs: ["dolls", "plush-soft-toys", "role-play", "bubble-blowers"],
   },
   {
     id: "6-8",

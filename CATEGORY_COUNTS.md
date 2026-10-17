@@ -1,22 +1,22 @@
 # Category counts
 
-Generated from the catalogue after `scripts/import-telegram-products.py` (Telegram toys with `add == true` from `curated_v2.json`, plus the existing shop). Every product sits in one of these aisles. There is no Others category.
+Generated from the catalogue after `scripts/import-telegram-products.py`. Every product sits in one aisle.
 
 | Category | Slug | Products |
 | --- | --- | ---: |
 | Squishies | `squishies` | 210 |
-| K-Pop & Collectible Figures | `action-figures` | 69 |
+| K-Pop & Collectible Figures | `action-figures` | 68 |
 | Light-Up Toys | `light-up-toys` | 52 |
-| Plush & Soft Toys | `dolls-plush` | 51 |
-| Home & Gifts | `home-gifts` | 46 |
-| Bags & Accessories | `bags-accessories` | 38 |
-| Keyrings & Bag Charms | `novelty-keyrings` | 36 |
-| Cars & Vehicles | `cars-vehicles` | 31 |
+| Plush & Soft Toys | `plush-soft-toys` | 49 |
+| Home & Gifts | `home-gifts` | 45 |
+| Bags & Accessories | `bags-accessories` | 37 |
+| Keyrings & Bag Charms | `novelty-keyrings` | 37 |
+| Cars & Vehicles | `cars-vehicles` | 32 |
 | Role Play & Pretend Play | `role-play` | 31 |
-| Labubu | `labubu` | 30 |
-| Party, Hats & Dress-Up | `party-spotlight` | 28 |
-| Outdoor & Sports | `outdoor-sports` | 26 |
-| Seasonal (Halloween & Christmas) | `seasonal` | 26 |
+| Party, Hats & Dress-Up | `party-spotlight` | 29 |
+| Labubu | `labubu` | 27 |
+| Outdoor & Sports | `outdoor-sports` | 25 |
+| Seasonal (Halloween & Christmas) | `seasonal` | 23 |
 | Fidget & Sensory | `fidget-spinners` | 22 |
 | Dolls | `dolls` | 20 |
 | Bubbles & Water Toys | `bubble-blowers` | 20 |
@@ -24,8 +24,6 @@ Generated from the catalogue after `scripts/import-telegram-products.py` (Telegr
 | Games & Cards | `board-games` | 10 |
 | Arts, Crafts & Stationery | `arts-crafts` | 5 |
 | Baby & Toddler | `baby-toddler` | 3 |
-| **Total** | | **765** |
+| **Total** | | **756** |
 
-Squishies is one aisle and lists every squishy, squeeze, Needoh, dumpling, butter, cheese, jumbo, crunchy and slow-rise toy. Former squishy micro-aisles (fruit, food, cheese, crunchy, glitter, Halloween butter, festive dumplings) fold into this page.
-
-Cover images are the highest-ranked product photo in each aisle (`lib/data/category-covers.ts`).
+Dolls and Plush & Soft Toys are separate aisles. Plush keyrings stay in Keyrings & Bag Charms.

@@ -163,7 +163,7 @@ export const newStock: Product[] = [
     ageRange: "3-5 years",
     brand: "Nest & Wool",
     theme: "Comfort",
-    categorySlug: "ear-buddy-plush",
+    categorySlug: "squishies",
     images: [],
     shortDescription: "Blue long-ear buddy with a warm glow in the tummy when you squeeze.",
     description: "Blue long-ear buddy with a warm glow in the tummy when you squeeze. Photographed from the new delivery, centred in a square frame so the toy is easy to recognise on every screen.",
@@ -171,6 +171,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "Soft plush pile, polyester fill, embroidered face.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 41,
   },
   {
@@ -180,7 +182,7 @@ export const newStock: Product[] = [
     ageRange: "3-5 years",
     brand: "Nest & Wool",
     theme: "Comfort",
-    categorySlug: "ear-buddy-plush",
+    categorySlug: "plush-soft-toys",
     images: [],
     shortDescription: "Matching blue and pink long-ear plushes sitting side by side.",
     description: "Matching blue and pink long-ear plushes sitting side by side. Photographed from the new delivery, centred in a square frame so the toy is easy to recognise on every screen.",
@@ -274,6 +276,8 @@ export const newStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Mixed party materials as shown — plush, PVC, or LED plastic.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 43,
   },
   {
@@ -291,6 +295,8 @@ export const newStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Mixed party materials as shown — plush, PVC, or LED plastic.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 50,
   },
   {
@@ -609,7 +615,7 @@ export const newStock: Product[] = [
     ageRange: "3-5 years",
     brand: "Nest & Wool",
     theme: "Comfort",
-    categorySlug: "dolls-plush",
+    categorySlug: "plush-soft-toys",
     images: [],
     shortDescription: "White and sky-blue cloud-pup plushes with stitched smiles.",
     description: "White and sky-blue cloud-pup plushes with stitched smiles. Photographed from the new delivery, centred in a square frame so the toy is easy to recognise on every screen.",
@@ -643,7 +649,7 @@ export const newStock: Product[] = [
     ageRange: "6-8 years",
     brand: "Nest & Wool",
     theme: "Comfort",
-    categorySlug: "dolls-plush",
+    categorySlug: "plush-soft-toys",
     images: [],
     shortDescription: "Pink idol-style plush still wrapped from the new delivery.",
     description: "Pink idol-style plush still wrapped from the new delivery. Photographed from the new delivery, centred in a square frame so the toy is easy to recognise on every screen.",
@@ -1465,7 +1471,7 @@ export const newStock: Product[] = [
     ageRange: "3-5 years",
     brand: "Nest & Wool",
     theme: "Comfort",
-    categorySlug: "bottle-plush",
+    categorySlug: "home-gifts",
     images: [],
     shortDescription: "Five bottle-shaped plushes in pink, red-white-blue, white, lime, and purple.",
     description: "Five bottle-shaped plushes in pink, red-white-blue, white, lime, and purple. Photographed from the new delivery, centred in a square frame so the toy is easy to recognise on every screen.",
@@ -1525,6 +1531,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 36,
   },
   {
@@ -1542,6 +1550,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 43,
   },
   {
@@ -1559,6 +1569,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 50,
   },
   {
@@ -1576,6 +1588,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 57,
   },
   {
@@ -1594,6 +1608,8 @@ export const newStock: Product[] = [
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
     isBestSeller: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 24,
   },
   {
@@ -1611,6 +1627,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 31,
   },
   {
@@ -1628,6 +1646,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 38,
   },
   {
@@ -1645,6 +1665,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 45,
   },
   {
@@ -1662,6 +1684,8 @@ export const newStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 52,
   },
   {
@@ -1679,6 +1703,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 19,
   },
   {
@@ -1696,6 +1722,8 @@ export const newStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 26,
   },
   {
@@ -1714,6 +1742,8 @@ export const newStock: Product[] = [
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
     isBestSeller: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 33,
   },
   {
@@ -1731,6 +1761,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 40,
   },
   {
@@ -1748,6 +1780,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 47,
   },
   {
@@ -1765,6 +1799,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 54,
   },
   {
@@ -1782,6 +1818,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 21,
   },
   {
@@ -1799,6 +1837,8 @@ export const newStock: Product[] = [
     safety: "Ages 3+. Use under adult supervision. Keep small parts away from under-threes.",
     materials: "TPR glitter gel, sealed skin.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 28,
   },
   {
@@ -1885,6 +1925,8 @@ export const newStock: Product[] = [
     safety: "Ages 6+. Not a food item. Supervise first use of lights and batteries.",
     materials: "Slow-rise PU foam.",
     isNew: true,
+    piecesPerBox: 12,
+    moqLabel: "Min order: 12 pcs (1 box)",
     stock: 23,
   },
   {

@@ -102,7 +102,7 @@ SPELLING = [
     (r"\badvert\b", "Advent"),
     (r"\batich\b", "Stitch"),
     (r"\bstich\b", "Stitch"),
-    (r"\bstick\b", "Stitch"),
+    (r"(?<!glow )(?<!glow-)\bstick\b", "Stitch"),
     (r"\bsumer\b", "Summer"),
     (r"\bairobus\b", "Airbus"),
     (r"\bfigurs\b", "Figures"),
@@ -194,10 +194,11 @@ OLD_FALLBACK = {
     "glitter-squeeze": "squishies",
     "halloween-squishies": "squishies",
     "festive-dumplings": "squishies",
-    "dolls-plush": "dolls-plush",
-    "ear-buddy-plush": "dolls-plush",
-    "bottle-plush": "dolls-plush",
-    "star-buddy-plush": "dolls-plush",
+    "dolls-plush": "plush-soft-toys",
+    "ear-buddy-plush": "plush-soft-toys",
+    "bottle-plush": "plush-soft-toys",
+    "star-buddy-plush": "plush-soft-toys",
+    "plush-soft-toys": "plush-soft-toys",
     "action-figures": "action-figures",
     "hatch-dragons": "action-figures",
     "games-gadgets": "cars-vehicles",
@@ -463,18 +464,19 @@ def classify(name: str, text: str, old_slug: str, is_squishy: bool) -> tuple[str
             return "home-gifts", "home"
         if _word(blob, "cup", "cups", "bottle", "bottles"):
             return "home-gifts", "home"
-        if _word(blob, "bag", "bags", "purse", "purses", "backpack", "trolley") or _has(blob, "back pack", "school bag", "accessories"):
+        bag_blob = re.sub(r"\bgift bags?\b", " ", blob)
+        if _word(bag_blob, "bag", "bags", "purse", "purses", "backpack", "trolley") or _has(bag_blob, "back pack", "school bag", "accessories"):
             return "bags-accessories", "bag"
         if _has(blob, "bubble") or _has(blob, "water blaster", "water game", "splash water", "water ball", "water gun"):
             return "bubble-blowers", "bubble"
         if _has(blob, "christmas", "halloween", "santa", "grinch", "advent", "pumpkin", "xmas"):
             return "seasonal", "seasonal"
         if _word(blob, "plush", "plushie", "teddy", "teddies") or _has(blob, "soft toy", "soft toys", "jellycat", "jelly cat", "ear buddy", "super soft", "barking dog"):
-            return "dolls-plush", "plush"
+            return "plush-soft-toys", "plush"
         if _word(blob, "stitch", "bluey", "kuromi", "capybara", "panda", "bingo") and not _has(
-            blob, "car", "bag", "cup", "light", "keyring", "make up", "makeup", "card"
+            blob, "car", "bag", "cup", "light", "keyring", "make up", "makeup", "card", "bubble", "wand", "stick"
         ):
-            return "dolls-plush", "plush"
+            return "plush-soft-toys", "plush"
         if _word(blob, "slime", "slimes", "spinner", "spinners") or _has(blob, "pop-it", "pop it", "push-pop", "push pop", "fidget", "stress ball"):
             return "fidget-spinners", "fidget"
         if _has(blob, "stretch toy", "stretch toys"):
@@ -556,7 +558,7 @@ def theme_for(name: str, category: str) -> str:
         if re.search(rf"\b{re.escape(needle)}\b", blob):
             return theme
     fallback = {
-        "dolls-plush": "Plush",
+        "plush-soft-toys": "Plush",
         "dolls": "Dolls",
         "squishies": "Squishy",
         "labubu": "Labubu",
@@ -578,6 +580,62 @@ def theme_for(name: str, category: str) -> str:
         "baby-toddler": "Baby",
     }
     return fallback.get(category, "Play")
+
+
+BOX_QTY_PATTERNS = [
+    re.compile(r"\bbox of\s*(\d+)\b", re.I),
+    re.compile(r"\b(\d+)\s*(?:pcs|pc|pieces)?\s*in (?:a |the )?box\b", re.I),
+    re.compile(r"\b(\d+)\s+in (?:a )?case\b", re.I),
+    re.compile(r"\bcase of\s*(\d+)\b", re.I),
+    re.compile(r"\b(\d+)\s+per box\b", re.I),
+    re.compile(r"\bpack of\s*(\d+)\b", re.I),
+    re.compile(r"complete items in box:\s*(\d+)", re.I),
+    re.compile(r"carton pack:\s*(\d+)", re.I),
+    re.compile(r"\b(\d+)\s*pcs per display\b", re.I),
+    re.compile(r"\b(\d+)\s+per display(?: box)?\b", re.I),
+]
+
+
+def stated_box_qty(blob: str) -> int | None:
+    """One clear box/case quantity. Conflicting numbers are not a single box size."""
+    found: list[int] = []
+    for pattern in BOX_QTY_PATTERNS:
+        found.extend(int(match.group(1)) for match in pattern.finditer(blob or ""))
+    unique = {qty for qty in found if qty > 0}
+    if len(unique) == 1:
+        return unique.pop()
+    return None
+
+
+def format_moq_label(qty: int, unit: str = "pcs") -> str:
+    if qty == 1 and unit in {"pc", "pcs"}:
+        return "Min order: 1 pc"
+    word = "pcs" if unit in {"pc", "pcs"} else unit
+    return f"Min order: {qty} {word} (1 box)"
+
+
+def resolve_squishy_moq(blob: str, min_qty: int, unit: str, label: str) -> tuple[int, str, str | None]:
+    """Return pieces, label, and a change reason. Reason is None when nothing should change."""
+    stated = stated_box_qty(blob)
+    old = int(min_qty or 1)
+    unit = unit or "pcs"
+    if stated is not None and stated != old:
+        if old > 12 and stated < old:
+            return old, label, None
+        reason = f"product text states a box/case of {stated}"
+        return stated, format_moq_label(stated, unit), reason
+    if stated is not None and stated == old:
+        wanted = format_moq_label(stated, unit)
+        if label == wanted:
+            return old, label, None
+        return old, wanted, f"product text states a box/case of {stated}"
+    if old > 12:
+        return old, label, None
+    if old == 12 and (not label or re.search(r"\b12\b", label)):
+        return old, label or format_moq_label(12, unit), None
+    if stated == 12:
+        return 12, format_moq_label(12, unit), None if old == 12 else "product text states a box of 12"
+    return 12, format_moq_label(12, unit), "squishy minimum is 12 pcs (1 box); no different box or case quantity in the product text"
 
 
 def existing_slugs() -> set[str]:
@@ -611,19 +669,25 @@ def parse_stock_products() -> list[dict]:
             short = re.search(r"\bshortDescription:\s*\"([^\"]*)\"", window)
             desc = re.search(r"\bdescription:\s*\"([^\"]*)\"", window)
             price = re.search(r"\bprice:\s*([0-9.]+)", window)
+            features = re.search(r"\bfeatures:\s*\[(.*?)\]", window, flags=re.S)
+            pieces = re.search(r"\bpiecesPerBox:\s*(\d+)", window)
+            moq = re.search(r'\bmoqLabel:\s*"([^"]*)"', window)
             if not name or not cat:
                 continue
             slug = match.group(1)
+            feature_text = features.group(1) if features else ""
             products.append(
                 {
                     "slug": slug,
                     "name": name.group(1),
-                    "text": f"{short.group(1) if short else ''} {desc.group(1) if desc else ''}",
+                    "text": f"{name.group(1)} {short.group(1) if short else ''} {desc.group(1) if desc else ''} {feature_text}",
                     "old": cat.group(1),
                     "price": float(price.group(1)) if price else 0,
                     "tbc": "priceTBC" in window[:900],
                     "image": f"/images/products/{slug}.jpg",
                     "source": filename,
+                    "pieces": int(pieces.group(1)) if pieces else 1,
+                    "moqLabel": moq.group(1) if moq else "",
                 }
             )
     # products.ts lists stock spreads; keep the first definition of each slug.
@@ -717,6 +781,7 @@ def main() -> int:
     doubtful_names = []
     name_map: dict[str, str] = {}
     category_notes = []
+    squishy_flags: list[tuple[str, str, str, str]] = []
 
     for item in toys:
         if blocked(item):
@@ -771,6 +836,15 @@ def main() -> int:
         }
         if price is None:
             product["priceTBC"] = True
+        if category == "squishies":
+            blob = f"{name}\n{text}\n{description}\n" + "\n".join(notes)
+            pieces, moq_label, why = resolve_squishy_moq(blob, min_qty, moq_unit, moq_label)
+            if why and (pieces != min_qty or moq_label != product["moqLabel"]):
+                squishy_flags.append((slug, product["moqLabel"], moq_label, why))
+            product["piecesPerBox"] = pieces
+            product["moqUnit"] = moq_unit
+            product["moqLabel"] = moq_label
+            product["features"][0] = moq_label
         products.append(product)
 
     write_name_map(name_map)
@@ -820,6 +894,144 @@ def main() -> int:
             image = "/images/categories/squishies.jpg"
         covers[slug] = image
     write_covers(covers)
+
+    plush_old = {"dolls-plush", "ear-buddy-plush", "bottle-plush", "star-buddy-plush"}
+    category_updates: dict[str, str] = {}
+    moq_updates: dict[str, tuple[int, str]] = {}
+    review_changed: list[tuple[str, str, str, str]] = []
+    review_left: list[tuple[str, str]] = []
+    for row in existing_rows:
+        if row["old"] in plush_old:
+            category_updates[row["slug"]] = row["category"]
+        pieces = int(row.get("pieces") or 1)
+        stored = row.get("moqLabel") or ""
+        old_label = stored or f"Min order: {pieces} pcs"
+        if row["category"] == "squishies":
+            new_pieces, new_label, why = resolve_squishy_moq(row["text"], pieces, "pcs", stored or old_label)
+            if why and (new_pieces != pieces or new_label != old_label):
+                squishy_flags.append((row["slug"], old_label, new_label, why))
+                moq_updates[row["slug"]] = (new_pieces, new_label)
+        elif pieces <= 1:
+            stated = stated_box_qty(row["text"])
+            if stated and stated > 1:
+                new_label = format_moq_label(stated)
+                review_changed.append((row["slug"], old_label, new_label, f"product text states a box/case of {stated}"))
+                moq_updates[row["slug"]] = (stated, new_label)
+            else:
+                review_left.append((row["slug"], row["name"]))
+
+    def patch_stock(text: str) -> str:
+        matches = list(re.finditer(r'\bslug:\s*"([^"]+)"', text))
+        if not matches:
+            return text
+        parts: list[str] = []
+        cursor = 0
+        for index, match in enumerate(matches):
+            end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+            parts.append(text[cursor:match.start()])
+            window = text[match.start():end]
+            slug = match.group(1)
+            if slug in category_updates:
+                window = re.sub(
+                    r'categorySlug:\s*"[^"]*"',
+                    f'categorySlug: "{category_updates[slug]}"',
+                    window,
+                    count=1,
+                )
+            if slug in moq_updates:
+                pieces, label = moq_updates[slug]
+                if re.search(r"\bpiecesPerBox:\s*\d+", window):
+                    window = re.sub(r"\bpiecesPerBox:\s*\d+", f"piecesPerBox: {pieces}", window, count=1)
+                else:
+                    window = re.sub(
+                        r"(\n\s*)stock:\s*",
+                        rf"\1piecesPerBox: {pieces},\n\1stock: ",
+                        window,
+                        count=1,
+                    )
+                rendered = json.dumps(label, ensure_ascii=False)
+                if re.search(r'\bmoqLabel:\s*"[^"]*"', window):
+                    window = re.sub(r'\bmoqLabel:\s*"[^"]*"', f"moqLabel: {rendered}", window, count=1)
+                else:
+                    window = re.sub(
+                        r"(\n\s*)stock:\s*",
+                        rf"\1moqLabel: {rendered},\n\1stock: ",
+                        window,
+                        count=1,
+                    )
+            parts.append(window)
+            cursor = end
+        parts.append(text[cursor:])
+        updated = "".join(parts)
+        return re.sub(r"\n\r?\n(\s*(?:piecesPerBox|moqLabel|stock):)", r"\n\1", updated)
+
+    for filename in STOCK_FILES:
+        path = DATA / filename
+        original = path.read_text(encoding="utf-8")
+        updated = patch_stock(original)
+        if updated != original:
+            path.write_text(updated, encoding="utf-8")
+            print(f"patched {filename}")
+
+    flag_lines = [
+        "# Squishy minimum orders",
+        "",
+        "Every Squishies product is at least 12 pcs (1 box) unless its own text states a different box or case quantity. Existing box quantities above 12 were left as they were.",
+        "",
+        "| Slug | Old | New | Reason |",
+        "| --- | --- | --- | --- |",
+    ]
+    for slug, old, new, why in squishy_flags:
+        flag_lines.append(f"| `{slug}` | {old} | {new} | {why} |")
+    flag_lines.append("")
+    flag_lines.append(f"{len(squishy_flags)} products changed.")
+    flag_lines.append("")
+    (ROOT / "SQUISHY_MOQ_FLAGS.md").write_text("\n".join(flag_lines), encoding="utf-8")
+
+    review_lines = [
+        "# Older catalogue minimum orders",
+        "",
+        "Non-Telegram products that were on a minimum of 1. A box quantity was set only when the product name, description, or features state one. Squishies are listed in `SQUISHY_MOQ_FLAGS.md`.",
+        "",
+        "## Changed",
+        "",
+        "| Slug | Old | New | Reason |",
+        "| --- | --- | --- | --- |",
+    ]
+    if review_changed:
+        for slug, old, new, why in review_changed:
+            review_lines.append(f"| `{slug}` | {old} | {new} | {why} |")
+    else:
+        review_lines.append("| — | — | — | No older non-squishy product stated a box or case quantity while still on a minimum of 1. |")
+    review_lines.extend(["", "## Left at 1", ""])
+    for slug, name in review_left:
+        review_lines.append(f"- `{slug}` — {name}")
+    review_lines.append("")
+    review_lines.append(f"{len(review_changed)} changed. {len(review_left)} left at 1.")
+    review_lines.append("")
+    (ROOT / "MOQ_REVIEW.md").write_text("\n".join(review_lines), encoding="utf-8")
+
+    names = {}
+    cat_text = (DATA / "categories.ts").read_text(encoding="utf-8")
+    for match in re.finditer(r'slug:\s*"([^"]+)"[\s\S]{0,240}?name:\s*"([^"]+)"', cat_text):
+        names[match.group(1)] = match.group(2)
+    count_lines = [
+        "# Category counts",
+        "",
+        "Generated from the catalogue after `scripts/import-telegram-products.py`. Every product sits in one aisle.",
+        "",
+        "| Category | Slug | Products |",
+        "| --- | --- | ---: |",
+    ]
+    total = 0
+    for slug, count in counts.most_common():
+        total += count
+        count_lines.append(f"| {names.get(slug, slug)} | `{slug}` | {count} |")
+    count_lines.append(f"| **Total** | | **{total}** |")
+    count_lines.append("")
+    count_lines.append("Dolls and Plush & Soft Toys are separate aisles. Plush keyrings stay in Keyrings & Bag Charms.")
+    count_lines.append("")
+    (ROOT / "CATEGORY_COUNTS.md").write_text("\n".join(count_lines), encoding="utf-8")
 
     print(f"wrote {len(products)} telegram products -> {OUT}")
     print(f"names {len(name_map)} -> {NAME_MAP_PATH}")

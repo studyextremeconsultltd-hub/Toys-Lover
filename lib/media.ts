@@ -123,7 +123,7 @@ const NEW_AISLES = [
 export const categoryStudio: Record<string, string> = {
   "educational-stem": img.stem,
   "action-figures": img.figures,
-  "dolls-plush": img.plush,
+  "plush-soft-toys": img.plush,
   "building-sets": img.blocks,
   "board-games": img.games,
   "arts-crafts": img.arts,
@@ -139,7 +139,7 @@ export const categoryStudio: Record<string, string> = {
 export const categoryImage: Record<string, string> = {
   "educational-stem": "/images/categories/educational-stem.jpg",
   "action-figures": "/images/categories/action-figures.jpg",
-  "dolls-plush": "/images/categories/dolls-plush.jpg",
+  "plush-soft-toys": "/images/categories/plush-soft-toys.jpg",
   "building-sets": "/images/categories/building-sets.jpg",
   "board-games": "/images/categories/board-games.jpg",
   "arts-crafts": "/images/categories/squishies.jpg",
@@ -190,7 +190,7 @@ const RELATED_PHOTOS: Record<string, string[]> = {
     productShot("alloy-diecast-racer"),
     productShot("hero-league-figure"),
   ],
-  "dolls-plush": [
+  "plush-soft-toys": [
     productShot("snuggle-puppy-plush"),
     productShot("unicorn-snuggle-plush"),
     productShot("beauty-princess-doll"),
