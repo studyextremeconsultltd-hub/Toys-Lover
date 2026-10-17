@@ -24,9 +24,20 @@ export function rankScore(product: Product) {
   if (!photo) score -= 40;
   if (product.priceTBC || product.price <= 0) score -= 50;
   if (isSquishyListing(product)) score += 35;
+  // Stronger listings: more real photos, best sellers, fresh Telegram stock with cleaned photos.
+  score += Math.min(product.images?.length ?? 0, 4) * 6;
+  if (product.isBestSeller) score += 15;
+  if (product.slug.startsWith("tg-")) score += 10;
   return score;
 }
 
 export function rankProducts<T extends Product>(items: T[]): T[] {
-  return [...items].sort((a, b) => rankScore(b) - rankScore(a) || a.name.localeCompare(b.name));
+  return [...items].sort((a, b) => rankScore(b) - rankScore(a) || tieBreak(a.slug) - tieBreak(b.slug));
+}
+
+/** Stable pseudo-random tiebreak so equal scores do not list alphabetically. */
+function tieBreak(slug: string) {
+  let h = 2166136261;
+  for (let i = 0; i < slug.length; i++) h = Math.imul(h ^ slug.charCodeAt(i), 16777619);
+  return h >>> 0;
 }
