@@ -1,4 +1,4 @@
-import { ArrowRight, Heart, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 import { img } from "@/lib/media";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -53,10 +53,6 @@ export function Hero() {
             <li className="inline-flex items-center gap-1.5">
               <ShieldCheck className="h-4 w-4 text-teal-600" />
               Safe &amp; Non-Toxic
-            </li>
-            <li className="inline-flex items-center gap-1.5">
-              <Heart className="h-4 w-4 text-coral-500" />
-              Parent Approved
             </li>
           </ul>
         </div>

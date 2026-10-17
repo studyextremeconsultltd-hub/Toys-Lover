@@ -7,7 +7,10 @@ import { chinaStock } from "@/lib/data/china-stock";
 import { innovativeStock } from "@/lib/data/innovative-stock";
 import { octoberNewStock } from "@/lib/data/october-new-stock";
 import { telegramStock } from "@/lib/data/telegram-stock";
+import { assignedCategory } from "@/lib/data/assigned-categories";
 import { productGallery, shop } from "@/lib/media";
+import { rankProducts } from "@/lib/rank";
+import { getPiecesPerBox } from "@/lib/utils";
 
 const catalog: Product[] = [
   {
@@ -15,8 +18,6 @@ const catalog: Product[] = [
     name: "Piano Fitness Gym",
     price: 22.99,
     compareAtPrice: 27.99,
-    rating: 4.8,
-    reviewCount: 186,
     ageRange: "0-2 years",
     brand: "Nest & Wool",
     theme: "First play",
@@ -36,8 +37,6 @@ const catalog: Product[] = [
     slug: "dino-world-musical-mat",
     name: "Dino World Musical Mat",
     price: 16.99,
-    rating: 4.7,
-    reviewCount: 94,
     ageRange: "0-2 years",
     brand: "Lumen Kids",
     theme: "Dinosaurs",
@@ -56,8 +55,6 @@ const catalog: Product[] = [
     slug: "wrap-around-plush-monkey",
     name: "Wrap-Around Plush Monkey",
     price: 9.99,
-    rating: 4.9,
-    reviewCount: 268,
     ageRange: "0-2 years",
     brand: "Nest & Wool",
     theme: "Comfort",
@@ -76,8 +73,6 @@ const catalog: Product[] = [
     slug: "guardsman-bear",
     name: "Guardsman Bear",
     price: 12.99,
-    rating: 4.8,
-    reviewCount: 141,
     ageRange: "0-2 years",
     brand: "Nest & Wool",
     theme: "Britain",
@@ -95,8 +90,6 @@ const catalog: Product[] = [
     slug: "snuggle-puppy-plush",
     name: "Snuggle Puppy Plush",
     price: 8.99,
-    rating: 4.8,
-    reviewCount: 203,
     ageRange: "0-2 years",
     brand: "Nest & Wool",
     theme: "Pets",
@@ -115,8 +108,6 @@ const catalog: Product[] = [
     slug: "rainbow-leopard-plush",
     name: "Rainbow Leopard Plush",
     price: 11.99,
-    rating: 4.7,
-    reviewCount: 86,
     ageRange: "3-5 years",
     brand: "Nest & Wool",
     theme: "Pets",
@@ -135,8 +126,6 @@ const catalog: Product[] = [
     slug: "eva-number-foam-puzzle",
     name: "EVA Number Foam Puzzle",
     price: 6.99,
-    rating: 4.6,
-    reviewCount: 77,
     ageRange: "3-5 years",
     brand: "Lumen Kids",
     theme: "Numbers",
@@ -154,8 +143,6 @@ const catalog: Product[] = [
     slug: "farmyard-peg-puzzle",
     name: "Farmyard Peg Puzzle",
     price: 14.99,
-    rating: 4.8,
-    reviewCount: 112,
     ageRange: "3-5 years",
     brand: "Lumen Kids",
     theme: "Animals",
@@ -176,8 +163,6 @@ const catalog: Product[] = [
     name: "Dream Castle Playset",
     price: 18.99,
     compareAtPrice: 24.99,
-    rating: 4.7,
-    reviewCount: 158,
     ageRange: "3-5 years",
     brand: "Kindred",
     theme: "Princess",
@@ -197,8 +182,6 @@ const catalog: Product[] = [
     slug: "fashion-girl-twin-gowns",
     name: "Fashion Girl Twin Gowns",
     price: 16.99,
-    rating: 4.6,
-    reviewCount: 112,
     ageRange: "3-5 years",
     brand: "PlayLane",
     theme: "Fashion",
@@ -217,8 +200,6 @@ const catalog: Product[] = [
     slug: "bear-bubbles-twin-dolls",
     name: "Bear Bubbles Twin Dolls",
     price: 12.5,
-    rating: 4.7,
-    reviewCount: 89,
     ageRange: "3-5 years",
     brand: "Kindred",
     theme: "Care",
@@ -236,8 +217,6 @@ const catalog: Product[] = [
     slug: "realistic-baby-care-doll",
     name: "Realistic Baby Care Doll",
     price: 14.99,
-    rating: 4.8,
-    reviewCount: 134,
     ageRange: "3-5 years",
     brand: "Kindred",
     theme: "Care",
@@ -256,8 +235,6 @@ const catalog: Product[] = [
     slug: "fashion-fairy-doll",
     name: "Fashion Fairy Doll",
     price: 9.99,
-    rating: 4.5,
-    reviewCount: 71,
     ageRange: "3-5 years",
     brand: "PlayLane",
     theme: "Fairies",
@@ -275,8 +252,6 @@ const catalog: Product[] = [
     slug: "lovely-doll-with-pet",
     name: "Lovely Doll With Pet",
     price: 11.99,
-    rating: 4.6,
-    reviewCount: 83,
     ageRange: "6-8 years",
     brand: "PlayLane",
     theme: "Fashion",
@@ -295,8 +270,6 @@ const catalog: Product[] = [
     slug: "stage-star-fashion-doll",
     name: "Stage Star Fashion Doll",
     price: 16.99,
-    rating: 4.6,
-    reviewCount: 64,
     ageRange: "6-8 years",
     brand: "Stage Pop",
     theme: "Music",
@@ -315,8 +288,6 @@ const catalog: Product[] = [
     slug: "beauty-princess-doll",
     name: "Beauty Princess Doll",
     price: 14.99,
-    rating: 4.5,
-    reviewCount: 98,
     ageRange: "6-8 years",
     brand: "PlayLane",
     theme: "Princess",
@@ -334,8 +305,6 @@ const catalog: Product[] = [
     slug: "sofia-nursery-stroller-set",
     name: "Sofia Nursery Stroller Set",
     price: 22.99,
-    rating: 4.8,
-    reviewCount: 107,
     ageRange: "3-5 years",
     brand: "Kindred",
     theme: "Care",
@@ -354,8 +323,6 @@ const catalog: Product[] = [
     slug: "funtasy-bubble-gun",
     name: "FunTasy Bubble Gun",
     price: 6.99,
-    rating: 4.6,
-    reviewCount: 154,
     ageRange: "3-5 years",
     brand: "BubbleBurst",
     theme: "Bubbles",
@@ -374,8 +341,6 @@ const catalog: Product[] = [
     slug: "rocket-48-bubble-machine",
     name: "Rocket 48-Hole Bubble Machine",
     price: 6.5,
-    rating: 4.7,
-    reviewCount: 121,
     ageRange: "3-5 years",
     brand: "BubbleBurst",
     theme: "Bubbles",
@@ -394,8 +359,6 @@ const catalog: Product[] = [
     slug: "bubble-bazooka-32",
     name: "32-Hole Bubble Bazooka",
     price: 12.99,
-    rating: 4.6,
-    reviewCount: 88,
     ageRange: "6-8 years",
     brand: "BubbleBurst",
     theme: "Bubbles",
@@ -413,8 +376,6 @@ const catalog: Product[] = [
     slug: "fairy-light-bubble-wand",
     name: "Fairy Light Bubble Wand",
     price: 8.99,
-    rating: 4.7,
-    reviewCount: 76,
     ageRange: "3-5 years",
     brand: "BubbleBurst",
     theme: "Fairies",
@@ -433,8 +394,6 @@ const catalog: Product[] = [
     slug: "electric-water-blaster",
     name: "Electric Water Blaster",
     price: 7.99,
-    rating: 4.5,
-    reviewCount: 132,
     ageRange: "3-5 years",
     brand: "Open Air",
     theme: "Summer",
@@ -452,8 +411,6 @@ const catalog: Product[] = [
     slug: "basketball-play-set",
     name: "Basketball Play Set",
     price: 16.99,
-    rating: 4.6,
-    reviewCount: 91,
     ageRange: "3-5 years",
     brand: "Open Air",
     theme: "Sport",
@@ -472,8 +429,6 @@ const catalog: Product[] = [
     name: "Ride-On 4x4 Jeep",
     price: 79.0,
     compareAtPrice: 95.0,
-    rating: 4.7,
-    reviewCount: 54,
     ageRange: "3-5 years",
     brand: "Open Air",
     theme: "Ride-on",
@@ -492,8 +447,6 @@ const catalog: Product[] = [
     slug: "ride-on-farm-tractor",
     name: "Ride-On Farm Tractor",
     price: 69.0,
-    rating: 4.6,
-    reviewCount: 41,
     ageRange: "3-5 years",
     brand: "Open Air",
     theme: "Farm",
@@ -511,8 +464,6 @@ const catalog: Product[] = [
     slug: "super-arrow-set",
     name: "Super Arrow Set",
     price: 9.99,
-    rating: 4.4,
-    reviewCount: 67,
     ageRange: "6-8 years",
     brand: "Open Air",
     theme: "Sport",
@@ -530,8 +481,6 @@ const catalog: Product[] = [
     slug: "sports-ball-pack",
     name: "Sports Ball Pack",
     price: 5.99,
-    rating: 4.5,
-    reviewCount: 118,
     ageRange: "6-8 years",
     brand: "Open Air",
     theme: "Sport",
@@ -549,8 +498,6 @@ const catalog: Product[] = [
     slug: "fruit-garden-bucket",
     name: "Fruit Garden Bucket Set",
     price: 6.99,
-    rating: 4.6,
-    reviewCount: 72,
     ageRange: "3-5 years",
     brand: "Open Air",
     theme: "Garden",
@@ -568,8 +515,6 @@ const catalog: Product[] = [
     slug: "soft-dart-modular-blaster",
     name: "Soft Dart Modular Blaster",
     price: 24.99,
-    rating: 4.5,
-    reviewCount: 58,
     ageRange: "9-12 years",
     brand: "Forge & Fun",
     theme: "Outdoor",
@@ -588,8 +533,6 @@ const catalog: Product[] = [
     slug: "kitchen-cook-set",
     name: "Kitchen Cook Set",
     price: 9.99,
-    rating: 4.8,
-    reviewCount: 176,
     ageRange: "3-5 years",
     brand: "Kindred",
     theme: "Home",
@@ -608,8 +551,6 @@ const catalog: Product[] = [
     slug: "pretend-vacuum-cleaner",
     name: "Pretend Vacuum Cleaner",
     price: 14.99,
-    rating: 4.7,
-    reviewCount: 101,
     ageRange: "3-5 years",
     brand: "Kindred",
     theme: "Home",
@@ -627,8 +568,6 @@ const catalog: Product[] = [
     slug: "hair-salon-set",
     name: "Hair Salon Set",
     price: 8.99,
-    rating: 4.6,
-    reviewCount: 84,
     ageRange: "3-5 years",
     brand: "Kindred",
     theme: "Salon",
@@ -646,8 +585,6 @@ const catalog: Product[] = [
     slug: "doctor-clinic-set",
     name: "Doctor Clinic Set",
     price: 12.99,
-    rating: 4.7,
-    reviewCount: 95,
     ageRange: "3-5 years",
     brand: "Kindred",
     theme: "Care",
@@ -665,8 +602,6 @@ const catalog: Product[] = [
     slug: "airline-play-set",
     name: "Airline Play Set",
     price: 11.99,
-    rating: 4.5,
-    reviewCount: 62,
     ageRange: "3-5 years",
     brand: "Forge & Fun",
     theme: "Travel",
@@ -684,8 +619,6 @@ const catalog: Product[] = [
     slug: "rc-tank-truck",
     name: "RC Tank Truck",
     price: 12.5,
-    rating: 4.6,
-    reviewCount: 73,
     ageRange: "3-5 years",
     brand: "Volt Racers",
     theme: "Vehicles",
@@ -704,8 +637,6 @@ const catalog: Product[] = [
     slug: "firepower-roleplay-rifle",
     name: "Firepower Role-Play Rifle",
     price: 14.99,
-    rating: 4.3,
-    reviewCount: 49,
     ageRange: "6-8 years",
     brand: "Forge & Fun",
     theme: "Adventure",
@@ -723,8 +654,6 @@ const catalog: Product[] = [
     slug: "sequin-cowboy-hat",
     name: "Sequin Cowboy Hat",
     price: 7.99,
-    rating: 4.5,
-    reviewCount: 81,
     ageRange: "6-8 years",
     brand: "Stage Pop",
     theme: "Dress-up",
@@ -742,8 +671,6 @@ const catalog: Product[] = [
     slug: "machine-soldier-transformer",
     name: "Machine Soldier Transformer",
     price: 14.99,
-    rating: 4.6,
-    reviewCount: 119,
     ageRange: "6-8 years",
     brand: "Forge & Fun",
     theme: "Robots",
@@ -762,8 +689,6 @@ const catalog: Product[] = [
     slug: "police-robot-car",
     name: "Police Robot Car",
     price: 12.99,
-    rating: 4.5,
-    reviewCount: 86,
     ageRange: "3-5 years",
     brand: "Forge & Fun",
     theme: "Rescue",
@@ -781,8 +706,6 @@ const catalog: Product[] = [
     slug: "alloy-diecast-racer",
     name: "Alloy Die-Cast Racer",
     price: 6.99,
-    rating: 4.6,
-    reviewCount: 144,
     ageRange: "3-5 years",
     brand: "Forge & Fun",
     theme: "Cars",
@@ -801,8 +724,6 @@ const catalog: Product[] = [
     slug: "engineering-dump-truck",
     name: "Engineering Dump Truck",
     price: 8.99,
-    rating: 4.5,
-    reviewCount: 70,
     ageRange: "3-5 years",
     brand: "Forge & Fun",
     theme: "Construction",
@@ -820,8 +741,6 @@ const catalog: Product[] = [
     slug: "city-rescue-garage",
     name: "City Rescue Garage",
     price: 24.99,
-    rating: 4.7,
-    reviewCount: 66,
     ageRange: "6-8 years",
     brand: "Forge & Fun",
     theme: "Rescue",
@@ -840,8 +759,6 @@ const catalog: Product[] = [
     slug: "dino-chariot-vehicle",
     name: "Dinosaur Chariot Vehicle",
     price: 9.99,
-    rating: 4.6,
-    reviewCount: 93,
     ageRange: "6-8 years",
     brand: "Forge & Fun",
     theme: "Dinosaurs",
@@ -859,8 +776,6 @@ const catalog: Product[] = [
     slug: "hero-league-figure",
     name: "Hero League Figure",
     price: 8.99,
-    rating: 4.4,
-    reviewCount: 58,
     ageRange: "6-8 years",
     brand: "Forge & Fun",
     theme: "Heroes",
@@ -878,8 +793,6 @@ const catalog: Product[] = [
     slug: "hipper-collectible-pack",
     name: "Hipper Collectible Pack",
     price: 6.99,
-    rating: 4.5,
-    reviewCount: 74,
     ageRange: "9-12 years",
     brand: "Stage Pop",
     theme: "Collect",
@@ -897,8 +810,6 @@ const catalog: Product[] = [
     slug: "dino-expedition-build",
     name: "Dinosaur Expedition Build",
     price: 16.99,
-    rating: 4.7,
-    reviewCount: 81,
     ageRange: "6-8 years",
     brand: "Orbit",
     theme: "Dinosaurs",
@@ -917,8 +828,6 @@ const catalog: Product[] = [
     slug: "mech-pioneer-build",
     name: "Mech Pioneer Build",
     price: 18.99,
-    rating: 4.6,
-    reviewCount: 52,
     ageRange: "9-12 years",
     brand: "Orbit",
     theme: "Robots",
@@ -937,8 +846,6 @@ const catalog: Product[] = [
     slug: "soccer-star-table-game",
     name: "Soccer Star Table Game",
     price: 19.99,
-    rating: 4.7,
-    reviewCount: 88,
     ageRange: "6-8 years",
     brand: "Table & Tale",
     theme: "Sport",
@@ -957,8 +864,6 @@ const catalog: Product[] = [
     slug: "tabletop-football-pitch",
     name: "Tabletop Football Pitch",
     price: 18.99,
-    rating: 4.6,
-    reviewCount: 61,
     ageRange: "6-8 years",
     brand: "Table & Tale",
     theme: "Sport",
@@ -976,8 +881,6 @@ const catalog: Product[] = [
     slug: "stage-quest-card-game",
     name: "Stage Quest Card Game",
     price: 16.99,
-    rating: 4.5,
-    reviewCount: 47,
     ageRange: "9-12 years",
     brand: "Table & Tale",
     theme: "Music",
@@ -995,8 +898,6 @@ const catalog: Product[] = [
     slug: "cat-face-musical-guitar",
     name: "Cat-Face Musical Guitar",
     price: 8.99,
-    rating: 4.6,
-    reviewCount: 90,
     ageRange: "3-5 years",
     brand: "Bright Apron",
     theme: "Music",
@@ -1014,8 +915,6 @@ const catalog: Product[] = [
     slug: "unicorn-vanity-kit",
     name: "Unicorn Vanity Kit",
     price: 7.99,
-    rating: 4.5,
-    reviewCount: 68,
     ageRange: "6-8 years",
     brand: "Bright Apron",
     theme: "Craft",
@@ -1033,8 +932,6 @@ const catalog: Product[] = [
     slug: "toy-cosmetics-set",
     name: "Toy Cosmetics Set",
     price: 6.99,
-    rating: 4.4,
-    reviewCount: 77,
     ageRange: "6-8 years",
     brand: "Bright Apron",
     theme: "Salon",
@@ -1052,8 +949,6 @@ const catalog: Product[] = [
     slug: "diy-bead-jewelry-set",
     name: "DIY Bead Jewellery Set",
     price: 6.99,
-    rating: 4.5,
-    reviewCount: 59,
     ageRange: "6-8 years",
     brand: "Bright Apron",
     theme: "Craft",
@@ -1071,8 +966,6 @@ const catalog: Product[] = [
     slug: "butter-block-squishy",
     name: "Butter Block Squishy",
     price: 4.99,
-    rating: 4.6,
-    reviewCount: 163,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1091,8 +984,6 @@ const catalog: Product[] = [
     slug: "explorer-binoculars",
     name: "Explorer Binoculars 4×30",
     price: 7.99,
-    rating: 4.5,
-    reviewCount: 64,
     ageRange: "6-8 years",
     brand: "Lumen Kids",
     theme: "Nature",
@@ -1110,8 +1001,6 @@ const catalog: Product[] = [
     slug: "space-explorer-kit",
     name: "Space Explorer Kit",
     price: 9.99,
-    rating: 4.6,
-    reviewCount: 55,
     ageRange: "6-8 years",
     brand: "Lumen Kids",
     theme: "Space",
@@ -1130,8 +1019,6 @@ const catalog: Product[] = [
     slug: "volt-workshop-kit",
     name: "Volt Workshop Kit",
     price: 24.99,
-    rating: 4.7,
-    reviewCount: 48,
     ageRange: "9-12 years",
     brand: "Lumen Kids",
     theme: "Making",
@@ -1150,8 +1037,6 @@ const catalog: Product[] = [
     slug: "brave-geeker-crawler",
     name: "Brave Geeker Rock Crawler",
     price: 14.5,
-    rating: 4.6,
-    reviewCount: 79,
     ageRange: "3-5 years",
     brand: "Volt Racers",
     theme: "RC",
@@ -1169,8 +1054,6 @@ const catalog: Product[] = [
     slug: "speed-phantom-rc",
     name: "Speed Phantom RC",
     price: 22.99,
-    rating: 4.6,
-    reviewCount: 71,
     ageRange: "6-8 years",
     brand: "Volt Racers",
     theme: "RC",
@@ -1189,8 +1072,6 @@ const catalog: Product[] = [
     slug: "rc-monster-truck",
     name: "RC Monster Truck",
     price: 19.99,
-    rating: 4.7,
-    reviewCount: 92,
     ageRange: "6-8 years",
     brand: "Volt Racers",
     theme: "RC",
@@ -1209,8 +1090,6 @@ const catalog: Product[] = [
     slug: "offroad-racing-pioneer",
     name: "Off-Road Racing Pioneer",
     price: 24.99,
-    rating: 4.6,
-    reviewCount: 44,
     ageRange: "9-12 years",
     brand: "Volt Racers",
     theme: "RC",
@@ -1229,8 +1108,6 @@ const catalog: Product[] = [
     slug: "racers-camera-car",
     name: "Racers Camera Car",
     price: 19.99,
-    rating: 4.5,
-    reviewCount: 39,
     ageRange: "9-12 years",
     brand: "Volt Racers",
     theme: "RC",
@@ -1248,8 +1125,6 @@ const catalog: Product[] = [
     slug: "spray-smoke-rc-suv",
     name: "Spray-Smoke RC SUV",
     price: 22.99,
-    rating: 4.6,
-    reviewCount: 57,
     ageRange: "9-12 years",
     brand: "Volt Racers",
     theme: "RC",
@@ -1267,8 +1142,6 @@ const catalog: Product[] = [
     slug: "street-graffiti-rc",
     name: "Street Graffiti RC",
     price: 21.99,
-    rating: 4.5,
-    reviewCount: 36,
     ageRange: "13+ years",
     brand: "Volt Racers",
     theme: "RC",
@@ -1287,8 +1160,6 @@ const catalog: Product[] = [
     slug: "quick-push-console",
     name: "Quick-Push Fidget Console",
     price: 9.99,
-    rating: 4.6,
-    reviewCount: 128,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Fidget",
@@ -1307,8 +1178,6 @@ const catalog: Product[] = [
     slug: "dancing-cactus-pal",
     name: "Dancing Cactus Pal",
     price: 8.99,
-    rating: 4.7,
-    reviewCount: 211,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Novelty",
@@ -1327,8 +1196,6 @@ const catalog: Product[] = [
     slug: "jumbo-peach-squishy",
     name: "Jumbo Peach Squishy",
     price: 8.99,
-    rating: 4.8,
-    reviewCount: 142,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1348,8 +1215,6 @@ const catalog: Product[] = [
     slug: "strawberry-duck-squeeze",
     name: "Strawberry Duck Squeeze",
     price: 6.99,
-    rating: 4.6,
-    reviewCount: 97,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1367,8 +1232,6 @@ const catalog: Product[] = [
     slug: "jumbo-fruit-squishy",
     name: "Jumbo Watermelon Squishy",
     price: 5.99,
-    rating: 4.5,
-    reviewCount: 156,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1387,8 +1250,6 @@ const catalog: Product[] = [
     slug: "giant-strawberry-squishy",
     name: "Giant Strawberry Squishy",
     price: 9.5,
-    rating: 4.8,
-    reviewCount: 188,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1408,8 +1269,6 @@ const catalog: Product[] = [
     slug: "mango-cloud-squishy",
     name: "Mango Cloud Squishy",
     price: 6.5,
-    rating: 4.6,
-    reviewCount: 74,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1428,8 +1287,6 @@ const catalog: Product[] = [
     slug: "grape-cluster-squishy",
     name: "Grape Cluster Squishy",
     price: 6.99,
-    rating: 4.5,
-    reviewCount: 61,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1447,8 +1304,6 @@ const catalog: Product[] = [
     slug: "banana-trio-squishy",
     name: "Banana Trio Squishy",
     price: 5.99,
-    rating: 4.6,
-    reviewCount: 88,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1466,8 +1321,6 @@ const catalog: Product[] = [
     slug: "lucky-cat-squishy",
     name: "Lucky Cat Squishy",
     price: 7.99,
-    rating: 4.7,
-    reviewCount: 92,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1486,8 +1339,6 @@ const catalog: Product[] = [
     slug: "unzip-penguin-squishy",
     name: "Unzip Penguin Squishy",
     price: 7.5,
-    rating: 4.6,
-    reviewCount: 70,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1505,8 +1356,6 @@ const catalog: Product[] = [
     slug: "jumbo-pencil-squishy",
     name: "Jumbo Pencil Squishy",
     price: 8.5,
-    rating: 4.7,
-    reviewCount: 81,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1525,8 +1374,6 @@ const catalog: Product[] = [
     slug: "watermelon-slice-squishy",
     name: "Watermelon Slice Squishy",
     price: 6.5,
-    rating: 4.6,
-    reviewCount: 99,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1545,8 +1392,6 @@ const catalog: Product[] = [
     slug: "rainbow-butter-squishy",
     name: "Rainbow Butter Squishy",
     price: 7.99,
-    rating: 4.8,
-    reviewCount: 174,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1566,8 +1411,6 @@ const catalog: Product[] = [
     slug: "jelly-gummy-bear",
     name: "Jelly Gummy Bear",
     price: 4.99,
-    rating: 4.7,
-    reviewCount: 210,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1586,8 +1429,6 @@ const catalog: Product[] = [
     slug: "sundae-cone-squishy",
     name: "Sundae Cone Squishy",
     price: 7.99,
-    rating: 4.6,
-    reviewCount: 67,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1606,8 +1447,6 @@ const catalog: Product[] = [
     slug: "giant-duck-squishy",
     name: "Giant Duck Squishy",
     price: 12.99,
-    rating: 4.7,
-    reviewCount: 58,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1626,8 +1465,6 @@ const catalog: Product[] = [
     slug: "cloud-ghost-squishy",
     name: "Cloud Ghost Squishy",
     price: 6.99,
-    rating: 4.5,
-    reviewCount: 49,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1645,8 +1482,6 @@ const catalog: Product[] = [
     slug: "jammy-toast-squishy",
     name: "Jammy Toast Squishy",
     price: 6.5,
-    rating: 4.6,
-    reviewCount: 73,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1664,8 +1499,6 @@ const catalog: Product[] = [
     slug: "crunch-carrot-squishy",
     name: "Crunch Carrot Squishy",
     price: 5.5,
-    rating: 4.5,
-    reviewCount: 64,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1683,8 +1516,6 @@ const catalog: Product[] = [
     slug: "pocket-breeze-fan",
     name: "Pocket Breeze Fan",
     price: 6.99,
-    rating: 4.4,
-    reviewCount: 83,
     ageRange: "9-12 years",
     brand: "Volt Racers",
     theme: "Gadget",
@@ -1702,8 +1533,6 @@ const catalog: Product[] = [
     slug: "crystal-mood-lamp",
     name: "Crystal Mood Lamp",
     price: 12.99,
-    rating: 4.5,
-    reviewCount: 41,
     ageRange: "13+ years",
     brand: "Nightfield",
     theme: "Gadget",
@@ -1721,8 +1550,6 @@ const catalog: Product[] = [
     slug: "dumpling-pop-spinner",
     name: "Dumpling Pop Spinner",
     price: 4.99,
-    rating: 4.7,
-    reviewCount: 211,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1742,8 +1569,6 @@ const catalog: Product[] = [
     slug: "sunshine-squeeze-blob",
     name: "Sunshine Squeeze Blob",
     price: 5.5,
-    rating: 4.8,
-    reviewCount: 304,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1763,8 +1588,6 @@ const catalog: Product[] = [
     slug: "unicorn-snuggle-plush",
     name: "Unicorn Snuggle Plush",
     price: 12.99,
-    rating: 4.8,
-    reviewCount: 166,
     ageRange: "3-5 years",
     brand: "Nest & Wool",
     theme: "Comfort",
@@ -1783,8 +1606,6 @@ const catalog: Product[] = [
     slug: "mermaid-dress-up-set",
     name: "Mermaid Dress-Up Set",
     price: 14.99,
-    rating: 4.6,
-    reviewCount: 92,
     ageRange: "3-5 years",
     brand: "Kindred",
     theme: "Dress-up",
@@ -1803,8 +1624,6 @@ const catalog: Product[] = [
     slug: "twin-track-rc-set",
     name: "Twin Track RC Set",
     price: 18.99,
-    rating: 4.7,
-    reviewCount: 148,
     ageRange: "6-8 years",
     brand: "Volt Racers",
     theme: "Racing",
@@ -1824,8 +1643,6 @@ const catalog: Product[] = [
     slug: "beach-bucket-set",
     name: "Beach Bucket Set",
     price: 4.5,
-    rating: 4.5,
-    reviewCount: 77,
     ageRange: "3-5 years",
     brand: "BubbleBurst",
     theme: "Outdoor",
@@ -1843,8 +1660,6 @@ const catalog: Product[] = [
     slug: "swirl-ice-cream-squishy",
     name: "Swirl Ice Cream Squishy",
     price: 7.99,
-    rating: 4.8,
-    reviewCount: 189,
     ageRange: "3-5 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1864,8 +1679,6 @@ const catalog: Product[] = [
     slug: "cheddar-block-squishy",
     name: "Cheddar Block Squishy",
     price: 5.99,
-    rating: 4.6,
-    reviewCount: 172,
     ageRange: "6-8 years",
     brand: "Squish Lane",
     theme: "Sensory",
@@ -1895,43 +1708,35 @@ if (duplicateSlugs.length > 0) {
   throw new Error(`Duplicate product slugs: ${Array.from(new Set(duplicateSlugs)).join(", ")}`);
 }
 
-export const products: Product[] = catalog.map((product) => ({
-  ...product,
-  piecesPerBox: product.piecesPerBox && product.piecesPerBox > 0 ? product.piecesPerBox : 1,
-  images: productGallery(product.slug, product.categorySlug, product.images),
-}));
+export const products: Product[] = catalog.map((product) => {
+  const categorySlug =
+    product.brand === "Toy Bloom Wholesale"
+      ? product.categorySlug
+      : assignedCategory[product.slug] ?? product.categorySlug;
+  const pieces = product.piecesPerBox && product.piecesPerBox > 0 ? product.piecesPerBox : getPiecesPerBox(product) ?? 1;
+  const moqLabel = product.moqLabel ?? `Min order: ${pieces} pcs`;
+  const features = (product.features ?? []).filter(
+    (feature) => !/^minimum order\b/i.test(feature.trim()) && feature !== moqLabel,
+  );
+  return {
+    ...product,
+    categorySlug,
+    piecesPerBox: pieces,
+    moqLabel,
+    features: [moqLabel, ...features],
+    images: productGallery(product.slug, categorySlug, product.images),
+  };
+});
 
 export function getProduct(slug: string) {
   return products.find((product) => product.slug === slug);
 }
 
-/** Core squishy aisles — the main product range for Toy Bloom. */
-export const SQUISHY_CATEGORY_SLUGS = [
-  "fruit-squishies",
-  "food-squishies",
-  "sensory-jars",
-  "crunchy-squishies",
-  "cheese-squishies",
-  "glitter-squeeze",
-  "halloween-squishies",
-] as const;
+/** Every squishy is listed on the Squishies category page. */
+export const SQUISHY_CATEGORY_SLUGS = ["squishies"] as const;
 
 export function getSquishies() {
-  const aisle = new Set<string>(SQUISHY_CATEGORY_SLUGS);
-  const innovativeSlugs = new Set(innovativeStock.map((product) => product.slug));
-  return products
-    .filter(
-      (product) =>
-        aisle.has(product.categorySlug) ||
-        (product.brand === "Squish Lane" && product.theme === "Sensory"),
-    )
-    .sort(
-      (a, b) =>
-        Number(innovativeSlugs.has(b.slug)) - Number(innovativeSlugs.has(a.slug)) ||
-        Number(b.isNew) - Number(a.isNew) ||
-        Number(b.isBestSeller) - Number(a.isBestSeller) ||
-        b.reviewCount - a.reviewCount,
-    );
+  return rankProducts(products.filter((product) => product.categorySlug === "squishies"));
 }
 
 export function getSquishyCount() {
@@ -1939,15 +1744,15 @@ export function getSquishyCount() {
 }
 
 export function getProductsByCategory(categorySlug: string) {
-  return products.filter((product) => product.categorySlug === categorySlug);
+  return rankProducts(products.filter((product) => product.categorySlug === categorySlug));
 }
 
 export function getNewArrivals() {
-  return products.filter((product) => product.isNew);
+  return rankProducts(products.filter((product) => product.isNew));
 }
 
 export function getBestSellers() {
-  return products.filter((product) => product.isBestSeller);
+  return rankProducts(products.filter((product) => product.isBestSeller));
 }
 
 /** Products imported from China Items Listings PDFs / WhatsApp order. */
@@ -1961,9 +1766,7 @@ export function getChinaListingCount() {
 }
 
 export function getFeatured(limit = 8) {
-  return [...products]
-    .sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount)
-    .slice(0, limit);
+  return rankProducts(products).slice(0, limit);
 }
 
 export function getLookbook(limit = 6) {
@@ -1976,7 +1779,7 @@ export function getLookbook(limit = 6) {
 }
 
 export function getProductsByAge(ageRange: Product["ageRange"]) {
-  return products.filter((product) => product.ageRange === ageRange);
+  return rankProducts(products.filter((product) => product.ageRange === ageRange));
 }
 
 function productFamily(slug: string) {
@@ -1987,9 +1790,7 @@ function productFamily(slug: string) {
 export function uniqueVisibleProducts(items: Product[]) {
   const seenImage = new Set<string>();
   const seenFamily = new Set<string>();
-  const ranked = [...items].sort(
-    (a, b) => Number(b.isBestSeller) - Number(a.isBestSeller) || b.rating - a.rating || b.reviewCount - a.reviewCount,
-  );
+  const ranked = rankProducts(items);
   const unique: Product[] = [];
   for (const product of ranked) {
     const image = product.images[0];
@@ -2007,9 +1808,9 @@ export function getProductsForAgeShelf(ageRange: Product["ageRange"]) {
   if (ageRange !== "13+ years") return uniqueVisibleProducts(primary);
   const extra = products.filter(
     (product) =>
-      product.categorySlug === "games-gadgets" ||
+      product.categorySlug === "cars-vehicles" ||
       (product.ageRange === "9-12 years" &&
-        (product.categorySlug === "educational-stem" || product.categorySlug === "building-sets")),
+        (product.categorySlug === "arts-crafts" || product.categorySlug === "building-sets")),
   );
   const map = new Map(primary.map((product) => [product.slug, product]));
   extra.forEach((product) => map.set(product.slug, product));
@@ -2037,10 +1838,12 @@ export function getSaleProducts() {
   const deals = SALE_SLUGS.map((slug) => products.find((product) => product.slug === slug)).filter(
     (product): product is Product => Boolean(product),
   );
-  return deals.map((product) => ({
-    ...product,
-    compareAtPrice: product.compareAtPrice ?? Math.round(product.price * 1.2 * 100) / 100,
-  }));
+  return rankProducts(
+    deals.map((product) => ({
+      ...product,
+      compareAtPrice: product.compareAtPrice ?? Math.round(product.price * 1.2 * 100) / 100,
+    })),
+  );
 }
 
 export function getRelatedProducts(product: Product, limit = 4) {
@@ -2053,18 +1856,9 @@ export function getRelatedProducts(product: Product, limit = 4) {
       item.ageRange === product.ageRange &&
       item.categorySlug !== product.categorySlug,
   );
-  return uniqueVisibleProducts([...sameAisle, ...sameAge].filter((item) => item.images[0] !== product.images[0])).slice(
-    0,
-    limit,
-  );
-}
-
-export function getBrands() {
-  return Array.from(new Set(products.map((product) => product.brand))).sort();
-}
-
-export function getThemes() {
-  return Array.from(new Set(products.map((product) => product.theme))).sort();
+  return rankProducts(
+    uniqueVisibleProducts([...sameAisle, ...sameAge].filter((item) => item.images[0] !== product.images[0])),
+  ).slice(0, limit);
 }
 
 export function getCategoryName(slug: string) {

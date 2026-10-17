@@ -1,0 +1,657 @@
+- generic [active] [ref=f2e1]:
+  - link "Skip to content" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f2e3]:
+    - paragraph [ref=f2e6]: Free UK shipping over £60
+    - generic [ref=f2e7]:
+      - link "Toy Bloom" [ref=f2e8] [cursor=pointer]:
+        - /url: /
+        - img "Toy Bloom — Trendy Toys for Happy Kids" [ref=f2e9]
+      - generic [ref=f2e10]:
+        - link "Search toys" [ref=f2e11] [cursor=pointer]:
+          - /url: /shop/
+        - link "Wishlist" [ref=f2e15] [cursor=pointer]:
+          - /url: /wishlist/
+        - link "Cart" [ref=f2e18] [cursor=pointer]:
+          - /url: /cart/
+        - button "Open menu" [ref=f2e23] [cursor=pointer]
+  - main [ref=f2e25]:
+    - generic [ref=f2e27]:
+      - generic [ref=f2e28]:
+        - paragraph [ref=f2e29]: Toy Bloom · UK toy shop
+        - heading "Toys for every kind of play." [level=1] [ref=f2e30]: Toys for everykind of play.
+        - paragraph [ref=f2e31]: Squishies, STEM, plush, role play and more — browse every aisle with clear box prices and happy UK delivery.
+        - generic [ref=f2e32]:
+          - link "Shop categories" [ref=f2e33] [cursor=pointer]:
+            - /url: /#all-categories
+          - link "Browse shop" [ref=f2e36] [cursor=pointer]:
+            - /url: /shop/
+        - list [ref=f2e37]:
+          - listitem [ref=f2e38]: Full category range
+          - listitem [ref=f2e41]: Safe & Non-Toxic
+      - generic [ref=f2e46]:
+        - img "Toddler playing with wooden blocks, train and stacking rings" [ref=f2e48]
+        - button "Previous slide" [ref=f2e49] [cursor=pointer]
+        - button "Next slide" [ref=f2e52] [cursor=pointer]
+        - generic [ref=f2e55]:
+          - button "Show slide 1" [ref=f2e56] [cursor=pointer]
+          - button "Show slide 2" [ref=f2e57] [cursor=pointer]
+          - button "Show slide 3" [ref=f2e58] [cursor=pointer]
+    - generic [ref=f2e60]:
+      - generic [ref=f2e62]:
+        - img "Toy Bloom squishies — fruit, food and sensory jars" [ref=f2e63]
+        - generic [ref=f2e65]:
+          - paragraph [ref=f2e66]: Squishy aisle · 210 styles
+          - heading "Squishy favourites." [level=2] [ref=f2e69]
+          - paragraph [ref=f2e70]: Every squishy, squeeze, dumpling and slow-rise toy, in one aisle.
+          - generic [ref=f2e71]:
+            - link "Shop Squishies" [ref=f2e72] [cursor=pointer]:
+              - /url: /shop/squishies/
+            - link "See bestsellers" [ref=f2e73] [cursor=pointer]:
+              - /url: "#squishy-wall"
+      - link "Squishies(210)" [ref=f2e75] [cursor=pointer]:
+        - /url: /shop/squishies/
+        - text: Squishies
+        - generic [ref=f2e76]: (210)
+      - generic [ref=f2e78]:
+        - paragraph [ref=f2e79]: 8 favourites
+        - link [ref=f2e83] [cursor=pointer]:
+          - /url: /shop/squishies/
+          - heading "Squishy bestsellers" [level=2] [ref=f2e84]
+      - generic [ref=f2e87]:
+        - article [ref=f2e88]:
+          - generic [ref=f2e89]:
+            - link [ref=f2e90] [cursor=pointer]:
+              - /url: /product/ra-579-30-12cm-animals/
+              - img "12cm Animal Squishy Mix" [ref=f2e91]
+            - generic [ref=f2e92]: 144 pcs · £1.99
+            - button "Add to wishlist" [ref=f2e93] [cursor=pointer]
+          - generic [ref=f2e96]:
+            - heading [level=3] [ref=f2e97]:
+              - link "12cm Animal Squishy Mix" [ref=f2e98] [cursor=pointer]:
+                - /url: /product/ra-579-30-12cm-animals/
+            - paragraph [ref=f2e99]: "Min order: 144 pcs"
+            - generic [ref=f2e100]:
+              - generic [ref=f2e101]: Box price
+              - generic [ref=f2e102]: £1.99
+        - article [ref=f2e103]:
+          - generic [ref=f2e104]:
+            - link [ref=f2e105] [cursor=pointer]:
+              - /url: /product/ra-579-46-12cm-bears/
+              - img "12cm Bear Squishy Mix" [ref=f2e106]
+            - generic [ref=f2e107]: 144 pcs · £1.99
+            - button "Add to wishlist" [ref=f2e108] [cursor=pointer]
+          - generic [ref=f2e111]:
+            - heading [level=3] [ref=f2e112]:
+              - link "12cm Bear Squishy Mix" [ref=f2e113] [cursor=pointer]:
+                - /url: /product/ra-579-46-12cm-bears/
+            - paragraph [ref=f2e114]: "Min order: 144 pcs"
+            - generic [ref=f2e115]:
+              - generic [ref=f2e116]: Box price
+              - generic [ref=f2e117]: £1.99
+        - article [ref=f2e118]:
+          - generic [ref=f2e119]:
+            - link [ref=f2e120] [cursor=pointer]:
+              - /url: /product/ra-579-59-24cm-cylindrical-butter/
+              - img "24cm Cylindrical Butter Stick" [ref=f2e121]
+            - generic [ref=f2e122]: 160 pcs · £6.99
+            - button "Add to wishlist" [ref=f2e123] [cursor=pointer]
+          - generic [ref=f2e126]:
+            - heading [level=3] [ref=f2e127]:
+              - link "24cm Cylindrical Butter Stick" [ref=f2e128] [cursor=pointer]:
+                - /url: /product/ra-579-59-24cm-cylindrical-butter/
+            - paragraph [ref=f2e129]: "Min order: 160 pcs"
+            - generic [ref=f2e130]:
+              - generic [ref=f2e131]: Box price
+              - generic [ref=f2e132]: £6.99
+        - article [ref=f2e133]:
+          - generic [ref=f2e134]:
+            - link [ref=f2e135] [cursor=pointer]:
+              - /url: /product/ra-123-3d-buns/
+              - img "3D Bun Squishies" [ref=f2e136]
+            - generic [ref=f2e137]: 288 pcs · £3.99
+            - button "Add to wishlist" [ref=f2e138] [cursor=pointer]
+          - generic [ref=f2e141]:
+            - heading [level=3] [ref=f2e142]:
+              - link "3D Bun Squishies" [ref=f2e143] [cursor=pointer]:
+                - /url: /product/ra-123-3d-buns/
+            - paragraph [ref=f2e144]: "Min order: 288 pcs"
+            - generic [ref=f2e145]:
+              - generic [ref=f2e146]: Box price
+              - generic [ref=f2e147]: £3.99
+        - article [ref=f2e148]:
+          - generic [ref=f2e149]:
+            - link [ref=f2e150] [cursor=pointer]:
+              - /url: /product/rk-1140-color-cheese/
+              - img "5.5 Colour Cheese Squishy" [ref=f2e151]
+            - generic [ref=f2e152]: 288 pcs · £4.99
+            - button "Add to wishlist" [ref=f2e153] [cursor=pointer]
+          - generic [ref=f2e156]:
+            - heading [level=3] [ref=f2e157]:
+              - link "5.5 Colour Cheese Squishy" [ref=f2e158] [cursor=pointer]:
+                - /url: /product/rk-1140-color-cheese/
+            - paragraph [ref=f2e159]: "Min order: 288 pcs"
+            - generic [ref=f2e160]:
+              - generic [ref=f2e161]: Box price
+              - generic [ref=f2e162]: £4.99
+        - article [ref=f2e163]:
+          - generic [ref=f2e164]:
+            - link [ref=f2e165] [cursor=pointer]:
+              - /url: /product/ra2895-15-5cm-cheese-blocks/
+              - img "5cm Cheese Building Blocks" [ref=f2e166]
+            - generic [ref=f2e167]: 144 pcs · £2.99
+            - button "Add to wishlist" [ref=f2e168] [cursor=pointer]
+          - generic [ref=f2e171]:
+            - heading [level=3] [ref=f2e172]:
+              - link "5cm Cheese Building Blocks" [ref=f2e173] [cursor=pointer]:
+                - /url: /product/ra2895-15-5cm-cheese-blocks/
+            - paragraph [ref=f2e174]: "Min order: 144 pcs"
+            - generic [ref=f2e175]:
+              - generic [ref=f2e176]: Box price
+              - generic [ref=f2e177]: £2.99
+        - article [ref=f2e178]:
+          - generic [ref=f2e179]:
+            - link [ref=f2e180] [cursor=pointer]:
+              - /url: /product/ra2895-13-7cm-cheese-blocks/
+              - img "7cm Cheese Building Blocks" [ref=f2e181]
+            - generic [ref=f2e182]: 72 pcs · £3.99
+            - button "Add to wishlist" [ref=f2e183] [cursor=pointer]
+          - generic [ref=f2e186]:
+            - heading [level=3] [ref=f2e187]:
+              - link "7cm Cheese Building Blocks" [ref=f2e188] [cursor=pointer]:
+                - /url: /product/ra2895-13-7cm-cheese-blocks/
+            - paragraph [ref=f2e189]: "Min order: 72 pcs"
+            - generic [ref=f2e190]:
+              - generic [ref=f2e191]: Box price
+              - generic [ref=f2e192]: £3.99
+        - article [ref=f2e193]:
+          - generic [ref=f2e194]:
+            - link [ref=f2e195] [cursor=pointer]:
+              - /url: /product/ra-579-55-7cm-cheese/
+              - img "7cm Cheese Squishy" [ref=f2e196]
+            - generic [ref=f2e197]: 72 pcs · £4.99
+            - button "Add to wishlist" [ref=f2e198] [cursor=pointer]
+          - generic [ref=f2e201]:
+            - heading [level=3] [ref=f2e202]:
+              - link "7cm Cheese Squishy" [ref=f2e203] [cursor=pointer]:
+                - /url: /product/ra-579-55-7cm-cheese/
+            - paragraph [ref=f2e204]: "Min order: 72 pcs"
+            - generic [ref=f2e205]:
+              - generic [ref=f2e206]: Box price
+              - generic [ref=f2e207]: £4.99
+      - link "Browse all squishies" [ref=f2e209] [cursor=pointer]:
+        - /url: /shop/squishies/
+    - generic [ref=f2e211]:
+      - generic [ref=f2e212]:
+        - generic [ref=f2e213]:
+          - paragraph [ref=f2e214]: All aisles
+          - link [ref=f2e218] [cursor=pointer]:
+            - /url: /shop/
+            - heading "Shop by Category" [level=2] [ref=f2e219]
+        - paragraph [ref=f2e222]: Explore every category — one clear pack shot per aisle, 20 ways to shop.
+      - generic [ref=f2e223]:
+        - link [ref=f2e224] [cursor=pointer]:
+          - /url: /shop/squishies/
+          - img "Squishies" [ref=f2e226]
+          - generic [ref=f2e227]:
+            - paragraph [ref=f2e228]: 210 items
+            - heading "Squishies" [level=3] [ref=f2e229]
+            - generic [ref=f2e230]: Shop
+        - link [ref=f2e233] [cursor=pointer]:
+          - /url: /shop/arts-crafts/
+          - img "Arts, Crafts & Stationery" [ref=f2e235]
+          - generic [ref=f2e236]:
+            - paragraph [ref=f2e237]: 5 items
+            - heading "Arts & Stationery" [level=3] [ref=f2e238]
+            - generic [ref=f2e239]: Shop
+        - link [ref=f2e242] [cursor=pointer]:
+          - /url: /shop/baby-toddler/
+          - img "Baby & Toddler" [ref=f2e244]
+          - generic [ref=f2e245]:
+            - paragraph [ref=f2e246]: 3 items
+            - heading "Baby & Toddler" [level=3] [ref=f2e247]
+            - generic [ref=f2e248]: Shop
+        - link [ref=f2e251] [cursor=pointer]:
+          - /url: /shop/bags-accessories/
+          - img "Bags & Accessories" [ref=f2e253]
+          - generic [ref=f2e254]:
+            - paragraph [ref=f2e255]: 38 items
+            - heading "Bags & Accessories" [level=3] [ref=f2e256]
+            - generic [ref=f2e257]: Shop
+        - link [ref=f2e260] [cursor=pointer]:
+          - /url: /shop/bubble-blowers/
+          - img "Bubbles & Water Toys" [ref=f2e262]
+          - generic [ref=f2e263]:
+            - paragraph [ref=f2e264]: 20 items
+            - heading "Bubbles & Water" [level=3] [ref=f2e265]
+            - generic [ref=f2e266]: Shop
+        - link [ref=f2e269] [cursor=pointer]:
+          - /url: /shop/building-sets/
+          - img "Building & Construction" [ref=f2e271]
+          - generic [ref=f2e272]:
+            - paragraph [ref=f2e273]: 11 items
+            - heading "Building" [level=3] [ref=f2e274]
+            - generic [ref=f2e275]: Shop
+        - link [ref=f2e278] [cursor=pointer]:
+          - /url: /shop/cars-vehicles/
+          - img "Cars & Vehicles" [ref=f2e280]
+          - generic [ref=f2e281]:
+            - paragraph [ref=f2e282]: 31 items
+            - heading "Cars & Vehicles" [level=3] [ref=f2e283]
+            - generic [ref=f2e284]: Shop
+        - link [ref=f2e287] [cursor=pointer]:
+          - /url: /shop/dolls/
+          - img "Dolls" [ref=f2e289]
+          - generic [ref=f2e290]:
+            - paragraph [ref=f2e291]: 20 items
+            - heading "Dolls" [level=3] [ref=f2e292]
+            - generic [ref=f2e293]: Shop
+        - link [ref=f2e296] [cursor=pointer]:
+          - /url: /shop/fidget-spinners/
+          - img "Fidget & Sensory" [ref=f2e298]
+          - generic [ref=f2e299]:
+            - paragraph [ref=f2e300]: 22 items
+            - heading "Fidget & Sensory" [level=3] [ref=f2e301]
+            - generic [ref=f2e302]: Shop
+        - link [ref=f2e305] [cursor=pointer]:
+          - /url: /shop/board-games/
+          - img "Games & Cards" [ref=f2e307]
+          - generic [ref=f2e308]:
+            - paragraph [ref=f2e309]: 10 items
+            - heading "Games & Cards" [level=3] [ref=f2e310]
+            - generic [ref=f2e311]: Shop
+        - link [ref=f2e314] [cursor=pointer]:
+          - /url: /shop/home-gifts/
+          - img "Home & Gifts" [ref=f2e316]
+          - generic [ref=f2e317]:
+            - paragraph [ref=f2e318]: 46 items
+            - heading "Home & Gifts" [level=3] [ref=f2e319]
+            - generic [ref=f2e320]: Shop
+        - link [ref=f2e323] [cursor=pointer]:
+          - /url: /shop/action-figures/
+          - img "K-Pop & Collectible Figures" [ref=f2e325]
+          - generic [ref=f2e326]:
+            - paragraph [ref=f2e327]: 69 items
+            - heading "K-Pop & Figures" [level=3] [ref=f2e328]
+            - generic [ref=f2e329]: Shop
+        - link [ref=f2e332] [cursor=pointer]:
+          - /url: /shop/novelty-keyrings/
+          - img "Keyrings & Bag Charms" [ref=f2e334]
+          - generic [ref=f2e335]:
+            - paragraph [ref=f2e336]: 36 items
+            - heading "Keyrings & Charms" [level=3] [ref=f2e337]
+            - generic [ref=f2e338]: Shop
+        - link [ref=f2e341] [cursor=pointer]:
+          - /url: /shop/labubu/
+          - img "Labubu" [ref=f2e343]
+          - generic [ref=f2e344]:
+            - paragraph [ref=f2e345]: 30 items
+            - heading "Labubu" [level=3] [ref=f2e346]
+            - generic [ref=f2e347]: Shop
+        - link [ref=f2e350] [cursor=pointer]:
+          - /url: /shop/light-up-toys/
+          - img "Light-Up Toys" [ref=f2e352]
+          - generic [ref=f2e353]:
+            - paragraph [ref=f2e354]: 52 items
+            - heading "Light-Up Toys" [level=3] [ref=f2e355]
+            - generic [ref=f2e356]: Shop
+        - link [ref=f2e359] [cursor=pointer]:
+          - /url: /shop/outdoor-sports/
+          - img "Outdoor & Sports" [ref=f2e361]
+          - generic [ref=f2e362]:
+            - paragraph [ref=f2e363]: 26 items
+            - heading "Outdoor & Sports" [level=3] [ref=f2e364]
+            - generic [ref=f2e365]: Shop
+        - link [ref=f2e368] [cursor=pointer]:
+          - /url: /shop/party-spotlight/
+          - img "Party, Hats & Dress-Up" [ref=f2e370]
+          - generic [ref=f2e371]:
+            - paragraph [ref=f2e372]: 28 items
+            - heading "Party & Hats" [level=3] [ref=f2e373]
+            - generic [ref=f2e374]: Shop
+        - link [ref=f2e377] [cursor=pointer]:
+          - /url: /shop/dolls-plush/
+          - img "Plush & Soft Toys" [ref=f2e379]
+          - generic [ref=f2e380]:
+            - paragraph [ref=f2e381]: 51 items
+            - heading "Plush & Soft Toys" [level=3] [ref=f2e382]
+            - generic [ref=f2e383]: Shop
+        - link [ref=f2e386] [cursor=pointer]:
+          - /url: /shop/role-play/
+          - img "Role Play & Pretend Play" [ref=f2e388]
+          - generic [ref=f2e389]:
+            - paragraph [ref=f2e390]: 31 items
+            - heading "Role Play" [level=3] [ref=f2e391]
+            - generic [ref=f2e392]: Shop
+        - link [ref=f2e395] [cursor=pointer]:
+          - /url: /shop/seasonal/
+          - img "Seasonal (Halloween & Christmas)" [ref=f2e397]
+          - generic [ref=f2e398]:
+            - paragraph [ref=f2e399]: 26 items
+            - heading "Seasonal" [level=3] [ref=f2e400]
+            - generic [ref=f2e401]: Shop
+      - link "Open full shop" [ref=f2e405] [cursor=pointer]:
+        - /url: /shop/
+    - generic [ref=f2e407]:
+      - generic [ref=f2e408]:
+        - paragraph [ref=f2e409]: Parents pick these first
+        - heading "Best Sellers" [level=2] [ref=f2e413]
+      - generic [ref=f2e417]:
+        - button "Previous bestsellers" [ref=f2e418] [cursor=pointer]
+        - region "Best sellers" [ref=f2e421]:
+          - article [ref=f2e423]:
+            - generic [ref=f2e424]:
+              - link [ref=f2e425] [cursor=pointer]:
+                - /url: /product/ra-579-59-24cm-cylindrical-butter/
+                - img "24cm Cylindrical Butter Stick" [ref=f2e426]
+              - generic [ref=f2e427]: New
+              - generic [ref=f2e428]: 160 pcs · £6.99
+              - button "Add to wishlist" [ref=f2e429] [cursor=pointer]
+            - generic [ref=f2e432]:
+              - paragraph [ref=f2e433]: Squishies
+              - heading [level=3] [ref=f2e434]:
+                - link "24cm Cylindrical Butter Stick" [ref=f2e435] [cursor=pointer]:
+                  - /url: /product/ra-579-59-24cm-cylindrical-butter/
+              - generic [ref=f2e436]:
+                - generic [ref=f2e437]: Box price
+                - generic [ref=f2e438]: £6.99
+              - button "Add box" [ref=f2e439] [cursor=pointer]
+          - article [ref=f2e444]:
+            - generic [ref=f2e445]:
+              - link [ref=f2e446] [cursor=pointer]:
+                - /url: /product/ra-123-3d-buns/
+                - img "3D Bun Squishies" [ref=f2e447]
+              - generic [ref=f2e448]: New
+              - generic [ref=f2e449]: 288 pcs · £3.99
+              - button "Add to wishlist" [ref=f2e450] [cursor=pointer]
+            - generic [ref=f2e453]:
+              - paragraph [ref=f2e454]: Squishies
+              - heading [level=3] [ref=f2e455]:
+                - link "3D Bun Squishies" [ref=f2e456] [cursor=pointer]:
+                  - /url: /product/ra-123-3d-buns/
+              - generic [ref=f2e457]:
+                - generic [ref=f2e458]: Box price
+                - generic [ref=f2e459]: £3.99
+              - button "Add box" [ref=f2e460] [cursor=pointer]
+          - article [ref=f2e465]:
+            - generic [ref=f2e466]:
+              - link [ref=f2e467] [cursor=pointer]:
+                - /url: /product/rk-1140-color-cheese/
+                - img "5.5 Colour Cheese Squishy" [ref=f2e468]
+              - generic [ref=f2e469]: New
+              - generic [ref=f2e470]: 288 pcs · £4.99
+              - button "Add to wishlist" [ref=f2e471] [cursor=pointer]
+            - generic [ref=f2e474]:
+              - paragraph [ref=f2e475]: Squishies
+              - heading [level=3] [ref=f2e476]:
+                - link "5.5 Colour Cheese Squishy" [ref=f2e477] [cursor=pointer]:
+                  - /url: /product/rk-1140-color-cheese/
+              - generic [ref=f2e478]:
+                - generic [ref=f2e479]: Box price
+                - generic [ref=f2e480]: £4.99
+              - button "Add box" [ref=f2e481] [cursor=pointer]
+          - article [ref=f2e486]:
+            - generic [ref=f2e487]:
+              - link [ref=f2e488] [cursor=pointer]:
+                - /url: /product/ra-579-55-7cm-cheese/
+                - img "7cm Cheese Squishy" [ref=f2e489]
+              - generic [ref=f2e490]: New
+              - generic [ref=f2e491]: 72 pcs · £4.99
+              - button "Add to wishlist" [ref=f2e492] [cursor=pointer]
+            - generic [ref=f2e495]:
+              - paragraph [ref=f2e496]: Squishies
+              - heading [level=3] [ref=f2e497]:
+                - link "7cm Cheese Squishy" [ref=f2e498] [cursor=pointer]:
+                  - /url: /product/ra-579-55-7cm-cheese/
+              - generic [ref=f2e499]:
+                - generic [ref=f2e500]: Box price
+                - generic [ref=f2e501]: £4.99
+              - button "Add box" [ref=f2e502] [cursor=pointer]
+          - article [ref=f2e507]:
+            - generic [ref=f2e508]:
+              - link [ref=f2e509] [cursor=pointer]:
+                - /url: /product/ra-579-76-7cm-cheese/
+                - img "7cm Vaseline Cheese" [ref=f2e510]
+              - generic [ref=f2e511]: New
+              - generic [ref=f2e512]: 72 pcs · £4.99
+              - button "Add to wishlist" [ref=f2e513] [cursor=pointer]
+            - generic [ref=f2e516]:
+              - paragraph [ref=f2e517]: Squishies
+              - heading [level=3] [ref=f2e518]:
+                - link "7cm Vaseline Cheese" [ref=f2e519] [cursor=pointer]:
+                  - /url: /product/ra-579-76-7cm-cheese/
+              - generic [ref=f2e520]:
+                - generic [ref=f2e521]: Box price
+                - generic [ref=f2e522]: £4.99
+              - button "Add box" [ref=f2e523] [cursor=pointer]
+          - article [ref=f2e528]:
+            - generic [ref=f2e529]:
+              - link [ref=f2e530] [cursor=pointer]:
+                - /url: /product/ra-579-67-7cm-vaseline-cheese/
+                - img "7cm Vaseline Cheese Squishy" [ref=f2e531]
+              - generic [ref=f2e532]: New
+              - generic [ref=f2e533]: 72 pcs · £4.99
+              - button "Add to wishlist" [ref=f2e534] [cursor=pointer]
+            - generic [ref=f2e537]:
+              - paragraph [ref=f2e538]: Squishies
+              - heading [level=3] [ref=f2e539]:
+                - link "7cm Vaseline Cheese Squishy" [ref=f2e540] [cursor=pointer]:
+                  - /url: /product/ra-579-67-7cm-vaseline-cheese/
+              - generic [ref=f2e541]:
+                - generic [ref=f2e542]: Box price
+                - generic [ref=f2e543]: £4.99
+              - button "Add box" [ref=f2e544] [cursor=pointer]
+          - article [ref=f2e549]:
+            - generic [ref=f2e550]:
+              - link [ref=f2e551] [cursor=pointer]:
+                - /url: /product/ra2608-2-big-butter/
+                - img "Big Butter Squishy" [ref=f2e552]
+              - generic [ref=f2e553]: New
+              - generic [ref=f2e554]: 48 pcs · £6.99
+              - button "Add to wishlist" [ref=f2e555] [cursor=pointer]
+            - generic [ref=f2e558]:
+              - paragraph [ref=f2e559]: Squishies
+              - heading [level=3] [ref=f2e560]:
+                - link "Big Butter Squishy" [ref=f2e561] [cursor=pointer]:
+                  - /url: /product/ra2608-2-big-butter/
+              - generic [ref=f2e562]:
+                - generic [ref=f2e563]: Box price
+                - generic [ref=f2e564]: £6.99
+              - button "Add box" [ref=f2e565] [cursor=pointer]
+          - article [ref=f2e570]:
+            - generic [ref=f2e571]:
+              - link [ref=f2e572] [cursor=pointer]:
+                - /url: /product/butter-block-squishy/
+                - img "Butter Block Squishy" [ref=f2e573]
+              - generic [ref=f2e574]: Bestseller
+              - generic [ref=f2e575]: 1 pcs · £4.99
+              - button "Add to wishlist" [ref=f2e576] [cursor=pointer]
+            - generic [ref=f2e579]:
+              - paragraph [ref=f2e580]: Squishies
+              - heading [level=3] [ref=f2e581]:
+                - link "Butter Block Squishy" [ref=f2e582] [cursor=pointer]:
+                  - /url: /product/butter-block-squishy/
+              - generic [ref=f2e583]:
+                - generic [ref=f2e584]: Box price
+                - generic [ref=f2e585]: £4.99
+              - button "Add box" [ref=f2e586] [cursor=pointer]
+          - article [ref=f2e591]:
+            - generic [ref=f2e592]:
+              - link [ref=f2e593] [cursor=pointer]:
+                - /url: /product/ra2895-7-butter-blocks/
+                - img "Butter Building Blocks" [ref=f2e594]
+              - generic [ref=f2e595]: New
+              - generic [ref=f2e596]: 144 pcs · £3.99
+              - button "Add to wishlist" [ref=f2e597] [cursor=pointer]
+            - generic [ref=f2e600]:
+              - paragraph [ref=f2e601]: Squishies
+              - heading [level=3] [ref=f2e602]:
+                - link "Butter Building Blocks" [ref=f2e603] [cursor=pointer]:
+                  - /url: /product/ra2895-7-butter-blocks/
+              - generic [ref=f2e604]:
+                - generic [ref=f2e605]: Box price
+                - generic [ref=f2e606]: £3.99
+              - button "Add box" [ref=f2e607] [cursor=pointer]
+          - article [ref=f2e612]:
+            - generic [ref=f2e613]:
+              - link [ref=f2e614] [cursor=pointer]:
+                - /url: /product/cheddar-block-squishy/
+                - img "Cheddar Block Squishy" [ref=f2e615]
+              - generic [ref=f2e616]: Bestseller
+              - generic [ref=f2e617]: 1 pcs · £5.99
+              - button "Add to wishlist" [ref=f2e618] [cursor=pointer]
+            - generic [ref=f2e621]:
+              - paragraph [ref=f2e622]: Squishies
+              - heading [level=3] [ref=f2e623]:
+                - link "Cheddar Block Squishy" [ref=f2e624] [cursor=pointer]:
+                  - /url: /product/cheddar-block-squishy/
+              - generic [ref=f2e625]:
+                - generic [ref=f2e626]: Box price
+                - generic [ref=f2e627]: £5.99
+              - button "Add box" [ref=f2e628] [cursor=pointer]
+        - button "Next bestsellers" [ref=f2e632] [cursor=pointer]
+        - generic [ref=f2e635]:
+          - button "Show 24cm Cylindrical Butter Stick" [ref=f2e636] [cursor=pointer]
+          - button "Show 3D Bun Squishies" [ref=f2e637] [cursor=pointer]
+          - button "Show 5.5 Colour Cheese Squishy" [ref=f2e638] [cursor=pointer]
+          - button "Show 7cm Cheese Squishy" [ref=f2e639] [cursor=pointer]
+          - button "Show 7cm Vaseline Cheese" [ref=f2e640] [cursor=pointer]
+          - button "Show 7cm Vaseline Cheese Squishy" [ref=f2e641] [cursor=pointer]
+          - button "Show Big Butter Squishy" [ref=f2e642] [cursor=pointer]
+          - button "Show Butter Block Squishy" [ref=f2e643] [cursor=pointer]
+          - button "Show Butter Building Blocks" [ref=f2e644] [cursor=pointer]
+          - button "Show Cheddar Block Squishy" [ref=f2e645] [cursor=pointer]
+    - generic [ref=f2e648]:
+      - generic [ref=f2e649]:
+        - paragraph [ref=f2e650]: Play with purpose
+        - heading "Learning Benefits for Every Child" [level=2] [ref=f2e654]
+      - generic [ref=f2e657]:
+        - article [ref=f2e658]:
+          - heading "Boosts Cognitive Skills" [level=3] [ref=f2e670]
+          - paragraph [ref=f2e671]: Encourages problem solving and critical thinking.
+        - article [ref=f2e672]:
+          - heading "Enhances Motor Skills" [level=3] [ref=f2e679]
+          - paragraph [ref=f2e680]: Builds hand-eye coordination and fine motor control.
+        - article [ref=f2e681]:
+          - heading "Encourages Creativity" [level=3] [ref=f2e689]
+          - paragraph [ref=f2e690]: Sparks imagination and honest self-expression.
+        - article [ref=f2e691]:
+          - heading "Builds Confidence" [level=3] [ref=f2e696]
+          - paragraph [ref=f2e697]: Helps children try, finish, and feel proud of play.
+        - article [ref=f2e698]:
+          - heading "Strengthens Social Skills" [level=3] [ref=f2e705]
+          - paragraph [ref=f2e706]: Encourages sharing, teamwork, and communication.
+    - generic [ref=f2e709]:
+      - generic [ref=f2e716]:
+        - heading "Free Shipping" [level=3] [ref=f2e717]
+        - paragraph [ref=f2e718]: On orders over £60
+      - generic [ref=f2e723]:
+        - heading "Easy Returns" [level=3] [ref=f2e724]
+        - paragraph [ref=f2e725]: 14-day hassle-free returns
+      - generic [ref=f2e730]:
+        - heading "Secure Checkout" [level=3] [ref=f2e731]
+        - paragraph [ref=f2e732]: 100% safe & secure payments
+      - generic [ref=f2e737]:
+        - heading "Sustainably Made" [level=3] [ref=f2e738]
+        - paragraph [ref=f2e739]: Eco-friendly toys and packaging
+    - generic [ref=f2e743]:
+      - heading "Let’s Stay in Touch!" [level=2] [ref=f2e744]
+      - paragraph [ref=f2e745]: Sign up for exclusive offers, new arrivals, and learning tips for your little ones.
+      - generic [ref=f2e747]:
+        - generic [ref=f2e748]: Email address
+        - textbox "Email address" [ref=f2e749]:
+          - /placeholder: Enter your email address
+        - button "Subscribe" [ref=f2e750] [cursor=pointer]
+  - contentinfo [ref=f2e751]:
+    - generic [ref=f2e752]:
+      - generic [ref=f2e753]:
+        - link "Toy Bloom" [ref=f2e755] [cursor=pointer]:
+          - /url: /
+          - img "Toy Bloom — Trendy Toys for Happy Kids" [ref=f2e756]
+        - paragraph [ref=f2e757]: Toy Bloom
+        - paragraph [ref=f2e758]: Play. Learn. Grow Together.
+        - paragraph [ref=f2e759]: We believe in the power of play to inspire young minds and create bright futures.
+        - list [ref=f2e760]:
+          - listitem [ref=f2e761]:
+            - link "Facebook" [ref=f2e762] [cursor=pointer]:
+              - /url: https://facebook.com
+          - listitem [ref=f2e765]:
+            - link "Instagram" [ref=f2e766] [cursor=pointer]:
+              - /url: https://instagram.com
+          - listitem [ref=f2e769]:
+            - link "YouTube" [ref=f2e770] [cursor=pointer]:
+              - /url: https://youtube.com
+          - listitem [ref=f2e773]:
+            - link "WhatsApp" [ref=f2e774] [cursor=pointer]:
+              - /url: https://wa.me/441613960184
+          - listitem [ref=f2e777]:
+            - link "TikTok" [ref=f2e778] [cursor=pointer]:
+              - /url: https://tiktok.com
+      - generic [ref=f2e781]:
+        - paragraph [ref=f2e782]: Shop
+        - list [ref=f2e783]:
+          - listitem [ref=f2e784]:
+            - link "Squishies" [ref=f2e785] [cursor=pointer]:
+              - /url: /#squishies
+          - listitem [ref=f2e786]:
+            - link "Shop All" [ref=f2e787] [cursor=pointer]:
+              - /url: /shop/
+          - listitem [ref=f2e788]:
+            - link "All Categories" [ref=f2e789] [cursor=pointer]:
+              - /url: /shop/#all-categories
+          - listitem [ref=f2e790]:
+            - link "Squishies" [ref=f2e791] [cursor=pointer]:
+              - /url: /shop/squishies/
+          - listitem [ref=f2e792]:
+            - link "Plush & Soft Toys" [ref=f2e793] [cursor=pointer]:
+              - /url: /shop/dolls-plush/
+          - listitem [ref=f2e794]:
+            - link "Cars & Vehicles" [ref=f2e795] [cursor=pointer]:
+              - /url: /shop/cars-vehicles/
+          - listitem [ref=f2e796]:
+            - link "Games & Cards" [ref=f2e797] [cursor=pointer]:
+              - /url: /shop/board-games/
+          - listitem [ref=f2e798]:
+            - link "Pay Now" [ref=f2e799] [cursor=pointer]:
+              - /url: /pay/
+      - generic [ref=f2e800]:
+        - paragraph [ref=f2e801]: Customer Care
+        - list [ref=f2e802]:
+          - listitem [ref=f2e803]:
+            - link "Contact Us" [ref=f2e804] [cursor=pointer]:
+              - /url: /contact/
+          - listitem [ref=f2e805]:
+            - link "Shipping Info" [ref=f2e806] [cursor=pointer]:
+              - /url: /shipping/
+          - listitem [ref=f2e807]:
+            - link "Returns & Exchanges" [ref=f2e808] [cursor=pointer]:
+              - /url: /faq/
+          - listitem [ref=f2e809]:
+            - link "FAQ" [ref=f2e810] [cursor=pointer]:
+              - /url: /faq/
+      - generic [ref=f2e811]:
+        - paragraph [ref=f2e812]: About Us
+        - list [ref=f2e813]:
+          - listitem [ref=f2e814]:
+            - link "Our Story" [ref=f2e815] [cursor=pointer]:
+              - /url: /about/
+          - listitem [ref=f2e816]:
+            - link "Blog" [ref=f2e817] [cursor=pointer]:
+              - /url: /blog/
+          - listitem [ref=f2e818]:
+            - link "Safety & Quality" [ref=f2e819] [cursor=pointer]:
+              - /url: /privacy/
+          - listitem [ref=f2e820]:
+            - link "Terms of Service" [ref=f2e821] [cursor=pointer]:
+              - /url: /terms/
+      - generic [ref=f2e822]:
+        - paragraph [ref=f2e832]: Nurturing Play.Inspiring Growth.
+        - paragraph [ref=f2e833]: Manchester · M2 6AQ
+    - generic [ref=f2e835]:
+      - paragraph [ref=f2e836]: © 2026 Toy Bloom. Prices in £.
+      - paragraph [ref=f2e837]:
+        - link "Terms of Service" [ref=f2e838] [cursor=pointer]:
+          - /url: /terms/
+        - link "Privacy Policy" [ref=f2e839] [cursor=pointer]:
+          - /url: /privacy/
+  - alert [ref=f2e840]

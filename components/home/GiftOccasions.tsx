@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/Button";
 
 const occasions = [
   { href: "/shop/party-spotlight", title: "Birthday Gifts", image: img.giftBirthday },
-  { href: "/shop/christmas-glow", title: "Holiday Gifts", image: img.giftHoliday },
-  { href: "/shop/educational-stem", title: "Back to School", image: img.giftSchool },
+  { href: "/shop/seasonal", title: "Holiday Gifts", image: img.giftHoliday },
+  { href: "/shop/arts-crafts", title: "Back to School", image: img.giftSchool },
   { href: "/shop/arts-crafts", title: "Rainy Day Fun", image: img.giftRainy },
-  { href: "/shop/arts-crafts", title: "Creative Play", image: img.giftArt },
-  { href: "/shop/games-gadgets", title: "Travel Toys", image: img.giftTravel },
+  { href: "/shop/role-play", title: "Creative Play", image: img.giftArt },
+  { href: "/shop/cars-vehicles", title: "Travel Toys", image: img.giftTravel },
 ];
 
 export function GiftOccasions() {

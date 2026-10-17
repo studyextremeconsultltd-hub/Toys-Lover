@@ -6,8 +6,6 @@ export const telegramStock: Product[] = [
     "slug": "tg-3d-plastic-playing-cards-7",
     "name": "3D Plastic Playing Cards",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Games",
@@ -16,23 +14,24 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-3d-plastic-playing-cards-7-1.webp",
       "/images/products/telegram/tg-3d-plastic-playing-cards-7-2.webp"
     ],
-    "shortDescription": "New 3D plastic playing cards available. Football cards. Stitch cards. Pokémon cards. 10 piece pack. 15 pack in a box.",
-    "description": "New 3D plastic playing cards available. Football cards. Stitch cards. Pokémon cards. 10 piece pack. 15 pack in a box.",
+    "shortDescription": "New 3D plastic playing cards available. Football cards. Stitch cards. Pokémon cards. 10pcs pack. 15 pack in a box.",
+    "description": "New 3D plastic playing cards available. Football cards. Stitch cards. Pokémon cards. 10pcs pack. 15 pack in a box.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each"
+      "Min order: 15 packs (1 box)",
+      "£1.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 15,
+    "moqUnit": "packs",
+    "moqLabel": "Min order: 15 packs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-pok-mon-cards-pack-8",
     "name": "Pokémon Cards Pack",
     "price": 1.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Games",
@@ -43,20 +42,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Pokémon normal cards 30cm c in a pack.",
     "description": "Pokémon normal cards 30cm c in a pack.",
     "features": [
-      "Minimum order: 1 pcs, £1.25 each"
+      "Min order: 1 pc",
+      "£1.25 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-pok-mon-3d-plastic-cards-gold-silver-multicolour-9",
-    "name": "Pokémon 3D Plastic Cards - Gold, Silver & Multicolour",
+    "name": "Pokémon 3D Plastic Cards Gold, Silver & Multicolour",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Games",
@@ -68,10 +68,11 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-pok-mon-3d-plastic-cards-gold-silver-multicolour-9-4.webp",
       "/images/products/telegram/tg-pok-mon-3d-plastic-cards-gold-silver-multicolour-9-5.webp"
     ],
-    "shortDescription": "New Pokémon 3D plastic cards in golden silver and multi coloured 30 piece in pack. 20 piece in box.",
-    "description": "New Pokémon 3D plastic cards in golden silver and multi coloured 30 piece in pack. 20 piece in box.",
+    "shortDescription": "New Pokémon 3D plastic cards in golden silver and multi coloured 30pcs in pack. 20pcs in box.",
+    "description": "New Pokémon 3D plastic cards in golden silver and multi coloured 30pcs in pack. 20pcs in box.",
     "features": [
-      "Minimum order: 20 pcs, £2.50 each",
+      "Min order: 20 packs (1 box)",
+      "£2.50 each",
       "30 per box",
       "30 cards per pack; 20 packs per box"
     ],
@@ -79,44 +80,45 @@ export const telegramStock: Product[] = [
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 20,
+    "moqUnit": "packs",
+    "moqLabel": "Min order: 20 packs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-glow-in-the-dark-room-stickers-stars-dinosaur-unic-14",
-    "name": "Glow in the Dark Room Stickers - Stars, Dinosaur & Unicorn",
+    "name": "Glow in the Dark Room Stickers Stars, Dinosaur & Unicorn",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dinosaur",
-    "categorySlug": "arts-crafts",
+    "categorySlug": "light-up-toys",
     "images": [
       "/images/products/telegram/tg-glow-in-the-dark-room-stickers-stars-dinosaur-unic-14-1.webp",
       "/images/products/telegram/tg-glow-in-the-dark-room-stickers-stars-dinosaur-unic-14-2.webp",
       "/images/products/telegram/tg-glow-in-the-dark-room-stickers-stars-dinosaur-unic-14-3.webp"
     ],
-    "shortDescription": "New glow in dark for kids rooms in stars, dinosaur and unicorn.",
-    "description": "New glow in dark for kids rooms in stars, dinosaur and unicorn.",
+    "shortDescription": "New glow in dark for kids rooms in stars, Dinosaur and unicorn.",
+    "description": "New glow in dark for kids rooms in stars, Dinosaur and unicorn.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each"
+      "Min order: 1 pc",
+      "£1.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-glow-in-the-dark-glasses-17",
     "name": "Glow in the Dark Glasses",
     "price": 0.9,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Play",
-    "categorySlug": "light-up-glasses",
+    "theme": "Lights",
+    "categorySlug": "light-up-toys",
     "images": [
       "/images/products/telegram/tg-glow-in-the-dark-glasses-17-1.webp",
       "/images/products/telegram/tg-glow-in-the-dark-glasses-17-2.webp",
@@ -125,44 +127,46 @@ export const telegramStock: Product[] = [
     "shortDescription": "Glow in a dark glasses.",
     "description": "Glow in a dark glasses.",
     "features": [
-      "Minimum order: 1 pcs, £0.90 each"
+      "Min order: 1 pc",
+      "£0.90 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-glow-in-dark-sword-21",
     "name": "Glow in Dark Sword",
     "price": 1.2,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
-    "categorySlug": "glow-swords",
+    "categorySlug": "light-up-toys",
     "images": [
       "/images/products/telegram/tg-glow-in-dark-sword-21-1.webp"
     ],
     "shortDescription": "Glow in dark sword.",
     "description": "Glow in dark sword.",
     "features": [
-      "Minimum order: 1 pcs, £1.20 each"
+      "Min order: 1 pc",
+      "£1.20 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stich-65cm-31",
     "name": "Stitch 65cm",
     "price": 12.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -177,20 +181,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Stitch 65cm.",
     "description": "New Stitch 65cm.",
     "features": [
-      "Minimum order: 1 pcs, £12.00 each"
+      "Min order: 1 pc",
+      "£12.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-paw-patrol-plush-45cm-36",
     "name": "Paw Patrol Plush 45cm",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -204,20 +209,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Paw patrol 45cm.",
     "description": "Paw patrol 45cm.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-big-size-35cm-teddy-40",
     "name": "Big Size 35cm Teddy",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -230,20 +236,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Big size 35cm teddy.",
     "description": "Big size 35cm teddy.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each"
+      "Min order: 1 pc",
+      "£1.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-colourful-45cm-teddy-43",
     "name": "Colourful 45cm Teddy",
     "price": 2.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -254,45 +261,47 @@ export const telegramStock: Product[] = [
     "shortDescription": "Colourful 45cm teddy 2.",
     "description": "Colourful 45cm teddy 2.",
     "features": [
-      "Minimum order: 1 pcs, £2.00 each"
+      "Min order: 1 pc",
+      "£2.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-barbie-44",
     "name": "Barbie",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "theme": "Dolls",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-barbie-44-1.webp",
       "/images/products/telegram/tg-barbie-44-2.webp"
     ],
-    "shortDescription": "New Barbie.",
-    "description": "New Barbie.",
+    "shortDescription": "New Barbie at.",
+    "description": "New Barbie at.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-spider-man-bump-and-go-musical-47",
     "name": "Spider Man Bump and Go Musical",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -304,20 +313,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "New spider man bump and go musical.",
     "description": "New spider man bump and go musical.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-light-up-stars-and-butterfly-50",
     "name": "Light Up Stars and Butterfly",
     "price": 2.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -329,48 +339,50 @@ export const telegramStock: Product[] = [
     "shortDescription": "Light up stars and butterfly.",
     "description": "Light up stars and butterfly.",
     "features": [
-      "Minimum order: 1 pcs, £2.25 each"
+      "Min order: 1 pc",
+      "£2.25 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-metal-set-of-car-sets-52",
     "name": "Metal Set of Car Sets",
     "price": 7.2,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-metal-set-of-car-sets-52-1.webp"
     ],
     "shortDescription": "Metal set of car sets.",
     "description": "Metal set of car sets.",
     "features": [
-      "Minimum order: 1 pcs, £7.20 each"
+      "Min order: 1 pc",
+      "£7.20 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-pop-up-ears-and-light-up-hats-53",
-    "name": "Pop Up Ears and Light Up Hats",
+    "name": "Pop Up Ears and Light Hats",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
-    "categorySlug": "light-up-hats",
+    "categorySlug": "party-spotlight",
     "images": [
       "/images/products/telegram/tg-pop-up-ears-and-light-up-hats-53-1.webp",
       "/images/products/telegram/tg-pop-up-ears-and-light-up-hats-53-2.webp",
@@ -384,24 +396,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "All new pop up ears and light up hats.",
     "description": "All new pop up ears and light up hats.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each"
+      "Min order: 1 pc",
+      "£3.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-avengers-sets-with-sword-63",
     "name": "Avengers Sets with Sword",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Lights",
-    "categorySlug": "glow-swords",
+    "theme": "Characters",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-avengers-sets-with-sword-63-1.webp",
       "/images/products/telegram/tg-avengers-sets-with-sword-63-2.webp",
@@ -410,20 +423,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Avengers sets with sword.",
     "description": "Avengers sets with sword.",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each"
+      "Min order: 1 pc",
+      "£7.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-gel-gun-70",
     "name": "Gel Gun",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
@@ -441,25 +455,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Gel gun. Or 10 mix for.",
     "description": "Gel gun. Or 10 mix for.",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each",
+      "Min order: 1 pc",
+      "£8.50 each",
       "Bulk: 10 for £70.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-helloween-light-up-mask-76",
     "name": "Halloween Light-Up Mask",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Halloween",
-    "categorySlug": "funky-frights",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-helloween-light-up-mask-76-1.webp",
       "/images/products/telegram/tg-helloween-light-up-mask-76-2.webp",
@@ -469,21 +484,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Halloween light-up mask. Each. Or 20 mix for.",
     "description": "Halloween light-up mask. Each. Or 20 mix for.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "Bulk: 20 for £50.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-mario-and-spider-dancing-98",
     "name": "Mario and Spider Dancing",
     "price": 5.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -498,21 +514,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Mario and spider dancing. Or 12 mix for.",
     "description": "Mario and spider dancing. Or 12 mix for.",
     "features": [
-      "Minimum order: 1 pcs, £5.00 each",
+      "Min order: 1 pc",
+      "£5.00 each",
       "Bulk: 12 for £54.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-light-up-in-trend-123",
-    "name": "Light Up in Trend",
+    "name": "Light-Up Trend Toys",
     "price": 1.1,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -523,25 +540,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New light up in trend and pack of 100.",
     "description": "New light up in trend and pack of 100.",
     "features": [
-      "Minimum order: 1 pcs, £1.10 each",
+      "Min order: 1 pc",
+      "£1.10 each",
       "Bulk: 100 for £95.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-halloween-skulls-jokers-125",
     "name": "Halloween Skulls & Jokers",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Halloween",
-    "categorySlug": "funky-frights",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-halloween-skulls-jokers-125-1.webp",
       "/images/products/telegram/tg-halloween-skulls-jokers-125-2.webp",
@@ -552,69 +570,72 @@ export const telegramStock: Product[] = [
     "shortDescription": "All Halloween skulls and jokers 🃏 available at and.",
     "description": "All Halloween skulls and jokers 🃏 available at and.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "£4.50 and £6.50 sizes"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-christmas-light-50pic-battery-operated-137",
-    "name": "Christmas Light 50 Piece Battery Operated",
+    "name": "Christmas Light 50pcs Battery Operated",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Christmas",
-    "categorySlug": "christmas-glow",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-christmas-light-50pic-battery-operated-137-1.webp"
     ],
-    "shortDescription": "New Christmas light 50 piece battery operated.",
-    "description": "New Christmas light 50 piece battery operated.",
+    "shortDescription": "New Christmas light 50pcs battery operated.",
+    "description": "New Christmas light 50pcs battery operated.",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each"
+      "Min order: 1 pc",
+      "£2.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-christmas-lights-battery-operated-138",
     "name": "Christmas Lights Battery Operated",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Christmas",
-    "categorySlug": "christmas-glow",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-christmas-lights-battery-operated-138-1.webp"
     ],
     "shortDescription": "New Christmas lights battery operated.",
     "description": "New Christmas lights battery operated.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each"
+      "Min order: 1 pc",
+      "£1.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-50-pic-multicoloured-led-timer-lights-battery-oper-139",
-    "name": "50 Piece Multicoloured LED Timer Lights Battery Operated",
+    "name": "50pcs Multicoloured LED Timer Lights Battery Operated",
     "price": 3.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -622,47 +643,49 @@ export const telegramStock: Product[] = [
     "images": [
       "/images/products/telegram/tg-50-pic-multicoloured-led-timer-lights-battery-oper-139-1.webp"
     ],
-    "shortDescription": "New 50 piece multicoloured led timer lights battery operated.",
-    "description": "New 50 piece multicoloured led timer lights battery operated.",
+    "shortDescription": "New 50pcs multicoloured led timer lights battery operated.",
+    "description": "New 50pcs multicoloured led timer lights battery operated.",
     "features": [
-      "Minimum order: 1 pcs, £3.25 each"
+      "Min order: 1 pc",
+      "£3.25 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-light-up-sword-145",
     "name": "Light Up Sword",
     "price": 1.95,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
-    "categorySlug": "glow-swords",
+    "categorySlug": "light-up-toys",
     "images": [
       "/images/products/telegram/tg-light-up-sword-145-1.webp"
     ],
     "shortDescription": "Light up sword.",
     "description": "Light up sword.",
     "features": [
-      "Minimum order: 1 pcs, £1.95 each"
+      "Min order: 1 pc",
+      "£1.95 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-light-up-balloons-146",
     "name": "Light Up Balloons",
     "price": 1.4,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -673,20 +696,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Light up balloons.",
     "description": "Light up balloons.",
     "features": [
-      "Minimum order: 1 pcs, £1.40 each"
+      "Min order: 1 pc",
+      "£1.40 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-light-up-stars-and-butterflies-147",
     "name": "Light Up Stars and Butterflies",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -698,24 +722,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Light up stars and butterflies.",
     "description": "Light up stars and butterflies.",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each"
+      "Min order: 1 pc",
+      "£2.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-lol-surprise-glitter-set-trolley-bag-151",
     "name": "Lol Surprise Glitter Set Trolley Bag",
     "price": 12.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bags",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-lol-surprise-glitter-set-trolley-bag-151-1.webp",
       "/images/products/telegram/tg-lol-surprise-glitter-set-trolley-bag-151-2.webp",
@@ -724,24 +749,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Lol surprise glitter set trolley bag.",
     "description": "Lol surprise glitter set trolley bag.",
     "features": [
-      "Minimum order: 1 pcs, £12.50 each"
+      "Min order: 1 pc",
+      "£12.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-lol-surprise-balls-152",
     "name": "Lol Surprise Balls",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
-    "categorySlug": "play-balls",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-lol-surprise-balls-152-1.webp",
       "/images/products/telegram/tg-lol-surprise-balls-152-2.webp",
@@ -751,24 +777,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Lol surprise balls.",
     "description": "Lol surprise balls.",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each"
+      "Min order: 1 pc",
+      "£2.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kids-character-bags-156",
     "name": "Kids Character Bags",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bags",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-kids-character-bags-156-1.webp",
       "/images/products/telegram/tg-kids-character-bags-156-2.webp",
@@ -779,97 +806,101 @@ export const telegramStock: Product[] = [
     "shortDescription": "All new kids character bags.",
     "description": "All new kids character bags.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each"
+      "Min order: 1 pc",
+      "£3.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stich-bags-161",
     "name": "Stitch Bags",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-stich-bags-161-1.webp"
     ],
     "shortDescription": "Stitch bags and pack of 10.",
     "description": "Stitch bags and pack of 10.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each",
+      "Min order: 1 pc",
+      "£5.50 each",
       "Bulk: 10 for £45.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-all-crocs-squishy-162",
     "name": "Crocs Squishy",
     "price": 1.2,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-all-crocs-squishy-162-1.webp"
     ],
     "shortDescription": "All crocs squishy.",
     "description": "All crocs squishy.",
     "features": [
-      "Minimum order: 1 pcs, £1.20 each"
+      "Min order: 12 pcs",
+      "£1.20 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-grinch-advert-calendar-163",
-    "name": "Grinch Advert Calendar",
+    "name": "Grinch Advent Calendar",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "theme": "Seasonal",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-grinch-advert-calendar-163-1.webp"
     ],
-    "shortDescription": "Grinch advert calendar.",
-    "description": "Grinch advert calendar.",
+    "shortDescription": "Grinch Advent calendar.",
+    "description": "Grinch Advent calendar.",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each"
+      "Min order: 1 pc",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-prime-calendar-big-size-164",
     "name": "Prime Calendar Big Size",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "theme": "Crafts",
+    "categorySlug": "arts-crafts",
     "images": [
       "/images/products/telegram/tg-prime-calendar-big-size-164-1.webp",
       "/images/products/telegram/tg-prime-calendar-big-size-164-2.webp"
@@ -877,68 +908,71 @@ export const telegramStock: Product[] = [
     "shortDescription": "Prime calendar big size only.",
     "description": "Prime calendar big size only.",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each"
+      "Min order: 1 pc",
+      "£7.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-hello-kitty-advert-calendar-166",
-    "name": "Hello Kitty Advert Calendar",
+    "name": "Hello Kitty Advent Calendar",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "theme": "Seasonal",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-hello-kitty-advert-calendar-166-1.webp"
     ],
-    "shortDescription": "Hello kitty advert calendar.",
-    "description": "Hello kitty advert calendar.",
+    "shortDescription": "Hello kitty Advent calendar.",
+    "description": "Hello kitty Advent calendar.",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each"
+      "Min order: 1 pc",
+      "£7.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stich-advert-calendar-167",
-    "name": "Stitch Advert Calendar",
+    "name": "Stitch Advent Calendar",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "christmas-surprise",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-stich-advert-calendar-167-1.webp"
     ],
-    "shortDescription": "New Stitch advert calendar.",
-    "description": "New Stitch advert calendar.",
+    "shortDescription": "New Stitch Advent calendar.",
+    "description": "New Stitch Advent calendar.",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each"
+      "Min order: 1 pc",
+      "£8.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-godzilla-series-168",
     "name": "Godzilla Series",
     "price": 12.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -950,20 +984,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Godzilla series.",
     "description": "New Godzilla series.",
     "features": [
-      "Minimum order: 1 pcs, £12.50 each"
+      "Min order: 1 pc",
+      "£12.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-design-keyrings-200",
     "name": "Design Keyrings",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Keyrings",
@@ -978,28 +1013,29 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-design-keyrings-200-7.webp",
       "/images/products/telegram/tg-design-keyrings-200-8.webp"
     ],
-    "shortDescription": "All new design keyrings available and pack of 24.",
-    "description": "All new design keyrings available and pack of 24.",
+    "shortDescription": "All new design keyrings available and pack of 24 at.",
+    "description": "All new design keyrings available and pack of 24 at.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each",
+      "Min order: 1 pc",
+      "£1.50 each",
       "Bulk: 24 at £1.20 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-cactus-smiley-206",
-    "name": "Cactus Smiley",
+    "name": "Cactus Smiley Toy",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Party",
+    "categorySlug": "party-spotlight",
     "images": [
       "/images/products/telegram/tg-cactus-smiley-206-1.webp",
       "/images/products/telegram/tg-cactus-smiley-206-2.webp",
@@ -1009,25 +1045,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Cactus smiley. 12 for.",
     "description": "Cactus smiley. 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "Bulk: 12 for £48.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-cactus-christmas-and-helloween-216",
     "name": "Cactus Christmas and Halloween",
     "price": 5.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-cactus-christmas-and-helloween-216-1.webp",
       "/images/products/telegram/tg-cactus-christmas-and-helloween-216-2.webp",
@@ -1040,21 +1077,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Cactus Christmas and Halloween. 12 for.",
     "description": "Cactus Christmas and Halloween. 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £5.00 each",
+      "Min order: 1 pc",
+      "£5.00 each",
       "Bulk: 12 for £54.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-tattoo-gel-pens-224",
     "name": "Tattoo Gel Pens",
     "price": 1.8,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Crafts",
@@ -1067,25 +1105,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Tattoo gel pens. In stock now or. 12 for.",
     "description": "Tattoo gel pens. In stock now or. 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £1.80 each",
+      "Min order: 1 pc",
+      "£1.80 each",
       "Bulk: 12 for £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-light-hat-251",
     "name": "Light Hat",
     "price": 4.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
-    "categorySlug": "light-up-hats",
+    "categorySlug": "party-spotlight",
     "images": [
       "/images/products/telegram/tg-light-hat-251-1.webp",
       "/images/products/telegram/tg-light-hat-251-2.webp",
@@ -1099,25 +1138,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "LIGHT HAT. ALL BACK IN STOCK NOW. EACH OR. 12 pcs for.",
     "description": "LIGHT HAT. ALL BACK IN STOCK NOW. EACH OR. 12 pcs for.",
     "features": [
-      "Minimum order: 1 pcs, £4.00 each",
+      "Min order: 1 pc",
+      "£4.00 each",
       "Bulk: 12 for £42.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-helloween-harror-mask-268",
     "name": "Halloween Horror Mask",
     "price": 5.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Halloween",
-    "categorySlug": "funky-frights",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-helloween-harror-mask-268-1.webp",
       "/images/products/telegram/tg-helloween-harror-mask-268-2.webp",
@@ -1128,28 +1168,29 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-helloween-harror-mask-268-7.webp",
       "/images/products/telegram/tg-helloween-harror-mask-268-8.webp"
     ],
-    "shortDescription": "Halloween horror mask. Each or. Mix 20 for.",
-    "description": "Halloween horror mask. Each or. Mix 20 for.",
+    "shortDescription": "Halloween Horror mask. Each or. Mix 20 for.",
+    "description": "Halloween Horror mask. Each or. Mix 20 for.",
     "features": [
-      "Minimum order: 1 pcs, £5.00 each",
+      "Min order: 1 pc",
+      "£5.00 each",
       "Bulk: 20 for £90.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-advent-calendar-275",
     "name": "Advent Calendar",
     "price": 9.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "theme": "Seasonal",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-advent-calendar-275-1.webp",
       "/images/products/telegram/tg-advent-calendar-275-2.webp",
@@ -1161,21 +1202,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Advent calendar. Each. Or mix 10 for.",
     "description": "Advent calendar. Each. Or mix 10 for.",
     "features": [
-      "Minimum order: 1 pcs, £9.00 each",
+      "Min order: 1 pc",
+      "£9.00 each",
       "Bulk: 10 for £80.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-atich-and-kuromi-gift-set-for-kids-280",
     "name": "Stitch and Kuromi Gift Set for Kids",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -1189,21 +1231,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Stitch and kuromi gift set for kids. Each. Or 12 mix for.",
     "description": "New Stitch and kuromi gift set for kids. Each. Or 12 mix for.",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each",
+      "Min order: 1 pc",
+      "£8.50 each",
       "Bulk: 12 for £90.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-dinosaur-wings-300",
     "name": "Dinosaur Wings",
     "price": 12.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dinosaur",
@@ -1219,24 +1262,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "DINOSAUR Wings. SHADOW ANGEL. Wings of faerie.",
     "description": "DINOSAUR Wings. SHADOW ANGEL. Wings of faerie.",
     "features": [
-      "Minimum order: 1 pcs, £12.00 each"
+      "Min order: 1 pc",
+      "£12.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-christmas-gift-items-378",
     "name": "Christmas Gift Items",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-christmas-gift-items-378-1.webp",
       "/images/products/telegram/tg-christmas-gift-items-378-2.webp",
@@ -1245,47 +1289,49 @@ export const telegramStock: Product[] = [
     "shortDescription": "Christmas gift items. 12 pcs for.",
     "description": "Christmas gift items. 12 pcs for.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 1 pc",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-light-up-stich-multicoloured-with-battery-and-u-389",
     "name": "3D Light Up Stitch Multicoloured with Battery and USB Operated",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "light-up-toys",
     "images": [
       "/images/products/telegram/tg-3d-light-up-stich-multicoloured-with-battery-and-u-389-1.webp",
       "/images/products/telegram/tg-3d-light-up-stich-multicoloured-with-battery-and-u-389-2.webp",
       "/images/products/telegram/tg-3d-light-up-stich-multicoloured-with-battery-and-u-389-3.webp"
     ],
-    "shortDescription": "3D light up Stitch multicoloured with battery and usb operated available now.",
-    "description": "3D light up Stitch multicoloured with battery and usb operated available now.",
+    "shortDescription": "3D light up Stitch multicoloured with battery and usb operated available now at.",
+    "description": "3D light up Stitch multicoloured with battery and usb operated available now at.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stich-plush-toys-in-4-sizes-395",
     "name": "Stitch Plush Toys in 4 Sizes",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -1298,46 +1344,48 @@ export const telegramStock: Product[] = [
     "shortDescription": "Stitch plush toys in 4 sizes. Small each 12pcs for. Medium each 12 pcs for. Large each 12 pcs for. XXL large each 6 pcs for.",
     "description": "Stitch plush toys in 4 sizes. Small each 12pcs for. Medium each 12 pcs for. Large each 12 pcs for. XXL large each 6 pcs for.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "Bulk: 12 for £42.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-christmas-dancing-398",
     "name": "Christmas Dancing",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-christmas-dancing-398-1.webp"
     ],
     "shortDescription": "Christmas dancing. In stock now each. 12pcs in a pack.",
     "description": "Christmas dancing. In stock now each. 12pcs in a pack.",
     "features": [
-      "Minimum order: 12 pcs, £7.50 each",
+      "Min order: 1 pc",
+      "£7.50 each",
       "12 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-led-lantern-410",
     "name": "LED Lantern",
     "price": 2.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -1352,25 +1400,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "LED LANTERN. 12 for (each).",
     "description": "LED LANTERN. 12 for (each).",
     "features": [
-      "Minimum order: 1 pcs, £2.00 each",
+      "Min order: 1 pc",
+      "£2.00 each",
       "Bulk: 12 for £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-pictures-framed-424",
     "name": "3D Pictures Framed",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-3d-pictures-framed-424-1.webp",
       "/images/products/telegram/tg-3d-pictures-framed-424-2.webp",
@@ -1384,20 +1433,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "3D pictures framed.",
     "description": "3D pictures framed.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stitch-pok-mon-kuromi-431",
     "name": "Stitch Pokémon Kuromi",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -1408,48 +1458,50 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-stitch-pok-mon-kuromi-431-3.webp",
       "/images/products/telegram/tg-stitch-pok-mon-kuromi-431-4.webp"
     ],
-    "shortDescription": "Stitch Pokémon kuromi. Breathing once in stock now. Minimum order 10 pcs mix. Just blue stitch.",
-    "description": "Stitch Pokémon kuromi. Breathing once in stock now. Minimum order 10 pcs mix. Just blue stitch.",
+    "shortDescription": "Stitch Pokémon kuromi. Breathing Ones in stock now. Just blue stitch.",
+    "description": "Stitch Pokémon kuromi. Breathing Ones in stock now. Just blue stitch.",
     "features": [
-      "Minimum order: 10 pcs, £8.50 each"
+      "Min order: 10 pcs",
+      "£8.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 10,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 10 pcs",
     "stock": 50
   },
   {
     "slug": "tg-stich-light-up-sound-for-kids-fun-433",
-    "name": "Stitch Light Up Sound for Kids Fun",
+    "name": "Stitch Light Up Sound",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "light-up-toys",
     "images": [
       "/images/products/telegram/tg-stich-light-up-sound-for-kids-fun-433-1.webp"
     ],
     "shortDescription": "New Stitch light up sound for kids fun a box of 12.",
     "description": "New Stitch light up sound for kids fun a box of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-skibidi-toilet-light-up-with-sound-effects-435",
     "name": "Skibidi Toilet Light Up with Sound Effects",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -1460,25 +1512,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Skibidi toilet light up with sound effects a box of 12.",
     "description": "New Skibidi toilet light up with sound effects a box of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-united-and-man-city-2025-calender-472",
     "name": "United and Man City 2025 Calendar",
     "price": 5.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "theme": "Crafts",
+    "categorySlug": "arts-crafts",
     "images": [
       "/images/products/telegram/tg-united-and-man-city-2025-calender-472-1.webp",
       "/images/products/telegram/tg-united-and-man-city-2025-calender-472-2.webp",
@@ -1489,78 +1542,81 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-united-and-man-city-2025-calender-472-7.webp",
       "/images/products/telegram/tg-united-and-man-city-2025-calender-472-8.webp"
     ],
-    "shortDescription": "New United and man city 2025 calendar available now and pack of 10.",
-    "description": "New United and man city 2025 calendar available now and pack of 10.",
+    "shortDescription": "New United and man city 2025 Calendar available now and pack of 10.",
+    "description": "New United and man city 2025 Calendar available now and pack of 10.",
     "features": [
-      "Minimum order: 1 pcs, £5.00 each",
+      "Min order: 1 pc",
+      "£5.00 each",
       "Bulk: 10 for £45.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-santa-dancing-and-singing-hats-500",
     "name": "Santa Dancing and Singing Hats",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Play",
-    "categorySlug": "kids-hats",
+    "theme": "Seasonal",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-santa-dancing-and-singing-hats-500-1.webp",
       "/images/products/telegram/tg-santa-dancing-and-singing-hats-500-2.webp"
     ],
-    "shortDescription": "New Santa dancing and singing hats each (10 pieces ).",
-    "description": "New Santa dancing and singing hats each (10 pieces ).",
+    "shortDescription": "New Santa dancing and singing hats each (10 pis ).",
+    "description": "New Santa dancing and singing hats each (10 pis ).",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each"
+      "Min order: 1 pc",
+      "£8.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stich-squishy-522",
     "name": "Stitch Squishy",
     "price": 0.83,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-stich-squishy-522-1.webp"
     ],
     "shortDescription": "New Stitch squishy a box of 12.",
     "description": "New Stitch squishy a box of 12.",
     "features": [
-      "Minimum order: 12 pcs, £0.83 each",
+      "Min order: 12 pcs (1 box)",
+      "£0.83 each",
       "Pack of 12 = £10.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-shape-maker-hard-coloured-squishy-hello-kitty-and--523",
     "name": "Shape Maker Hard Coloured Squishy Hello Kitty and Stitch One",
     "price": 15.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-shape-maker-hard-coloured-squishy-hello-kitty-and--523-1.webp",
       "/images/products/telegram/tg-shape-maker-hard-coloured-squishy-hello-kitty-and--523-2.webp"
@@ -1568,24 +1624,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New shape maker hard coloured squishy hello kitty and Stitch one a box.",
     "description": "New shape maker hard coloured squishy hello kitty and Stitch one a box.",
     "features": [
-      "Minimum order: 1 pcs, £15.00 each"
+      "Min order: 12 pcs",
+      "£15.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-dancing-santa-hats-533",
     "name": "Dancing Santa Hats",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Play",
-    "categorySlug": "kids-hats",
+    "theme": "Seasonal",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-dancing-santa-hats-533-1.webp",
       "/images/products/telegram/tg-dancing-santa-hats-533-2.webp",
@@ -1599,21 +1656,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New dancing Santa hats and pack of 10 ( each ).",
     "description": "New dancing Santa hats and pack of 10 ( each ).",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each",
+      "Min order: 1 pc",
+      "£8.50 each",
       "Bulk: 10 for £75.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-teddy-bear-549",
     "name": "Teddy Bear",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -1626,21 +1684,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New teddy bear and for 10.",
     "description": "New teddy bear and for 10.",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each",
+      "Min order: 1 pc",
+      "£6.50 each",
       "Bulk: 10 for £65"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-fluffy-teddy-bear-65cm-553",
     "name": "Fluffy Teddy Bear 65cm",
     "price": 9.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -1654,21 +1713,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New teddy bear 65cm fluffy one and for 10 ( 8.50each ).",
     "description": "New teddy bear 65cm fluffy one and for 10 ( 8.50each ).",
     "features": [
-      "Minimum order: 1 pcs, £9.50 each",
+      "Min order: 1 pc",
+      "£9.50 each",
       "Bulk: 10 for £85"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-dream-castle-560",
     "name": "Dream Castle",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Pretend Play",
@@ -1681,25 +1741,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Dream castle. With light&music bigger size. Or 10 for.",
     "description": "Dream castle. With light&music bigger size. Or 10 for.",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each",
+      "Min order: 1 pc",
+      "£8.50 each",
       "Bulk: 10 for £80.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-pets-home-2in1-565",
-    "name": "Pets Home 2IN1",
+    "name": "Pets Home 2-in-1 Playset",
     "price": 11.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Pretend Play",
+    "categorySlug": "role-play",
     "images": [
       "/images/products/telegram/tg-pets-home-2in1-565-1.webp",
       "/images/products/telegram/tg-pets-home-2in1-565-2.webp",
@@ -1709,25 +1770,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Pets home 2in1. Space craft. Each. Or mix 10pcs for ().",
     "description": "Pets home 2in1. Space craft. Each. Or mix 10pcs for ().",
     "features": [
-      "Minimum order: 1 pcs, £11.00 each",
+      "Min order: 1 pc",
+      "£11.00 each",
       "Bulk: 10 for £105.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-car-set-12-pcs-571",
-    "name": "Car Set (12 Pcs)",
+    "name": "Car Set 12 Pcs",
     "price": 30,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-car-set-12-pcs-571-1.webp",
       "/images/products/telegram/tg-car-set-12-pcs-571-2.webp",
@@ -1738,48 +1800,50 @@ export const telegramStock: Product[] = [
     "shortDescription": "Car set. For a set. 12pcs in set.",
     "description": "Car set. For a set. 12pcs in set.",
     "features": [
-      "Minimum order: 1 pcs, £30.00 each",
+      "Min order: 12 pcs (1 box)",
+      "£30.00 each",
       "12 per box",
       "£30 per set of 12 cars"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-aircraft-and-airobus-with-remote-control-579",
     "name": "Aircraft and Airbus with Remote Control",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-aircraft-and-airobus-with-remote-control-579-1.webp",
       "/images/products/telegram/tg-aircraft-and-airobus-with-remote-control-579-2.webp"
     ],
-    "shortDescription": "New aircraft and airbus with remote control and 10 piece at (each ).",
-    "description": "New aircraft and airbus with remote control and 10 piece at (each ).",
+    "shortDescription": "New aircraft and Airbus with remote control and 10pcs at (each ).",
+    "description": "New aircraft and Airbus with remote control and 10pcs at (each ).",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each",
+      "Min order: 1 pc",
+      "£8.50 each",
       "Bulk: 10 for £75.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-light-up-single-multicolour-589",
-    "name": "Light Up (Single & Multicolour)",
+    "name": "Light Up Single & Multicolour",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -1792,21 +1856,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Light 🆙. Single and multiple colours. Each. Or mix 12 for.",
     "description": "Light 🆙. Single and multiple colours. Each. Or mix 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "Bulk: 12 for £36.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-dragon-with-egg-609",
     "name": "3D Dragon with Egg",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dragon",
@@ -1820,21 +1885,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New 3D dragon with egg available now at (pack of 20 each).",
     "description": "New 3D dragon with egg available now at (pack of 20 each).",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "Bulk: 20 for £70.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-25cm-dragon-10-colours-614",
     "name": "25cm Dragon 10 Colours",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dragon",
@@ -1845,21 +1911,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New 25cm dragon 10 colours available at ( pack of 20 each ).",
     "description": "New 25cm dragon 10 colours available at ( pack of 20 each ).",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each",
+      "Min order: 1 pc",
+      "£1.50 each",
       "Bulk: 20 for £24.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-dragon-45cm-10-colours-615",
     "name": "3D Dragon 45cm 10 Colours",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dragon",
@@ -1872,21 +1939,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New 3D dragon 45cm 10 colours available at pack of 10.",
     "description": "New 3D dragon 45cm 10 colours available at pack of 10.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each",
+      "Min order: 1 pc",
+      "£5.50 each",
       "Bulk: 10 for £45"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-dragon-70cm-10-colours-618",
-    "name": "3D Dragon 70cm - 10 Colours",
+    "name": "3D Dragon 70cm 10 Colours",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dragon",
@@ -1899,21 +1967,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Popular new 3D dragons in 10 colours bigger size cm pack of 10.",
     "description": "Popular new 3D dragons in 10 colours bigger size cm pack of 10.",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each",
+      "Min order: 1 pc",
+      "£7.50 each",
       "Bulk: 10 for £65"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-newton-spider-621",
     "name": "3D Newton Spider",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -1927,21 +1996,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New 3D newton spider available pack of 10.",
     "description": "New 3D newton spider available pack of 10.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "Bulk: 10 for £30.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-dinosaurs-in-10-different-colours-625",
     "name": "3D Dinosaurs in 10 Different Colours",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -1955,24 +2025,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New 3D dinosaurs in 10 different colours available at and pack of 10.",
     "description": "New 3D dinosaurs in 10 different colours available at and pack of 10.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each",
+      "Min order: 1 pc",
+      "£5.50 each",
       "Bulk: 10 for £45.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-multicolour-trynasour-629",
-    "name": "3D Multicolour Dinosaur",
+    "name": "3D Multicolour Tyrannosaurus",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Dinosaur",
+    "theme": "Characters",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-3d-multicolour-trynasour-629-1.webp",
@@ -1980,27 +2051,28 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-3d-multicolour-trynasour-629-3.webp",
       "/images/products/telegram/tg-3d-multicolour-trynasour-629-4.webp"
     ],
-    "shortDescription": "New 3D multicolour dinosaur available at and set of 10 different colours.",
-    "description": "New 3D multicolour dinosaur available at and set of 10 different colours.",
+    "shortDescription": "New 3D multicolour Tyrannosaurus available at and set of 10 different colours.",
+    "description": "New 3D multicolour Tyrannosaurus available at and set of 10 different colours.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 10 pcs (1 box)",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 10,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 10 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-trends-accessories-for-phone-and-laptop-with-popul-633",
-    "name": "Trends Accessories for Phone and Laptop with Popular and Famous Charac",
+    "name": "Character Phone and Laptop Accessories",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-trends-accessories-for-phone-and-laptop-with-popul-633-1.webp",
       "/images/products/telegram/tg-trends-accessories-for-phone-and-laptop-with-popul-633-2.webp",
@@ -2010,21 +2082,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New trends accessories for phone and laptop with popular and famous characters (pack of 12 each ).",
     "description": "New trends accessories for phone and laptop with popular and famous characters (pack of 12 each ).",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each",
+      "Min order: 1 pc",
+      "£1.50 each",
       "Bulk: 12 for £15.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-beauty-fashion-set-642",
-    "name": "Beauty Fashion Set",
+    "name": "Beauty Fashion Playset",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Pretend Play",
@@ -2038,20 +2111,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Beauty fashion set.",
     "description": "Beauty fashion set.",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each"
+      "Min order: 1 pc",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-hair-salon-fashion-647",
     "name": "Hair Salon Fashion",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Pretend Play",
@@ -2065,21 +2139,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Hair salon fashion. Mix 10 for.",
     "description": "Hair salon fashion. Mix 10 for.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each",
+      "Min order: 1 pc",
+      "£5.50 each",
       "Bulk: 10 for £45.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kitchen-bread-maker-651",
     "name": "Kitchen Bread Maker",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Pretend Play",
@@ -2096,20 +2171,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Kitchen bread maker.",
     "description": "Kitchen bread maker.",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each"
+      "Min order: 1 pc",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-soft-toys-stich-and-bluye-with-cover-zip-685",
     "name": "Soft Toys Stitch and Bluey with Cover Zip",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -2120,25 +2196,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New soft toys Stitch and Bluey with cover zip (pack of 12 each ).",
     "description": "New soft toys Stitch and Bluey with cover zip (pack of 12 each ).",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "Bulk: 12 for £36.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-cry-baby-doll-694",
     "name": "Cry Baby Doll",
     "price": 12,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dolls",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-cry-baby-doll-694-1.webp",
       "/images/products/telegram/tg-cry-baby-doll-694-2.webp",
@@ -2147,21 +2224,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New cry baby back in stock pack of 10.",
     "description": "New cry baby back in stock pack of 10.",
     "features": [
-      "Minimum order: 1 pcs, £12.00 each",
+      "Min order: 1 pc",
+      "£12.00 each",
       "Bulk: 10 for £100"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stitch-plush-30cm-702",
     "name": "Stitch Plush 30cm",
     "price": 3,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -2175,21 +2253,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Stitch plush 30cm. For 12 pcs in pack.",
     "description": "Stitch plush 30cm. For 12 pcs in pack.",
     "features": [
-      "Minimum order: 1 pcs, £3.00 each",
+      "Min order: 1 pc",
+      "£3.00 each",
       "Bulk: 12 for £30"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stitch-plush-35cm-707",
     "name": "Stitch Plush 35cm",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -2202,25 +2281,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Stitch plush 35cm. 12 pcs in pack.",
     "description": "Stitch plush 35cm. 12 pcs in pack.",
     "features": [
-      "Minimum order: 12 pcs, £3.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£3.50 each",
       "12 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-mercedes-metal-model-car-with-light-sound-22cm-725",
     "name": "Mercedes Metal Model Car with Light & Sound 22cm",
     "price": 14.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-mercedes-metal-model-car-with-light-sound-22cm-725-1.webp",
       "/images/products/telegram/tg-mercedes-metal-model-car-with-light-sound-22cm-725-2.webp",
@@ -2233,24 +2313,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Here is new Mercedes push metal model car with sound and light big heavy classic car size 22*10.",
     "description": "Here is new Mercedes push metal model car with sound and light big heavy classic car size 22*10.",
     "features": [
-      "Minimum order: 1 pcs, £14.50 each"
+      "Min order: 1 pc",
+      "£14.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-transformer-car-759",
     "name": "Transformer Car",
     "price": 1.88,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-transformer-car-759-1.webp",
       "/images/products/telegram/tg-transformer-car-759-2.webp",
@@ -2259,21 +2340,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New transformer car a box of 8.",
     "description": "New transformer car a box of 8.",
     "features": [
-      "Minimum order: 8 pcs, £1.88 each",
+      "Min order: 8 pcs (1 box)",
+      "£1.88 each",
       "Pack of 8 = £15.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 8,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 8 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-soft-toys-25cm-in-offer-770",
-    "name": "Soft Toys 25cm in Offer",
+    "name": "Soft Toys 25cm",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -2291,25 +2373,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New soft toys 25cm in offer now pack of 12 each.",
     "description": "New soft toys 25cm in offer now pack of 12 each.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 1 pc",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-cushion-covers-character-designs-792",
-    "name": "Cushion Covers - Character Designs",
+    "name": "Cushion Covers Character Designs",
     "price": 3.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-cushion-covers-character-designs-792-1.webp",
       "/images/products/telegram/tg-cushion-covers-character-designs-792-2.webp",
@@ -2323,25 +2406,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "NEW DESIGNS. Cousins cover. Each. Or 10 for. Note just covers.",
     "description": "NEW DESIGNS. Cousins cover. Each. Or 10 for. Note just covers.",
     "features": [
-      "Minimum order: 1 pcs, £3.00 each",
+      "Min order: 1 pc",
+      "£3.00 each",
       "Bulk: 10 for £25.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kids-character-cushions-covers-817",
     "name": "Kids Character Cushions Covers",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-kids-character-cushions-covers-817-1.webp",
       "/images/products/telegram/tg-kids-character-cushions-covers-817-2.webp",
@@ -2355,21 +2439,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New kids character cushions covers back in stock now at and pack of 10.",
     "description": "New kids character cushions covers back in stock now at and pack of 10.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "Bulk: 10 for £25.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-gel-blaster-831",
     "name": "Gel Blaster",
     "price": 6.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
@@ -2384,20 +2469,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "New gel blaster available now.",
     "description": "New gel blaster available now.",
     "features": [
-      "Minimum order: 1 pcs, £6.00 each"
+      "Min order: 1 pc",
+      "£6.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-police-and-mickey-blocks-836",
     "name": "Police and Mickey Blocks",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Building",
@@ -2409,21 +2495,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New police and Mickey blocks and pack of 10 55.",
     "description": "New police and Mickey blocks and pack of 10 55.",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each",
+      "Min order: 1 pc",
+      "£6.50 each",
       "Bulk: 10 for £55.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-car-blocks-838",
     "name": "Car Blocks",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
@@ -2432,24 +2519,25 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-car-blocks-838-1.webp",
       "/images/products/telegram/tg-car-blocks-838-2.webp"
     ],
-    "shortDescription": "Car blocks. Pack of 10.",
-    "description": "Car blocks. Pack of 10.",
+    "shortDescription": "Car blocks. Pack of 10 at.",
+    "description": "Car blocks. Pack of 10 at.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each",
+      "Min order: 1 pc",
+      "£5.50 each",
       "Bulk: 10 for £50"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-thomas-train-blocks-840",
     "name": "Thomas Train Blocks",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Building",
@@ -2461,25 +2549,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Thomas train blocks pack of 10.",
     "description": "New Thomas train blocks pack of 10.",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each",
+      "Min order: 1 pc",
+      "£8.50 each",
       "Bulk: 10 for £75"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stich-make-up-842",
     "name": "Stitch Make Up",
     "price": 6.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "role-play",
     "images": [
       "/images/products/telegram/tg-stich-make-up-842-1.webp",
       "/images/products/telegram/tg-stich-make-up-842-2.webp",
@@ -2489,69 +2578,72 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Stitch make up available now and (pack of 20 each).",
     "description": "New Stitch make up available now and (pack of 20 each).",
     "features": [
-      "Minimum order: 1 pcs, £6.00 each",
+      "Min order: 1 pc",
+      "£6.00 each",
       "Bulk: 20 for £100.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-sets-of-truck-846",
     "name": "Sets of Truck",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-sets-of-truck-846-1.webp"
     ],
     "shortDescription": "New sets of truck available now.",
     "description": "New sets of truck available now.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-fire-truck-set-847",
     "name": "Fire Truck Set",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-fire-truck-set-847-1.webp"
     ],
-    "shortDescription": "New fire truck set available.",
-    "description": "New fire truck set available.",
+    "shortDescription": "New fire truck set available at.",
+    "description": "New fire truck set available at.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-dinasour-track-848",
     "name": "Dinosaur Track",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dinosaur",
@@ -2560,23 +2652,24 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-dinasour-track-848-1.webp",
       "/images/products/telegram/tg-dinasour-track-848-2.webp"
     ],
-    "shortDescription": "New dinosaur track.",
-    "description": "New dinosaur track.",
+    "shortDescription": "New Dinosaur track.",
+    "description": "New Dinosaur track.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-big-size-dinasour-track-7-50-850",
     "name": "Big Size Dinosaur Track",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dinosaur",
@@ -2585,47 +2678,49 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-big-size-dinasour-track-7-50-850-1.webp",
       "/images/products/telegram/tg-big-size-dinasour-track-7-50-850-2.webp"
     ],
-    "shortDescription": "Big size dinosaur track.",
-    "description": "Big size dinosaur track.",
+    "shortDescription": "Big size Dinosaur track.",
+    "description": "Big size Dinosaur track.",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each"
+      "Min order: 1 pc",
+      "£7.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kids-piano-set-5-50-852",
     "name": "Kids Piano Set",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Learning",
-    "categorySlug": "educational-stem",
+    "theme": "Pretend Play",
+    "categorySlug": "role-play",
     "images": [
       "/images/products/telegram/tg-kids-piano-set-5-50-852-1.webp"
     ],
     "shortDescription": "Kids piano set.",
     "description": "Kids piano set.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stitch-dance-repeat-usb-rechargeable-853",
-    "name": "Stitch Dance & Repeat (USB Rechargeable)",
+    "name": "Stitch Dance & Repeat USB Rechargeable",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -2636,25 +2731,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Stitch dance and repeat with usb charger pack of 10 each.",
     "description": "Stitch dance and repeat with usb charger pack of 10 each.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "Bulk: 10 for £39.50"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-jumping-off-road-truck-855",
     "name": "Jumping Off Road Truck",
     "price": 15.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-jumping-off-road-truck-855-1.webp",
       "/images/products/telegram/tg-jumping-off-road-truck-855-2.webp"
@@ -2662,20 +2758,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Jumping off road truck a box.",
     "description": "Jumping off road truck a box.",
     "features": [
-      "Minimum order: 1 pcs, £15.00 each"
+      "Min order: 1 pc",
+      "£15.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-keyrings-876",
-    "name": "Keyrings",
+    "name": "Character Keyrings",
     "price": 1.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Keyrings",
@@ -2693,20 +2790,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Keyrings available now each.",
     "description": "New Keyrings available now each.",
     "features": [
-      "Minimum order: 1 pcs, £1.00 each"
+      "Min order: 1 pc",
+      "£1.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-panda-60cm-894",
     "name": "Panda 60cm",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -2720,20 +2818,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "PANDA 60cm. Plush toy available now.",
     "description": "PANDA 60cm. Plush toy available now.",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each"
+      "Min order: 1 pc",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-girl-set-of-make-up-895",
     "name": "Girl Set of Make Up",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Pretend Play",
@@ -2746,24 +2845,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New girl set of make up.",
     "description": "New girl set of make up.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each"
+      "Min order: 1 pc",
+      "£3.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stich-bag-898",
     "name": "Stitch Bag",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-stich-bag-898-1.webp",
       "/images/products/telegram/tg-stich-bag-898-2.webp",
@@ -2776,25 +2876,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Stitch bag available now at and pack of 50 ( each ).",
     "description": "New Stitch bag available now at and pack of 50 ( each ).",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each",
+      "Min order: 1 pc",
+      "£2.50 each",
       "Bulk: 50 for £75.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stich-light-up-squeeze-905",
     "name": "Stitch Light Up Squeeze",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-stich-light-up-squeeze-905-1.webp",
       "/images/products/telegram/tg-stich-light-up-squeeze-905-2.webp"
@@ -2802,21 +2903,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Stitch light up squeeze a box of 12.",
     "description": "New Stitch light up squeeze a box of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-kids-character-light-up-for-kids-room-908",
-    "name": "Kids Character Light Up for Kids Room",
+    "name": "Kids Character Light Up for Room",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -2829,46 +2931,48 @@ export const telegramStock: Product[] = [
     "shortDescription": "New kids character light up for kids room pack of 12.",
     "description": "New kids character light up for kids room pack of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-stick-side-bag-with-strap-911",
     "name": "Stitch Side Bag with Strap",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-stick-side-bag-with-strap-911-1.webp"
     ],
     "shortDescription": "Stitch side bag with strap pack of 12 each.",
     "description": "Stitch side bag with strap pack of 12 each.",
     "features": [
-      "Minimum order: 12 pcs, £2.50 each",
+      "Min order: 1 pc",
+      "£2.50 each",
       "Pack of 12 = £30.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-inside-out-plush-toys-912",
     "name": "Inside Out Plush Toys",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -2880,21 +2984,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New inside out plush toys available each 12in a pack.",
     "description": "New inside out plush toys available each 12in a pack.",
     "features": [
-      "Minimum order: 12 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "12 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kitchen-electric-mini-appliances-960",
     "name": "Kitchen Electric Mini Appliances",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Pretend Play",
@@ -2905,24 +3010,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New kitchen electric mini appliances now.",
     "description": "New kitchen electric mini appliances now.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kids-push-car-age-1-3-970",
     "name": "Kids Push Car Age 1-3",
     "price": 18.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "0-2 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "baby-toddler",
     "images": [
       "/images/products/telegram/tg-kids-push-car-age-1-3-970-1.webp",
       "/images/products/telegram/tg-kids-push-car-age-1-3-970-2.webp",
@@ -2933,51 +3039,53 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-kids-push-car-age-1-3-970-7.webp",
       "/images/products/telegram/tg-kids-push-car-age-1-3-970-8.webp"
     ],
-    "shortDescription": "New kids push car age 1-3 available now.",
-    "description": "New kids push car age 1-3 available now.",
+    "shortDescription": "New kids push car age 1-3 available now at.",
+    "description": "New kids push car age 1-3 available now at.",
     "features": [
-      "Minimum order: 1 pcs, £18.00 each"
+      "Min order: 1 pc",
+      "£18.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-barking-dogs-in-box-971",
-    "name": "Barking Dogs in Box",
+    "name": "Barking Dogs",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Plush",
+    "categorySlug": "dolls-plush",
     "images": [
       "/images/products/telegram/tg-barking-dogs-in-box-971-1.webp"
     ],
     "shortDescription": "Barking dogs in box available.",
     "description": "Barking dogs in box available.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-angel-with-unicorn-pegasus-972",
-    "name": "Angel with Unicorn Pegasus",
+    "name": "Angel Unicorn Pegasus Figure",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Characters",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-angel-with-unicorn-pegasus-972-1.webp",
       "/images/products/telegram/tg-angel-with-unicorn-pegasus-972-2.webp"
@@ -2985,20 +3093,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "New angel with unicorn Pegasus.",
     "description": "New angel with unicorn Pegasus.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-soft-bullet-gun-big-size-974",
     "name": "Soft Bullet Gun Big Size",
     "price": 14.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
@@ -3009,20 +3118,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "New soft bullet gun big size.",
     "description": "New soft bullet gun big size.",
     "features": [
-      "Minimum order: 1 pcs, £14.50 each"
+      "Min order: 1 pc",
+      "£14.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-big-size-soft-bullet-guns-975",
     "name": "Big Size Soft Bullet Guns",
     "price": 15.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
@@ -3034,46 +3144,48 @@ export const telegramStock: Product[] = [
     "shortDescription": "New big size soft bullet guns available now.",
     "description": "New big size soft bullet guns available now.",
     "features": [
-      "Minimum order: 1 pcs, £15.50 each"
+      "Min order: 1 pc",
+      "£15.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-design-of-music-guns-977",
-    "name": "Design of Music Guns",
+    "name": "Music Toy Guns",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Outdoor",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-design-of-music-guns-977-1.webp",
       "/images/products/telegram/tg-design-of-music-guns-977-2.webp",
       "/images/products/telegram/tg-design-of-music-guns-977-3.webp"
     ],
-    "shortDescription": "New design of music guns available.",
-    "description": "New design of music guns available.",
+    "shortDescription": "New design of music guns available at.",
+    "description": "New design of music guns available at.",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each"
+      "Min order: 1 pc",
+      "£2.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kids-steering-980",
     "name": "Kids Steering",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Pretend Play",
@@ -3082,23 +3194,24 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-kids-steering-980-1.webp",
       "/images/products/telegram/tg-kids-steering-980-2.webp"
     ],
-    "shortDescription": "New kids steering available.",
-    "description": "New kids steering available.",
+    "shortDescription": "New kids steering available at.",
+    "description": "New kids steering available at.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-bow-and-arrow-suit-990",
     "name": "Bow and Arrow Suit",
     "price": 5.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
@@ -3112,24 +3225,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "BOW AND ARROW SUIT. Big size.",
     "description": "BOW AND ARROW SUIT. Big size.",
     "features": [
-      "Minimum order: 1 pcs, £5.00 each"
+      "Min order: 1 pc",
+      "£5.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stitch-bluey-pokemon-etc-997",
-    "name": "Stitch Bluey Pokémon Etc",
+    "name": "Stitch Bluey and Pokémon Plush Mix",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "dolls-plush",
     "images": [
       "/images/products/telegram/tg-stitch-bluey-pokemon-etc-997-1.webp",
       "/images/products/telegram/tg-stitch-bluey-pokemon-etc-997-2.webp",
@@ -3141,21 +3255,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Stitch Bluey Pokémon etc. Purse available now. Just for a pack of 12.",
     "description": "Stitch Bluey Pokémon etc. Purse available now. Just for a pack of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.75 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.75 each",
       "Pack of 12 = £21.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-basketball-game-1002",
     "name": "Basketball Game",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Games",
@@ -3169,20 +3284,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Let’s play. Basketball game.",
     "description": "Let’s play. Basketball game.",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each"
+      "Min order: 1 pc",
+      "£7.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kids-football-soccer-game-1007",
     "name": "Kids Football Soccer Game",
     "price": 11.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Football",
@@ -3195,24 +3311,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "SOCCER. KIDS FOOTBALL GAME. Each.",
     "description": "SOCCER. KIDS FOOTBALL GAME. Each.",
     "features": [
-      "Minimum order: 1 pcs, £11.00 each"
+      "Min order: 1 pc",
+      "£11.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-designs-off-football-1022",
-    "name": "Designs Off Football",
+    "name": "Designs of Football",
     "price": 2.8,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Football",
-    "categorySlug": "play-balls",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-designs-off-football-1022-1.webp",
       "/images/products/telegram/tg-designs-off-football-1022-2.webp",
@@ -3223,27 +3340,28 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-designs-off-football-1022-7.webp",
       "/images/products/telegram/tg-designs-off-football-1022-8.webp"
     ],
-    "shortDescription": "New designs off football available from.",
-    "description": "New designs off football available from.",
+    "shortDescription": "New designs of football available from.",
+    "description": "New designs of football available from.",
     "features": [
-      "Minimum order: 1 pcs, £2.80 each"
+      "Min order: 1 pc",
+      "£2.80 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-designs-mini-football-1030",
     "name": "Designs Mini Football",
     "price": 2.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Football",
-    "categorySlug": "play-balls",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-designs-mini-football-1030-1.webp",
       "/images/products/telegram/tg-designs-mini-football-1030-2.webp",
@@ -3256,25 +3374,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New designs MINI football available each. Pack of 12 (£).",
     "description": "New designs MINI football available each. Pack of 12 (£).",
     "features": [
-      "Minimum order: 1 pcs, £2.00 each",
+      "Min order: 1 pc",
+      "£2.00 each",
       "Bulk: 12 for £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-mercedes-gls600-metal-model-car-22cm-1039",
     "name": "Mercedes GLS600 Metal Model Car 22cm",
     "price": 14.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-mercedes-gls600-metal-model-car-22cm-1039-1.webp",
       "/images/products/telegram/tg-mercedes-gls600-metal-model-car-22cm-1039-2.webp",
@@ -3287,24 +3406,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "MERCEDES GLS600. Metal model car with sound and light big heavy classic car size 22*10.",
     "description": "MERCEDES GLS600. Metal model car with sound and light big heavy classic car size 22*10.",
     "features": [
-      "Minimum order: 1 pcs, £14.00 each"
+      "Min order: 1 pc",
+      "£14.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-range-rover-metal-model-car-22cm-1059",
     "name": "Range Rover Metal Model Car 22cm",
     "price": 14.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-range-rover-metal-model-car-22cm-1059-1.webp",
       "/images/products/telegram/tg-range-rover-metal-model-car-22cm-1059-2.webp",
@@ -3318,24 +3438,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "RANGE ROVER JEEP. Metal model car with sound and light big heavy classic car size 22*10.",
     "description": "RANGE ROVER JEEP. Metal model car with sound and light big heavy classic car size 22*10.",
     "features": [
-      "Minimum order: 1 pcs, £14.00 each"
+      "Min order: 1 pc",
+      "£14.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-bmw-metal-model-car-22cm-1072",
     "name": "BMW Metal Model Car 22cm",
     "price": 14.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-bmw-metal-model-car-22cm-1072-1.webp",
       "/images/products/telegram/tg-bmw-metal-model-car-22cm-1072-2.webp",
@@ -3349,20 +3470,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "BMW. Metal model car with sound and light big heavy classic car size 22*10.",
     "description": "BMW. Metal model car with sound and light big heavy classic car size 22*10.",
     "features": [
-      "Minimum order: 1 pcs, £14.00 each"
+      "Min order: 1 pc",
+      "£14.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-spiders-1079",
     "name": "3D Spiders",
     "price": 3.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -3378,21 +3500,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "3D SPIDERS. HAND MADE. JUST EACH. OR MIX 12 for.",
     "description": "3D SPIDERS. HAND MADE. JUST EACH. OR MIX 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £3.00 each",
+      "Min order: 1 pc",
+      "£3.00 each",
       "Bulk: 12 for £30.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-dinosaurs-1087",
     "name": "3D Dinosaurs",
     "price": 4.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -3409,25 +3532,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "3D DINOSAURS. HAND MADE. JUST EACH. OR MIX 12 for.",
     "description": "3D DINOSAURS. HAND MADE. JUST EACH. OR MIX 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £4.00 each",
+      "Min order: 1 pc",
+      "£4.00 each",
       "Bulk: 12 for £42.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-character-umbrella-1128",
     "name": "Character Umbrella",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-character-umbrella-1128-1.webp",
       "/images/products/telegram/tg-character-umbrella-1128-2.webp",
@@ -3441,24 +3565,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New character in umbrella in stoc. K now.",
     "description": "New character in umbrella in stoc. K now.",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each"
+      "Min order: 1 pc",
+      "£2.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-light-up-mask-iron-man-joker-1156",
-    "name": "Light Up Mask - Iron Man & Joker",
+    "name": "Light Up Mask Iron Man & Joker",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
-    "categorySlug": "funky-frights",
+    "categorySlug": "light-up-toys",
     "images": [
       "/images/products/telegram/tg-light-up-mask-iron-man-joker-1156-1.webp",
       "/images/products/telegram/tg-light-up-mask-iron-man-joker-1156-2.webp",
@@ -3471,20 +3596,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "LIGHT UP MASK. IRONMAN AND JOKER.",
     "description": "LIGHT UP MASK. IRONMAN AND JOKER.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-breathing-teddy-1162",
     "name": "Breathing Teddy",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -3498,24 +3624,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Breathing teddy.",
     "description": "Breathing teddy.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-mini-slimes-1181",
     "name": "Mini Slimes",
     "price": 0.65,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Sensory",
-    "categorySlug": "sensory-jars",
+    "categorySlug": "fidget-spinners",
     "images": [
       "/images/products/telegram/tg-mini-slimes-1181-1.webp",
       "/images/products/telegram/tg-mini-slimes-1181-2.webp",
@@ -3529,24 +3656,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "ALL NEW MINI SLIMES. IN STOCK NOW JUST FROM.",
     "description": "ALL NEW MINI SLIMES. IN STOCK NOW JUST FROM.",
     "features": [
-      "Minimum order: 1 pcs, £0.65 each"
+      "Min order: 1 pc",
+      "£0.65 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-glitter-slime-1185",
     "name": "Glitter Slime",
     "price": 0.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Sensory",
-    "categorySlug": "sensory-jars",
+    "categorySlug": "fidget-spinners",
     "images": [
       "/images/products/telegram/tg-glitter-slime-1185-1.webp",
       "/images/products/telegram/tg-glitter-slime-1185-2.webp",
@@ -3555,24 +3683,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "NEW GLITTER SLIME. IN STOCK NOW JUST FROM.",
     "description": "NEW GLITTER SLIME. IN STOCK NOW JUST FROM.",
     "features": [
-      "Minimum order: 1 pcs, £0.75 each"
+      "Min order: 1 pc",
+      "£0.75 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-slime-1190",
     "name": "Slime",
     "price": 0.85,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Sensory",
-    "categorySlug": "sensory-jars",
+    "categorySlug": "fidget-spinners",
     "images": [
       "/images/products/telegram/tg-slime-1190-1.webp",
       "/images/products/telegram/tg-slime-1190-2.webp",
@@ -3583,20 +3712,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "NEW SLIME. IN STOCK NOW JUST FROM.",
     "description": "NEW SLIME. IN STOCK NOW JUST FROM.",
     "features": [
-      "Minimum order: 1 pcs, £0.85 each"
+      "Min order: 1 pc",
+      "£0.85 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-35cm-teddy-1199",
     "name": "35cm Teddy",
     "price": 2.45,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -3607,7 +3737,8 @@ export const telegramStock: Product[] = [
     "shortDescription": "35cm Teddy in stock now. 300 in a box mix.",
     "description": "35cm Teddy in stock now. 300 in a box mix.",
     "features": [
-      "Minimum order: 300 pcs, £2.45 each",
+      "Min order: 300 pcs (1 box)",
+      "£2.45 each",
       "300 per box",
       "Box only"
     ],
@@ -3615,18 +3746,18 @@ export const telegramStock: Product[] = [
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 300,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 300 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-squish-multiple-colours-1203",
     "name": "Squish Multiple Colours",
     "price": 1.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-squish-multiple-colours-1203-1.webp",
       "/images/products/telegram/tg-squish-multiple-colours-1203-2.webp",
@@ -3635,24 +3766,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "SQUISH MULTIPLE COLOURS.",
     "description": "SQUISH MULTIPLE COLOURS.",
     "features": [
-      "Minimum order: 1 pcs, £1.00 each"
+      "Min order: 12 pcs",
+      "£1.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-slimes-1213",
     "name": "Slimes",
     "price": 1.1,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Sensory",
-    "categorySlug": "sensory-jars",
+    "categorySlug": "fidget-spinners",
     "images": [
       "/images/products/telegram/tg-slimes-1213-1.webp",
       "/images/products/telegram/tg-slimes-1213-2.webp",
@@ -3661,24 +3793,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "NEW SLIMES.",
     "description": "NEW SLIMES.",
     "features": [
-      "Minimum order: 1 pcs, £1.10 each"
+      "Min order: 1 pc",
+      "£1.10 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-bouncy-ball-big-size-1221",
     "name": "Bouncy Ball Big Size",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
-    "categorySlug": "play-balls",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-bouncy-ball-big-size-1221-1.webp",
       "/images/products/telegram/tg-bouncy-ball-big-size-1221-2.webp"
@@ -3686,25 +3819,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "BOUNCY BALL BIG SIZE. JUST each. 12 pcs in box.",
     "description": "BOUNCY BALL BIG SIZE. JUST each. 12 pcs in box.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 1 pc",
+      "£1.50 each",
       "12 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-disney-stitch-cup-with-straw-1250",
     "name": "Disney Stitch Cup with Straw",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "star-buddy-cups",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-disney-stitch-cup-with-straw-1250-1.webp",
       "/images/products/telegram/tg-disney-stitch-cup-with-straw-1250-2.webp",
@@ -3718,25 +3852,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Disney Disney Cartoon Character Stitch cup With Straw. Or DM FOR BULK PRICE.",
     "description": "Disney Disney Cartoon Character Stitch cup With Straw. Or DM FOR BULK PRICE.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "DM for bulk/box price"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-disney-stitch-40oz-insulated-water-bottle-1200ml-1267",
     "name": "Disney Stitch 40oz Insulated Water Bottle 1200ml",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "star-buddy-cups",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-disney-stitch-40oz-insulated-water-bottle-1200ml-1267-1.webp",
       "/images/products/telegram/tg-disney-stitch-40oz-insulated-water-bottle-1200ml-1267-2.webp",
@@ -3750,24 +3885,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Disney 40oz 1200ml Large Capacity Stainless Steel Insulated Water Bottle With Handle, Disney Stitch Pattern, Suitable For Outdoor Travel (With Straw).",
     "description": "Disney 40oz 1200ml Large Capacity Stainless Steel Insulated Water Bottle With Handle, Disney Stitch Pattern, Suitable For Outdoor Travel (With Straw).",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each"
+      "Min order: 1 pc",
+      "£8.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-squeeze-dinosaur-1288",
     "name": "Squeeze Dinosaur",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dinosaur",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-squeeze-dinosaur-1288-1.webp",
       "/images/products/telegram/tg-squeeze-dinosaur-1288-2.webp",
@@ -3776,24 +3912,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "SQUEEZE DINOSAUR. JUST each.",
     "description": "SQUEEZE DINOSAUR. JUST each.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each"
+      "Min order: 1 pc",
+      "£1.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-blankets-1308",
-    "name": "Blankets",
+    "name": "Character Blankets",
     "price": 15.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-blankets-1308-1.webp",
       "/images/products/telegram/tg-blankets-1308-2.webp",
@@ -3807,21 +3944,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "BLANKETS AVAILABLE NOW. JUST EACH. 2 for.",
     "description": "BLANKETS AVAILABLE NOW. JUST EACH. 2 for.",
     "features": [
-      "Minimum order: 1 pcs, £15.00 each",
+      "Min order: 1 pc",
+      "£15.00 each",
       "Bulk: 2 for £25.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-plushie-toys-1319",
     "name": "Plushie Toys",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -3835,24 +3973,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "All these new plushies toy’s available in super price just.",
     "description": "All these new plushies toy’s available in super price just.",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each"
+      "Min order: 1 pc",
+      "£2.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kids-purses-1324",
     "name": "Kids Purses",
     "price": 2.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bags",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-kids-purses-1324-1.webp",
       "/images/products/telegram/tg-kids-purses-1324-2.webp"
@@ -3860,20 +3999,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Kids purses just.",
     "description": "Kids purses just.",
     "features": [
-      "Minimum order: 1 pcs, £2.00 each"
+      "Min order: 1 pc",
+      "£2.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-inside-out-plush-1327",
     "name": "Inside Out Plush",
     "price": 3.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -3886,20 +4026,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Inside out plush.",
     "description": "Inside out plush.",
     "features": [
-      "Minimum order: 1 pcs, £3.00 each"
+      "Min order: 1 pc",
+      "£3.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stitch-plushie-1349",
     "name": "Stitch Plushie",
     "price": 3.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -3914,20 +4055,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Stitch plushie available now.",
     "description": "Stitch plushie available now.",
     "features": [
-      "Minimum order: 1 pcs, £3.00 each"
+      "Min order: 1 pc",
+      "£3.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-bluey-and-bingo-70cm-1398",
     "name": "Bluey and Bingo 70cm",
     "price": 12.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bluey",
@@ -3941,24 +4083,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "BLUEY AND BINGO 70cm.",
     "description": "BLUEY AND BINGO 70cm.",
     "features": [
-      "Minimum order: 1 pcs, £12.00 each"
+      "Min order: 1 pc",
+      "£12.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-splash-water-balls-1406",
     "name": "Splash Water Balls",
     "price": 7.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Outdoor",
-    "categorySlug": "play-balls",
+    "theme": "Bubbles",
+    "categorySlug": "bubble-blowers",
     "images": [
       "/images/products/telegram/tg-splash-water-balls-1406-1.webp",
       "/images/products/telegram/tg-splash-water-balls-1406-2.webp",
@@ -3971,24 +4114,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Splash water balls. Note in Amazon but 48 balls. Our 60 balls.",
     "description": "Splash water balls. Note in Amazon but 48 balls. Our 60 balls.",
     "features": [
-      "Minimum order: 1 pcs, £7.00 each"
+      "Min order: 1 pc",
+      "£7.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-slime-stitch-1452",
     "name": "Slime Stitch",
     "price": 1.1,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "sensory-jars",
+    "categorySlug": "dolls-plush",
     "images": [
       "/images/products/telegram/tg-slime-stitch-1452-1.webp",
       "/images/products/telegram/tg-slime-stitch-1452-2.webp",
@@ -3998,20 +4142,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Slime stitch available now.",
     "description": "Slime stitch available now.",
     "features": [
-      "Minimum order: 1 pcs, £1.10 each"
+      "Min order: 1 pc",
+      "£1.10 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-soft-teddy-1477",
     "name": "Soft Teddy",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -4026,25 +4171,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New soft toys teddy available for 10.",
     "description": "New soft toys teddy available for 10.",
     "features": [
-      "Minimum order: 10 pcs, £5.50 each",
+      "Min order: 1 pc",
+      "£5.50 each",
       "£55 for 10"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 10,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-bedding-1492",
-    "name": "Bedding",
+    "name": "Character Bedding",
     "price": 20.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-bedding-1492-1.webp",
       "/images/products/telegram/tg-bedding-1492-2.webp",
@@ -4058,25 +4204,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "BEDDING BACK IN STOCK NOW. With new designs. Each.",
     "description": "BEDDING BACK IN STOCK NOW. With new designs. Each.",
     "features": [
-      "Minimum order: 1 pcs, £20.00 each",
+      "Min order: 1 pc",
+      "£20.00 each",
       "DM for bulk/box price"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-smileys-balls-1513",
     "name": "Smileys Balls",
     "price": 1.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
-    "categorySlug": "play-balls",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-smileys-balls-1513-1.webp",
       "/images/products/telegram/tg-smileys-balls-1513-2.webp",
@@ -4085,24 +4232,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Smiley’s balls In stock now. With strings. Each.",
     "description": "Smiley’s balls In stock now. With strings. Each.",
     "features": [
-      "Minimum order: 1 pcs, £1.00 each"
+      "Min order: 1 pc",
+      "£1.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-blankets-1520",
-    "name": "Blankets",
+    "name": "Printed Blankets",
     "price": 12.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-blankets-1520-1.webp",
       "/images/products/telegram/tg-blankets-1520-2.webp",
@@ -4114,24 +4262,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New blankets on the floor now.",
     "description": "New blankets on the floor now.",
     "features": [
-      "Minimum order: 1 pcs, £12.50 each"
+      "Min order: 1 pc",
+      "£12.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-slime-6-in-pack-1553",
     "name": "Slime 6 in Pack",
     "price": 1.1,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Sensory",
-    "categorySlug": "sensory-jars",
+    "categorySlug": "fidget-spinners",
     "images": [
       "/images/products/telegram/tg-slime-6-in-pack-1553-1.webp",
       "/images/products/telegram/tg-slime-6-in-pack-1553-2.webp",
@@ -4144,25 +4293,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Slime available from. 6 in pack.",
     "description": "Slime available from. 6 in pack.",
     "features": [
-      "Minimum order: 6 pcs, £1.10 each",
+      "Min order: 6 pcs (1 box)",
+      "£1.10 each",
       "6 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 6,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 6 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-shape-of-big-size-water-game-in-stich-and-spider-m-1554",
     "name": "Shape of Big Size Water Game in Stitch and Spider Man",
     "price": 1.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "bubble-blowers",
     "images": [
       "/images/products/telegram/tg-shape-of-big-size-water-game-in-stich-and-spider-m-1554-1.webp",
       "/images/products/telegram/tg-shape-of-big-size-water-game-in-stich-and-spider-m-1554-2.webp"
@@ -4170,25 +4320,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New shape of big size water game in Stitch and spider man available now a box of 24 ( each ).",
     "description": "New shape of big size water game in Stitch and spider man available now a box of 24 ( each ).",
     "features": [
-      "Minimum order: 24 pcs, £1.25 each",
+      "Min order: 1 pc",
+      "£1.25 each",
       "Pack of 24 = £30.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 24,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-string-ball-in-football-colours-1556",
     "name": "String Ball in Football Colours",
     "price": 0.9,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Football",
-    "categorySlug": "play-balls",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-string-ball-in-football-colours-1556-1.webp",
       "/images/products/telegram/tg-string-ball-in-football-colours-1556-2.webp",
@@ -4197,20 +4348,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "String ball in football colours available now.",
     "description": "String ball in football colours available now.",
     "features": [
-      "Minimum order: 1 pcs, £0.90 each"
+      "Min order: 1 pc",
+      "£0.90 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-spider-lights-up-1576",
     "name": "Spider Lights Up",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -4222,21 +4374,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Spider lights up. Each. Or pack of 12.",
     "description": "Spider lights up. Each. Or pack of 12.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "Bulk: 12 for £36.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-dart-size-38cm-1607",
     "name": "Dart Size 38cm",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
@@ -4249,21 +4402,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New dart size 38cm. Available. Each. 12 for.",
     "description": "New dart size 38cm. Available. Each. 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "Bulk: 12 for £42.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-dart-size-48cm-1614",
     "name": "Dart Size 48cm",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
@@ -4276,25 +4430,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New dart size 48cm. Available. Each. 12 for.",
     "description": "New dart size 48cm. Available. Each. 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each",
+      "Min order: 1 pc",
+      "£6.50 each",
       "Bulk: 12 for £66.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-transformers-1630",
     "name": "Transformers",
     "price": 5.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Vehicles",
-    "categorySlug": "games-gadgets",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-transformers-1630-1.webp",
       "/images/products/telegram/tg-transformers-1630-2.webp",
@@ -4308,21 +4463,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "TRANSFORMERS. MACHINE SOLDIERS TRUCK. MIX 12 FOR.",
     "description": "TRANSFORMERS. MACHINE SOLDIERS TRUCK. MIX 12 FOR.",
     "features": [
-      "Minimum order: 12 pcs, £5.00 each",
+      "Min order: 1 pc",
+      "£5.00 each",
       "Pack of 12 = £60.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-skateboard-1681",
     "name": "Skateboard",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
@@ -4340,24 +4496,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Skateboard. Big 79cm. Both in stock now.",
     "description": "Skateboard. Big 79cm. Both in stock now.",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each"
+      "Min order: 1 pc",
+      "£7.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-jeffy-mom-and-dad-1714",
-    "name": "Jeffy Mom and Dad",
+    "name": "Jeffy Mom and Dad Dolls",
     "price": 12.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Dolls",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-jeffy-mom-and-dad-1714-1.webp",
       "/images/products/telegram/tg-jeffy-mom-and-dad-1714-2.webp",
@@ -4366,20 +4523,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "JEFFY MOM AND DAD. BOTH IN STOCK NOW.",
     "description": "JEFFY MOM AND DAD. BOTH IN STOCK NOW.",
     "features": [
-      "Minimum order: 1 pcs, £12.50 each"
+      "Min order: 1 pc",
+      "£12.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-keychain-1810",
     "name": "3D Keychain",
     "price": 1.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Keyrings",
@@ -4397,25 +4555,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "NEW NEW NEW. 3D keychain available now with 30 different designs. Just each. 12 in a pack.",
     "description": "NEW NEW NEW. 3D keychain available now with 30 different designs. Just each. 12 in a pack.",
     "features": [
-      "Minimum order: 12 pcs, £1.25 each",
+      "Min order: 1 pc",
+      "£1.25 each",
       "12 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stitch-bag-1815",
     "name": "Stitch Bag",
     "price": 4.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-stitch-bag-1815-1.webp",
       "/images/products/telegram/tg-stitch-bag-1815-2.webp",
@@ -4424,21 +4583,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Stitch bag. Each. For a pack of 12.",
     "description": "Stitch bag. Each. For a pack of 12.",
     "features": [
-      "Minimum order: 1 pcs, £4.00 each",
+      "Min order: 1 pc",
+      "£4.00 each",
       "Bulk: 12 for £42.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-crocs-charms-pack-of-6-1822",
-    "name": "Crocs Charms (Pack of 6)",
+    "name": "Crocs Charms Pack of 6",
     "price": 1,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Keyrings",
@@ -4456,25 +4616,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Crocs charms available. For a pack of 6.",
     "description": "New Crocs charms available. For a pack of 6.",
     "features": [
-      "Minimum order: 1 pcs, £1.00 each",
+      "Min order: 1 pc",
+      "£1.00 each",
       "£1 per pack of 6"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-latest-sugar-squishy-in-different-characters-1860",
-    "name": "Latest Sugar Squishy in Different Characters",
+    "name": "Sugar Squishy in Different Characters",
     "price": 0.85,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-latest-sugar-squishy-in-different-characters-1860-1.webp",
       "/images/products/telegram/tg-latest-sugar-squishy-in-different-characters-1860-2.webp",
@@ -4488,21 +4649,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New latest sugar squishy in different characters available now. 12 in a box.",
     "description": "New latest sugar squishy in different characters available now. 12 in a box.",
     "features": [
-      "Minimum order: 12 pcs, £0.85 each",
+      "Min order: 12 pcs (1 box)",
+      "£0.85 each",
       "12 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-3d-dragons-with-egg-1867",
     "name": "3D Dragons with Egg",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -4516,24 +4678,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "3D dragons with egg.",
     "description": "3D dragons with egg.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stitch-beach-bag-1878",
     "name": "Stitch Beach Bag",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-stitch-beach-bag-1878-1.webp",
       "/images/products/telegram/tg-stitch-beach-bag-1878-2.webp",
@@ -4544,24 +4707,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Stitch beach bag available now. Each or. Pack of 12 mix.",
     "description": "Stitch beach bag available now. Each or. Pack of 12 mix.",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each"
+      "Min order: 1 pc",
+      "£2.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-sumer-rechargeable-usb-fans-1889",
     "name": "Summer Rechargeable USB Fans",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Fans",
-    "categorySlug": "handheld-fans",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-sumer-rechargeable-usb-fans-1889-1.webp",
       "/images/products/telegram/tg-sumer-rechargeable-usb-fans-1889-2.webp",
@@ -4572,24 +4736,25 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-sumer-rechargeable-usb-fans-1889-7.webp",
       "/images/products/telegram/tg-sumer-rechargeable-usb-fans-1889-8.webp"
     ],
-    "shortDescription": "New summer rechargeable usb fans available now grab for.",
-    "description": "New summer rechargeable usb fans available now grab for.",
+    "shortDescription": "New Summer rechargeable usb fans available now grab for.",
+    "description": "New Summer rechargeable usb fans available now grab for.",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each",
+      "Min order: 1 pc",
+      "£2.50 each",
       "DM for bulk/box price"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stitch-rainbow-plush-30cm-1894",
     "name": "Stitch Rainbow Plush 30cm",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -4603,21 +4768,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "STITCH RAINBOW. 30CM AVAILABLE NOW. Each. Pack of 12.",
     "description": "STITCH RAINBOW. 30CM AVAILABLE NOW. Each. Pack of 12.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "Bulk: 12 for £42"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-figures-1911",
     "name": "3D Figures",
     "price": 1.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -4632,25 +4798,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "NEW 3D FIGURES. AVAILABLE WITH 7 DESIGNS. AND WITH DIFFERENT COLOURS. JUST for pack of 12.",
     "description": "NEW 3D FIGURES. AVAILABLE WITH 7 DESIGNS. AND WITH DIFFERENT COLOURS. JUST for pack of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.00 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.00 each",
       "Pack of 12 = £12.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-rechargeable-fans-with-box-1923",
     "name": "Rechargeable Fans with Box",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Fans",
-    "categorySlug": "handheld-fans",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-rechargeable-fans-with-box-1923-1.webp",
       "/images/products/telegram/tg-rechargeable-fans-with-box-1923-2.webp",
@@ -4663,7 +4830,8 @@ export const telegramStock: Product[] = [
     "shortDescription": "New rechargeable fans with box. Each. ( 144 in abox ).",
     "description": "New rechargeable fans with box. Each. ( 144 in abox ).",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each",
+      "Min order: 1 pc",
+      "£2.50 each",
       "144 per box",
       "£1.95 at 144 box"
     ],
@@ -4671,14 +4839,14 @@ export const telegramStock: Product[] = [
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-big-size-60cm-dragon-1931",
     "name": "Big Size 60cm Dragon",
     "price": 5.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dragon",
@@ -4692,24 +4860,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New big size 60cm dragon available now in different colours.",
     "description": "New big size 60cm dragon available now in different colours.",
     "features": [
-      "Minimum order: 1 pcs, £5.00 each"
+      "Min order: 1 pc",
+      "£5.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-fidget-spinners-in-stich-bluye-spider-man-and-poke-1936",
-    "name": "Fidget Spinners in Stitch, Bluey, Spider Man and Pokémon",
+    "name": "Fidget Spinners in Stitch , Bluey , Spider Man and Pokémon",
     "price": 1.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "fidget-spinners",
+    "categorySlug": "dolls-plush",
     "images": [
       "/images/products/telegram/tg-fidget-spinners-in-stich-bluye-spider-man-and-poke-1936-1.webp",
       "/images/products/telegram/tg-fidget-spinners-in-stich-bluye-spider-man-and-poke-1936-2.webp",
@@ -4718,24 +4887,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New fidget spinners in Stitch , Bluey , spider man and Pokémon available now.",
     "description": "New fidget spinners in Stitch , Bluey , spider man and Pokémon available now.",
     "features": [
-      "Minimum order: 1 pcs, £1.25 each"
+      "Min order: 1 pc",
+      "£1.25 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-soft-toy-with-keyring-1947",
     "name": "Labubu Soft Toy with Keyring",
     "price": 0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-soft-toy-with-keyring-1947-1.webp",
       "/images/products/telegram/tg-labubu-soft-toy-with-keyring-1947-2.webp",
@@ -4747,13 +4917,15 @@ export const telegramStock: Product[] = [
     "shortDescription": "Labubu soft toy with keyring available now welcome for orders.",
     "description": "Labubu soft toy with keyring available now welcome for orders.",
     "features": [
-      "Minimum order: 1 pcs",
+      "Min order: 1 pc",
       "Price on request"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50,
     "priceTBC": true
   },
@@ -4761,8 +4933,6 @@ export const telegramStock: Product[] = [
     "slug": "tg-stitch-and-bluey-1997",
     "name": "Stitch and Bluey",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -4780,20 +4950,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "STITCH AND BLUEY. DANCING TOY. HOT SALER.",
     "description": "STITCH AND BLUEY. DANCING TOY. HOT SALER.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-bubble-gun-new-style-2007",
-    "name": "Bubble Gun - New Style",
+    "name": "Bubble Gun",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bubbles",
@@ -4809,25 +4980,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "This all new style off bubble gun on the floor now. Each.",
     "description": "This all new style off bubble gun on the floor now. Each.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "DM for bulk/box price"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stitch-stunt-racing-car-2017",
     "name": "Stitch Stunt Racing Car",
     "price": 9.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-stitch-stunt-racing-car-2017-1.webp",
       "/images/products/telegram/tg-stitch-stunt-racing-car-2017-2.webp",
@@ -4836,20 +5008,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Stitch stunt racing car.",
     "description": "Stitch stunt racing car.",
     "features": [
-      "Minimum order: 1 pcs, £9.50 each"
+      "Min order: 1 pc",
+      "£9.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-character-bubble-toy-2026",
     "name": "Character Bubble Toy",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bubbles",
@@ -4866,7 +5039,8 @@ export const telegramStock: Product[] = [
     "shortDescription": "SUMMER TIME. BUBBLE TIME. IS BACK NOW. WITH CHARACTERS. PRICE JUST EACH. 60 IN A BOX PRICE.",
     "description": "SUMMER TIME. BUBBLE TIME. IS BACK NOW. WITH CHARACTERS. PRICE JUST EACH. 60 IN A BOX PRICE.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "60 per box",
       "£3.50 each at 60 box"
     ],
@@ -4874,18 +5048,18 @@ export const telegramStock: Product[] = [
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-in-surprise-bag-and-box-2029",
     "name": "Labubu in Surprise Bag and Box",
     "price": 5.99,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-in-surprise-bag-and-box-2029-1.webp",
       "/images/products/telegram/tg-labubu-in-surprise-bag-and-box-2029-2.webp"
@@ -4893,21 +5067,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Labubu in surprise bag and box available now. Just last 2 boxes left.",
     "description": "Labubu in surprise bag and box available now. Just last 2 boxes left.",
     "features": [
-      "Minimum order: 1 pcs, £5.99 each",
+      "Min order: 1 pc",
+      "£5.99 each",
       "Box only"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kids-bike-m9-12-2033",
     "name": "Kids Bike M9 12\"",
     "price": 40,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
@@ -4920,25 +5095,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "M9 #12 size. Kids bikes available now not ready. And ready bikes.",
     "description": "M9 #12 size. Kids bikes available now not ready. And ready bikes.",
     "features": [
-      "Minimum order: 1 pcs, £40.00 each",
+      "Min order: 1 pc",
+      "£40.00 each",
       "£40 unassembled, £60 ready"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-unisex-cowboy-hats-2040",
     "name": "Unisex Cowboy Hats",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Play",
-    "categorySlug": "kids-hats",
+    "theme": "Party",
+    "categorySlug": "party-spotlight",
     "images": [
       "/images/products/telegram/tg-unisex-cowboy-hats-2040-1.webp",
       "/images/products/telegram/tg-unisex-cowboy-hats-2040-2.webp",
@@ -4949,24 +5125,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Unisex cowboy hats. Each. Or mix 12 for just.",
     "description": "Unisex cowboy hats. Each. Or mix 12 for just.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each"
+      "Min order: 1 pc",
+      "£3.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-croc-bags-2045",
     "name": "Croc Bags",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bags",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-croc-bags-2045-1.webp",
       "/images/products/telegram/tg-croc-bags-2045-2.webp",
@@ -4976,24 +5153,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New croc bags available now.",
     "description": "New croc bags available now.",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each"
+      "Min order: 1 pc",
+      "£2.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-mini-version-in-surprise-bag-and-box-2052",
     "name": "Labubu Mini Version in Surprise Bag and Box",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-mini-version-in-surprise-bag-and-box-2052-1.webp",
       "/images/products/telegram/tg-labubu-mini-version-in-surprise-bag-and-box-2052-2.webp",
@@ -5004,25 +5182,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Labubu mini version in surprise bag and box available now ( 720 in a box ).",
     "description": "Labubu mini version in surprise bag and box available now ( 720 in a box ).",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each",
+      "Min order: 720 pcs (1 box)",
+      "£1.50 each",
       "720 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 720,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 720 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-labubu-lakers-2060",
     "name": "Labubu Lakers",
     "price": 6,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-lakers-2060-1.webp",
       "/images/products/telegram/tg-labubu-lakers-2060-2.webp",
@@ -5033,7 +5212,8 @@ export const telegramStock: Product[] = [
     "shortDescription": "Labubu lakers. Arrived now. Pack of 12 ().",
     "description": "Labubu lakers. Arrived now. Pack of 12 ().",
     "features": [
-      "Minimum order: 12 pcs, £6.00 each",
+      "Min order: 12 pcs (1 box)",
+      "£6.00 each",
       "DM for bulk/box price",
       "£72 pack of 12; DM for box price"
     ],
@@ -5041,18 +5221,18 @@ export const telegramStock: Product[] = [
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-labubu-halloween-2075",
     "name": "Labubu Halloween",
     "price": 6,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Halloween",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-halloween-2075-1.webp",
       "/images/products/telegram/tg-labubu-halloween-2075-2.webp",
@@ -5065,7 +5245,8 @@ export const telegramStock: Product[] = [
     "shortDescription": "Labubu Halloween. Arrived now. Pack of 12 ().",
     "description": "Labubu Halloween. Arrived now. Pack of 12 ().",
     "features": [
-      "Minimum order: 12 pcs, £6.00 each",
+      "Min order: 12 pcs (1 box)",
+      "£6.00 each",
       "DM for bulk/box price",
       "£72 pack of 12; DM for box price"
     ],
@@ -5073,18 +5254,18 @@ export const telegramStock: Product[] = [
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-lububu-squishy-2083",
     "name": "Labubu Squishy",
     "price": 0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-lububu-squishy-2083-1.webp",
       "/images/products/telegram/tg-lububu-squishy-2083-2.webp",
@@ -5098,13 +5279,15 @@ export const telegramStock: Product[] = [
     "shortDescription": "NEW LABUBU SQUISHY. 15cm in stock now.",
     "description": "NEW LABUBU SQUISHY. 15cm in stock now.",
     "features": [
-      "Minimum order: 1 pcs",
+      "Min order: 12 pcs",
       "Price on request"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50,
     "priceTBC": true
   },
@@ -5112,12 +5295,10 @@ export const telegramStock: Product[] = [
     "slug": "tg-lububu-lay-down-2089",
     "name": "Labubu Lay Down",
     "price": 0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-lububu-lay-down-2089-1.webp",
       "/images/products/telegram/tg-lububu-lay-down-2089-2.webp",
@@ -5126,13 +5307,15 @@ export const telegramStock: Product[] = [
     "shortDescription": "Labubu lay down. Style available now.",
     "description": "Labubu lay down. Style available now.",
     "features": [
-      "Minimum order: 1 pcs",
+      "Min order: 1 pc",
       "Price on request"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50,
     "priceTBC": true
   },
@@ -5140,12 +5323,10 @@ export const telegramStock: Product[] = [
     "slug": "tg-magic-labubu-blind-box-plush-keyring-2113",
     "name": "Magic Labubu Blind Box Plush Keyring",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "pocket-critter-keyrings",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-magic-labubu-blind-box-plush-keyring-2113-1.webp",
       "/images/products/telegram/tg-magic-labubu-blind-box-plush-keyring-2113-2.webp",
@@ -5155,21 +5336,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "MAGIC LABUBU. BLIND BOX. PLUSH KEYRING. If you take a pack of 12.",
     "description": "MAGIC LABUBU. BLIND BOX. PLUSH KEYRING. If you take a pack of 12.",
     "features": [
-      "Minimum order: 12 pcs, £3.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£3.50 each",
       "£3.50 when taking 12"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-styles-of-keyrings-2124",
     "name": "Styles of Keyrings",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Keyrings",
@@ -5182,25 +5364,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "All new styles of keyrings. Just pack of 12pcs.",
     "description": "All new styles of keyrings. Just pack of 12pcs.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-labubu-coca-cola-big-size-2129",
     "name": "Labubu Coca-Cola Big Size",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-coca-cola-big-size-2129-1.webp",
       "/images/products/telegram/tg-labubu-coca-cola-big-size-2129-2.webp",
@@ -5208,52 +5391,54 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-labubu-coca-cola-big-size-2129-4.webp",
       "/images/products/telegram/tg-labubu-coca-cola-big-size-2129-5.webp"
     ],
-    "shortDescription": "Big size Coca Cola once available now.",
-    "description": "Big size Coca Cola once available now.",
+    "shortDescription": "Big size Coca Cola Ones available now.",
+    "description": "Big size Coca Cola Ones available now.",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each"
+      "Min order: 1 pc",
+      "£7.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-new-clothes-2135",
-    "name": "Labubu New Clothes",
+    "name": "Labubu Clothes",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-new-clothes-2135-1.webp",
       "/images/products/telegram/tg-labubu-new-clothes-2135-2.webp"
     ],
-    "shortDescription": "New clothes once.",
-    "description": "New clothes once.",
+    "shortDescription": "New clothes Ones.",
+    "description": "New clothes Ones.",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each"
+      "Min order: 1 pc",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-tomorrow-morning-2138",
     "name": "Labubu Tomorrow Morning",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-tomorrow-morning-2138-1.webp",
       "/images/products/telegram/tg-labubu-tomorrow-morning-2138-2.webp",
@@ -5264,24 +5449,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Tomorrow morning comes.",
     "description": "Tomorrow morning comes.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-purse-2144",
     "name": "Labubu Purse",
     "price": 2.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-purse-2144-1.webp",
       "/images/products/telegram/tg-labubu-purse-2144-2.webp",
@@ -5292,24 +5478,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Purses Labubu. 12 pcs minimum to buy.",
     "description": "Purses Labubu. 12 pcs minimum to buy.",
     "features": [
-      "Minimum order: 12 pcs, £2.00 each"
+      "Min order: 12 pcs",
+      "£2.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-labubu-big-into-energy-have-a-seat-macaron-cola-2157",
     "name": "Labubu Big Into Energy / Have a Seat / Macaron / Cola",
     "price": 4.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-big-into-energy-have-a-seat-macaron-cola-2157-1.webp",
       "/images/products/telegram/tg-labubu-big-into-energy-have-a-seat-macaron-cola-2157-2.webp",
@@ -5321,49 +5508,51 @@ export const telegramStock: Product[] = [
     "shortDescription": "Labubu. Biginto energy. Have a sit. Macaron. Cola cane. All in stock now. Place your order now. ALL HOT SELLERS.",
     "description": "Labubu. Biginto energy. Have a sit. Macaron. Cola cane. All in stock now. Place your order now. ALL HOT SELLERS.",
     "features": [
-      "Minimum order: 240 pcs, £4.25 each",
+      "Min order: 1 pc",
+      "£4.25 each",
       "Box prices: Macaron, Have a Seat, Big Into Energy £4.25 (240 box) or £5 loose"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 240,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-series-4-2159",
-    "name": "Series 4",
+    "name": "Series 4 Collectible Figures",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Characters",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-series-4-2159-1.webp"
     ],
-    "shortDescription": "Series 4 available now. Minimum 12 pcs to buy.",
-    "description": "Series 4 available now. Minimum 12 pcs to buy.",
+    "shortDescription": "Series 4 available now.",
+    "description": "Series 4 available now.",
     "features": [
-      "Minimum order: 12 pcs, £6.50 each"
+      "Min order: 12 pcs",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-cry-baby-series-2160",
     "name": "Cry Baby Series",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "theme": "Dolls",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-cry-baby-series-2160-1.webp",
       "/images/products/telegram/tg-cry-baby-series-2160-2.webp",
@@ -5373,25 +5562,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New cry baby series available now ( box of 240. 7 different styles).",
     "description": "New cry baby series available now ( box of 240. 7 different styles).",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each",
+      "Min order: 1 pc",
+      "£7.50 each",
       "£6.50 at 240 box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-angel-labubu-with-wings-2164",
     "name": "Angel Labubu with Wings",
     "price": 0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-angel-labubu-with-wings-2164-1.webp",
       "/images/products/telegram/tg-angel-labubu-with-wings-2164-2.webp",
@@ -5402,13 +5592,15 @@ export const telegramStock: Product[] = [
     "shortDescription": "New angel Labubu with wings available now.",
     "description": "New angel Labubu with wings available now.",
     "features": [
-      "Minimum order: 1 pcs",
+      "Min order: 1 pc",
       "Price on request"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50,
     "priceTBC": true
   },
@@ -5416,8 +5608,6 @@ export const telegramStock: Product[] = [
     "slug": "tg-pop-mart-skull-panda-series-2185",
     "name": "Pop Mart Skull Panda Series",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -5430,26 +5620,27 @@ export const telegramStock: Product[] = [
     "shortDescription": "New popular pop mart series skull panda available now ( 240 in carton ).",
     "description": "New popular pop mart series skull panda available now ( 240 in carton ).",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each",
+      "Min order: 240 pcs (1 box)",
+      "£6.50 each",
       "240 per box",
       "240 per carton"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 240,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 240 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-labubu-cola-can-with-music-2218",
     "name": "Labubu Cola Can with Music",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-cola-can-with-music-2218-1.webp",
       "/images/products/telegram/tg-labubu-cola-can-with-music-2218-2.webp",
@@ -5462,25 +5653,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Cola can with.",
     "description": "Cola can with.",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each",
+      "Min order: 1 pc",
+      "£7.50 each",
       "DM for bulk/box price"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-kids-towels-2226",
     "name": "Kids Towels",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-kids-towels-2226-1.webp",
       "/images/products/telegram/tg-kids-towels-2226-2.webp",
@@ -5489,24 +5681,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Kids towels. Stitch and football teams.",
     "description": "Kids towels. Stitch and football teams.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-bag-2237",
     "name": "Labubu Bag",
     "price": 0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-bag-2237-1.webp",
       "/images/products/telegram/tg-labubu-bag-2237-2.webp",
@@ -5517,13 +5710,15 @@ export const telegramStock: Product[] = [
     "shortDescription": "LABUBU BAG AVAILABLE NOW.",
     "description": "LABUBU BAG AVAILABLE NOW.",
     "features": [
-      "Minimum order: 1 pcs",
+      "Min order: 1 pc",
       "Price on request"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50,
     "priceTBC": true
   },
@@ -5531,12 +5726,10 @@ export const telegramStock: Product[] = [
     "slug": "tg-labubu-set-2244",
     "name": "Labubu Set",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "others",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-set-2244-1.webp",
       "/images/products/telegram/tg-labubu-set-2244-2.webp",
@@ -5545,25 +5738,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Labubu set. Bracelet hair clip. Much more accessories. For a pack of 12pcs.",
     "description": "Labubu set. Bracelet hair clip. Much more accessories. For a pack of 12pcs.",
     "features": [
-      "Minimum order: 12 pcs, £3.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£3.50 each",
       "Pack of 12 = £42.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-fuggler-ball-2249",
     "name": "Fuggler Ball",
     "price": 1.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Keyrings",
-    "categorySlug": "novelty-keyrings",
+    "theme": "Outdoor",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-fuggler-ball-2249-1.webp",
       "/images/products/telegram/tg-fuggler-ball-2249-2.webp",
@@ -5572,25 +5766,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "FuGGLER BALL. FuGGLER KEYRING. Available now 12 in a pack.",
     "description": "FuGGLER BALL. FuGGLER KEYRING. Available now 12 in a pack.",
     "features": [
-      "Minimum order: 12 pcs, £1.25 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.25 each",
       "12 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-labubu-kids-lunch-box-2268",
     "name": "Labubu Kids Lunch Box",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "others",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-kids-lunch-box-2268-1.webp",
       "/images/products/telegram/tg-labubu-kids-lunch-box-2268-2.webp",
@@ -5604,25 +5799,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Labubu kids lunch box. Each. 12 mix for.",
     "description": "Labubu kids lunch box. Each. 12 mix for.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each",
+      "Min order: 1 pc",
+      "£5.50 each",
       "Bulk: 12 for £54.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-series-5-2272",
-    "name": "Series-5",
+    "name": "Series 5 Collectible Figures",
     "price": 0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Characters",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-series-5-2272-1.webp",
       "/images/products/telegram/tg-series-5-2272-2.webp",
@@ -5631,13 +5827,15 @@ export const telegramStock: Product[] = [
     "shortDescription": "Series-5 available now.",
     "description": "Series-5 available now.",
     "features": [
-      "Minimum order: 1 pcs",
+      "Min order: 1 pc",
       "Price on request"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50,
     "priceTBC": true
   },
@@ -5645,12 +5843,10 @@ export const telegramStock: Product[] = [
     "slug": "tg-labubu-kids-pencil-set-2281",
     "name": "Labubu Kids Pencil Set",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "arts-crafts",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-kids-pencil-set-2281-1.webp",
       "/images/products/telegram/tg-labubu-kids-pencil-set-2281-2.webp",
@@ -5664,25 +5860,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "LABUBU KIDS PENCIL. SETS. For 12pcs mix.",
     "description": "LABUBU KIDS PENCIL. SETS. For 12pcs mix.",
     "features": [
-      "Minimum order: 12 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "£54 for 12 mix"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-dancing-25cm-2305",
     "name": "Labubu Dancing 25cm",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-dancing-25cm-2305-1.webp",
       "/images/products/telegram/tg-labubu-dancing-25cm-2305-2.webp",
@@ -5693,47 +5890,49 @@ export const telegramStock: Product[] = [
     "shortDescription": "LABUBU DANCING 25cm. Available now with 7 colours. And 7 different music. And voice repeating. Mix 12 for.",
     "description": "LABUBU DANCING 25cm. Available now with 7 colours. And 7 different music. And voice repeating. Mix 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each",
+      "Min order: 1 pc",
+      "£8.50 each",
       "Bulk: 12 for £90.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-wakuku-2311",
-    "name": "Wakuku",
+    "name": "Wakuku Character Figures",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "theme": "Characters",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-wakuku-2311-1.webp",
       "/images/products/telegram/tg-wakuku-2311-2.webp",
       "/images/products/telegram/tg-wakuku-2311-3.webp"
     ],
     "shortDescription": "Wakuku. Fuzzy tredy fun party. Come with 6 different characters. Back to ysk. Upto MISCHIEF. BECOME REBEL. PLAY BEAR. SING ROCK SUPER FUTURE. MONSTER IMITATION.",
-    "description": "Wakuku. Fuzzy tredy fun party. Come with 6 different characters. Back to ysk. Upto MISCHIEF. BECOME REBEL. PLAY BEAR. SING ROCK SUPER FUTURE. MONSTER IMITATION. Minimum 12pcs.",
+    "description": "Wakuku. Fuzzy tredy fun party. Come with 6 different characters. Back to ysk. Upto MISCHIEF. BECOME REBEL. PLAY BEAR. SING ROCK SUPER FUTURE. MONSTER IMITATION.",
     "features": [
-      "Minimum order: 12 pcs, £5.50 each"
+      "Min order: 12 pcs",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-cup-with-charms-2324",
     "name": "Cup with Charms",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Keyrings",
@@ -5750,25 +5949,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Copy with charms. Just for 12pcs.",
     "description": "Copy with charms. Just for 12pcs.",
     "features": [
-      "Minimum order: 12 pcs, £2.50 each",
+      "Min order: 1 pc",
+      "£2.50 each",
       "£30 for 12"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-3pcs-school-bag-set-2345",
     "name": "Labubu 3pcs School Bag Set",
     "price": 18.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-3pcs-school-bag-set-2345-1.webp",
       "/images/products/telegram/tg-labubu-3pcs-school-bag-set-2345-2.webp",
@@ -5779,24 +5979,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "LABUBU 3pcs school bag set. With led lights.",
     "description": "LABUBU 3pcs school bag set. With led lights.",
     "features": [
-      "Minimum order: 1 pcs, £18.00 each"
+      "Min order: 1 pc",
+      "£18.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-back-to-school-stationery-set-2357",
     "name": "Labubu Back to School Stationery Set",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "arts-crafts",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-back-to-school-stationery-set-2357-1.webp",
       "/images/products/telegram/tg-labubu-back-to-school-stationery-set-2357-2.webp",
@@ -5807,25 +6008,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "BACK TO SCHOOL. WITH LABUBU. STATIONERY SET. 12pcs mix for. Will be.",
     "description": "BACK TO SCHOOL. WITH LABUBU. STATIONERY SET. 12pcs mix for. Will be.",
     "features": [
-      "Minimum order: 12 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "Pack of 12 = £54.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-labubu-new-range-2372",
-    "name": "Labubu - New Range",
+    "name": "Labubu Collectible",
     "price": 0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-new-range-2372-1.webp",
       "/images/products/telegram/tg-labubu-new-range-2372-2.webp",
@@ -5839,13 +6041,15 @@ export const telegramStock: Product[] = [
     "shortDescription": "All new Labubu available now.",
     "description": "All new Labubu available now.",
     "features": [
-      "Minimum order: 1 pcs",
+      "Min order: 1 pc",
       "Price on request"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50,
     "priceTBC": true
   },
@@ -5853,8 +6057,6 @@ export const telegramStock: Product[] = [
     "slug": "tg-surprise-box-bag-keyrings-2386",
     "name": "Surprise Box & Bag Keyrings",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Keyrings",
@@ -5872,21 +6074,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "All NEW TYPES OF KEYRINGS. AVAILABLE NOW WITH BOX AND SURPRISE BAG. A box of 12pcs.",
     "description": "All NEW TYPES OF KEYRINGS. AVAILABLE NOW WITH BOX AND SURPRISE BAG. A box of 12pcs.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-stitch-genz-series-pop-mart-style-2394",
-    "name": "Stitch Genz Series (Pop Mart Style)",
+    "name": "Stitch Genz Series Pop Mart Style",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -5903,25 +6106,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New craze of Stitch GENZ SERIES IN POPMART very popular online market available now. For pack of 12pcs.",
     "description": "New craze of Stitch GENZ SERIES IN POPMART very popular online market available now. For pack of 12pcs.",
     "features": [
-      "Minimum order: 12 pcs, £7.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£7.50 each",
       "Pack of 12 = £90.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-surprise-balls-big-size-2405",
     "name": "Surprise Balls Big Size",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
-    "categorySlug": "play-balls",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-surprise-balls-big-size-2405-1.webp",
       "/images/products/telegram/tg-surprise-balls-big-size-2405-2.webp",
@@ -5935,25 +6139,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Surprise balls big size. For box of 12pcs.",
     "description": "Surprise balls big size. For box of 12pcs.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-christmas-taba-squishy-2409",
     "name": "Christmas Taba Squishy",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Christmas",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-christmas-taba-squishy-2409-1.webp",
       "/images/products/telegram/tg-christmas-taba-squishy-2409-2.webp",
@@ -5965,25 +6170,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Christmas taba squishy available now. Just each.",
     "description": "New Christmas taba squishy available now. Just each.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each",
+      "Min order: 18 pcs (1 box)",
+      "£1.50 each",
       "Box only"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 18,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 18 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-labubu-50cm-xxl-size-2419",
     "name": "Labubu 50cm XXL Size",
     "price": 28.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-50cm-xxl-size-2419-1.webp",
       "/images/products/telegram/tg-labubu-50cm-xxl-size-2419-2.webp",
@@ -5993,24 +6199,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "LABUBU 50cm XXL SIZE.",
     "description": "LABUBU 50cm XXL SIZE.",
     "features": [
-      "Minimum order: 1 pcs, £28.00 each"
+      "Min order: 1 pc",
+      "£28.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-3d-frames-2432",
     "name": "3D Frames",
     "price": 9.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-3d-frames-2432-1.webp",
       "/images/products/telegram/tg-3d-frames-2432-2.webp",
@@ -6019,27 +6226,28 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-3d-frames-2432-5.webp",
       "/images/products/telegram/tg-3d-frames-2432-6.webp"
     ],
-    "shortDescription": "Latest new 3D frames. Good gift and best for your wall decoration available now minimum 10 pieces order.",
-    "description": "Latest new 3D frames. Good gift and best for your wall decoration available now minimum 10 pieces order.",
+    "shortDescription": "Latest new 3D frames. Good gift and best for your wall decoration available now minimum 10 pices order.",
+    "description": "Latest new 3D frames. Good gift and best for your wall decoration available now minimum 10 pices order.",
     "features": [
-      "Minimum order: 10 pcs, £9.00 each"
+      "Min order: 10 pcs",
+      "£9.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 10,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 10 pcs",
     "stock": 50
   },
   {
     "slug": "tg-calendar-2439",
     "name": "Calendar",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "theme": "Crafts",
+    "categorySlug": "arts-crafts",
     "images": [
       "/images/products/telegram/tg-calendar-2439-1.webp",
       "/images/products/telegram/tg-calendar-2439-2.webp",
@@ -6049,24 +6257,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Calendar are. Minimum Oder 12.",
     "description": "Calendar are. Minimum Oder 12.",
     "features": [
-      "Minimum order: 12 pcs, £7.50 each"
+      "Min order: 12 pcs",
+      "£7.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-labubu-big-dancing-40cm-2458",
     "name": "Labubu Big Dancing 40cm",
     "price": 22.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-big-dancing-40cm-2458-1.webp",
       "/images/products/telegram/tg-labubu-big-dancing-40cm-2458-2.webp",
@@ -6077,24 +6286,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "LABUBU BIG DANCING 40cm.",
     "description": "LABUBU BIG DANCING 40cm.",
     "features": [
-      "Minimum order: 1 pcs, £22.00 each"
+      "Min order: 1 pc",
+      "£22.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-original-fluffy-big-size-labubu-2463",
     "name": "Original Fluffy Big Size Labubu",
     "price": 28.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-original-fluffy-big-size-labubu-2463-1.webp",
       "/images/products/telegram/tg-original-fluffy-big-size-labubu-2463-2.webp",
@@ -6103,24 +6313,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Original fluffy big size Labubu available in both colours.",
     "description": "Original fluffy big size Labubu available in both colours.",
     "features": [
-      "Minimum order: 1 pcs, £28.00 each"
+      "Min order: 1 pc",
+      "£28.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-rainbow-big-size-labubu-back-in-stock-2467",
-    "name": "Rainbow Big Size Labubu (Back in Stock)",
+    "name": "Rainbow Big Size Labubu",
     "price": 0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-rainbow-big-size-labubu-back-in-stock-2467-1.webp",
       "/images/products/telegram/tg-rainbow-big-size-labubu-back-in-stock-2467-2.webp",
@@ -6130,79 +6341,81 @@ export const telegramStock: Product[] = [
     "shortDescription": "Back in stock rainbow big size available.",
     "description": "Back in stock rainbow big size available.",
     "features": [
-      "Minimum order: 1 pcs",
+      "Min order: 1 pc",
       "Price on request"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50,
     "priceTBC": true
   },
   {
     "slug": "tg-labubu-dancing-once-2472",
-    "name": "Labubu Dancing Once",
+    "name": "Labubu Dancing Ones",
     "price": 9.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-dancing-once-2472-1.webp",
       "/images/products/telegram/tg-labubu-dancing-once-2472-2.webp",
       "/images/products/telegram/tg-labubu-dancing-once-2472-3.webp"
     ],
-    "shortDescription": "LABUBU DANCING ONCE AVAILABLE NOW 25cm. Minimum order 12pcs mix.",
-    "description": "LABUBU DANCING ONCE AVAILABLE NOW 25cm. Minimum order 12pcs mix.",
+    "shortDescription": "LABUBU DANCING Ones AVAILABLE NOW 25cm.",
+    "description": "LABUBU DANCING Ones AVAILABLE NOW 25cm.",
     "features": [
-      "Minimum order: 12 pcs, £9.50 each"
+      "Min order: 12 pcs",
+      "£9.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-labubu-light-up-2478",
     "name": "Labubu Light Up",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-labubu-light-up-2478-1.webp",
       "/images/products/telegram/tg-labubu-light-up-2478-2.webp",
       "/images/products/telegram/tg-labubu-light-up-2478-3.webp",
       "/images/products/telegram/tg-labubu-light-up-2478-4.webp"
     ],
-    "shortDescription": "LABUBU LIGHT UP. Minimum order 24. Otherwise each.",
-    "description": "LABUBU LIGHT UP. Minimum order 24. Otherwise each.",
+    "shortDescription": "LABUBU LIGHT UP. Otherwise each.",
+    "description": "LABUBU LIGHT UP. Otherwise each.",
     "features": [
-      "Minimum order: 24 pcs, £3.50 each"
+      "Min order: 24 pcs",
+      "£3.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 24,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 24 pcs",
     "stock": 50
   },
   {
     "slug": "tg-halloween-pumpkin-labubu-2485",
     "name": "Halloween Pumpkin Labubu",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Halloween",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-halloween-pumpkin-labubu-2485-1.webp",
       "/images/products/telegram/tg-halloween-pumpkin-labubu-2485-2.webp",
@@ -6214,20 +6427,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Halloween pumpkin Labubu available now.",
     "description": "New Halloween pumpkin Labubu available now.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-italian-brainrot-big-plush-2496",
     "name": "Italian Brainrot Big Plush",
     "price": 16.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -6245,78 +6459,81 @@ export const telegramStock: Product[] = [
     "shortDescription": "ITALIAN BRAINROT BIG SIZE PLUSH IN STOCK NOW. Or mix 12 for.",
     "description": "ITALIAN BRAINROT BIG SIZE PLUSH IN STOCK NOW. Or mix 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £16.00 each",
+      "Min order: 1 pc",
+      "£16.00 each",
       "Bulk: 12 for £168.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-surprise-ball-2500",
-    "name": "K Pop Surprise Ball",
+    "name": "K-Pop Surprise Ball",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Outdoor",
-    "categorySlug": "play-balls",
+    "theme": "K-Pop",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-surprise-ball-2500-1.webp",
       "/images/products/telegram/tg-k-pop-surprise-ball-2500-2.webp",
       "/images/products/telegram/tg-k-pop-surprise-ball-2500-3.webp",
       "/images/products/telegram/tg-k-pop-surprise-ball-2500-4.webp"
     ],
-    "shortDescription": "K pop surprise ball back in stock.",
-    "description": "K pop surprise ball back in stock.",
+    "shortDescription": "K-Pop surprise ball back in stock.",
+    "description": "K-Pop surprise ball back in stock.",
     "features": [
-      "Minimum order: 1 pcs, £1.75 each"
+      "Min order: 1 pc",
+      "£1.75 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-squishy-2505",
-    "name": "K Pop Squishy",
+    "name": "K-Pop Squishy",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "theme": "K-Pop",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-k-pop-squishy-2505-1.webp",
       "/images/products/telegram/tg-k-pop-squishy-2505-2.webp",
       "/images/products/telegram/tg-k-pop-squishy-2505-3.webp"
     ],
-    "shortDescription": "K pop squishy available now.",
-    "description": "K pop squishy available now.",
+    "shortDescription": "K-Pop squishy available now.",
+    "description": "K-Pop squishy available now.",
     "features": [
-      "Minimum order: 1 pcs, £1.75 each"
+      "Min order: 12 pcs",
+      "£1.75 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-christmas-2512",
-    "name": "Christmas",
+    "name": "Christmas Assortment",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-christmas-2512-1.webp",
       "/images/products/telegram/tg-christmas-2512-2.webp",
@@ -6326,24 +6543,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Christmas.",
     "description": "Christmas.",
     "features": [
-      "Minimum order: 1 pcs, £1.75 each"
+      "Min order: 1 pc",
+      "£1.75 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-christmas-led-train-with-santa-2522",
     "name": "Christmas LED Train with Santa",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Christmas",
-    "categorySlug": "christmas-glow",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-christmas-led-train-with-santa-2522-1.webp",
       "/images/products/telegram/tg-christmas-led-train-with-santa-2522-2.webp",
@@ -6354,24 +6572,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "CHRISTMAS LED TRAIN WITH SANTA.",
     "description": "CHRISTMAS LED TRAIN WITH SANTA.",
     "features": [
-      "Minimum order: 1 pcs, £4.50 each"
+      "Min order: 1 pc",
+      "£4.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-christmas-led-lantern-2528",
     "name": "Christmas LED Lantern",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Christmas",
-    "categorySlug": "christmas-glow",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-christmas-led-lantern-2528-1.webp",
       "/images/products/telegram/tg-christmas-led-lantern-2528-2.webp",
@@ -6381,21 +6600,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "CHRISTMAS LED LANTERN. 12 in box.",
     "description": "CHRISTMAS LED LANTERN. 12 in box.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "12 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-led-tree-light-2531",
     "name": "LED Tree Light",
     "price": 1.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -6407,21 +6627,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "LED TREE LIGHT. 24 in a box.",
     "description": "LED TREE LIGHT. 24 in a box.",
     "features": [
-      "Minimum order: 24 pcs, £1.00 each",
+      "Min order: 24 pcs (1 box)",
+      "£1.00 each",
       "24 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 24,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 24 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-4d-mirror-light-up-2545",
     "name": "4D Mirror Light Up",
     "price": 4,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -6437,25 +6658,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "4D mirror Light up in stock now. Batteries included. If you take 24 pcs. Box price 120 pcs in a box.",
     "description": "4D mirror Light up in stock now. Batteries included. If you take 24 pcs. Box price 120 pcs in a box.",
     "features": [
-      "Minimum order: 24 pcs, £4.00 each",
+      "Min order: 120 pcs (1 box)",
+      "£4.00 each",
       "120 per box",
       "£3.50 at 120 box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 24,
+    "piecesPerBox": 120,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 120 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-figures-2558",
-    "name": "K Pop Figures",
+    "name": "K-Pop Figures",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Characters",
+    "theme": "K-Pop",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-figures-2558-1.webp",
@@ -6467,172 +6689,179 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-figures-2558-7.webp",
       "/images/products/telegram/tg-k-pop-figures-2558-8.webp"
     ],
-    "shortDescription": "K POP FIGURES. Minimum order 12pcs.",
-    "description": "K POP FIGURES. Minimum order 12pcs.",
+    "shortDescription": "K-Pop FIGURES.",
+    "description": "K-Pop FIGURES.",
     "features": [
-      "Minimum order: 12 pcs, £6.50 each"
+      "Min order: 12 pcs",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-small-box-surprise-2568",
-    "name": "K Pop Small Box Surprise",
+    "name": "K-Pop Small Box Surprise",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Characters",
+    "theme": "K-Pop",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-small-box-surprise-2568-1.webp"
     ],
-    "shortDescription": "K POP SMALL BOX SURPRISE.",
-    "description": "K POP SMALL BOX SURPRISE.",
+    "shortDescription": "K-Pop SMALL BOX SURPRISE.",
+    "description": "K-Pop SMALL BOX SURPRISE.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each"
+      "Min order: 1 pc",
+      "£1.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-surprise-packet-pink-2572",
-    "name": "K Pop Surprise Packet Pink",
+    "name": "K-Pop Surprise Packet Pink",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Characters",
+    "theme": "K-Pop",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-surprise-packet-pink-2572-1.webp",
       "/images/products/telegram/tg-k-pop-surprise-packet-pink-2572-2.webp"
     ],
-    "shortDescription": "K POP SURPRISE PACKET PINK. 24 in a pack.",
-    "description": "K POP SURPRISE PACKET PINK. 24 in a pack.",
+    "shortDescription": "K-Pop SURPRISE PACKET PINK. 24 in a pack.",
+    "description": "K-Pop SURPRISE PACKET PINK. 24 in a pack.",
     "features": [
-      "Minimum order: 24 pcs, £1.75 each",
+      "Min order: 24 pcs (1 box)",
+      "£1.75 each",
       "24 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 24,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 24 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-surprise-cans-2577",
-    "name": "K Pop Surprise Cans",
+    "name": "K-Pop Surprise Cans",
     "price": 3.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Characters",
+    "theme": "K-Pop",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-surprise-cans-2577-1.webp"
     ],
-    "shortDescription": "K POP SURPRISE CANS.",
-    "description": "K POP SURPRISE CANS.",
+    "shortDescription": "K-Pop SURPRISE CANS.",
+    "description": "K-Pop SURPRISE CANS.",
     "features": [
-      "Minimum order: 1 pcs, £3.75 each"
+      "Min order: 1 pc",
+      "£3.75 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-keyring-2579",
-    "name": "K Pop Keyring",
+    "name": "K-Pop Keyring",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Keyrings",
+    "theme": "K-Pop",
     "categorySlug": "novelty-keyrings",
     "images": [
       "/images/products/telegram/tg-k-pop-keyring-2579-1.webp"
     ],
-    "shortDescription": "K POP KEYRING.",
-    "description": "K POP KEYRING.",
+    "shortDescription": "K-Pop KEYRING.",
+    "description": "K-Pop KEYRING.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each"
+      "Min order: 1 pc",
+      "£1.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-med-box-surprise-2581",
-    "name": "K Pop Med Box Surprise",
+    "name": "K-Pop Med Box Surprise",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Characters",
+    "theme": "K-Pop",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-med-box-surprise-2581-1.webp"
     ],
-    "shortDescription": "K POP MED BOX SURPRISE.",
-    "description": "K POP MED BOX SURPRISE.",
+    "shortDescription": "K-Pop MED BOX SURPRISE.",
+    "description": "K-Pop MED BOX SURPRISE.",
     "features": [
-      "Minimum order: 1 pcs, £1.75 each"
+      "Min order: 1 pc",
+      "£1.75 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-egg-surprise-2583",
-    "name": "K Pop Egg Surprise",
+    "name": "K-Pop Egg Surprise",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Characters",
+    "theme": "K-Pop",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-egg-surprise-2583-1.webp"
     ],
-    "shortDescription": "K POP EGG SURPRISE.",
-    "description": "K POP EGG SURPRISE.",
+    "shortDescription": "K-Pop EGG SURPRISE.",
+    "description": "K-Pop EGG SURPRISE.",
     "features": [
-      "Minimum order: 1 pcs, £1.75 each"
+      "Min order: 1 pc",
+      "£1.75 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-large-surprise-box-2587",
-    "name": "K Pop Large Surprise Box",
+    "name": "K-Pop Large Surprise Box",
     "price": 2.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Characters",
+    "theme": "K-Pop",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-large-surprise-box-2587-1.webp",
@@ -6640,48 +6869,50 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-large-surprise-box-2587-3.webp",
       "/images/products/telegram/tg-k-pop-large-surprise-box-2587-4.webp"
     ],
-    "shortDescription": "K POP LARGE SURPRISE BOX.",
-    "description": "K POP LARGE SURPRISE BOX.",
+    "shortDescription": "K-Pop LARGE SURPRISE BOX.",
+    "description": "K-Pop LARGE SURPRISE BOX.",
     "features": [
-      "Minimum order: 1 pcs, £2.75 each"
+      "Min order: 1 pc",
+      "£2.75 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-advent-calendar-2591",
-    "name": "K Pop Advent Calendar",
+    "name": "K-Pop Advent Calendar",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "theme": "K-Pop",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-advent-calendar-2591-1.webp"
     ],
-    "shortDescription": "K POP ADVENT CALENDAR. 36 in a box.",
-    "description": "K POP ADVENT CALENDAR. 36 in a box.",
+    "shortDescription": "K-Pop ADVENT CALENDAR. 36 in a box.",
+    "description": "K-Pop ADVENT CALENDAR. 36 in a box.",
     "features": [
-      "Minimum order: 36 pcs, £7.50 each",
+      "Min order: 36 pcs (1 box)",
+      "£7.50 each",
       "36 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 36,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 36 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-brain-rot-surprise-box-medium-2593",
     "name": "Brain Rot Surprise Box Medium",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -6692,20 +6923,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "SURPRISE BOX MED. BRAIN ROT.",
     "description": "SURPRISE BOX MED. BRAIN ROT.",
     "features": [
-      "Minimum order: 1 pcs, £1.75 each"
+      "Min order: 1 pc",
+      "£1.75 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-brain-rot-surprise-box-small-2595",
     "name": "Brain Rot Surprise Box Small",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -6719,24 +6951,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "SURPRISE BOX SMALL. BRAIN ROT.",
     "description": "SURPRISE BOX SMALL. BRAIN ROT.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each"
+      "Min order: 1 pc",
+      "£1.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-brain-rot-squishy-2602",
     "name": "Brain Rot Squishy",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-brain-rot-squishy-2602-1.webp",
       "/images/products/telegram/tg-brain-rot-squishy-2602-2.webp"
@@ -6744,24 +6977,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Brain rot squishy.",
     "description": "Brain rot squishy.",
     "features": [
-      "Minimum order: 1 pcs, £1.50 each"
+      "Min order: 12 pcs",
+      "£1.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-stitch-labubu-4-in-1-gift-set-watch-earbuds-game-c-2623",
-    "name": "Stitch & Labubu 4-In-1 Gift Set (Watch, Earbuds, Game, Case)",
+    "name": "Stitch & Labubu 4-In-1 Gift Set Watch, Earbuds, Game, Case",
     "price": 15.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Labubu",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "labubu",
     "images": [
       "/images/products/telegram/tg-stitch-labubu-4-in-1-gift-set-watch-earbuds-game-c-2623-1.webp",
       "/images/products/telegram/tg-stitch-labubu-4-in-1-gift-set-watch-earbuds-game-c-2623-2.webp",
@@ -6773,49 +7007,51 @@ export const telegramStock: Product[] = [
     "shortDescription": "STITCH AND LABUBU. 4INL SUIT GIFT SETS. WATCH+Earbuds+SUP GAME +CASE. Each.",
     "description": "STITCH AND LABUBU. 4INL SUIT GIFT SETS. WATCH+Earbuds+SUP GAME +CASE. Each.",
     "features": [
-      "Minimum order: 1 pcs, £15.00 each"
+      "Min order: 1 pc",
+      "£15.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-flashing-top-2626",
-    "name": "Flashing Top",
+    "name": "Flashing Light-Up Top",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Lights",
+    "categorySlug": "light-up-toys",
     "images": [
       "/images/products/telegram/tg-flashing-top-2626-1.webp"
     ],
     "shortDescription": "Flashing TOP. A box of 12.",
     "description": "Flashing TOP. A box of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-baby-lovely-2630",
-    "name": "Baby Lovely",
+    "name": "Baby Lovely Doll",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Dolls",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-baby-lovely-2630-1.webp",
       "/images/products/telegram/tg-baby-lovely-2630-2.webp",
@@ -6824,24 +7060,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "BABY LOVELY.",
     "description": "BABY LOVELY.",
     "features": [
-      "Minimum order: 1 pcs, £5.50 each"
+      "Min order: 1 pc",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-princess-doll-2638",
     "name": "Princess Doll",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dolls",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-princess-doll-2638-1.webp",
       "/images/products/telegram/tg-princess-doll-2638-2.webp",
@@ -6854,24 +7091,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Princess doll.",
     "description": "Princess doll.",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each"
+      "Min order: 1 pc",
+      "£8.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-be-happy-princess-with-2643",
-    "name": "Be Happy Princess with",
+    "name": "Be Happy Princess Doll",
     "price": 9.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "theme": "Dolls",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-be-happy-princess-with-2643-1.webp",
       "/images/products/telegram/tg-be-happy-princess-with-2643-2.webp",
@@ -6881,24 +7119,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Be happy princess with.",
     "description": "Be happy princess with.",
     "features": [
-      "Minimum order: 1 pcs, £9.50 each"
+      "Min order: 1 pc",
+      "£9.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-beauty-princess-with-music-2648",
     "name": "Beauty Princess with Music",
     "price": 10.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "theme": "Dolls",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-beauty-princess-with-music-2648-1.webp",
       "/images/products/telegram/tg-beauty-princess-with-music-2648-2.webp",
@@ -6908,24 +7147,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "Beauty princess with music. And accessories.",
     "description": "Beauty princess with music. And accessories.",
     "features": [
-      "Minimum order: 1 pcs, £10.50 each"
+      "Min order: 1 pc",
+      "£10.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-baby-cry-2654",
-    "name": "Baby Cry",
+    "name": "Baby Cry Doll",
     "price": 2.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "theme": "Dolls",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-baby-cry-2654-1.webp",
       "/images/products/telegram/tg-baby-cry-2654-2.webp",
@@ -6936,25 +7176,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "BABY CRY. A BOX of 12.",
     "description": "BABY CRY. A BOX of 12.",
     "features": [
-      "Minimum order: 12 pcs, £2.00 each",
+      "Min order: 12 pcs (1 box)",
+      "£2.00 each",
       "Pack of 12 = £24.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-small-sweet-doll-2659",
     "name": "Small Sweet Doll",
     "price": 2.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dolls",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-small-sweet-doll-2659-1.webp",
       "/images/products/telegram/tg-small-sweet-doll-2659-2.webp",
@@ -6964,21 +7205,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Small sweet doll. A box of 6.",
     "description": "Small sweet doll. A box of 6.",
     "features": [
-      "Minimum order: 6 pcs, £2.00 each",
+      "Min order: 6 pcs (1 box)",
+      "£2.00 each",
       "Pack of 6 = £12.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 6,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 6 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-demon-hunters-2pcs-set-2673",
     "name": "K-Pop Demon Hunters 2pcs Set",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "K-Pop",
@@ -6991,24 +7233,25 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-demon-hunters-2pcs-set-2673-5.webp",
       "/images/products/telegram/tg-k-pop-demon-hunters-2pcs-set-2673-6.webp"
     ],
-    "shortDescription": "K-POP. DEMON. HUNTERS. 2pcs SETS. LIMITED STOCK. Minimum order 24pcs. Otherwise each.",
-    "description": "K-POP. DEMON. HUNTERS. 2pcs SETS. LIMITED STOCK. Minimum order 24pcs. Otherwise each.",
+    "shortDescription": "K-Pop. DEMON. HUNTERS. 2pcs SETS. LIMITED STOCK. Otherwise each.",
+    "description": "K-Pop. DEMON. HUNTERS. 2pcs SETS. LIMITED STOCK. Otherwise each.",
     "features": [
-      "Minimum order: 24 pcs, £6.50 each",
+      "Min order: 24 pcs",
+      "£6.50 each",
       "£7.50 each under 24"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 24,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 24 pcs",
     "stock": 50
   },
   {
     "slug": "tg-neon-light-ups-2694",
     "name": "Neon Light Ups",
     "price": 3,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -7026,7 +7269,8 @@ export const telegramStock: Product[] = [
     "shortDescription": "All neons. New light up in stock now. Each. Box price 144 in carton.",
     "description": "All neons. New light up in stock now. Each. Box price 144 in carton.",
     "features": [
-      "Minimum order: 1 pcs, £3.00 each",
+      "Min order: 1 pc",
+      "£3.00 each",
       "144 per box",
       "£2.50 each at 144 carton"
     ],
@@ -7034,18 +7278,18 @@ export const telegramStock: Product[] = [
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-figures-in-in-surprise-packet-with-cards-2713",
-    "name": "K Pop Figures in in Surprise Packet with Cards",
+    "name": "K-Pop Figures in Surprise Packet with Cards",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Games",
-    "categorySlug": "board-games",
+    "theme": "K-Pop",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-figures-in-in-surprise-packet-with-cards-2713-1.webp",
       "/images/products/telegram/tg-k-pop-figures-in-in-surprise-packet-with-cards-2713-2.webp",
@@ -7056,28 +7300,29 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-figures-in-in-surprise-packet-with-cards-2713-7.webp",
       "/images/products/telegram/tg-k-pop-figures-in-in-surprise-packet-with-cards-2713-8.webp"
     ],
-    "shortDescription": "K POP FIGURES IN IN SURPRISE PACKET WITH CARDS AVAILABLE NOW. A pack of 24pcs.",
-    "description": "K POP FIGURES IN IN SURPRISE PACKET WITH CARDS AVAILABLE NOW. A pack of 24pcs.",
+    "shortDescription": "K-Pop FIGURES IN IN SURPRISE PACKET WITH CARDS AVAILABLE NOW. A pack of 24pcs.",
+    "description": "K-Pop FIGURES IN IN SURPRISE PACKET WITH CARDS AVAILABLE NOW. A pack of 24pcs.",
     "features": [
-      "Minimum order: 24 pcs, £2.50 each",
+      "Min order: 24 pcs (1 box)",
+      "£2.50 each",
       "Pack of 24 = £60.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 24,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 24 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-surprise-balls-2722",
-    "name": "K Pop Surprise Balls",
+    "name": "K-Pop Surprise Balls",
     "price": 1.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Outdoor",
-    "categorySlug": "play-balls",
+    "theme": "K-Pop",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-surprise-balls-2722-1.webp",
       "/images/products/telegram/tg-k-pop-surprise-balls-2722-2.webp",
@@ -7088,27 +7333,28 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-surprise-balls-2722-7.webp",
       "/images/products/telegram/tg-k-pop-surprise-balls-2722-8.webp"
     ],
-    "shortDescription": "K POP SURPRISE BALLS. IN 3 SIZES. Small for a pack of 24. Med for a pack of 12. Large for a pack of 12.",
-    "description": "K POP SURPRISE BALLS. IN 3 SIZES. Small for a pack of 24. Med for a pack of 12. Large for a pack of 12.",
+    "shortDescription": "K-Pop SURPRISE BALLS. IN 3 SIZES. Small for a pack of 24. Med for a pack of 12. Large for a pack of 12.",
+    "description": "K-Pop SURPRISE BALLS. IN 3 SIZES. Small for a pack of 24. Med for a pack of 12. Large for a pack of 12.",
     "features": [
-      "Minimum order: 24 pcs, £1.00 each",
+      "Min order: 24 pcs (1 box)",
+      "£1.00 each",
       "Pack of 24 = £24.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 24,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 24 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-keyrings-2732",
-    "name": "K Pop Keyrings",
+    "name": "K-Pop Keyrings",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Keyrings",
+    "theme": "K-Pop",
     "categorySlug": "novelty-keyrings",
     "images": [
       "/images/products/telegram/tg-k-pop-keyrings-2732-1.webp",
@@ -7120,27 +7366,28 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-keyrings-2732-7.webp",
       "/images/products/telegram/tg-k-pop-keyrings-2732-8.webp"
     ],
-    "shortDescription": "K POP KEYRINGS. A pack of 12.",
-    "description": "K POP KEYRINGS. A pack of 12.",
+    "shortDescription": "K-Pop KEYRINGS. A pack of 12.",
+    "description": "K-Pop KEYRINGS. A pack of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-7pcs-sets-2741",
-    "name": "K Pop 7pcs Sets",
+    "name": "K-Pop 7pcs Sets",
     "price": 9.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Characters",
+    "theme": "K-Pop",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-7pcs-sets-2741-1.webp",
@@ -7152,24 +7399,25 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-7pcs-sets-2741-7.webp",
       "/images/products/telegram/tg-k-pop-7pcs-sets-2741-8.webp"
     ],
-    "shortDescription": "K pop 7pcs sets in stock now. Each. Or DM FOR BULK PRICE.",
-    "description": "K pop 7pcs sets in stock now. Each. Or DM FOR BULK PRICE.",
+    "shortDescription": "K-Pop 7pcs sets in stock now. Each. Or DM FOR BULK PRICE.",
+    "description": "K-Pop 7pcs sets in stock now. Each. Or DM FOR BULK PRICE.",
     "features": [
-      "Minimum order: 1 pcs, £9.50 each",
+      "Min order: 1 pc",
+      "£9.50 each",
       "DM for bulk/box price"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-demon-hunters-2795",
     "name": "K-Pop Demon Hunters",
     "price": 10.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "K-Pop",
@@ -7182,50 +7430,52 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-demon-hunters-2795-5.webp",
       "/images/products/telegram/tg-k-pop-demon-hunters-2795-6.webp"
     ],
-    "shortDescription": "K-POP. DEMON HUNTERS. 12pcs figure set available. Now. Each. Or 12 for ().",
-    "description": "K-POP. DEMON HUNTERS. 12pcs figure set available. Now. Each. Or 12 for ().",
+    "shortDescription": "K-Pop. DEMON HUNTERS. 12pcs figure set available. Now. Each. Or 12 for ().",
+    "description": "K-Pop. DEMON HUNTERS. 12pcs figure set available. Now. Each. Or 12 for ().",
     "features": [
-      "Minimum order: 1 pcs, £10.00 each",
+      "Min order: 1 pc",
+      "£10.00 each",
       "Bulk: 12 for £114.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-dancing-santa-2809",
     "name": "Dancing Santa",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Christmas",
-    "categorySlug": "christmas-surprise",
+    "theme": "Seasonal",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-dancing-santa-2809-1.webp",
       "/images/products/telegram/tg-dancing-santa-2809-2.webp",
       "/images/products/telegram/tg-dancing-santa-2809-3.webp"
     ],
-    "shortDescription": "DANCING SANTA. NORMAL. BLACK FRIDAY DEAL. Only today. Minimum 24pcs.",
-    "description": "DANCING SANTA. NORMAL. BLACK FRIDAY DEAL. Only today. Minimum 24pcs.",
+    "shortDescription": "DANCING SANTA. NORMAL. BLACK FRIDAY DEAL. Only today.",
+    "description": "DANCING SANTA. NORMAL. BLACK FRIDAY DEAL. Only today.",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each"
+      "Min order: 24 pcs",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 24,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 24 pcs",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-6pcs-girls-set-2815",
     "name": "K-Pop 6pcs Girls Set",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "K-Pop",
@@ -7237,50 +7487,52 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-6pcs-girls-set-2815-4.webp",
       "/images/products/telegram/tg-k-pop-6pcs-girls-set-2815-5.webp"
     ],
-    "shortDescription": "K POP. 6 pcs girls set in stock now. For a 12pcs.",
-    "description": "K POP. 6 pcs girls set in stock now. For a 12pcs.",
+    "shortDescription": "K-Pop. 6 pcs girls set in stock now. For a 12pcs.",
+    "description": "K-Pop. 6 pcs girls set in stock now. For a 12pcs.",
     "features": [
-      "Minimum order: 12 pcs, £8.50 each",
+      "Min order: 1 pc",
+      "£8.50 each",
       "£102 for 12"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-dolls-with-music-2873",
-    "name": "K Pop Dolls with Music",
+    "name": "K-Pop Dolls with Music",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "theme": "K-Pop",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-dolls-with-music-2873-1.webp",
       "/images/products/telegram/tg-k-pop-dolls-with-music-2873-2.webp",
       "/images/products/telegram/tg-k-pop-dolls-with-music-2873-3.webp"
     ],
-    "shortDescription": "K pop dolls with music. Minimum order 12pcs.",
-    "description": "K pop dolls with music. Minimum order 12pcs.",
+    "shortDescription": "K-Pop dolls with music.",
+    "description": "K-Pop dolls with music.",
     "features": [
-      "Minimum order: 12 pcs, £8.50 each"
+      "Min order: 12 pcs",
+      "£8.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-girls-2882",
     "name": "K-Pop Girls",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "K-Pop",
@@ -7290,26 +7542,27 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-girls-2882-2.webp",
       "/images/products/telegram/tg-k-pop-girls-2882-3.webp"
     ],
-    "shortDescription": "K-POP GIRLS. WITH MUSIC AND ACCESSORIES. Minimum order 12pcs.",
-    "description": "K-POP GIRLS. WITH MUSIC AND ACCESSORIES. Minimum order 12pcs.",
+    "shortDescription": "K-Pop GIRLS. WITH MUSIC AND ACCESSORIES.",
+    "description": "K-Pop GIRLS. WITH MUSIC AND ACCESSORIES.",
     "features": [
-      "Minimum order: 12 pcs, £6.50 each"
+      "Min order: 12 pcs",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-6pcs-set-big-figures-sets-2892",
-    "name": "K Pop 6pcs Set Big Figures Sets",
+    "name": "K-Pop 6pcs Set Big Figures Sets",
     "price": 12.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Characters",
+    "theme": "K-Pop",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-6pcs-set-big-figures-sets-2892-1.webp",
@@ -7318,23 +7571,24 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-6pcs-set-big-figures-sets-2892-4.webp",
       "/images/products/telegram/tg-k-pop-6pcs-set-big-figures-sets-2892-5.webp"
     ],
-    "shortDescription": "K pop 6pcs set big figures sets. Minimum order 12pcs.",
-    "description": "K pop 6pcs set big figures sets. Minimum order 12pcs.",
+    "shortDescription": "K-Pop 6pcs set big figures sets.",
+    "description": "K-Pop 6pcs set big figures sets.",
     "features": [
-      "Minimum order: 12 pcs, £12.50 each"
+      "Min order: 12 pcs",
+      "£12.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-single-pcs-big-figure-25cm-2898",
     "name": "K-Pop Single Pcs Big Figure 25cm",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "K-Pop",
@@ -7344,80 +7598,83 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-single-pcs-big-figure-25cm-2898-2.webp",
       "/images/products/telegram/tg-k-pop-single-pcs-big-figure-25cm-2898-3.webp"
     ],
-    "shortDescription": "K-POP SINGLE PCS BIG FIGURE 25cm IN STOCK NOW. Minimum order 12pcs.",
-    "description": "K-POP SINGLE PCS BIG FIGURE 25cm IN STOCK NOW. Minimum order 12pcs.",
+    "shortDescription": "K-Pop SINGLE PCS BIG FIGURE 25cm IN STOCK NOW.",
+    "description": "K-Pop SINGLE PCS BIG FIGURE 25cm IN STOCK NOW.",
     "features": [
-      "Minimum order: 12 pcs, £6.50 each"
+      "Min order: 12 pcs",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-football-bracelets-2911",
     "name": "K-Pop & Football Bracelets",
     "price": 2.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "K-Pop",
-    "categorySlug": "others",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-football-bracelets-2911-1.webp",
       "/images/products/telegram/tg-k-pop-football-bracelets-2911-2.webp",
       "/images/products/telegram/tg-k-pop-football-bracelets-2911-3.webp",
       "/images/products/telegram/tg-k-pop-football-bracelets-2911-4.webp"
     ],
-    "shortDescription": "K-POP AND FOOTBALL. BRACELET FOR BOYS AND GIRLS AVAILABLE NOW. For a pack of 24pcs.",
-    "description": "K-POP AND FOOTBALL. BRACELET FOR BOYS AND GIRLS AVAILABLE NOW. For a pack of 24pcs.",
+    "shortDescription": "K-Pop AND FOOTBALL. BRACELET FOR BOYS AND GIRLS AVAILABLE NOW. For a pack of 24pcs.",
+    "description": "K-Pop AND FOOTBALL. BRACELET FOR BOYS AND GIRLS AVAILABLE NOW. For a pack of 24pcs.",
     "features": [
-      "Minimum order: 24 pcs, £2.00 each",
+      "Min order: 24 pcs (1 box)",
+      "£2.00 each",
       "Pack of 24 = £48.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 24,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 24 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-big-size-20cm-2939",
-    "name": "K Pop Big Size 20cm",
+    "name": "K-Pop Big Size 20cm",
     "price": 12.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Characters",
+    "theme": "K-Pop",
     "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-big-size-20cm-2939-1.webp",
       "/images/products/telegram/tg-k-pop-big-size-20cm-2939-2.webp"
     ],
-    "shortDescription": "K POP BIG SIZE 20cm. Minimum buy 12pcs. FIGURES SET IN STOCK NOW.",
-    "description": "K POP BIG SIZE 20cm. Minimum buy 12pcs. FIGURES SET IN STOCK NOW.",
+    "shortDescription": "K-Pop BIG SIZE 20cm. Minimum buy 12pcs. FIGURES SET IN STOCK NOW.",
+    "description": "K-Pop BIG SIZE 20cm. Minimum buy 12pcs. FIGURES SET IN STOCK NOW.",
     "features": [
-      "Minimum order: 12 pcs, £12.50 each"
+      "Min order: 12 pcs",
+      "£12.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-music-guitar-2955",
-    "name": "K Pop Music Guitar",
+    "name": "K-Pop Music Guitar",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Pretend Play",
-    "categorySlug": "role-play",
+    "theme": "K-Pop",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-music-guitar-2955-1.webp",
       "/images/products/telegram/tg-k-pop-music-guitar-2955-2.webp",
@@ -7425,49 +7682,51 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-k-pop-music-guitar-2955-4.webp",
       "/images/products/telegram/tg-k-pop-music-guitar-2955-5.webp"
     ],
-    "shortDescription": "K POP MUSIC GUITAR. AND LARGE SIZE. Minimum order 12pcs.",
-    "description": "K POP MUSIC GUITAR. AND LARGE SIZE. Minimum order 12pcs.",
+    "shortDescription": "K-Pop MUSIC GUITAR. AND LARGE SIZE.",
+    "description": "K-Pop MUSIC GUITAR. AND LARGE SIZE.",
     "features": [
-      "Minimum order: 12 pcs, £8.50 each"
+      "Min order: 12 pcs",
+      "£8.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-k-pop-huntrix-2960",
-    "name": "K Pop Huntrix",
+    "name": "K-Pop Huntrix",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "theme": "K-Pop",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-k-pop-huntrix-2960-1.webp",
       "/images/products/telegram/tg-k-pop-huntrix-2960-2.webp",
       "/images/products/telegram/tg-k-pop-huntrix-2960-3.webp"
     ],
-    "shortDescription": "K POP HUNTRIX. Minimum 12pcs mix and match. You can find inside dolls with accessories. Accessories each box randomly mixed.",
-    "description": "K POP HUNTRIX. Minimum 12pcs mix and match. You can find inside dolls with accessories. Accessories each box randomly mixed.",
+    "shortDescription": "K-Pop HUNTRIX. You can find inside dolls with accessories. Accessories each box randomly mixed.",
+    "description": "K-Pop HUNTRIX. You can find inside dolls with accessories. Accessories each box randomly mixed.",
     "features": [
-      "Minimum order: 12 pcs, £5.50 each"
+      "Min order: 12 pcs",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-stitch-flower-gift-set-2974",
     "name": "Stitch Flower Gift Set",
     "price": 12,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Stitch",
@@ -7485,25 +7744,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Stitch flower gift set. Each if you take 12pcs mix.",
     "description": "New Stitch flower gift set. Each if you take 12pcs mix.",
     "features": [
-      "Minimum order: 12 pcs, £12.00 each",
+      "Min order: 1 pc",
+      "£12.00 each",
       "£12 each when taking 12 mix"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-lovely-doll-2979",
     "name": "Lovely Doll",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dolls",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-lovely-doll-2979-1.webp",
       "/images/products/telegram/tg-lovely-doll-2979-2.webp",
@@ -7513,25 +7773,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "NEW STOCK ARRIVED TODAY. Lovely Doll. Mix 12 pcs for each ().",
     "description": "NEW STOCK ARRIVED TODAY. Lovely Doll. Mix 12 pcs for each ().",
     "features": [
-      "Minimum order: 12 pcs, £8.50 each",
+      "Min order: 1 pc",
+      "£8.50 each",
       "Pack of 12 = £102.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-fashion-doll-2983",
     "name": "Fashion Doll",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dolls",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-fashion-doll-2983-1.webp",
       "/images/products/telegram/tg-fashion-doll-2983-2.webp",
@@ -7540,25 +7801,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "NEW STOCK ARRIVED TODAY. FASHION DOLL. A box of 6pcs.",
     "description": "NEW STOCK ARRIVED TODAY. FASHION DOLL. A box of 6pcs.",
     "features": [
-      "Minimum order: 6 pcs, £3.50 each",
+      "Min order: 6 pcs (1 box)",
+      "£3.50 each",
       "Pack of 6 = £21.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 6,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 6 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-beautiful-lovely-frozen-doll-2987",
     "name": "Beautiful Lovely Frozen Doll",
     "price": 6.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Dolls",
-    "categorySlug": "dolls-plush",
+    "categorySlug": "dolls",
     "images": [
       "/images/products/telegram/tg-beautiful-lovely-frozen-doll-2987-1.webp",
       "/images/products/telegram/tg-beautiful-lovely-frozen-doll-2987-2.webp",
@@ -7567,24 +7829,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "NEW STOCK ARRIVED TODAY. Beautiful lovely frozen doll. Or if you take 12pcs then.",
     "description": "NEW STOCK ARRIVED TODAY. Beautiful lovely frozen doll. Or if you take 12pcs then.",
     "features": [
-      "Minimum order: 1 pcs, £6.50 each"
+      "Min order: 1 pc",
+      "£6.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-italian-brain-rot-trading-cards-2991",
     "name": "Italian Brain Rot Trading Cards",
     "price": 0.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Games",
-    "categorySlug": "board-games",
+    "theme": "Characters",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-italian-brain-rot-trading-cards-2991-1.webp",
       "/images/products/telegram/tg-italian-brain-rot-trading-cards-2991-2.webp",
@@ -7593,25 +7856,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New trend of Italian brain rot trading cards available now box of 36 pack mix design.",
     "description": "New trend of Italian brain rot trading cards available now box of 36 pack mix design.",
     "features": [
-      "Minimum order: 36 pcs, £0.50 each",
+      "Min order: 36 pcs (1 box)",
+      "£0.50 each",
       "Pack of 36 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 36,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 36 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-all-sony-angels-3026",
-    "name": "Sony Angels",
+    "name": "Sonny Angels",
     "price": 1.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Characters",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-all-sony-angels-3026-1.webp",
       "/images/products/telegram/tg-all-sony-angels-3026-2.webp",
@@ -7622,28 +7886,29 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-all-sony-angels-3026-7.webp",
       "/images/products/telegram/tg-all-sony-angels-3026-8.webp"
     ],
-    "shortDescription": "All Sony angels available now a box of 12 ( each).",
-    "description": "All Sony angels available now a box of 12 ( each).",
+    "shortDescription": "All Sonny Angels available now a box of 12 ( each).",
+    "description": "All Sonny Angels available now a box of 12 ( each).",
     "features": [
-      "Minimum order: 12 pcs, £1.00 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.00 each",
       "Pack of 12 = £12.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-italian-brain-rot-67-3051",
     "name": "Italian Brain Rot 67",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Characters",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-italian-brain-rot-67-3051-1.webp",
       "/images/products/telegram/tg-italian-brain-rot-67-3051-2.webp",
@@ -7657,20 +7922,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Italian brain rot 67. 6pcs set available now. Each.",
     "description": "New Italian brain rot 67. 6pcs set available now. Each.",
     "features": [
-      "Minimum order: 1 pcs, £8.50 each"
+      "Min order: 1 pc",
+      "£8.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-italian-brain-rot-surprise-box-3062",
     "name": "Italian Brain Rot Surprise Box",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -7688,21 +7954,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New Italian brain rot surprise box. Box of 12pcs.",
     "description": "New Italian brain rot surprise box. Box of 12pcs.",
     "features": [
-      "Minimum order: 12 pcs, £1.75 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.75 each",
       "Pack of 12 = £21.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-stranger-things-figure-sets-3122",
     "name": "Stranger Things Figure Sets",
     "price": 9.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -7720,21 +7987,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New collection of stranger things figures sets in 2 different style available now. Minimum 5. Minimum 20. Minimum box of 48.",
     "description": "New collection of stranger things figures sets in 2 different style available now. Minimum 5. Minimum 20. Minimum box of 48.",
     "features": [
-      "Minimum order: 5 pcs, £9.50 each",
+      "Min order: 5 pcs",
+      "£9.50 each",
       "£8.50 at 20, £7.50 at 48"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 5,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 5 pcs",
     "stock": 50
   },
   {
     "slug": "tg-minecraft-figur-set-3141",
-    "name": "Minecraft Figur Set",
+    "name": "Minecraft Figure Set",
     "price": 3.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -7749,28 +8017,29 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-minecraft-figur-set-3141-7.webp",
       "/images/products/telegram/tg-minecraft-figur-set-3141-8.webp"
     ],
-    "shortDescription": "Minecraft figur set. Each. 12 for (). 24 for ().",
-    "description": "Minecraft figur set. Each. 12 for (). 24 for ().",
+    "shortDescription": "Minecraft Figure set. Each. 12 for (). 24 for ().",
+    "description": "Minecraft Figure set. Each. 12 for (). 24 for ().",
     "features": [
-      "Minimum order: 1 pcs, £3.00 each",
+      "Min order: 1 pc",
+      "£3.00 each",
       "Bulk: 12 for £33.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stranger-things-soft-surprise-bag-box-3164",
     "name": "Stranger Things Soft Surprise Bag & Box",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bags",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-stranger-things-soft-surprise-bag-box-3164-1.webp",
       "/images/products/telegram/tg-stranger-things-soft-surprise-bag-box-3164-2.webp",
@@ -7784,21 +8053,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New popular Netflix series stranger things character now in surprise bag and box in softer version available. Box of 8 ( each). Minimum 5 box of 8 ( each ). Minimum.",
     "description": "New popular Netflix series stranger things character now in surprise bag and box in softer version available. Box of 8 ( each). Minimum 5 box of 8 ( each ). Minimum 10 box of 8 ( each ).",
     "features": [
-      "Minimum order: 8 pcs, £4.50 each",
+      "Min order: 5 pcs",
+      "£4.50 each",
       "£36 box of 8; cheaper at 5+ boxes"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 8,
+    "piecesPerBox": 5,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 5 pcs",
     "stock": 50
   },
   {
     "slug": "tg-stranger-things-keyrings-3181",
     "name": "Stranger Things Keyrings",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Keyrings",
@@ -7815,21 +8085,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "STRANGER THINGS KEYRINGS. Pack of 12pcs.",
     "description": "STRANGER THINGS KEYRINGS. Pack of 12pcs.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-minecraft-figure-set-3188",
     "name": "Minecraft Figure Set",
     "price": 5.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -7846,21 +8117,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "MINECRAFT FIGURE SET. EACH. Or 12 for.",
     "description": "MINECRAFT FIGURE SET. EACH. Or 12 for.",
     "features": [
-      "Minimum order: 1 pcs, £5.00 each",
+      "Min order: 1 pc",
+      "£5.00 each",
       "Bulk: 12 for £54.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-popular-netflix-series-stranger-things-character-6-3202",
-    "name": "Popular Netflix Series Stranger Things Character 6pcs Set Figures",
+    "name": "Netflix Series Stranger Things Character 6pcs Set Figures",
     "price": 8.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
@@ -7876,24 +8148,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New popular Netflix series stranger things character 6pcs set figures available. Each. Minimum buy 12pcs.",
     "description": "New popular Netflix series stranger things character 6pcs set figures available. Each. Minimum buy 12pcs.",
     "features": [
-      "Minimum order: 12 pcs, £8.50 each"
+      "Min order: 12 pcs",
+      "£8.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-brain-rot-stranger-things-trading-cards-3209",
     "name": "Brain Rot & Stranger Things Trading Cards",
     "price": 1.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Games",
-    "categorySlug": "board-games",
+    "theme": "Characters",
+    "categorySlug": "action-figures",
     "images": [
       "/images/products/telegram/tg-brain-rot-stranger-things-trading-cards-3209-1.webp",
       "/images/products/telegram/tg-brain-rot-stranger-things-trading-cards-3209-2.webp",
@@ -7907,21 +8180,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Brain rot and stranger things. Cards. Box of 36 pack. In each pack 8 cards.",
     "description": "Brain rot and stranger things. Cards. Box of 36 pack. In each pack 8 cards.",
     "features": [
-      "Minimum order: 36 pcs, £1.25 each",
+      "Min order: 1 pc",
+      "£1.25 each",
       "£45 box of 36 packs, 8 cards per pack"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 36,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-soft-teddy-keyring-3239",
     "name": "Soft Teddy Keyring",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Keyrings",
@@ -7939,25 +8213,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New soft teddy keyring available now only at a pack of 12.",
     "description": "New soft teddy keyring available now only at a pack of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.75 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.75 each",
       "Pack of 12 = £21.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-air-horn-3242",
     "name": "Air Horn",
     "price": 1.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Party",
+    "categorySlug": "party-spotlight",
     "images": [
       "/images/products/telegram/tg-air-horn-3242-1.webp",
       "/images/products/telegram/tg-air-horn-3242-2.webp"
@@ -7965,20 +8240,21 @@ export const telegramStock: Product[] = [
     "shortDescription": "Air horn available now. Each minimum 10. Each box of 72.",
     "description": "Air horn available now. Each minimum 10. Each box of 72.",
     "features": [
-      "Minimum order: 10 pcs, £1.00 each"
+      "Min order: 10 pcs",
+      "£1.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 10,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 10 pcs",
     "stock": 50
   },
   {
     "slug": "tg-fifa-2026-bubble-trophy-3249",
     "name": "FIFA 2026 Bubble Trophy",
     "price": 5.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bubbles",
@@ -7987,23 +8263,24 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-fifa-2026-bubble-trophy-3249-1.webp",
       "/images/products/telegram/tg-fifa-2026-bubble-trophy-3249-2.webp"
     ],
-    "shortDescription": "FIFA 2026. BUBBLE TROPHY. LIMITED STOCK. READY FOR COLLECTION AND POST. Each minimum order 12pcs.",
-    "description": "FIFA 2026. BUBBLE TROPHY. LIMITED STOCK. READY FOR COLLECTION AND POST. Each minimum order 12pcs.",
+    "shortDescription": "FIFA 2026. BUBBLE TROPHY. LIMITED STOCK. READY FOR COLLECTION AND POST.",
+    "description": "FIFA 2026. BUBBLE TROPHY. LIMITED STOCK. READY FOR COLLECTION AND POST.",
     "features": [
-      "Minimum order: 12 pcs, £5.00 each"
+      "Min order: 12 pcs",
+      "£5.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-kitchen-set-3256",
     "name": "Kitchen Set",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Pretend Play",
@@ -8016,21 +8293,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Kitchen set available. Each or. 12 mix for ().",
     "description": "Kitchen set available. Each or. 12 mix for ().",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "Bulk: 12 for £30.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-guitar-3261",
     "name": "Guitar",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Pretend Play",
@@ -8043,25 +8321,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Guitar. Each. Or 12 for will be each.",
     "description": "Guitar. Each. Or 12 for will be each.",
     "features": [
-      "Minimum order: 1 pcs, £3.50 each",
+      "Min order: 1 pc",
+      "£3.50 each",
       "Bulk: 12 for £30.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-capybara-back-pack-35cm-3308",
     "name": "Capybara & Back Pack 35cm",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Plush",
-    "categorySlug": "dolls-plush",
+    "theme": "Bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-capybara-back-pack-35cm-3308-1.webp",
       "/images/products/telegram/tg-capybara-back-pack-35cm-3308-2.webp",
@@ -8073,25 +8352,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Capybara & Back Pack 35cm. Plushie ready to order. Mix 12 pcs for ( each).",
     "description": "Capybara & Back Pack 35cm. Plushie ready to order. Mix 12 pcs for ( each).",
     "features": [
-      "Minimum order: 12 pcs, £5.50 each",
+      "Min order: 1 pc",
+      "£5.50 each",
       "Pack of 12 = £66.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-30cm-super-soft-hamish-the-highland-cow-3314",
     "name": "30cm Super Soft Hamish the Highland Cow",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Plush",
+    "categorySlug": "dolls-plush",
     "images": [
       "/images/products/telegram/tg-30cm-super-soft-hamish-the-highland-cow-3314-1.webp",
       "/images/products/telegram/tg-30cm-super-soft-hamish-the-highland-cow-3314-2.webp",
@@ -8099,27 +8379,28 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-30cm-super-soft-hamish-the-highland-cow-3314-4.webp",
       "/images/products/telegram/tg-30cm-super-soft-hamish-the-highland-cow-3314-5.webp"
     ],
-    "shortDescription": "30cm super soft Hamish The Highland Cow each. Minimum order 12pcs. Otherwise.",
-    "description": "30cm super soft Hamish The Highland Cow each. Minimum order 12pcs. Otherwise.",
+    "shortDescription": "30cm super soft Hamish The Highland Cow each. Otherwise.",
+    "description": "30cm super soft Hamish The Highland Cow each. Otherwise.",
     "features": [
-      "Minimum order: 12 pcs, £5.50 each"
+      "Min order: 12 pcs",
+      "£5.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-kids-summer-hats-3350",
     "name": "Kids Summer Hats",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Play",
-    "categorySlug": "kids-hats",
+    "theme": "Party",
+    "categorySlug": "party-spotlight",
     "images": [
       "/images/products/telegram/tg-kids-summer-hats-3350-1.webp",
       "/images/products/telegram/tg-kids-summer-hats-3350-2.webp",
@@ -8130,28 +8411,29 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-kids-summer-hats-3350-7.webp",
       "/images/products/telegram/tg-kids-summer-hats-3350-8.webp"
     ],
-    "shortDescription": "Kids summer hats. 12pcs in a pack. Minimum order pack.",
-    "description": "Kids summer hats. 12pcs in a pack. Minimum order pack.",
+    "shortDescription": "Kids summer hats. 12pcs in a pack.",
+    "description": "Kids summer hats. 12pcs in a pack.",
     "features": [
-      "Minimum order: 12 pcs, £2.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£2.50 each",
       "12 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-balls-with-string-3357",
     "name": "Balls with String",
     "price": 1.2,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
-    "categorySlug": "play-balls",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-balls-with-string-3357-1.webp",
       "/images/products/telegram/tg-balls-with-string-3357-2.webp",
@@ -8161,42 +8443,45 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-balls-with-string-3357-6.webp",
       "/images/products/telegram/tg-balls-with-string-3357-7.webp"
     ],
-    "shortDescription": "Balls with string strong quality. Minimum order pack of each colour.",
-    "description": "Balls with string strong quality. Minimum order pack of each colour.",
+    "shortDescription": "Balls with string strong quality.",
+    "description": "Balls with string strong quality.",
     "features": [
-      "Minimum order: 1 pcs, £1.20 each",
+      "Min order: 1 packs per colour",
+      "£1.20 each",
       "Minimum one pack per colour"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "packs",
+    "moqLabel": "Min order: 1 packs per colour",
     "stock": 50
   },
   {
     "slug": "tg-dumplings-rainbow-squeeze-cube-3426",
     "name": "Dumplings Rainbow & Squeeze Cube",
     "price": 0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "festive-dumplings",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-dumplings-rainbow-squeeze-cube-3426-1.webp",
       "/images/products/telegram/tg-dumplings-rainbow-squeeze-cube-3426-2.webp"
     ],
-    "shortDescription": "NEW ARRIVALS. DUMPLINGS RAINBOW COLOUR BACK IN STOCK AND. SQUEEZE CUBE NORMAL AND GLITTER ONCE BOTH BACK IN STOCK NOW.",
-    "description": "NEW ARRIVALS. DUMPLINGS RAINBOW COLOUR BACK IN STOCK AND. SQUEEZE CUBE NORMAL AND GLITTER ONCE BOTH BACK IN STOCK NOW.",
+    "shortDescription": "NEW ARRIVALS. DUMPLINGS RAINBOW COLOUR BACK IN STOCK AND. SQUEEZE CUBE NORMAL AND GLITTER Ones BOTH BACK IN STOCK NOW.",
+    "description": "NEW ARRIVALS. DUMPLINGS RAINBOW COLOUR BACK IN STOCK AND. SQUEEZE CUBE NORMAL AND GLITTER Ones BOTH BACK IN STOCK NOW.",
     "features": [
-      "Minimum order: 1 pcs",
+      "Min order: 12 pcs",
       "Price on request"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50,
     "priceTBC": true
   },
@@ -8204,12 +8489,10 @@ export const telegramStock: Product[] = [
     "slug": "tg-butter-squishy-3436",
     "name": "Butter Squishy",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Sensory",
-    "categorySlug": "sensory-jars",
+    "theme": "Squishy",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-butter-squishy-3436-1.webp",
       "/images/products/telegram/tg-butter-squishy-3436-2.webp",
@@ -8220,26 +8503,27 @@ export const telegramStock: Product[] = [
     "shortDescription": "Butter. Limited stock. Small. Big.",
     "description": "Butter. Limited stock. Small. Big.",
     "features": [
-      "Minimum order: 1 pcs, £2.50 each",
+      "Min order: 12 pcs",
+      "£2.50 each",
       "DM for bulk/box price",
       "Small £2.50, Big £3.50; DM for bulk"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-dumplings-keyrings-3444",
     "name": "Dumplings Keyrings",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Keyrings",
-    "categorySlug": "novelty-keyrings",
+    "theme": "Squishy",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-dumplings-keyrings-3444-1.webp",
       "/images/products/telegram/tg-dumplings-keyrings-3444-2.webp",
@@ -8248,25 +8532,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Dumplings keyrings in stock now. For a pack of 12.",
     "description": "Dumplings keyrings in stock now. For a pack of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-dumplings-squishy-case-3451",
-    "name": "Dumplings Squishy (Case)",
+    "name": "Dumplings Squishy Case",
     "price": 2.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "festive-dumplings",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-dumplings-squishy-case-3451-1.webp",
       "/images/products/telegram/tg-dumplings-squishy-case-3451-2.webp",
@@ -8279,25 +8564,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Dumplings. New colour ones. A box of 96( each). New 2 tone colour 6.5cm. A box of 96 ( ). Iced ones. A box of 96 ( each). Glitter ones. Rainbow ones. Two tone new.",
     "description": "Dumplings. New colour ones. A box of 96( each). New 2 tone colour 6.5cm. A box of 96 ( ). Iced ones. A box of 96 ( each). Glitter ones. Rainbow ones. Two tone new colours.",
     "features": [
-      "Minimum order: 96 pcs, £2.75 each",
+      "Min order: 1 pc",
+      "£2.75 each",
       "Case of 96; iced/glitter £3.50, rainbow/two-tone £3.25"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 96,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-needoh-squishies-full-range-3483",
-    "name": "Needoh Squishies - Full Range",
+    "name": "Needoh Squishies Full Range",
     "price": 2.15,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "cheese-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-needoh-squishies-full-range-3483-1.webp",
       "/images/products/telegram/tg-needoh-squishies-full-range-3483-2.webp",
@@ -8308,10 +8594,11 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-needoh-squishies-full-range-3483-7.webp",
       "/images/products/telegram/tg-needoh-squishies-full-range-3483-8.webp"
     ],
-    "shortDescription": "Needoh full range. Nice cube loose: (288 in case). Nice cube pack: (144 in case). Gummy bear: (144 in case). Ice lolly: ( 480 in case). Ice cone : (288 in case ).",
-    "description": "Needoh full range. Nice cube loose: (288 in case). Nice cube pack: (144 in case). Gummy bear: (144 in case). Ice lolly: ( 480 in case). Ice cone : (288 in case ). Splash: (288 in case ). Jelly hops: ( in case ). Jelly fish: ( 240 in case). Pizza : ( 360 in case ). Buzz ball: ( 144 in case). Butter small: (288 in case ). Butter rainbow : ( 288 in case ). Butter gold : (288 in case). Cheese: (288 in case ). Cheese square : (288 in case ). Cheese pizza small: (288 in case). Cheese pizza big (192 in case ). Butter medium: (144 in case). Chocolate: (240 in case ).",
+    "shortDescription": "Needoh Full range. Nice cube loose: (288 in case). Nice cube pack: (144 in case). Gummy bear: (144 in case). Ice lolly: ( 480 in case). Ice cone : (288 in case ).",
+    "description": "Needoh Full range. Nice cube loose: (288 in case). Nice cube pack: (144 in case). Gummy bear: (144 in case). Ice lolly: ( 480 in case). Ice cone : (288 in case ). Splash: (288 in case ). Jelly hops: ( in case ). Jelly fish: ( 240 in case). Pizza : ( 360 in case ). Buzz ball: ( 144 in case). Butter small: (288 in case ). Butter rainbow : ( 288 in case ). Butter gold : (288 in case). Cheese: (288 in case ). Cheese square : (288 in case ). Cheese pizza small: (288 in case). Cheese pizza big (192 in case ). Butter medium: (144 in case). Chocolate: (240 in case ).",
     "features": [
-      "Minimum order: 1 pcs, £2.15 each",
+      "Min order: 1 pc",
+      "£2.15 each",
       "288 per box",
       "From £2.15 at case qty (cube, gummy bear, ice lolly, pizza, butter, cheese...). +25p each under a case"
     ],
@@ -8319,14 +8606,14 @@ export const telegramStock: Product[] = [
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-bullet-gun-3485",
     "name": "Bullet Gun",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
@@ -8337,21 +8624,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New bullet gun a box of 12.",
     "description": "New bullet gun a box of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-bubble-gun-3486",
     "name": "Bubble Gun",
     "price": 2.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bubbles",
@@ -8363,25 +8651,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New bubble gun available now ( 24 in pack ).",
     "description": "New bubble gun available now ( 24 in pack ).",
     "features": [
-      "Minimum order: 24 pcs, £2.75 each",
+      "Min order: 24 pcs (1 box)",
+      "£2.75 each",
       "24 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 24,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 24 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-music-smoke-train-3488",
     "name": "Music Smoke Train",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Building",
+    "categorySlug": "building-sets",
     "images": [
       "/images/products/telegram/tg-music-smoke-train-3488-1.webp",
       "/images/products/telegram/tg-music-smoke-train-3488-2.webp",
@@ -8390,24 +8679,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "New music smoke train available now minimum 12 to buy.",
     "description": "New music smoke train available now minimum 12 to buy.",
     "features": [
-      "Minimum order: 12 pcs, £3.50 each"
+      "Min order: 12 pcs",
+      "£3.50 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-jellycat-capybara-plush-keyrings-3491",
     "name": "Jellycat Capybara Plush Keyrings",
     "price": 2.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
-    "categorySlug": "pocket-critter-keyrings",
+    "categorySlug": "novelty-keyrings",
     "images": [
       "/images/products/telegram/tg-jellycat-capybara-plush-keyrings-3491-1.webp",
       "/images/products/telegram/tg-jellycat-capybara-plush-keyrings-3491-2.webp"
@@ -8415,21 +8705,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "New jellycat capybara plush keyrings available now a pack of 12 ( each ).",
     "description": "New jellycat capybara plush keyrings available now a pack of 12 ( each ).",
     "features": [
-      "Minimum order: 12 pcs, £2.25 each",
+      "Min order: 1 pc",
+      "£2.25 each",
       "Pack of 12 = £27.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-jelly-cat-popcorn-soft-toys-3493",
     "name": "Jelly Cat Popcorn Soft Toys",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -8441,46 +8732,48 @@ export const telegramStock: Product[] = [
     "shortDescription": "New jelly cat popcorn soft toys available with keyring a pack of 12 ( each ).",
     "description": "New jelly cat popcorn soft toys available with keyring a pack of 12 ( each ).",
     "features": [
-      "Minimum order: 12 pcs, £2.50 each",
+      "Min order: 1 pc",
+      "£2.50 each",
       "Pack of 12 = £30.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-hand-fan-3495",
     "name": "Hand Fan",
     "price": 0.83,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Fans",
-    "categorySlug": "handheld-fans",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-hand-fan-3495-1.webp"
     ],
     "shortDescription": "Hand fan available now a pack of 12.",
     "description": "Hand fan available now a pack of 12.",
     "features": [
-      "Minimum order: 12 pcs, £0.83 each",
+      "Min order: 12 pcs (1 box)",
+      "£0.83 each",
       "Pack of 12 = £10.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-jellycat-burgers-3496",
     "name": "Jellycat Burgers",
     "price": 2.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Plush",
@@ -8494,25 +8787,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New jellycat burgers available now a box of 12 ( each ).",
     "description": "New jellycat burgers available now a box of 12 ( each ).",
     "features": [
-      "Minimum order: 12 pcs, £2.50 each",
+      "Min order: 1 pc",
+      "£2.50 each",
       "Pack of 12 = £30.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-stretch-toys-dog-donkey-3500",
-    "name": "Stretch Toys - Dog & Donkey",
+    "name": "Stretch Toys Dog & Donkey",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Sensory",
+    "categorySlug": "fidget-spinners",
     "images": [
       "/images/products/telegram/tg-stretch-toys-dog-donkey-3500-1.webp",
       "/images/products/telegram/tg-stretch-toys-dog-donkey-3500-2.webp",
@@ -8526,25 +8820,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New stretch toys in dog, donkey styles available in 2 size. Big each. Small each.",
     "description": "New stretch toys in dog, donkey styles available in 2 size. Big each. Small each.",
     "features": [
-      "Minimum order: 1 pcs, £7.50 each",
+      "Min order: 1 pc",
+      "£7.50 each",
       "Big £7.50, Small £4.50"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-all-bouncy-ball-varieties-3509",
     "name": "Bouncy Ball Varieties",
     "price": 0.83,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Outdoor",
-    "categorySlug": "play-balls",
+    "categorySlug": "outdoor-sports",
     "images": [
       "/images/products/telegram/tg-all-bouncy-ball-varieties-3509-1.webp",
       "/images/products/telegram/tg-all-bouncy-ball-varieties-3509-2.webp",
@@ -8554,25 +8849,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "All bouncy ball varieties available now a box of 12.",
     "description": "All bouncy ball varieties available now a box of 12.",
     "features": [
-      "Minimum order: 12 pcs, £0.83 each",
+      "Min order: 12 pcs (1 box)",
+      "£0.83 each",
       "Pack of 12 = £10.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-puffer-ball-squishy-in-character-3513",
     "name": "Puffer Ball Squishy in Character",
     "price": 1.25,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-puffer-ball-squishy-in-character-3513-1.webp",
       "/images/products/telegram/tg-puffer-ball-squishy-in-character-3513-2.webp",
@@ -8584,25 +8880,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New puffer ball squishy in character available now a box of 12 ( each).",
     "description": "New puffer ball squishy in character available now a box of 12 ( each).",
     "features": [
-      "Minimum order: 12 pcs, £1.25 each",
+      "Min order: 1 pc",
+      "£1.25 each",
       "Pack of 12 = £15.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-jumbo-squishy-3519",
     "name": "Jumbo Squishy",
     "price": 12.0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-jumbo-squishy-3519-1.webp",
       "/images/products/telegram/tg-jumbo-squishy-3519-2.webp",
@@ -8616,24 +8913,25 @@ export const telegramStock: Product[] = [
     "shortDescription": "All new jumbo size squishy available now each ( 6 minimum each style ).",
     "description": "All new jumbo size squishy available now each ( 6 minimum each style ).",
     "features": [
-      "Minimum order: 6 pcs, £12.00 each"
+      "Min order: 6 pcs",
+      "£12.00 each"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 6,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 6 pcs",
     "stock": 50
   },
   {
     "slug": "tg-trends-squishy-smushers-3529",
-    "name": "Trends Squishy Smushers",
+    "name": "Squishy Smushers",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-trends-squishy-smushers-3529-1.webp",
       "/images/products/telegram/tg-trends-squishy-smushers-3529-2.webp",
@@ -8642,50 +8940,52 @@ export const telegramStock: Product[] = [
     "shortDescription": "New trends squishy smushers available now limited quantity a box of 12 ( each ).",
     "description": "New trends squishy smushers available now limited quantity a box of 12 ( each ).",
     "features": [
-      "Minimum order: 12 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "Pack of 12 = £54.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-trendy-minions-toys-in-surprise-bag-3532",
-    "name": "Trendy Minions Toys in Surprise Bag",
+    "name": "Minions Toys in Surprise Bag",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Bags",
-    "categorySlug": "monster-buddy-bags",
+    "categorySlug": "bags-accessories",
     "images": [
       "/images/products/telegram/tg-trendy-minions-toys-in-surprise-bag-3532-1.webp"
     ],
     "shortDescription": "New trendy minions toys in surprise bag available now limited quantity only a box of 6 ( each ).",
     "description": "New trendy minions toys in surprise bag available now limited quantity only a box of 6 ( each ).",
     "features": [
-      "Minimum order: 6 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "Pack of 6 = £27.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 6,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-needoh-full-range-cube-can-bottle-burger-more-3575",
-    "name": "Needoh Full Range (Cube, Can, Bottle, Burger & More)",
+    "name": "Needoh Full Range Cube, Can, Bottle, Burger & More",
     "price": 3.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-needoh-full-range-cube-can-bottle-burger-more-3575-1.webp",
       "/images/products/telegram/tg-needoh-full-range-cube-can-bottle-burger-more-3575-2.webp",
@@ -8696,24 +8996,25 @@ export const telegramStock: Product[] = [
       "/images/products/telegram/tg-needoh-full-range-cube-can-bottle-burger-more-3575-7.webp",
       "/images/products/telegram/tg-needoh-full-range-cube-can-bottle-burger-more-3575-8.webp"
     ],
-    "shortDescription": "Fulllllll range of Needoh cube, can, bottle, burgers and all others in pictures available now a box of 12 each design ( each ) and if you take minimum 10 style of.",
-    "description": "Fulllllll range of Needoh cube, can, bottle, burgers and all others in pictures available now a box of 12 each design ( each ) and if you take minimum 10 style of random will be a box of 12 ( each ).",
+    "shortDescription": "Full range of Needoh cube, can, bottle, burgers and all others in pictures available now a box of 12 each design ( each ) and if you take minimum 10 style of random.",
+    "description": "Full range of Needoh cube, can, bottle, burgers and all others in pictures available now a box of 12 each design ( each ) and if you take minimum 10 style of random will be a box of 12 ( each ).",
     "features": [
-      "Minimum order: 12 pcs, £3.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£3.50 each",
       "£42 box of 12 per design; 10+ styles £36/box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-football-trophy-bubble-blower-3576",
     "name": "Football Trophy Bubble Blower",
     "price": 4,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Football",
@@ -8724,21 +9025,22 @@ export const telegramStock: Product[] = [
     "shortDescription": "Football trophies bubble available now for 12 ( each ).",
     "description": "Football trophies bubble available now for 12 ( each ).",
     "features": [
-      "Minimum order: 12 pcs, £4.00 each",
+      "Min order: 1 pc",
+      "£4.00 each",
       "£48 for 12"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-light-up-cubes-in-individual-packing-3578",
     "name": "Light Up Cubes in Individual Packing",
     "price": 2.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
@@ -8752,75 +9054,78 @@ export const telegramStock: Product[] = [
     "shortDescription": "All new light up cubes in individual packing a pack of 12 ( each ).",
     "description": "All new light up cubes in individual packing a pack of 12 ( each ).",
     "features": [
-      "Minimum order: 12 pcs, £2.75 each",
+      "Min order: 1 pc",
+      "£2.75 each",
       "Pack of 12 = £33.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-starbucks-cups-3582",
     "name": "Starbucks Cups",
     "price": 4.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Play",
-    "categorySlug": "star-buddy-cups",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-starbucks-cups-3582-1.webp"
     ],
     "shortDescription": "Starbucks cups available now a box of 12 ( each ).",
     "description": "Starbucks cups available now a box of 12 ( each ).",
     "features": [
-      "Minimum order: 12 pcs, £4.50 each",
+      "Min order: 1 pc",
+      "£4.50 each",
       "Pack of 12 = £54.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-starbucks-bottle-3583",
     "name": "Starbucks Bottle",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Play",
-    "categorySlug": "star-buddy-cups",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-starbucks-bottle-3583-1.webp"
     ],
     "shortDescription": "New Starbucks bottle available now a box of 12 ( each ).",
     "description": "New Starbucks bottle available now a box of 12 ( each ).",
     "features": [
-      "Minimum order: 12 pcs, £5.50 each",
+      "Min order: 1 pc",
+      "£5.50 each",
       "Pack of 12 = £66.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-mini-dumplings-3584",
     "name": "Mini Dumplings",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "festive-dumplings",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-mini-dumplings-3584-1.webp",
       "/images/products/telegram/tg-mini-dumplings-3584-2.webp"
@@ -8828,25 +9133,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Mini dumplings available now a box of 24 ( each ).",
     "description": "Mini dumplings available now a box of 24 ( each ).",
     "features": [
-      "Minimum order: 24 pcs, £1.50 each",
+      "Min order: 1 pc",
+      "£1.50 each",
       "Pack of 24 = £36.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 24,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-dumplings-squishy-full-range-3604",
-    "name": "Dumplings Squishy - Full Range",
+    "name": "Dumplings Squishy Full Range",
     "price": 1.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "festive-dumplings",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-dumplings-squishy-full-range-3604-1.webp",
       "/images/products/telegram/tg-dumplings-squishy-full-range-3604-2.webp",
@@ -8860,25 +9166,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Full range of dumplings available from till.",
     "description": "Full range of dumplings available from till.",
     "features": [
-      "Minimum order: 1 pcs, £1.75 each",
+      "Min order: 12 pcs",
+      "£1.75 each",
       "£1.75 to £2.75"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 1,
+    "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs",
     "stock": 50
   },
   {
     "slug": "tg-usb-digital-cooling-fans-3614",
     "name": "USB Digital Cooling Fans",
     "price": 0,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Fans",
-    "categorySlug": "handheld-fans",
+    "theme": "Home",
+    "categorySlug": "home-gifts",
     "images": [
       "/images/products/telegram/tg-usb-digital-cooling-fans-3614-1.webp",
       "/images/products/telegram/tg-usb-digital-cooling-fans-3614-2.webp",
@@ -8892,13 +9199,15 @@ export const telegramStock: Product[] = [
     "shortDescription": "All usb digital cooling fans available now.",
     "description": "All usb digital cooling fans available now.",
     "features": [
-      "Minimum order: 1 pcs",
+      "Min order: 1 pc",
       "Price on request"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50,
     "priceTBC": true
   },
@@ -8906,12 +9215,10 @@ export const telegramStock: Product[] = [
     "slug": "tg-slow-rise-squishy-3640",
     "name": "Slow Rise Squishy",
     "price": 1.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-slow-rise-squishy-3640-1.webp",
       "/images/products/telegram/tg-slow-rise-squishy-3640-2.webp",
@@ -8925,25 +9232,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "All new slow rise squishy available at a pack of 12.",
     "description": "All new slow rise squishy available at a pack of 12.",
     "features": [
-      "Minimum order: 12 pcs, £1.50 each",
+      "Min order: 12 pcs (1 box)",
+      "£1.50 each",
       "Pack of 12 = £18.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 12,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 12 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-all-jumbo-size-squishy-3655",
     "name": "Jumbo Size Squishy",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-all-jumbo-size-squishy-3655-1.webp",
       "/images/products/telegram/tg-all-jumbo-size-squishy-3655-2.webp",
@@ -8957,25 +9265,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "All jumbo size squishy available now each ( 36 in box ).",
     "description": "All jumbo size squishy available now each ( 36 in box ).",
     "features": [
-      "Minimum order: 36 pcs, £7.50 each",
+      "Min order: 1 pc",
+      "£7.50 each",
       "36 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 36,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-trendy-vaseline-cheese-3660",
-    "name": "Trendy Vaseline Cheese",
+    "name": "Vaseline Cheese",
     "price": 5.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "cheese-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-trendy-vaseline-cheese-3660-1.webp",
       "/images/products/telegram/tg-trendy-vaseline-cheese-3660-2.webp",
@@ -8984,25 +9293,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New trendy Vaseline cheese available now a box of 6 ( each ).",
     "description": "New trendy Vaseline cheese available now a box of 6 ( each ).",
     "features": [
-      "Minimum order: 6 pcs, £5.50 each",
+      "Min order: 1 pc",
+      "£5.50 each",
       "Pack of 6 = £33.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 6,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-sugar-peanut-with-individual-packaging-3663",
-    "name": "Sugar Peanut with Individual Packaging",
+    "name": "Sugar Peanut Squishy",
     "price": 2.75,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
-    "theme": "Mixed",
-    "categorySlug": "others",
+    "theme": "Squishy",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-sugar-peanut-with-individual-packaging-3663-1.webp",
       "/images/products/telegram/tg-sugar-peanut-with-individual-packaging-3663-2.webp",
@@ -9011,25 +9321,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "New sugar peanut with individual packaging a pack of 12 ( each ).",
     "description": "New sugar peanut with individual packaging a pack of 12 ( each ).",
     "features": [
-      "Minimum order: 12 pcs, £2.75 each",
+      "Min order: 1 pc",
+      "£2.75 each",
       "Pack of 12 = £33.00"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 12,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   },
   {
     "slug": "tg-dumplings-advent-calendar-3666",
     "name": "Dumplings Advent Calendar",
     "price": 7.5,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "festive-dumplings",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-dumplings-advent-calendar-3666-1.webp",
       "/images/products/telegram/tg-dumplings-advent-calendar-3666-2.webp",
@@ -9040,25 +9351,26 @@ export const telegramStock: Product[] = [
     "shortDescription": "Dumplings advent calendar available now ( 100 in box ).",
     "description": "Dumplings advent calendar available now ( 100 in box ).",
     "features": [
-      "Minimum order: 100 pcs, £7.50 each",
+      "Min order: 100 pcs (1 box)",
+      "£7.50 each",
       "100 per box"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
     "piecesPerBox": 100,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 100 pcs (1 box)",
     "stock": 50
   },
   {
     "slug": "tg-needoh-advent-calendar-3671",
     "name": "Needoh Advent Calendar",
     "price": 6,
-    "rating": 4.6,
-    "reviewCount": 12,
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Squishy",
-    "categorySlug": "food-squishies",
+    "categorySlug": "squishies",
     "images": [
       "/images/products/telegram/tg-needoh-advent-calendar-3671-1.webp",
       "/images/products/telegram/tg-needoh-advent-calendar-3671-2.webp",
@@ -9072,13 +9384,16 @@ export const telegramStock: Product[] = [
     "shortDescription": "Needoh advent calendar ( box of 100). Less than 100.",
     "description": "Needoh advent calendar ( box of 100). Less than 100.",
     "features": [
-      "Minimum order: 100 pcs, £6.00 each",
+      "Min order: 1 pc",
+      "£6.00 each",
       "£7.50 each under 100"
     ],
     "safety": "Ages 3+. Adult supervision recommended. Not suitable for children under 36 months (small parts).",
     "materials": "See packaging.",
     "isNew": true,
-    "piecesPerBox": 100,
+    "piecesPerBox": 1,
+    "moqUnit": "pcs",
+    "moqLabel": "Min order: 1 pc",
     "stock": 50
   }
 ];

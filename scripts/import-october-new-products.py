@@ -432,8 +432,6 @@ def find_src(filename: str) -> Path | None:
 
 
 def emit(item: dict, index: int) -> str:
-    rating = round(4.5 + (index % 5) * 0.1, 1)
-    reviews = 40 + (index * 13) % 160
     stock = max(item["pieces"] * 2, 12 + (index * 3) % 40)
     features = ", ".join(ts_escape(f) for f in item["features"])
     compare = ""
@@ -446,8 +444,6 @@ def emit(item: dict, index: int) -> str:
     slug: {ts_escape(item["slug"])},
     name: {ts_escape(item["name"])},
     price: {item["price"]},{compare}
-    rating: {rating},
-    reviewCount: {reviews},
     ageRange: {ts_escape(item["age"])},
     brand: {ts_escape(item["brand"])},
     theme: {ts_escape(item["theme"])},

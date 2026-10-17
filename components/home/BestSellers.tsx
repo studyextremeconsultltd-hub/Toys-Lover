@@ -7,7 +7,6 @@ import { Check, ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
 import type { Product } from "@/lib/types";
 import { getCategory } from "@/lib/data/categories";
 import { listingPrice, toTitleCase } from "@/lib/utils";
-import { Rating } from "@/components/ui/Rating";
 import { WishButton } from "@/components/product/ProductCardActions";
 import { useCart } from "@/lib/context/CartContext";
 
@@ -97,9 +96,6 @@ function BestSellerCard({ product, index }: { product: Product; index: number })
             {toTitleCase(product.name)}
           </Link>
         </h3>
-        <div className="mt-1">
-          <Rating value={product.rating} />
-        </div>
         <div className="mt-auto flex items-end justify-between gap-2 border-t border-cream-200 pt-2">
           <span className="text-[11px] font-semibold text-ink-500">{price.label}</span>
           <span className="font-display text-base font-bold text-coral-500">{price.text}</span>

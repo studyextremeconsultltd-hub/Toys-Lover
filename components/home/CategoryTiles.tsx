@@ -22,7 +22,11 @@ export function CategoryTiles({
       };
     })
     .filter((row) => row.count > 0)
-    .sort((a, b) => a.category.shortName.localeCompare(b.category.shortName));
+    .sort((a, b) => {
+      if (a.category.slug === "squishies") return -1;
+      if (b.category.slug === "squishies") return 1;
+      return a.category.shortName.localeCompare(b.category.shortName);
+    });
 
   return (
     <Section id="all-categories" className="content-visibility-auto scroll-mt-28 bg-cream-50 py-12">

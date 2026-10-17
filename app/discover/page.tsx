@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getLookbook } from "@/lib/data/products";
 import { posts } from "@/lib/data/blog";
 import { img, categoryImage } from "@/lib/media";
+import { categoryCovers } from "@/lib/data/category-covers";
 import { GlowHeading } from "@/components/home/GlowHeading";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
@@ -19,14 +20,14 @@ const scenes = [
   {
     src: categoryImage.squishies,
     title: "Squishy lane",
-    text: "Peaches and strawberries live in Arts & Crafts — one squeeze per card.",
-    href: "/shop/arts-crafts",
+    text: "Every slow-rise, dumpling and butter squishy is in one aisle.",
+    href: "/shop/squishies",
   },
   {
-    src: categoryImage["games-gadgets"],
-    title: "Gadgets and racers",
-    text: "RC trucks and fidget consoles for older kids.",
-    href: "/shop/games-gadgets",
+    src: categoryCovers["cars-vehicles"] || categoryImage["outdoor-sports"],
+    title: "Cars and garden play",
+    text: "Die-cast cars, trucks and outdoor toys.",
+    href: "/shop/cars-vehicles",
   },
 ];
 

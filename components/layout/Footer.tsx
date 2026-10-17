@@ -28,11 +28,10 @@ export function Footer() {
             <li><Link href="/#squishies" className="hover:text-white">Squishies</Link></li>
             <li><Link href="/shop" className="hover:text-white">Shop All</Link></li>
             <li><Link href="/shop#all-categories" className="hover:text-white">All Categories</Link></li>
-            <li><Link href="/shop/fruit-squishies" className="hover:text-white">Fruit Squishies</Link></li>
-            <li><Link href="/shop/food-squishies" className="hover:text-white">Food Squishies</Link></li>
-            <li><Link href="/shop/sensory-jars" className="hover:text-white">Sensory Jars</Link></li>
-            <li><Link href="/shop/educational-stem" className="hover:text-white">STEM Toys</Link></li>
-            <li><Link href="/shop/board-games" className="hover:text-white">Board Games</Link></li>
+            <li><Link href="/shop/squishies" className="hover:text-white">Squishies</Link></li>
+            <li><Link href="/shop/dolls-plush" className="hover:text-white">Plush & Soft Toys</Link></li>
+            <li><Link href="/shop/cars-vehicles" className="hover:text-white">Cars & Vehicles</Link></li>
+            <li><Link href="/shop/board-games" className="hover:text-white">Games & Cards</Link></li>
             <li><Link href="/pay" className="hover:text-white">Pay Now</Link></li>
           </ul>
         </div>

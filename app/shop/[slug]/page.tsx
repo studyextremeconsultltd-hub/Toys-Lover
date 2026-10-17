@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/lib/data/categories";
-import { getBrands, getProductsByCategory, getThemes } from "@/lib/data/products";
-import { categoryStudio } from "@/lib/media";
+import { getProductsByCategory } from "@/lib/data/products";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { CategoryShop } from "@/components/shop/CategoryShop";
@@ -24,25 +23,18 @@ export default function CategoryPage({ params }: Props) {
   if (!category) notFound();
 
   const products = getProductsByCategory(category.slug);
-  const brands = Array.from(new Set(products.map((product) => product.brand))).sort();
-  const themes = Array.from(new Set(products.map((product) => product.theme))).sort();
 
   return (
     <>
       <PageHero
-        image={categoryStudio[category.slug] ?? category.image}
+        image={category.image}
         eyebrow={`${products.length} products in this category`}
         title={category.name}
         description={category.longDescription}
       />
       <Section>
         <Container>
-          <CategoryShop
-            category={category}
-            products={products}
-            brands={brands.length ? brands : getBrands()}
-            themes={themes.length ? themes : getThemes()}
-          />
+          <CategoryShop category={category} products={products} />
         </Container>
       </Section>
     </>

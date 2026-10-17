@@ -3,7 +3,6 @@ import { Hero } from "@/components/home/Hero";
 import { SquishyLane } from "@/components/home/SquishyLane";
 import { CategoryTiles } from "@/components/home/CategoryTiles";
 import { LearningBenefits } from "@/components/home/LearningBenefits";
-import { ParentLove } from "@/components/home/ParentLove";
 import { TrustBadges } from "@/components/home/TrustBadges";
 import { Newsletter } from "@/components/home/Newsletter";
 import { BestSellers } from "@/components/home/BestSellers";
@@ -16,8 +15,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <CategoryTiles title="Shop by Category" eyebrow="All aisles" />
       <SquishyLane />
+      <CategoryTiles title="Shop by Category" eyebrow="All aisles" />
 
       <section id="trending" className="content-visibility-auto bg-cream-50 py-12">
         <Container>
@@ -30,9 +29,6 @@ export default function HomePage() {
 
       <div className="content-visibility-auto">
         <LearningBenefits />
-      </div>
-      <div className="content-visibility-auto">
-        <ParentLove />
       </div>
       <TrustBadges />
       <Newsletter />

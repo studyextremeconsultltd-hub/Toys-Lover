@@ -16,8 +16,6 @@ export interface Product {
   name: string;
   price: number;
   compareAtPrice?: number;
-  rating: number;
-  reviewCount: number;
   ageRange: AgeRange;
   brand: string;
   theme: string;
@@ -30,8 +28,12 @@ export interface Product {
   materials: string;
   isNew?: boolean;
   isBestSeller?: boolean;
-  /** Pieces / units included in the retail box or carton pack. */
+  /** Pieces / units included in the retail box, or the wholesale minimum. */
   piecesPerBox?: number;
+  /** Wholesale unit for the minimum, such as pcs or packs. */
+  moqUnit?: string;
+  /** Exact minimum-order line, for example "Min order: 12 pcs (1 box)". */
+  moqLabel?: string;
   /** Wholesale line with no confirmed unit price. Do not render £0.00. */
   priceTBC?: boolean;
   stock: number;

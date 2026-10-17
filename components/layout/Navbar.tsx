@@ -13,7 +13,7 @@ import { Logo } from "@/components/layout/Logo";
 const links = [
   { href: "/shop", label: "Shop All" },
   { href: "/#all-categories", label: "Categories" },
-  { href: "/shop/sensory-jars", label: "Sensory Jars" },
+  { href: "/shop/squishies", label: "Squishies" },
   { href: "/about", label: "About Us" },
 ];
 

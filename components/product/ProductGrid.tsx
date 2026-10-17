@@ -5,14 +5,16 @@ import { ProductCard } from "@/components/product/ProductCard";
 export function ProductGrid({
   products,
   compact = false,
+  wide = false,
 }: {
   products: Product[];
   compact?: boolean;
+  wide?: boolean;
 }) {
   if (products.length === 0) {
     return (
       <p className="rounded-3xl border border-dashed border-ink-200 bg-white p-10 text-center text-ink-500">
-        No toys match those filters yet. Try a wider price, brand, or theme.
+        No products in this aisle yet.
       </p>
     );
   }
@@ -22,8 +24,8 @@ export function ProductGrid({
   return (
     <div
       className={
-        compact
-          ? "grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+        wide
+          ? "grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
           : "grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
       }
     >

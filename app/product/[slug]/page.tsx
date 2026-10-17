@@ -8,10 +8,9 @@ import {
 } from "@/lib/data/products";
 import { getCategory } from "@/lib/data/categories";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
-import { formatPrice, getBoxDeal, isPriceOnRequest, isUnitWholesale, listingPrice, toTitleCase } from "@/lib/utils";
+import { formatPrice, getBoxDeal, isPriceOnRequest, isUnitWholesale, listingPrice, minOrderLabel, toTitleCase } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { Rating } from "@/components/ui/Rating";
 import { Badge } from "@/components/ui/Badge";
 import { ProductGallery } from "@/components/product/ProductGallery";
 import { ProductActions } from "@/components/product/ProductActions";
@@ -71,11 +70,6 @@ export default function ProductPage({ params }: Props) {
     sku: product.slug,
     brand: { "@type": "Brand", name: product.brand },
     category: category?.name,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: product.rating,
-      reviewCount: product.reviewCount,
-    },
     offers: {
       "@type": "Offer",
       url: `${SITE_URL}/product/${product.slug}/`,
@@ -99,11 +93,10 @@ export default function ProductPage({ params }: Props) {
             <p className="text-xs font-semibold uppercase tracking-wider text-ink-400">
               {category?.name} · {product.brand}
             </p>
-            <h1 className="heading-glow mt-2 font-display text-4xl font-extrabold text-ink-900">
+            <h1 className="heading-glow mt-2 break-words font-display text-3xl font-extrabold text-ink-900 sm:text-4xl">
               {toTitleCase(product.name)}
             </h1>
             <div className="mt-3 flex flex-wrap items-center gap-3">
-              <Rating value={product.rating} count={product.reviewCount} size="md" />
               {category ? (
                 <Link href={`/shop/${category.slug}`}>
                   <Badge tone="sky">{category.shortName}</Badge>
@@ -116,13 +109,14 @@ export default function ProductPage({ params }: Props) {
             <div className="mt-5 rounded-2xl border border-teal-200 bg-teal-50/80 p-5">
               <p className="text-xs font-bold uppercase tracking-wide text-teal-700">{price.label}</p>
               <p className="mt-1 font-display text-4xl font-extrabold text-coral-500">{ask ? "Price on request" : price.text}</p>
+              <p className="mt-2 w-fit rounded-full bg-white px-3 py-1 text-sm font-bold text-teal-800">
+                {minOrderLabel(product)}
+              </p>
               <p className="mt-1 text-sm font-semibold text-ink-600">
                 {ask
                   ? "Ask us for the current wholesale price."
                   : wholesale
-                    ? deal.pieces > 1
-                      ? `Minimum order ${deal.pieces} pcs`
-                      : "Priced per piece"
+                    ? "Priced per piece"
                     : `${deal.pieces} ${deal.pieces === 1 ? "pc" : "pcs"} in this box`}
               </p>
             </div>

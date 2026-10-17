@@ -20,7 +20,9 @@ export function cn(...classes: Array<string | false | null | undefined>) {
 const SMALL_CAPS = /^(UK|USA|STEM|FAQ|PCI|GB|AM|PM|LED|USB|FIFA|BMW|RC|XXL|XL|DIY|TV|HD|3D|4D)$/i;
 
 export function toTitleCase(value: string) {
-  return value.replace(/[A-Za-zÀ-ÿ’']+/g, (word) => {
+  return value.replace(/[A-Za-zÀ-ÿ’']+/g, (word, offset, full) => {
+    const before = full.slice(Math.max(0, offset - 6), offset);
+    if (/\d$/.test(before) && /^(cm|mm|ml|oz|pcs|pc|kg|g|in)$/i.test(word)) return word.toLowerCase();
     if (SMALL_CAPS.test(word)) return word.toUpperCase();
     return word.charAt(0).toUpperCase() + word.slice(1);
   });
@@ -145,6 +147,17 @@ export function isPriceOnRequest(product: { priceTBC?: boolean }) {
   return Boolean(product.priceTBC);
 }
 
+/** Shopper-facing minimum. Telegram lines keep the curated label verbatim. */
+export function minOrderLabel(product: {
+  moqLabel?: string;
+  piecesPerBox?: number;
+  features?: string[];
+}) {
+  if (product.moqLabel) return product.moqLabel;
+  const pieces = getPiecesPerBox(product) ?? 1;
+  return `Min order: ${pieces} pcs`;
+}
+
 /** Telegram wholesale lines are priced per unit. Minimum order lives on piecesPerBox. */
 export function isUnitWholesale(product: { brand: string }) {
   return product.brand === "Toy Bloom Wholesale";
@@ -159,11 +172,10 @@ export function listingPrice(product: {
   compareAtPrice?: number;
   slug?: string;
 }) {
-  const pieces = product.piecesPerBox && product.piecesPerBox > 0 ? product.piecesPerBox : 1;
   if (isPriceOnRequest(product)) {
     return {
       ask: true as const,
-      badge: pieces > 1 ? `Min ${pieces} pcs` : "Ask for price",
+      badge: "On request",
       label: "Price",
       text: "On request",
     };
@@ -171,7 +183,7 @@ export function listingPrice(product: {
   if (isUnitWholesale(product)) {
     return {
       ask: false as const,
-      badge: pieces > 1 ? `Min ${pieces} pcs` : "Each",
+      badge: "Each",
       label: "Each",
       text: formatPrice(product.price),
     };

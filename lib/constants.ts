@@ -3,7 +3,7 @@ export const SITE_NAME = "Toy Bloom";
 export const SITE_TAGLINE = "Play. Learn. Grow Together.";
 
 export const SITE_DESCRIPTION =
-  "Toy Bloom is a trusted UK toy store for families — age-appropriate play, safe materials, and gifts that spark curiosity. Free UK shipping over £60.";
+  "Toy Bloom is a UK toy store for families — age-appropriate play, safe materials, and gifts that spark curiosity. Free UK shipping over £60.";
 
 export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL || "https://toybloom.co.uk"
@@ -46,13 +46,6 @@ export const AGE_RANGES = [
   "6-8 years",
   "9-12 years",
   "13+ years",
-] as const;
-
-export const PRICE_RANGES = [
-  { id: "under-25", label: "Under £25", min: 0, max: 25 },
-  { id: "25-50", label: "£25 – £50", min: 25, max: 50 },
-  { id: "50-100", label: "£50 – £100", min: 50, max: 100 },
-  { id: "over-100", label: "Over £100", min: 100, max: Infinity },
 ] as const;
 
 export const SORT_OPTIONS = [

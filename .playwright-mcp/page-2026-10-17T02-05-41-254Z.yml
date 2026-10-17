@@ -1,0 +1,231 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e5]:
+      - paragraph [ref=f1e6]: Free UK shipping over £60
+      - paragraph [ref=f1e7]: United Kingdom
+    - generic [ref=f1e11]:
+      - link "Toy Bloom" [ref=f1e12] [cursor=pointer]:
+        - /url: /
+        - img "Toy Bloom — Trendy Toys for Happy Kids" [ref=f1e13]
+      - navigation "Primary" [ref=f1e14]:
+        - link "Shop All" [ref=f1e15] [cursor=pointer]:
+          - /url: /shop/
+        - link "Categories" [ref=f1e16] [cursor=pointer]:
+          - /url: /#all-categories
+        - link "Squishies" [ref=f1e17] [cursor=pointer]:
+          - /url: /shop/squishies/
+        - link "About Us" [ref=f1e18] [cursor=pointer]:
+          - /url: /about/
+      - generic [ref=f1e19]:
+        - link "Pay Now" [ref=f1e20] [cursor=pointer]:
+          - /url: /pay/
+        - link "Search toys" [ref=f1e24] [cursor=pointer]:
+          - /url: /shop/
+        - link "Wishlist" [ref=f1e28] [cursor=pointer]:
+          - /url: /wishlist/
+        - link "Cart" [ref=f1e31] [cursor=pointer]:
+          - /url: /cart/
+  - main [ref=f1e36]:
+    - generic [ref=f1e38]:
+      - img "Piano Fitness Gym" [ref=f1e41]
+      - generic [ref=f1e42]:
+        - paragraph [ref=f1e43]: Baby & Toddler · Nest & Wool
+        - heading "Piano Fitness Gym" [level=1] [ref=f1e44]
+        - generic [ref=f1e45]:
+          - link "Baby & Toddler" [ref=f1e46] [cursor=pointer]:
+            - /url: /shop/baby-toddler/
+          - generic [ref=f1e48]: 1 pcs
+          - generic [ref=f1e49]: Box £22.99
+          - generic [ref=f1e50]: New
+        - generic [ref=f1e51]:
+          - paragraph [ref=f1e52]: Box price
+          - paragraph [ref=f1e53]: £22.99
+          - paragraph [ref=f1e54]: "Min order: 1 pcs"
+          - paragraph [ref=f1e55]: 1 pc in this box
+        - generic [ref=f1e56]:
+          - tablist [ref=f1e57]:
+            - tab "Overview" [selected] [ref=f1e58] [cursor=pointer]
+            - tab "Details" [ref=f1e59] [cursor=pointer]
+          - paragraph [ref=f1e61]: Kick piano, hanging toys, and a soft mat for tummy time.
+        - generic [ref=f1e63]:
+          - generic [ref=f1e64]:
+            - generic [ref=f1e65]:
+              - button "Decrease items" [ref=f1e66] [cursor=pointer]
+              - generic [ref=f1e68]: "1"
+              - button "Increase items" [ref=f1e69] [cursor=pointer]
+            - generic [ref=f1e71]: 1 item
+            - button "Wishlist" [ref=f1e72] [cursor=pointer]
+          - generic [ref=f1e75]:
+            - button "Add to Cart" [ref=f1e76] [cursor=pointer]
+            - button "Buy Now" [ref=f1e77] [cursor=pointer]
+        - list [ref=f1e78]:
+          - listitem [ref=f1e79]: "Min order: 1 pcs"
+          - listitem [ref=f1e81]: 0+ kick piano
+          - listitem [ref=f1e83]: Hanging sensory toys
+          - listitem [ref=f1e85]: Foldable play mat
+          - listitem [ref=f1e87]: Volume-friendly tunes
+        - generic [ref=f1e89]:
+          - generic [ref=f1e90]:
+            - paragraph [ref=f1e91]: Safety
+            - paragraph [ref=f1e92]: Use under adult supervision. Remove packaging and ties before play.
+          - generic [ref=f1e93]:
+            - paragraph [ref=f1e94]: Materials
+            - paragraph [ref=f1e95]: Soft fabric mat, BPA-free plastic piano, polyester hanging toys.
+    - generic [ref=f1e97]:
+      - heading "Related Toys" [level=2] [ref=f1e98]
+      - generic [ref=f1e100]:
+        - article [ref=f1e101]:
+          - generic [ref=f1e102]:
+            - link [ref=f1e103] [cursor=pointer]:
+              - /url: /product/ra1288-1-santa-rattle/
+              - img "Santa Rattle" [ref=f1e104]
+            - generic [ref=f1e105]: 144 pcs · £6.99
+            - button "Add to wishlist" [ref=f1e106] [cursor=pointer]
+          - generic [ref=f1e109]:
+            - heading [level=3] [ref=f1e110]:
+              - link "Santa Rattle" [ref=f1e111] [cursor=pointer]:
+                - /url: /product/ra1288-1-santa-rattle/
+            - paragraph [ref=f1e112]: "Min order: 144 pcs"
+            - generic [ref=f1e113]:
+              - generic [ref=f1e114]: Box price
+              - generic [ref=f1e115]: £6.99
+        - article [ref=f1e116]:
+          - generic [ref=f1e117]:
+            - link [ref=f1e118] [cursor=pointer]:
+              - /url: /product/dino-world-musical-mat/
+              - img "Dino World Musical Mat" [ref=f1e119]
+            - generic [ref=f1e120]: 1 pcs · £16.99
+            - button "Add to wishlist" [ref=f1e121] [cursor=pointer]
+          - generic [ref=f1e124]:
+            - heading [level=3] [ref=f1e125]:
+              - link "Dino World Musical Mat" [ref=f1e126] [cursor=pointer]:
+                - /url: /product/dino-world-musical-mat/
+            - paragraph [ref=f1e127]: "Min order: 1 pcs"
+            - generic [ref=f1e128]:
+              - generic [ref=f1e129]: Box price
+              - generic [ref=f1e130]: £16.99
+        - article [ref=f1e131]:
+          - generic [ref=f1e132]:
+            - link [ref=f1e133] [cursor=pointer]:
+              - /url: /product/guardsman-bear/
+              - img "Guardsman Bear" [ref=f1e134]
+            - generic [ref=f1e135]: 1 pcs · £12.99
+            - button "Add to wishlist" [ref=f1e136] [cursor=pointer]
+          - generic [ref=f1e139]:
+            - heading [level=3] [ref=f1e140]:
+              - link "Guardsman Bear" [ref=f1e141] [cursor=pointer]:
+                - /url: /product/guardsman-bear/
+            - paragraph [ref=f1e142]: "Min order: 1 pcs"
+            - generic [ref=f1e143]:
+              - generic [ref=f1e144]: Box price
+              - generic [ref=f1e145]: £12.99
+        - article [ref=f1e146]:
+          - generic [ref=f1e147]:
+            - link [ref=f1e148] [cursor=pointer]:
+              - /url: /product/tg-kids-push-car-age-1-3-970/
+              - img "Kids Push Car Age 1-3" [ref=f1e149]
+            - generic [ref=f1e150]: Each
+            - button "Add to wishlist" [ref=f1e151] [cursor=pointer]
+          - generic [ref=f1e154]:
+            - heading [level=3] [ref=f1e155]:
+              - link "Kids Push Car Age 1-3" [ref=f1e156] [cursor=pointer]:
+                - /url: /product/tg-kids-push-car-age-1-3-970/
+            - paragraph [ref=f1e157]: "Min order: 1 pc"
+            - generic [ref=f1e158]:
+              - generic [ref=f1e159]: Each
+              - generic [ref=f1e160]: £18.00
+  - contentinfo [ref=f1e161]:
+    - generic [ref=f1e162]:
+      - generic [ref=f1e163]:
+        - link "Toy Bloom" [ref=f1e165] [cursor=pointer]:
+          - /url: /
+          - img "Toy Bloom — Trendy Toys for Happy Kids" [ref=f1e166]
+        - paragraph [ref=f1e167]: Toy Bloom
+        - paragraph [ref=f1e168]: Play. Learn. Grow Together.
+        - paragraph [ref=f1e169]: We believe in the power of play to inspire young minds and create bright futures.
+        - list [ref=f1e170]:
+          - listitem [ref=f1e171]:
+            - link "Facebook" [ref=f1e172] [cursor=pointer]:
+              - /url: https://facebook.com
+          - listitem [ref=f1e175]:
+            - link "Instagram" [ref=f1e176] [cursor=pointer]:
+              - /url: https://instagram.com
+          - listitem [ref=f1e179]:
+            - link "YouTube" [ref=f1e180] [cursor=pointer]:
+              - /url: https://youtube.com
+          - listitem [ref=f1e183]:
+            - link "WhatsApp" [ref=f1e184] [cursor=pointer]:
+              - /url: https://wa.me/441613960184
+          - listitem [ref=f1e187]:
+            - link "TikTok" [ref=f1e188] [cursor=pointer]:
+              - /url: https://tiktok.com
+      - generic [ref=f1e191]:
+        - paragraph [ref=f1e192]: Shop
+        - list [ref=f1e193]:
+          - listitem [ref=f1e194]:
+            - link "Squishies" [ref=f1e195] [cursor=pointer]:
+              - /url: /#squishies
+          - listitem [ref=f1e196]:
+            - link "Shop All" [ref=f1e197] [cursor=pointer]:
+              - /url: /shop/
+          - listitem [ref=f1e198]:
+            - link "All Categories" [ref=f1e199] [cursor=pointer]:
+              - /url: /shop/#all-categories
+          - listitem [ref=f1e200]:
+            - link "Squishies" [ref=f1e201] [cursor=pointer]:
+              - /url: /shop/squishies/
+          - listitem [ref=f1e202]:
+            - link "Plush & Soft Toys" [ref=f1e203] [cursor=pointer]:
+              - /url: /shop/dolls-plush/
+          - listitem [ref=f1e204]:
+            - link "Cars & Vehicles" [ref=f1e205] [cursor=pointer]:
+              - /url: /shop/cars-vehicles/
+          - listitem [ref=f1e206]:
+            - link "Games & Cards" [ref=f1e207] [cursor=pointer]:
+              - /url: /shop/board-games/
+          - listitem [ref=f1e208]:
+            - link "Pay Now" [ref=f1e209] [cursor=pointer]:
+              - /url: /pay/
+      - generic [ref=f1e210]:
+        - paragraph [ref=f1e211]: Customer Care
+        - list [ref=f1e212]:
+          - listitem [ref=f1e213]:
+            - link "Contact Us" [ref=f1e214] [cursor=pointer]:
+              - /url: /contact/
+          - listitem [ref=f1e215]:
+            - link "Shipping Info" [ref=f1e216] [cursor=pointer]:
+              - /url: /shipping/
+          - listitem [ref=f1e217]:
+            - link "Returns & Exchanges" [ref=f1e218] [cursor=pointer]:
+              - /url: /faq/
+          - listitem [ref=f1e219]:
+            - link "FAQ" [ref=f1e220] [cursor=pointer]:
+              - /url: /faq/
+      - generic [ref=f1e221]:
+        - paragraph [ref=f1e222]: About Us
+        - list [ref=f1e223]:
+          - listitem [ref=f1e224]:
+            - link "Our Story" [ref=f1e225] [cursor=pointer]:
+              - /url: /about/
+          - listitem [ref=f1e226]:
+            - link "Blog" [ref=f1e227] [cursor=pointer]:
+              - /url: /blog/
+          - listitem [ref=f1e228]:
+            - link "Safety & Quality" [ref=f1e229] [cursor=pointer]:
+              - /url: /privacy/
+          - listitem [ref=f1e230]:
+            - link "Terms of Service" [ref=f1e231] [cursor=pointer]:
+              - /url: /terms/
+      - generic [ref=f1e232]:
+        - paragraph [ref=f1e242]: Nurturing Play.Inspiring Growth.
+        - paragraph [ref=f1e243]: Manchester · M2 6AQ
+    - generic [ref=f1e245]:
+      - paragraph [ref=f1e246]: © 2026 Toy Bloom. Prices in £.
+      - paragraph [ref=f1e247]:
+        - link "Terms of Service" [ref=f1e248] [cursor=pointer]:
+          - /url: /terms/
+        - link "Privacy Policy" [ref=f1e249] [cursor=pointer]:
+          - /url: /privacy/
+  - alert [ref=f1e250]

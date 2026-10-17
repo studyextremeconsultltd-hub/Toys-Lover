@@ -303,8 +303,6 @@ def ts_escape(value: str) -> str:
 
 
 def emit_product(item: dict, index: int) -> str:
-    rating = round(4.5 + (index % 5) * 0.1, 1)
-    reviews = 48 + (index * 13) % 220
     stock = 18 + (index * 7) % 40
     features = ", ".join(ts_escape(f) for f in item["features"])
     desc = (
@@ -318,8 +316,6 @@ def emit_product(item: dict, index: int) -> str:
     slug: {ts_escape(item['slug'])},
     name: {ts_escape(item['name'])},
     price: {item['price']},
-    rating: {rating},
-    reviewCount: {reviews},
     ageRange: {ts_escape(item['age'])},
     brand: {ts_escape(item['brand'])},
     theme: {ts_escape(item['theme'])},

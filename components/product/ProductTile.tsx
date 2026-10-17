@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/lib/types";
-import { listingPrice, toTitleCase } from "@/lib/utils";
-import { Rating } from "@/components/ui/Rating";
+import { listingPrice, minOrderLabel, toTitleCase } from "@/lib/utils";
 import { WishButton } from "@/components/product/ProductCardActions";
 
 export function ProductTile({ product }: { product: Product }) {
@@ -33,13 +32,13 @@ export function ProductTile({ product }: { product: Product }) {
       </div>
       <div className="flex flex-1 flex-col px-3 pb-3 pt-2.5">
         <h3 className="font-display text-sm font-bold leading-snug text-ink-800">
-          <Link href={`/product/${product.slug}`} className="hover:text-coral-500">
+          <Link href={`/product/${product.slug}`} className="line-clamp-3 break-words hover:text-coral-500">
             {toTitleCase(product.name)}
           </Link>
         </h3>
-        <div className="mt-1">
-          <Rating value={product.rating} />
-        </div>
+        <p className="mt-1 line-clamp-2 break-words text-[11px] font-bold leading-snug text-teal-800">
+          {minOrderLabel(product)}
+        </p>
         <div className="mt-auto flex items-end justify-between gap-2 border-t border-cream-200 pt-2">
           <span className="text-[11px] font-semibold text-ink-500">{price.label}</span>
           <span className="font-display text-base font-bold text-coral-500">{price.text}</span>

@@ -2,9 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/lib/types";
 import { getCategory } from "@/lib/data/categories";
-import { listingPrice, toTitleCase } from "@/lib/utils";
+import { listingPrice, minOrderLabel, toTitleCase } from "@/lib/utils";
 import { Badge } from "@/components/ui/Badge";
-import { Rating } from "@/components/ui/Rating";
 import { AddButton, WishButton } from "@/components/product/ProductCardActions";
 
 export function ProductCard({ product }: { product: Product }) {
@@ -42,11 +41,13 @@ export function ProductCard({ product }: { product: Product }) {
           {category?.shortName ?? product.categorySlug}
         </p>
         <h3 className="font-display text-sm font-bold leading-snug text-ink-800 sm:text-base">
-          <Link href={`/product/${product.slug}`} className="hover:text-coral-500">
+          <Link href={`/product/${product.slug}`} className="line-clamp-3 hover:text-coral-500">
             {toTitleCase(product.name)}
           </Link>
         </h3>
-        <Rating value={product.rating} count={product.reviewCount} />
+        <p className="w-fit max-w-full rounded-full bg-teal-50 px-2 py-0.5 text-[11px] font-bold leading-snug text-teal-800">
+          {minOrderLabel(product)}
+        </p>
         <div className="mt-auto flex items-end justify-between gap-2 border-t border-cream-200 pt-2">
           <span className="text-[11px] font-bold uppercase tracking-wide text-ink-400">{price.label}</span>
           <span className="font-display text-xl font-bold text-coral-500">{price.text}</span>

@@ -45,11 +45,11 @@ export function SquishyLane() {
                 Squishy favourites.
               </h2>
               <p className="mt-2 max-w-md text-sm text-white/95">
-                One of many aisles — boxed with piece count and a clear UK box price.
+                Every squishy, squeeze, dumpling and slow-rise toy, in one aisle.
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
-                <Button href="/shop/fruit-squishies" size="lg" variant="sun" className="w-fit">
-                  Shop Fruit Squishies
+                <Button href="/shop/squishies" size="lg" variant="sun" className="w-fit">
+                  Shop Squishies
                 </Button>
                 <Button
                   href="#squishy-wall"
@@ -86,14 +86,14 @@ export function SquishyLane() {
           <GlowHeading
             eyebrow={`${featured.length} favourites`}
             title="Squishy bestsellers"
-            href="/shop/fruit-squishies"
+            href="/shop/squishies"
           />
         </div>
 
         <ProductGrid products={featured} compact />
 
         <div className="mt-8 flex justify-center">
-          <Button href="/shop/fruit-squishies" size="lg">
+          <Button href="/shop/squishies" size="lg">
             Browse all squishies
           </Button>
         </div>
