@@ -6,7 +6,7 @@ export const categoryCovers: Record<string, string> = {
   "baby-toddler": "/images/products/telegram/tg-kids-push-car-age-1-3-970-1.webp",
   "bags-accessories": "/images/products/telegram/tg-lol-surprise-glitter-set-trolley-bag-151-1.webp",
   "board-games": "/images/products/telegram/tg-3d-plastic-playing-cards-7-1.webp",
-  "bubble-blowers": "/images/products/telegram/tg-splash-water-balls-1406-1.webp",
+  "bubble-blowers": "/images/products/telegram/tg-bubble-gun-new-style-2007-1.webp",
   "building-sets": "/images/products/telegram/tg-police-and-mickey-blocks-836-1.webp",
   "cars-vehicles": "/images/products/telegram/tg-metal-set-of-car-sets-52-1.webp",
   "dolls": "/images/products/telegram/tg-barbie-44-1.webp",

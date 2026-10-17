@@ -19,7 +19,7 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
           priority
           sizes="(min-width: 1024px) 420px, 92vw"
           quality={88}
-          className="object-contain object-center bg-white p-3 sm:p-5"
+          className="object-contain object-center bg-white p-1.5 sm:p-2.5"
         />
       </div>
       {photos.length > 1 ? (

@@ -43,7 +43,7 @@ export function ToyPhoto({
         decoding={priority ? "sync" : "async"}
         className={
           mode === "contain"
-            ? "h-full w-full object-contain object-center bg-white p-2 sm:p-3"
+            ? "h-full w-full object-contain object-center bg-white p-0.5 sm:p-1.5"
             : "object-cover object-center"
         }
       />

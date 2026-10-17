@@ -72,7 +72,7 @@ function BestSellerCard({ product, index }: { product: Product; index: number })
             priority={priority}
             loading="eager"
             decoding="async"
-            className="object-contain object-center bg-white p-2 bestseller-photo product-shot"
+            className="object-contain object-center bg-white p-0.5 bestseller-photo product-shot sm:p-1"
           />
         </Link>
         {badge ? (

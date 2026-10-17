@@ -44,7 +44,7 @@ export function AisleCard({
           quality={72}
           loading={priority ? undefined : "lazy"}
           decoding="async"
-          className="object-contain object-center bg-white p-2 product-shot"
+          className="object-contain object-center bg-white p-0.5 product-shot sm:p-1"
         />
       </div>
       <div className="flex flex-1 flex-col p-3 sm:p-3.5">
