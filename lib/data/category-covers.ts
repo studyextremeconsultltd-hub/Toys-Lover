@@ -16,7 +16,7 @@ export const categoryCovers: Record<string, string> = {
   "labubu": "/images/products/telegram/tg-labubu-in-surprise-bag-and-box-2029-1.webp",
   "light-up-toys": "/images/products/telegram/tg-glow-in-the-dark-room-stickers-stars-dinosaur-unic-14-1.webp",
   "novelty-keyrings": "/images/products/telegram/tg-design-keyrings-200-1.webp",
-  "outdoor-sports": "/images/products/telegram/tg-gel-gun-70-1.webp",
+  "outdoor-sports": "/images/products/telegram/tg-light-up-mask-iron-man-joker-1156-5.webp",
   "party-spotlight": "/images/products/telegram/tg-pop-up-ears-and-light-up-hats-53-1.webp",
   "role-play": "/images/products/telegram/tg-dream-castle-560-1.webp",
   "seasonal": "/images/products/telegram/tg-helloween-light-up-mask-76-1.webp",

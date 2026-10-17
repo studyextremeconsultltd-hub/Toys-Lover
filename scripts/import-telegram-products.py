@@ -1,4 +1,4 @@
-"""Build lib/data/telegram-stock.ts from curated_v2.json toys (add == true only).
+"""Build lib/data/telegram-stock.ts from curated_v3.json toys (add == true only).
 
 Never reads the perfumes key. Names are written to scripts/telegram_name_map.py
 (a reviewed slug -> title dict). Categories for the existing catalogue are
@@ -14,7 +14,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = Path(r"C:\Users\Adeel\toybloom_work\curated_v2.json")
+SOURCE = Path(r"C:\Users\Adeel\toybloom_work\curated_v3.json")
 OUT = ROOT / "lib" / "data" / "telegram-stock.ts"
 NAME_MAP_PATH = ROOT / "scripts" / "telegram_name_map.py"
 ASSIGNED_PATH = ROOT / "lib" / "data" / "assigned-categories.ts"
@@ -53,6 +53,12 @@ SAFETY = (
 
 # Hand fixes where the caption is too thin for a tidy title alone.
 NAME_OVERRIDES = {
+    "tg-sony-angles-2290": "Sonny Angels Figures",
+    "tg-fidget-spinners-in-stich-bluye-spider-man-and-poke-1936": "Character Fidget Spinners (Stitch, Bluey, Spider-Man, Pokemon)",
+    "tg-k-pop-med-surprise-box-2585": "K-Pop Medium Surprise Box",
+    "tg-bigger-crocs-charms-pack-1828": "Bigger Crocs Charms (pack)",
+    "tg-airplane-series-763": "Airplane Toy Series",
+    "tg-labubu-in-rabbits-2094": "Labubu Rabbit Style",
     "tg-series-4-2159": "Series 4 Collectible Figures",
     "tg-series-5-2272": "Series 5 Collectible Figures",
     "tg-christmas-2512": "Christmas Assortment",
@@ -374,6 +380,8 @@ def features_for(price: float | None, moq_label: str, notes: list[str]) -> list[
         cleaned = fix_spelling(note).strip()
         if not cleaned or cleaned.lower() == "price tbc":
             continue
+        if re.search(r"fix 2|re-matched|photos moved|possible duplicate|not added|box rate|single was", cleaned, flags=re.IGNORECASE):
+            continue
         if re.search(r"minimum\s+order|min\s+order", cleaned, flags=re.IGNORECASE):
             continue
         cleaned = cleaned[0].upper() + cleaned[1:]
@@ -405,6 +413,9 @@ def _word(blob: str, *words: str) -> bool:
 
 def classify(name: str, text: str, old_slug: str, is_squishy: bool) -> tuple[str, str]:
     """Prefer the product name. Description is used for squishy signals and as a backup."""
+    _force = {"airplane toy series": ("cars-vehicles", "vehicle"), "airplane series": ("cars-vehicles", "vehicle"), "3d stegosaurus": ("action-figures", "figure")}
+    if fix_spelling(name).lower().strip() in _force:
+        return _force[fix_spelling(name).lower().strip()]
     name_blob = fix_spelling(name).lower()
     full = fix_spelling(f"{name} {text}").lower()
 
