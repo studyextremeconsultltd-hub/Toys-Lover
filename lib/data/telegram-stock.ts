@@ -305,7 +305,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
-    "categorySlug": "action-figures",
+    "categorySlug": "cars-vehicles",
     "images": [
       "/images/products/telegram/tg-spider-man-bump-and-go-musical-47-1.webp",
       "/images/products/telegram/tg-spider-man-bump-and-go-musical-47-2.webp"
@@ -639,7 +639,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Lights",
-    "categorySlug": "light-up-toys",
+    "categorySlug": "seasonal",
     "images": [
       "/images/products/telegram/tg-50-pic-multicoloured-led-timer-lights-battery-oper-139-1.webp"
     ],
@@ -4288,7 +4288,7 @@ export const telegramStock: Product[] = [
     "ageRange": "3-5 years",
     "brand": "Toy Bloom Wholesale",
     "theme": "Characters",
-    "categorySlug": "action-figures",
+    "categorySlug": "light-up-toys",
     "images": [
       "/images/products/telegram/tg-spider-lights-up-1576-1.webp",
       "/images/products/telegram/tg-spider-lights-up-1576-2.webp"

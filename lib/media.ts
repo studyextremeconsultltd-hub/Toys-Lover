@@ -186,19 +186,19 @@ const RELATED_PHOTOS: Record<string, string[]> = {
     productShot("space-explorer-kit"),
   ],
   "action-figures": [
-    productShot("machine-soldier-transformer"),
-    productShot("alloy-diecast-racer"),
-    productShot("hero-league-figure"),
+    productShot("hipper-collectible-pack"),
+    productShot("big-into-energy-surprise"),
+    productShot("hatch-dragon-egg-01"),
   ],
   "plush-soft-toys": [
     productShot("snuggle-puppy-plush"),
     productShot("unicorn-snuggle-plush"),
-    productShot("beauty-princess-doll"),
+    productShot("wrap-around-plush-monkey"),
   ],
   "building-sets": [
     productShot("dino-expedition-build"),
     productShot("mech-pioneer-build"),
-    productShot("engineering-dump-truck"),
+    productShot("eva-number-foam-puzzle"),
   ],
   "bubble-blowers": [
     productShot("animal-bubble-camera-set"),
@@ -211,14 +211,14 @@ const RELATED_PHOTOS: Record<string, string[]> = {
     productShot("stage-quest-card-game"),
   ],
   "arts-crafts": [
-    productShot("jumbo-peach-squishy"),
-    productShot("giant-strawberry-squishy"),
-    productShot("swirl-ice-cream-squishy"),
+    productShot("diy-bead-jewelry-set"),
+    productShot("space-explorer-kit"),
+    productShot("eva-number-foam-puzzle"),
   ],
   "outdoor-sports": [
-    productShot("basketball-play-set"),
-    productShot("ride-on-4x4-jeep"),
     productShot("sports-ball-pack"),
+    productShot("soft-dart-modular-blaster"),
+    productShot("character-play-balls"),
   ],
   "baby-toddler": [
     productShot("piano-fitness-gym"),
@@ -227,8 +227,8 @@ const RELATED_PHOTOS: Record<string, string[]> = {
   ],
   "role-play": [
     productShot("dream-castle-playset"),
-    productShot("mermaid-dress-up-set"),
-    productShot("kitchen-cook-set"),
+    productShot("doctor-clinic-set"),
+    productShot("unicorn-vanity-kit"),
   ],
   "games-gadgets": [
     productShot("rc-monster-truck"),
