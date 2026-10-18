@@ -7,6 +7,7 @@ import { chinaStock } from "@/lib/data/china-stock";
 import { innovativeStock } from "@/lib/data/innovative-stock";
 import { octoberNewStock } from "@/lib/data/october-new-stock";
 import { telegramStock } from "@/lib/data/telegram-stock";
+import { HIDDEN_PRODUCT_SLUGS } from "@/lib/data/hidden-products";
 import { assignedCategory } from "@/lib/data/assigned-categories";
 import { productGallery, shop } from "@/lib/media";
 import { rankProducts } from "@/lib/rank";
@@ -1754,7 +1755,7 @@ if (duplicateSlugs.length > 0) {
   throw new Error(`Duplicate product slugs: ${Array.from(new Set(duplicateSlugs)).join(", ")}`);
 }
 
-export const products: Product[] = catalog.map((product) => {
+export const products: Product[] = catalog.filter((product) => !HIDDEN_PRODUCT_SLUGS.includes(product.slug)).map((product) => {
   const categorySlug =
     product.brand === "Toy Bloom Wholesale"
       ? product.categorySlug
