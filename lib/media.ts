@@ -341,21 +341,21 @@ export function fallbackPhoto(src?: string | null) {
 
 export const HERO_SLIDES = [
   {
-    src: productShot("jumbo-peach-squishy"),
-    alt: "Jumbo peach squishy",
+    src: productShot("rainbow-butter-squishy"),
+    alt: "Rainbow butter squishy",
     title: "Squishies are the main event.",
     text: "Fruit, butter, and jelly fidgets — each with its own photo.",
   },
   {
-    src: productShot("giant-strawberry-squishy"),
-    alt: "Giant strawberry squishy",
+    src: productShot("gummy-bear-squeeze-box"),
+    alt: "Gummy bear squeeze box",
     title: "Slow-rise till-point hits.",
-    text: "The strawberries and peaches that leave the counter first.",
+    text: "Counter-ready squeezes you can see before you order.",
   },
   {
-    src: productShot("rainbow-butter-squishy"),
-    alt: "Rainbow butter squishy",
-    title: "Butter bricks and jelly bears.",
+    src: productShot("grape-cluster-squishy"),
+    alt: "Grape cluster squishy",
+    title: "Butter bricks and fruit fidgets.",
     text: "Viral squeezes, listed one by one at UK high-street prices.",
   },
 ];
